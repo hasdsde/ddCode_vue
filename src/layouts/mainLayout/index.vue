@@ -8,8 +8,11 @@
           DD-Code管理系统
         </q-toolbar-title>
         <div>
-          <span class="q-mr-md">
+          <span v-if="userInfo" class="q-mr-md">
             用户： {{ userInfo.nickName }}
+          </span>
+          <span v-else="userInfo" class="q-mr-md">
+            用户：未登录
           </span>
           <q-btn icon="logout" size="sm" color="red" @click="handleLogout"/>
         </div>
@@ -43,7 +46,7 @@
 <script setup lang="ts">
 import {api} from 'src/boot/axios';
 import {BaseApi} from 'src/components/models';
-import {ref} from 'vue';
+import {onMounted, ref} from 'vue';
 import {useRoute} from 'vue-router';
 
 const menuMap: any = []
@@ -53,12 +56,18 @@ const menus: any = ref([])
 const leftDrawerOpen = ref(true)
 const link: any = ref('')
 const route = useRoute()
-const userInfo = ref({nickName: ""})
+const userInfo = ref({nickName: "aa"})
 
 // 收起侧栏
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
+
+onMounted(() => {
+  if (userInfo.value == null) {
+    location.href = "/#/login"
+  }
+})
 
 // 记忆侧栏开合
 function handleCardExpand(name: any) {
