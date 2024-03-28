@@ -54,7 +54,7 @@
 ```sh
 npm run install #下载依赖
 npm run dev #启动系统
-npm run wt #启动node服务器
+npm run tw #启动node服务器
 ```
 
 ## 访问地址

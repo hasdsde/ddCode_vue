@@ -3378,8 +3378,12 @@ export const tagLists: any = [
     {name: "tfoot", desc: "", info: {}},
     {name: "img", desc: "", info: {}},
     {name: "video", desc: "", info: {}},
+
+
     {
-        name: "q-ajax-bar", desc: "ajax栏", info: {
+        "name": "q-ajax-bar",
+        "desc": "ajax栏",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/ajax-bar"
@@ -3387,7 +3391,7 @@ export const tagLists: any = [
             "props": {
                 "position": {
                     "type": "String",
-                    "desc": "Position within window of where QAjaxBar should be displayed",
+                    "desc": "窗口中应显示QAjaxBar的位置",
                     "default": "top",
                     "values": [
                         "top",
@@ -3400,7 +3404,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name",
+                    "desc": "以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -3411,7 +3415,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -3420,17 +3424,17 @@ export const tagLists: any = [
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Reverse direction of progress",
+                    "desc": "前进方向相反",
                     "category": "behavior"
                 },
                 "skip-hijack": {
                     "type": "Boolean",
-                    "desc": "Skip Ajax hijacking (not a reactive prop)",
+                    "desc": "跳过Ajax劫持（不是被动道具）",
                     "category": "behavior"
                 },
                 "hijack-filter": {
                     "type": "Function",
-                    "desc": "Filter which URL should trigger start() + stop()",
+                    "desc": "筛选应该触发start（）+stop（）的URL",
                     "params": {
                         "url": {
                             "type": "String",
@@ -3450,15 +3454,15 @@ export const tagLists: any = [
             },
             "events": {
                 "start": {
-                    "desc": "Emitted when bar is triggered to appear"
+                    "desc": "当条形图被触发显示时发出"
                 },
                 "stop": {
-                    "desc": "Emitted when bar has finished its job"
+                    "desc": "条形图完成工作时发出"
                 }
             },
             "methods": {
                 "start": {
-                    "desc": "Notify bar you are waiting for a new process to finish",
+                    "desc": "通知栏您正在等待新进程完成",
                     "params": {
                         "speed": {
                             "type": "Number",
@@ -3473,7 +3477,7 @@ export const tagLists: any = [
                     }
                 },
                 "increment": {
-                    "desc": "Manually trigger a bar progress increment",
+                    "desc": "手动触发条形进度增量",
                     "params": {
                         "amount": {
                             "type": "Number",
@@ -3486,7 +3490,7 @@ export const tagLists: any = [
                     }
                 },
                 "stop": {
-                    "desc": "Notify bar that one process you were waiting has finished",
+                    "desc": "通知栏您正在等待的一个进程已完成",
                     "returns": {
                         "type": "Number",
                         "desc": "Number of active simultaneous sessions"
@@ -3496,7 +3500,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-avatar", desc: "头像", info: {
+        "name": "q-avatar",
+        "desc": "头像",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/avatar"
@@ -3504,7 +3510,7 @@ export const tagLists: any = [
             "props": {
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -3515,7 +3521,7 @@ export const tagLists: any = [
                 },
                 "font-size": {
                     "type": "String",
-                    "desc": "The size in CSS units, including unit name, of the content (icon, text)",
+                    "desc": "内容（图标、文本）的大小（以CSS为单位），包括单元名称",
                     "examples": [
                         "18px",
                         "2rem"
@@ -3524,7 +3530,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -3533,7 +3539,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -3542,7 +3548,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -3553,24 +3559,26 @@ export const tagLists: any = [
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a small standard border-radius for a squared shape of the component",
+                    "desc": "为零部件的方形应用小的标准边界半径",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Optional; Suggestions: one character string, /<img> tag"
+                    "desc": "可选择的建议：一个字符串，/<img>标记"
                 }
             }
         }
     },
     {
-        name: "q-badge", desc: "标记", info: {
+        "name": "q-badge",
+        "desc": "标记",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/badge"
@@ -3578,7 +3586,7 @@ export const tagLists: any = [
             "props": {
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -3587,7 +3595,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -3596,17 +3604,17 @@ export const tagLists: any = [
                 },
                 "floating": {
                     "type": "Boolean",
-                    "desc": "Tell QBadge if it should float to the top right side of the relative positioned parent element or not",
+                    "desc": "告诉QBadge它是否应该浮动到相对定位的父元素的右上侧",
                     "category": "content"
                 },
                 "transparent": {
                     "type": "Boolean",
-                    "desc": "Applies a 0.8 opacity; Useful especially for floating QBadge",
+                    "desc": "应用0.8的不透明度；特别适用于浮动QBadge",
                     "category": "style"
                 },
                 "multi-line": {
                     "type": "Boolean",
-                    "desc": "Content can wrap to multiple lines",
+                    "desc": "内容可以换行为多行",
                     "category": "content"
                 },
                 "label": {
@@ -3614,7 +3622,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Badge's content as string; overrides default slot if specified",
+                    "desc": "徽章内容为字符串；如果指定，则覆盖默认插槽",
                     "examples": [
                         "John Doe",
                         22
@@ -3623,7 +3631,7 @@ export const tagLists: any = [
                 },
                 "align": {
                     "type": "String",
-                    "desc": "Sets vertical-align CSS prop",
+                    "desc": "设置垂直对齐CSS道具",
                     "values": [
                         "top",
                         "middle",
@@ -3633,24 +3641,26 @@ export const tagLists: any = [
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Use 'outline' design (colored text and borders only)",
+                    "desc": "使用“轮廓”设计（仅限彩色文本和边框）",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Makes a rounded shaped badge",
+                    "desc": "制作圆形徽章",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where QBadge content goes, if not using 'label' property"
+                    "desc": "如果不使用“label”属性，这就是QBadge内容的去向"
                 }
             }
         }
     },
     {
-        name: "q-banner", desc: "横幅", info: {
+        "name": "q-banner",
+        "desc": "横幅",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/banner"
@@ -3658,40 +3668,42 @@ export const tagLists: any = [
             "props": {
                 "inline-actions": {
                     "type": "Boolean",
-                    "desc": "Display actions on same row as content",
+                    "desc": "显示与内容在同一行上的操作",
                     "category": "content"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a small standard border-radius for a squared shape of the component",
+                    "desc": "为零部件的方形应用小的标准边界半径",
                     "category": "style"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where Banner content goes"
+                    "desc": "这就是Banner内容的去向"
                 },
                 "avatar": {
-                    "desc": "Slot for displaying an avatar (suggestions: QIcon, QAvatar)"
+                    "desc": "用于显示化身的插槽（建议：QIcon、QAvatar）"
                 },
                 "action": {
-                    "desc": "Slot for Banner action (suggestions: QBtn)"
+                    "desc": "横幅动作的位置（建议：QBtn）"
                 }
             }
         }
     },
     {
-        name: "q-bar", desc: "栏", info: {
+        "name": "q-bar",
+        "desc": "栏",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/bar"
@@ -3699,24 +3711,26 @@ export const tagLists: any = [
             "props": {
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "The component background color lights up the parent's background (as opposed to default behavior which is to darken it); Works unless you specify a CSS background color for it",
+                    "desc": "组件背景颜色会照亮父对象的背景（与使其变暗的默认行为相反）；除非为其指定CSS背景色，否则有效",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-breadcrumbs", desc: "面包屑组", info: {
+        "name": "q-breadcrumbs",
+        "desc": "面包屑组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/breadcrumbs"
@@ -3724,7 +3738,7 @@ export const tagLists: any = [
             "props": {
                 "separator": {
                     "type": "String",
-                    "desc": "The string used to separate the breadcrumbs",
+                    "desc": "用来分离面包屑的绳子",
                     "default": "/",
                     "examples": [
                         "-",
@@ -3736,7 +3750,7 @@ export const tagLists: any = [
                 },
                 "active-color": {
                     "type": "String",
-                    "desc": "The color of the active breadcrumb, which can be any color from the Quasar Color Palette",
+                    "desc": "活动面包屑的颜色，可以是Quasar调色板中的任何颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -3747,7 +3761,7 @@ export const tagLists: any = [
                 },
                 "gutter": {
                     "type": "String",
-                    "desc": "The gutter value allows you control over the space between the breadcrumb elements.",
+                    "desc": "通过边值，可以控制面包屑元素之间的空间。",
                     "default": "sm",
                     "values": [
                         "none",
@@ -3762,7 +3776,7 @@ export const tagLists: any = [
                 },
                 "separator-color": {
                     "type": "String",
-                    "desc": "The color used to color the separator, which can be any color from the Quasar Color Palette",
+                    "desc": "用于为分隔符上色的颜色，可以是Quasar调色板中的任何颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -3772,7 +3786,7 @@ export const tagLists: any = [
                 "align": {
                     "type": "String",
                     "default": "left",
-                    "desc": "Specify how to align the breadcrumbs horizontally",
+                    "desc": "指定如何水平对齐面包屑",
                     "values": [
                         "left",
                         "center",
@@ -3787,16 +3801,18 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 },
                 "separator": {
-                    "desc": "HTML or component you can slot in to separate the breadcrumbs"
+                    "desc": "可以插入HTML或组件以分离面包屑"
                 }
             }
         }
     },
     {
-        name: "q-breadcrumbs-el", desc: "面包屑", info: {
+        "name": "q-breadcrumbs-el",
+        "desc": "面包屑",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/breadcrumbs"
@@ -3807,7 +3823,7 @@ export const tagLists: any = [
                         "String",
                         "Object"
                     ],
-                    "desc": "Equivalent to Vue Router <router-link> 'to' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“to”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "/home/dashboard",
                         ":to=\"{ name: 'my-route-name' }\""
@@ -3816,17 +3832,17 @@ export const tagLists: any = [
                 },
                 "exact": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'exact' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue路由器＜Router link＞的“精确”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "replace": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'replace' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“replace”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-active-class"
                     ],
@@ -3834,7 +3850,7 @@ export const tagLists: any = [
                 },
                 "exact-active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-exact-active-class"
                     ],
@@ -3842,7 +3858,7 @@ export const tagLists: any = [
                 },
                 "href": {
                     "type": "String",
-                    "desc": "Native <a> link href attribute; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接href属性；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "https://quasar.dev"
                     ],
@@ -3851,7 +3867,7 @@ export const tagLists: any = [
                 },
                 "target": {
                     "type": "String",
-                    "desc": "Native <a> link target attribute; Use it only along with 'href' prop; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接目标属性；只能与'href'道具一起使用；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "_blank",
                         "_self",
@@ -3863,12 +3879,12 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "label": {
                     "type": "String",
-                    "desc": "The label text for the breadcrumb",
+                    "desc": "面包屑的标签文本",
                     "examples": [
                         "Home",
                         "Index"
@@ -3877,7 +3893,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -3888,7 +3904,7 @@ export const tagLists: any = [
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to use",
+                    "desc": "要使用的HTML标记",
                     "examples": [
                         "div",
                         "span",
@@ -3902,12 +3918,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "This is where custom content goes, unless 'icon' and 'label' props are not enough"
+                    "desc": "这就是自定义内容的位置，除非“图标”和“标签”道具不够"
                 }
             },
             "events": {
                 "click": {
-                    "desc": "Emitted when the component is clicked",
+                    "desc": "单击组件时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -3960,7 +3976,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-btn", desc: "按钮", info: {
+        "name": "q-btn",
+        "desc": "按钮",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/button"
@@ -3968,7 +3986,7 @@ export const tagLists: any = [
             "props": {
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -3979,7 +3997,7 @@ export const tagLists: any = [
                 },
                 "type": {
                     "type": "String",
-                    "desc": "1) Define the button native type attribute (submit, reset, button) or 2) render component with <a> tag so you can access events even if disable or 3) Use 'href' prop and specify 'type' as a media tag",
+                    "desc": "1） 定义按钮本机类型属性（submit、reset、button）或2）使用<a>标记的呈现组件，以便即使禁用也可以访问事件或3）使用“href”道具并指定“type”作为媒体标记",
                     "default": "button",
                     "examples": [
                         "a",
@@ -3997,7 +4015,7 @@ export const tagLists: any = [
                         "String",
                         "Object"
                     ],
-                    "desc": "Equivalent to Vue Router <router-link> 'to' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“to”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "/home/dashboard",
                         ":to=\"{ name: 'my-route-name' }\""
@@ -4006,12 +4024,12 @@ export const tagLists: any = [
                 },
                 "replace": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'replace' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“replace”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "href": {
                     "type": "String",
-                    "desc": "Native <a> link href attribute; Has priority over the 'to' and 'replace' props",
+                    "desc": "本机<a>链接href属性；优先于“to”和“replace”道具",
                     "examples": [
                         "https://quasar.dev",
                         "href=\"https://quasar.dev\" target=\"_blank\""
@@ -4021,7 +4039,7 @@ export const tagLists: any = [
                 },
                 "target": {
                     "type": "String",
-                    "desc": "Native <a> link target attribute; Use it only with 'to' or 'href' props",
+                    "desc": "本机<a>链接目标属性；仅与“to”或“href”道具一起使用",
                     "examples": [
                         "_blank",
                         "_self",
@@ -4036,7 +4054,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "The text that will be shown on the button",
+                    "desc": "将显示在按钮上的文本",
                     "examples": [
                         "Button Label"
                     ],
@@ -4044,7 +4062,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -4055,7 +4073,7 @@ export const tagLists: any = [
                 },
                 "icon-right": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -4066,53 +4084,53 @@ export const tagLists: any = [
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Use 'outline' design",
+                    "desc": "使用“大纲”设计",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Use 'flat' design",
+                    "desc": "使用“平面”设计",
                     "category": "style"
                 },
                 "unelevated": {
                     "type": "Boolean",
-                    "desc": "Remove shadow",
+                    "desc": "移除阴影",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a more prominent border-radius for a squared shape button",
+                    "desc": "为方形按钮应用更突出的边框半径",
                     "category": "style"
                 },
                 "push": {
                     "type": "Boolean",
-                    "desc": "Use 'push' design",
+                    "desc": "使用“推送”设计",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style",
                     "addedIn": "v2.7.6"
                 },
                 "glossy": {
                     "type": "Boolean",
-                    "desc": "Applies a glossy effect",
+                    "desc": "应用光泽效果",
                     "category": "style"
                 },
                 "fab": {
                     "type": "Boolean",
-                    "desc": "Makes button size and shape to fit a Floating Action Button",
+                    "desc": "使按钮大小和形状适合浮动动作按钮",
                     "category": "style"
                 },
                 "fab-mini": {
                     "type": "Boolean",
-                    "desc": "Makes button size and shape to fit a small Floating Action Button",
+                    "desc": "使按钮的大小和形状适合小型浮动动作按钮",
                     "category": "style"
                 },
                 "padding": {
                     "type": "String",
-                    "desc": "Apply custom padding (vertical [horizontal]); Size in CSS units, including unit name or standard size name (none|xs|sm|md|lg|xl); Also removes the min width and height when set",
+                    "desc": "应用自定义填充（垂直[水平]）；以CSS为单位的大小，包括单元名称或标准大小名称（none|xs|sm|md|lg|xl）；设置时还删除最小宽度和高度",
                     "examples": [
                         "16px",
                         "10px 5px",
@@ -4125,7 +4143,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -4134,7 +4152,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -4143,17 +4161,17 @@ export const tagLists: any = [
                 },
                 "no-caps": {
                     "type": "Boolean",
-                    "desc": "Avoid turning label text into caps (which happens by default)",
+                    "desc": "避免将标签文本变成大写（默认情况下会发生这种情况）",
                     "category": "content"
                 },
                 "no-wrap": {
                     "type": "Boolean",
-                    "desc": "Avoid label text wrapping",
+                    "desc": "避免标签文本换行",
                     "category": "content"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "ripple": {
@@ -4161,7 +4179,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Object"
                     ],
-                    "desc": "Configure material ripple (disable it by setting it to 'false' or supply a config object)",
+                    "desc": "配置材料波纹（通过将其设置为“false”或提供配置对象来禁用它）",
                     "default": true,
                     "examples": [
                         false,
@@ -4175,7 +4193,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -4184,7 +4202,7 @@ export const tagLists: any = [
                 },
                 "align": {
                     "type": "String",
-                    "desc": "Label or content alignment",
+                    "desc": "标签或内容对齐",
                     "default": "center",
                     "values": [
                         "left",
@@ -4199,51 +4217,51 @@ export const tagLists: any = [
                 },
                 "stack": {
                     "type": "Boolean",
-                    "desc": "Stack icon and label vertically instead of on same line (like it is by default)",
+                    "desc": "垂直堆叠图标和标签，而不是在同一行（就像默认情况下一样）",
                     "category": "content"
                 },
                 "stretch": {
                     "type": "Boolean",
-                    "desc": "When used on flexbox parent, button will stretch to parent's height",
+                    "desc": "当在flexbox父对象上使用时，按钮将拉伸到父对象的高度",
                     "category": "content"
                 },
                 "loading": {
                     "type": "Boolean",
-                    "desc": "Put button into loading state (displays a QSpinner -- can be overridden by using a 'loading' slot)",
+                    "desc": "将按钮置于加载状态（显示一个QSpinner——可以通过使用“加载”插槽覆盖）",
                     "category": "behavior|state"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "round": {
                     "type": "Boolean",
-                    "desc": "Makes a circle shaped button",
+                    "desc": "制作圆形按钮",
                     "category": "style"
                 },
                 "percentage": {
                     "type": "Number",
-                    "desc": "Percentage (0.0 < x < 100.0); To be used along 'loading' prop; Display a progress bar on the background",
+                    "desc": "百分比（0.0<x<100.0）；与“加载”道具一起使用；在后台显示进度条",
                     "category": "behavior"
                 },
                 "dark-percentage": {
                     "type": "Boolean",
-                    "desc": "Progress bar on the background should have dark color; To be used along with 'percentage' and 'loading' props",
+                    "desc": "背景上的进度条应为深色；与“百分比”和“加载”道具一起使用",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Use for custom content, instead of relying on 'icon' and 'label' props"
+                    "desc": "用于自定义内容，而不是依赖“图标”和“标签”道具"
                 },
                 "loading": {
-                    "desc": "Override the default QSpinner when in 'loading' state"
+                    "desc": "处于“加载”状态时覆盖默认的QSpinner"
                 }
             },
             "events": {
                 "click": {
-                    "desc": "Emitted when the component is clicked",
+                    "desc": "单击组件时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4295,7 +4313,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "click": {
-                    "desc": "Emulate click on QBtn",
+                    "desc": "模拟点击QBtn",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4307,7 +4325,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-btn-group", desc: "按钮组", info: {
+        "name": "q-btn-group",
+        "desc": "按钮组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/button-group"
@@ -4315,60 +4335,62 @@ export const tagLists: any = [
             "props": {
                 "spread": {
                     "type": "Boolean",
-                    "desc": "Spread horizontally to all available space",
+                    "desc": "水平分布到所有可用空间",
                     "category": "content"
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Use 'outline' design for buttons",
+                    "desc": "按钮采用“轮廓”设计",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Use 'flat' design for buttons",
+                    "desc": "按钮采用“平面”设计",
                     "category": "style"
                 },
                 "unelevated": {
                     "type": "Boolean",
-                    "desc": "Remove shadow on buttons",
+                    "desc": "删除按钮上的阴影",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a more prominent border-radius for squared shape buttons",
+                    "desc": "为方形按钮应用更突出的边框半径",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style",
                     "addedIn": "v2.7.6"
                 },
                 "push": {
                     "type": "Boolean",
-                    "desc": "Use 'push' design for buttons",
+                    "desc": "按钮采用“推”式设计",
                     "category": "style"
                 },
                 "stretch": {
                     "type": "Boolean",
-                    "desc": "When used on flexbox parent, buttons will stretch to parent's height",
+                    "desc": "在柔性盒父对象上使用时，按钮将延伸到父对象的高度",
                     "category": "content"
                 },
                 "glossy": {
                     "type": "Boolean",
-                    "desc": "Applies a glossy effect",
+                    "desc": "应用光泽效果",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestion: QBtn"
+                    "desc": "建议：QBtn"
                 }
             }
         }
     },
     {
-        name: "q-btn-dropdown", desc: "按钮下拉", info: {
+        "name": "q-btn-dropdown",
+        "desc": "按钮下拉",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/button-dropdown"
@@ -4376,7 +4398,7 @@ export const tagLists: any = [
             "props": {
                 "transition-show": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -4387,7 +4409,7 @@ export const tagLists: any = [
                 },
                 "transition-hide": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -4401,13 +4423,13 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "required": false
                 },
                 "model-value": {
-                    "desc": "Controls Menu show/hidden state; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "控制菜单显示/隐藏状态；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": false,
                     "syncable": true,
                     "category": "model",
@@ -4418,7 +4440,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -4429,7 +4451,7 @@ export const tagLists: any = [
                 },
                 "type": {
                     "type": "String",
-                    "desc": "1) Define the button native type attribute (submit, reset, button) or 2) render component with <a> tag so you can access events even if disable or 3) Use 'href' prop and specify 'type' as a media tag",
+                    "desc": "1） 定义按钮本机类型属性（submit、reset、button）或2）使用<a>标记的呈现组件，以便即使禁用也可以访问事件或3）使用“href”道具并指定“type”作为媒体标记",
                     "default": "button",
                     "examples": [
                         "a",
@@ -4447,7 +4469,7 @@ export const tagLists: any = [
                         "String",
                         "Object"
                     ],
-                    "desc": "Equivalent to Vue Router <router-link> 'to' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“to”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "/home/dashboard",
                         ":to=\"{ name: 'my-route-name' }\""
@@ -4456,12 +4478,12 @@ export const tagLists: any = [
                 },
                 "replace": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'replace' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“replace”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "href": {
                     "type": "String",
-                    "desc": "Native <a> link href attribute; Has priority over the 'to' and 'replace' props",
+                    "desc": "本机<a>链接href属性；优先于“to”和“replace”道具",
                     "examples": [
                         "https://quasar.dev",
                         "href=\"https://quasar.dev\" target=\"_blank\""
@@ -4471,7 +4493,7 @@ export const tagLists: any = [
                 },
                 "target": {
                     "type": "String",
-                    "desc": "Native <a> link target attribute; Use it only with 'to' or 'href' props",
+                    "desc": "本机<a>链接目标属性；仅与“to”或“href”道具一起使用",
                     "examples": [
                         "_blank",
                         "_self",
@@ -4486,7 +4508,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "The text that will be shown on the button",
+                    "desc": "将显示在按钮上的文本",
                     "examples": [
                         "Button Label"
                     ],
@@ -4494,7 +4516,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -4505,7 +4527,7 @@ export const tagLists: any = [
                 },
                 "icon-right": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -4516,53 +4538,53 @@ export const tagLists: any = [
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Use 'outline' design",
+                    "desc": "使用“大纲”设计",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Use 'flat' design",
+                    "desc": "使用“平面”设计",
                     "category": "style"
                 },
                 "unelevated": {
                     "type": "Boolean",
-                    "desc": "Remove shadow",
+                    "desc": "移除阴影",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a more prominent border-radius for a squared shape button",
+                    "desc": "为方形按钮应用更突出的边框半径",
                     "category": "style"
                 },
                 "push": {
                     "type": "Boolean",
-                    "desc": "Use 'push' design",
+                    "desc": "使用“推送”设计",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style",
                     "addedIn": "v2.7.6"
                 },
                 "glossy": {
                     "type": "Boolean",
-                    "desc": "Applies a glossy effect",
+                    "desc": "应用光泽效果",
                     "category": "style"
                 },
                 "fab": {
                     "type": "Boolean",
-                    "desc": "Makes button size and shape to fit a Floating Action Button",
+                    "desc": "使按钮大小和形状适合浮动动作按钮",
                     "category": "style"
                 },
                 "fab-mini": {
                     "type": "Boolean",
-                    "desc": "Makes button size and shape to fit a small Floating Action Button",
+                    "desc": "使按钮的大小和形状适合小型浮动动作按钮",
                     "category": "style"
                 },
                 "padding": {
                     "type": "String",
-                    "desc": "Apply custom padding (vertical [horizontal]); Size in CSS units, including unit name or standard size name (none|xs|sm|md|lg|xl); Also removes the min width and height when set",
+                    "desc": "应用自定义填充（垂直[水平]）；以CSS为单位的大小，包括单元名称或标准大小名称（none|xs|sm|md|lg|xl）；设置时还删除最小宽度和高度",
                     "examples": [
                         "16px",
                         "10px 5px",
@@ -4575,7 +4597,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -4584,7 +4606,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -4593,17 +4615,17 @@ export const tagLists: any = [
                 },
                 "no-caps": {
                     "type": "Boolean",
-                    "desc": "Avoid turning label text into caps (which happens by default)",
+                    "desc": "避免将标签文本变成大写（默认情况下会发生这种情况）",
                     "category": "content"
                 },
                 "no-wrap": {
                     "type": "Boolean",
-                    "desc": "Avoid label text wrapping",
+                    "desc": "避免标签文本换行",
                     "category": "content"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "ripple": {
@@ -4611,7 +4633,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Object"
                     ],
-                    "desc": "Configure material ripple (disable it by setting it to 'false' or supply a config object)",
+                    "desc": "配置材料波纹（通过将其设置为“false”或提供配置对象来禁用它）",
                     "default": true,
                     "examples": [
                         false,
@@ -4625,7 +4647,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -4634,7 +4656,7 @@ export const tagLists: any = [
                 },
                 "align": {
                     "type": "String",
-                    "desc": "Label or content alignment",
+                    "desc": "标签或内容对齐",
                     "default": "center",
                     "values": [
                         "left",
@@ -4649,32 +4671,32 @@ export const tagLists: any = [
                 },
                 "stack": {
                     "type": "Boolean",
-                    "desc": "Stack icon and label vertically instead of on same line (like it is by default)",
+                    "desc": "垂直堆叠图标和标签，而不是在同一行（就像默认情况下一样）",
                     "category": "content"
                 },
                 "stretch": {
                     "type": "Boolean",
-                    "desc": "When used on flexbox parent, button will stretch to parent's height",
+                    "desc": "当在flexbox父对象上使用时，按钮将拉伸到父对象的高度",
                     "category": "content"
                 },
                 "loading": {
                     "type": "Boolean",
-                    "desc": "Put button into loading state (displays a QSpinner -- can be overridden by using a 'loading' slot)",
+                    "desc": "将按钮置于加载状态（显示一个QSpinner——可以通过使用“加载”插槽覆盖）",
                     "category": "behavior|state"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "split": {
                     "type": "Boolean",
-                    "desc": "Split dropdown icon into its own button",
+                    "desc": "将下拉图标拆分为自己的按钮",
                     "category": "content|behavior"
                 },
                 "dropdown-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -4685,17 +4707,17 @@ export const tagLists: any = [
                 },
                 "disable-main-btn": {
                     "type": "Boolean",
-                    "desc": "Disable main button (useful along with 'split' prop)",
+                    "desc": "禁用主按钮（与“拆分”道具一起使用很有用）",
                     "category": "behavior"
                 },
                 "disable-dropdown": {
                     "type": "Boolean",
-                    "desc": "Disables dropdown (dropdown button if using along 'split' prop)",
+                    "desc": "禁用下拉（如果使用“拆分”道具，则为下拉按钮）",
                     "category": "behavior"
                 },
                 "no-icon-animation": {
                     "type": "Boolean",
-                    "desc": "Disables the rotation of the dropdown icon when state is toggled",
+                    "desc": "切换状态时禁用下拉图标的旋转",
                     "category": "style"
                 },
                 "content-style": {
@@ -4705,7 +4727,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the menu",
+                    "desc": "要归因于菜单的样式定义",
                     "examples": [
                         "background-color: #ff0000",
                         ":content-style=\"{ backgroundColor: '#ff0000' }\""
@@ -4719,7 +4741,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the menu",
+                    "desc": "要归因于菜单的类定义",
                     "examples": [
                         "my-special-class",
                         ":content-class=\"{ 'my-special-class': <condition> }\""
@@ -4728,27 +4750,27 @@ export const tagLists: any = [
                 },
                 "cover": {
                     "type": "Boolean",
-                    "desc": "Allows the menu to cover the button. When used, the 'menu-self' and 'menu-fit' props are no longer effective",
+                    "desc": "允许菜单覆盖按钮。使用时，“菜单自身”和“菜单适合”道具不再有效",
                     "category": "position"
                 },
                 "persistent": {
                     "type": "Boolean",
-                    "desc": "Allows the menu to not be dismissed by a click/tap outside of the menu or by hitting the ESC key",
+                    "desc": "允许菜单不被菜单外的点击/轻击或按ESC键取消",
                     "category": "behavior"
                 },
                 "no-route-dismiss": {
                     "type": "Boolean",
-                    "desc": "Changing route app won't dismiss the popup; No need to set it if 'persistent' prop is also set",
+                    "desc": "更改路线应用程序不会关闭弹出窗口；如果还设置了“persistent”道具，则无需设置",
                     "category": "behavior"
                 },
                 "auto-close": {
                     "type": "Boolean",
-                    "desc": "Allows any click/tap in the menu to close it; Useful instead of attaching events to each menu item that should close the menu on click/tap",
+                    "desc": "允许在菜单中单击/点击以关闭它；很有用，而不是将事件附加到单击/点击时应关闭菜单的每个菜单项",
                     "category": "behavior"
                 },
                 "menu-anchor": {
                     "type": "String",
-                    "desc": "Two values setting the starting position or anchor point of the menu relative to its target",
+                    "desc": "设置菜单相对于目标的起始位置或锚点的两个值",
                     "values": [
                         "top left",
                         "top middle",
@@ -4772,7 +4794,7 @@ export const tagLists: any = [
                 },
                 "menu-self": {
                     "type": "String",
-                    "desc": "Two values setting the menu's own position relative to its target",
+                    "desc": "两个值设置菜单自身相对于目标的位置",
                     "values": [
                         "top left",
                         "top middle",
@@ -4796,7 +4818,7 @@ export const tagLists: any = [
                 },
                 "menu-offset": {
                     "type": "Array",
-                    "desc": "An array of two numbers to offset the menu horizontally and vertically in pixels",
+                    "desc": "两个数字的数组，以像素为单位水平和垂直偏移菜单",
                     "examples": [
                         "[8, 8]",
                         "[5, 10]"
@@ -4805,7 +4827,7 @@ export const tagLists: any = [
                 },
                 "toggle-aria-label": {
                     "type": "String",
-                    "desc": "aria-label to be used on the dropdown toggle element",
+                    "desc": "要在下拉切换元素上使用的aria标签",
                     "examples": [
                         "Open menu"
                     ],
@@ -4815,19 +4837,19 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 },
                 "label": {
-                    "desc": "Customize main button's content through this slot, unless you're using the 'icon' and 'label' props"
+                    "desc": "通过此插槽自定义主按钮的内容，除非您使用“图标”和“标签”道具"
                 },
                 "loading": {
-                    "desc": "Override the default QSpinner when in 'loading' state",
+                    "desc": "处于“加载”状态时覆盖默认的QSpinner",
                     "addedIn": "v2.8"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when showing/hidden state changes; Is also used by v-model",
+                    "desc": "显示/隐藏状态更改时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Boolean",
@@ -4836,7 +4858,7 @@ export const tagLists: any = [
                     }
                 },
                 "show": {
-                    "desc": "Emitted after component has triggered show()",
+                    "desc": "在组件触发show（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4846,7 +4868,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted when component triggers show() but before it finishes doing it",
+                    "desc": "当组件触发show（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4856,7 +4878,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Emitted after component has triggered hide()",
+                    "desc": "在组件触发hide（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4866,7 +4888,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-hide": {
-                    "desc": "Emitted when component triggers hide() but before it finishes doing it",
+                    "desc": "当组件触发hide（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4876,7 +4898,7 @@ export const tagLists: any = [
                     }
                 },
                 "click": {
-                    "desc": "Emitted when user clicks/taps on the main button (not the icon one, if using 'split')",
+                    "desc": "当用户点击/点击主按钮时发出（如果使用“拆分”，则不是图标）",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4888,7 +4910,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "show": {
-                    "desc": "Triggers component to show",
+                    "desc": "触发要显示的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4898,7 +4920,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Triggers component to hide",
+                    "desc": "触发要隐藏的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -4915,13 +4937,15 @@ export const tagLists: any = [
                             "required": false
                         }
                     },
-                    "desc": "Triggers component to toggle between show/hide"
+                    "desc": "触发组件在显示/隐藏之间切换"
                 }
             }
         }
     },
     {
-        name: "q-card", desc: "卡片", info: {
+        "name": "q-card",
+        "desc": "卡片",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/card"
@@ -4929,27 +4953,27 @@ export const tagLists: any = [
             "props": {
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to use",
+                    "desc": "要使用的HTML标记",
                     "examples": [
                         "div",
                         "span",
@@ -4963,13 +4987,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-card-section", desc: "卡片内部组", info: {
+        "name": "q-card-section",
+        "desc": "卡片内部组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/card"
@@ -4977,12 +5003,12 @@ export const tagLists: any = [
             "props": {
                 "horizontal": {
                     "type": "Boolean",
-                    "desc": "Display a horizontal section (will have no padding and can contain other QCardSection)",
+                    "desc": "显示水平部分（没有填充，可以包含其他QCardSection）",
                     "category": "content"
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to use",
+                    "desc": "要使用的HTML标记",
                     "examples": [
                         "div",
                         "span",
@@ -4996,13 +5022,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-card-actions", desc: "卡片操作", info: {
+        "name": "q-card-actions",
+        "desc": "卡片操作",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/card"
@@ -5010,7 +5038,7 @@ export const tagLists: any = [
             "props": {
                 "align": {
                     "type": "String",
-                    "desc": "Specify how to align the actions",
+                    "desc": "指定如何对齐操作",
                     "default": "left (for horizontal mode) / stretch (for vertical mode)",
                     "values": [
                         "left",
@@ -5026,19 +5054,21 @@ export const tagLists: any = [
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "Display actions one below the other",
+                    "desc": "一个接一个地显示操作",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestions: QBtn"
+                    "desc": "建议：QBtn"
                 }
             }
         }
     },
     {
-        name: "q-carousel", desc: "转盘", info: {
+        "name": "q-carousel",
+        "desc": "转盘",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/carousel"
@@ -5047,7 +5077,7 @@ export const tagLists: any = [
                 "fullscreen": {
                     "type": "Boolean",
                     "sync": true,
-                    "desc": "Fullscreen mode",
+                    "desc": "全屏幕模式",
                     "examples": [
                         "v-model:fullscreen=\"isFullscreen\""
                     ],
@@ -5056,12 +5086,12 @@ export const tagLists: any = [
                 },
                 "no-route-fullscreen-exit": {
                     "type": "Boolean",
-                    "desc": "Changing route app won't exit fullscreen",
+                    "desc": "更改路线应用程序不会全屏退出",
                     "category": "behavior"
                 },
                 "model-value": {
                     "type": "Any",
-                    "desc": "Model of the component defining the current panel's name; If a Number is used, it does not define the panel's index, but rather the panel's name which can also be an Integer; Either use this property (along with a listener for 'update:model-value' event) OR use the v-model directive.",
+                    "desc": "定义当前面板名称的组件的模型；如果使用数字，它不会定义面板的索引，而是定义面板的名称，该名称也可以是Integer；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令。",
                     "examples": [
                         "v-model=\"panelName\""
                     ],
@@ -5069,7 +5099,7 @@ export const tagLists: any = [
                 },
                 "keep-alive": {
                     "type": "Boolean",
-                    "desc": "Equivalent to using Vue's native <keep-alive> component on the content",
+                    "desc": "相当于在内容上使用Vue的原生＜keep-alive＞组件",
                     "category": "behavior"
                 },
                 "keep-alive-include": {
@@ -5078,7 +5108,7 @@ export const tagLists: any = [
                         "Array",
                         "RegExp"
                     ],
-                    "desc": "Equivalent to using Vue's native include prop for <keep-alive>; Values must be valid Vue component names",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生include道具；值必须是有效的Vue组件名称",
                     "examples": [
                         "a,b",
                         "/a|b/",
@@ -5092,7 +5122,7 @@ export const tagLists: any = [
                         "Array",
                         "RegExp"
                     ],
-                    "desc": "Equivalent to using Vue's native exclude prop for <keep-alive>; Values must be valid Vue component names",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生exclude道具；值必须是有效的Vue组件名称",
                     "examples": [
                         "a,b",
                         "/a|b/",
@@ -5102,32 +5132,32 @@ export const tagLists: any = [
                 },
                 "keep-alive-max": {
                     "type": "Number",
-                    "desc": "Equivalent to using Vue's native max prop for <keep-alive>",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生最大道具",
                     "category": "behavior"
                 },
                 "animated": {
                     "type": "Boolean",
-                    "desc": "Enable transitions between panel (also see 'transition-prev' and 'transition-next' props)",
+                    "desc": "启用面板之间的转换（另请参阅“转换前一个”和“转换下一个”道具）",
                     "category": "behavior"
                 },
                 "infinite": {
                     "type": "Boolean",
-                    "desc": "Makes component appear as infinite (when reaching last panel, next one will become the first one)",
+                    "desc": "使组件显示为无穷大（当到达最后一个面板时，下一个面板将成为第一个面板）",
                     "category": "behavior"
                 },
                 "swipeable": {
                     "type": "Boolean",
-                    "desc": "Enable swipe events (may interfere with content's touch/mouse events)",
+                    "desc": "启用滑动事件（可能会干扰内容的触摸/鼠标事件）",
                     "category": "behavior"
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "Default transitions and swipe actions will be on the vertical axis",
+                    "desc": "默认转换和滑动动作将在垂直轴上",
                     "category": "behavior"
                 },
                 "transition-prev": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+                    "desc": "Quasar的嵌入过渡之一（仅当设置了“动画”道具时才有效）",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -5138,7 +5168,7 @@ export const tagLists: any = [
                 },
                 "transition-next": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+                    "desc": "Quasar的嵌入过渡之一（仅当设置了“动画”道具时才有效）",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -5152,7 +5182,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "addedIn": "v2.2",
@@ -5160,12 +5190,12 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "height": {
                     "type": "String",
-                    "desc": "Height of Carousel in CSS units, including unit name",
+                    "desc": "旋转木马的高度（以CSS为单位），包括单元名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -5174,12 +5204,12 @@ export const tagLists: any = [
                 },
                 "padding": {
                     "type": "Boolean",
-                    "desc": "Applies a default padding to each slide, according to the usage of 'arrows' and 'navigation' props",
+                    "desc": "根据“箭头”和“导航”道具的使用情况，为每张幻灯片应用默认填充",
                     "category": "content"
                 },
                 "control-color": {
                     "type": "String",
-                    "desc": "Color name for QCarousel button controls (arrows, navigation) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中QCarousel按钮控件（箭头、导航）的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5188,7 +5218,7 @@ export const tagLists: any = [
                 },
                 "control-text-color": {
                     "type": "String",
-                    "desc": "Color name for text color of QCarousel button controls (arrows, navigation) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中QCarousel按钮控件（箭头、导航）的文本颜色的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5197,7 +5227,7 @@ export const tagLists: any = [
                 },
                 "control-type": {
                     "type": "String",
-                    "desc": "Type of button to use for controls (arrows, navigation)",
+                    "desc": "用于控件的按钮类型（箭头、导航）",
                     "values": [
                         "regular",
                         "flat",
@@ -5212,7 +5242,7 @@ export const tagLists: any = [
                         "Number",
                         "Boolean"
                     ],
-                    "desc": "Jump to next slide (if 'true' or val > 0) or previous slide (if val < 0) at fixed time intervals (in milliseconds); 'false' disables autoplay, 'true' enables it for 5000ms intervals",
+                    "desc": "以固定的时间间隔（以毫秒为单位）跳转到下一张幻灯片（如果“true”或val>0）或上一张幻灯片false禁用自动播放，true启用自动播放5000ms",
                     "default": false,
                     "examples": [
                         ":autoplay=\"2500\"",
@@ -5224,12 +5254,12 @@ export const tagLists: any = [
                 },
                 "arrows": {
                     "type": "Boolean",
-                    "desc": "Show navigation arrow buttons",
+                    "desc": "显示导航箭头按钮",
                     "category": "content"
                 },
                 "prev-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5240,7 +5270,7 @@ export const tagLists: any = [
                 },
                 "next-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5251,12 +5281,12 @@ export const tagLists: any = [
                 },
                 "navigation": {
                     "type": "Boolean",
-                    "desc": "Show navigation dots",
+                    "desc": "显示导航点",
                     "category": "content"
                 },
                 "navigation-position": {
                     "type": "String",
-                    "desc": "Side to stick navigation to",
+                    "desc": "侧边粘贴导航",
                     "default": "bottom/right",
                     "values": [
                         "top",
@@ -5269,7 +5299,7 @@ export const tagLists: any = [
                 },
                 "navigation-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5280,7 +5310,7 @@ export const tagLists: any = [
                 },
                 "navigation-active-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention for the active (current slide) navigation icon; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "活动（当前幻灯片）导航图标的图标名称遵循Quasar约定；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5291,19 +5321,19 @@ export const tagLists: any = [
                 },
                 "thumbnails": {
                     "type": "Boolean",
-                    "desc": "Show thumbnails",
+                    "desc": "显示缩略图",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestion: QCarouselSlide"
+                    "desc": "建议：QCarousel幻灯片"
                 },
                 "control": {
-                    "desc": "Slot specific for QCarouselControl"
+                    "desc": "专用于QCarouselControl的插槽"
                 },
                 "navigation-icon": {
-                    "desc": "Slot for navigation icon/btn; Suggestion: QBtn",
+                    "desc": "导航图标插槽/btn；建议：QBtn",
                     "scope": {
                         "index": {
                             "type": "Number",
@@ -5342,7 +5372,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component changes the model; This event _isn't_ fired if the model is changed externally; Is also used by v-model",
+                    "desc": "当组件更改模型时发出；如果模型在外部发生更改，则会触发此事件_isn't_；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -5357,7 +5387,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-transition": {
-                    "desc": "Emitted before transitioning to a new panel",
+                    "desc": "在转换到新面板之前发出",
                     "params": {
                         "newVal": {
                             "type": [
@@ -5382,7 +5412,7 @@ export const tagLists: any = [
                     }
                 },
                 "transition": {
-                    "desc": "Emitted after component transitioned to a new panel",
+                    "desc": "在组件转换到新面板后发出",
                     "params": {
                         "newVal": {
                             "type": [
@@ -5409,22 +5439,22 @@ export const tagLists: any = [
             },
             "methods": {
                 "toggleFullscreen": {
-                    "desc": "Toggle the view to be fullscreen or not fullscreen"
+                    "desc": "将视图切换为全屏或非全屏"
                 },
                 "setFullscreen": {
-                    "desc": "Enter the fullscreen view"
+                    "desc": "进入全屏视图"
                 },
                 "exitFullscreen": {
-                    "desc": "Leave the fullscreen view"
+                    "desc": "离开全屏视图"
                 },
                 "next": {
-                    "desc": "Go to next panel"
+                    "desc": "转到下一个面板"
                 },
                 "previous": {
-                    "desc": "Go to previous panel"
+                    "desc": "转到上一个面板"
                 },
                 "goTo": {
-                    "desc": "Go to specific panel",
+                    "desc": "转到特定面板",
                     "params": {
                         "panelName": {
                             "type": [
@@ -5443,7 +5473,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-carouselControl", desc: "转盘控制", info: {
+        "name": "q-carouselControl",
+        "desc": "转盘控制",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/carousel"
@@ -5451,7 +5483,7 @@ export const tagLists: any = [
             "props": {
                 "position": {
                     "type": "String",
-                    "desc": "Side/corner to stick to",
+                    "desc": "要粘贴的边/角",
                     "default": "bottom-right",
                     "values": [
                         "top-right",
@@ -5468,7 +5500,7 @@ export const tagLists: any = [
                 },
                 "offset": {
                     "type": "Array",
-                    "desc": "An array of two numbers to offset the component horizontally and vertically (in pixels)",
+                    "desc": "两个数字的数组，用于水平和垂直偏移组件（以像素为单位）",
                     "default": "[18, 18]",
                     "examples": [
                         "[8, 8]",
@@ -5480,13 +5512,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-carousel-slide", desc: "转盘内容", info: {
+        "name": "q-carousel-slide",
+        "desc": "转盘内容",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/carousel"
@@ -5494,7 +5528,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "Any",
-                    "desc": "Slide name",
+                    "desc": "幻灯片名称",
                     "required": true,
                     "examples": [
                         "accounts",
@@ -5508,12 +5542,12 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "img-src": {
                     "type": "String",
-                    "desc": "URL pointing to a slide background image (use public folder)",
+                    "desc": "指向幻灯片背景图像的URL（使用公用文件夹）",
                     "transformAssetUrls": true,
                     "examples": [
                         "(public folder) src=\"img/my-bg.png\"",
@@ -5526,13 +5560,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-chat-message", desc: "聊天消息", info: {
+        "name": "q-chat-message",
+        "desc": "聊天消息",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/chat"
@@ -5540,12 +5576,12 @@ export const tagLists: any = [
             "props": {
                 "sent": {
                     "type": "Boolean",
-                    "desc": "Render as a sent message (so from current user)",
+                    "desc": "呈现为已发送的消息（因此来自当前用户）",
                     "category": "content"
                 },
                 "label": {
                     "type": "String",
-                    "desc": "Renders a label header/section only",
+                    "desc": "仅呈现标签标头/节",
                     "examples": [
                         "Friday, 18th"
                     ],
@@ -5553,7 +5589,7 @@ export const tagLists: any = [
                 },
                 "bg-color": {
                     "type": "String",
-                    "desc": "Color name (from the Quasar Color Palette) for chat bubble background",
+                    "desc": "聊天气泡背景的颜色名称（来自Quasar调色板）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5562,7 +5598,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Color name (from the Quasar Color Palette) for chat bubble text",
+                    "desc": "聊天气泡文本的颜色名称（来自Quasar调色板）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5571,7 +5607,7 @@ export const tagLists: any = [
                 },
                 "name": {
                     "type": "String",
-                    "desc": "Author's name",
+                    "desc": "作者姓名",
                     "examples": [
                         "John Doe"
                     ],
@@ -5579,7 +5615,7 @@ export const tagLists: any = [
                 },
                 "avatar": {
                     "type": "String",
-                    "desc": "URL to the avatar image of the author",
+                    "desc": "作者头像的URL",
                     "transformAssetUrls": true,
                     "examples": [
                         "(public folder) src=\"boy-avatar.png\"",
@@ -5591,7 +5627,7 @@ export const tagLists: any = [
                 },
                 "text": {
                     "type": "Array",
-                    "desc": "Array of strings that are the message body. Strings are not sanitized (see details in docs)",
+                    "desc": "作为消息正文的字符串数组。字符串未经过消毒（请参阅文档中的详细信息）",
                     "examples": [
                         ":text=\"['How are you?']\"",
                         ":text=\"['I\\'m good, thank you!', 'And you?']\""
@@ -5600,7 +5636,7 @@ export const tagLists: any = [
                 },
                 "stamp": {
                     "type": "String",
-                    "desc": "Creation timestamp",
+                    "desc": "创建时间戳",
                     "examples": [
                         "13:55",
                         "Yesterday at 13:51"
@@ -5609,7 +5645,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "1-12 out of 12 (same as col-*)",
+                    "desc": "1-12个（共12个）（与col-*相同）",
                     "examples": [
                         "4",
                         "6",
@@ -5619,46 +5655,48 @@ export const tagLists: any = [
                 },
                 "label-html": {
                     "type": "Boolean",
-                    "desc": "Render the label as HTML; This can lead to XSS attacks so make sure that you sanitize the message first",
+                    "desc": "将标签渲染为HTML；这可能会导致XSS攻击，因此请确保首先对消息进行消毒",
                     "category": "behavior"
                 },
                 "name-html": {
                     "type": "Boolean",
-                    "desc": "Render the name as HTML; This can lead to XSS attacks so make sure that you sanitize the message first",
+                    "desc": "将名称渲染为HTML；这可能会导致XSS攻击，因此请确保首先对消息进行消毒",
                     "category": "behavior"
                 },
                 "text-html": {
                     "type": "Boolean",
-                    "desc": "Render the text as HTML; This can lead to XSS attacks so make sure that you sanitize the message first",
+                    "desc": "将文本渲染为HTML；这可能会导致XSS攻击，因此请确保首先对消息进行消毒",
                     "category": "behavior"
                 },
                 "stamp-html": {
                     "type": "Boolean",
-                    "desc": "Render the stamp as HTML; This can lead to XSS attacks so make sure that you sanitize the message first",
+                    "desc": "将印章渲染为HTML；这可能会导致XSS攻击，因此请确保首先对消息进行消毒",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "You can use this slot to define a custom message (overrides props)"
+                    "desc": "您可以使用此槽定义自定义消息（覆盖道具）"
                 },
                 "avatar": {
-                    "desc": "Slot for avatar; Suggestion: QAvatar, img"
+                    "desc": "头像插槽；建议：QAvatar，img"
                 },
                 "name": {
-                    "desc": "Slot for name; Overrides the 'name' prop"
+                    "desc": "名称插槽；覆盖“name”道具"
                 },
                 "stamp": {
-                    "desc": "Slot for stamp; Overrides the 'stamp' prop"
+                    "desc": "邮票插槽；覆盖“stamp”道具"
                 },
                 "label": {
-                    "desc": "Slot for label; Overrides the 'label' prop"
+                    "desc": "标签插槽；覆盖“标签”道具"
                 }
             }
         }
     },
     {
-        name: "q-chip", desc: "碎片", info: {
+        "name": "q-chip",
+        "desc": "碎片",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/chip"
@@ -5666,12 +5704,12 @@ export const tagLists: any = [
             "props": {
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "size": {
                     "type": "String",
-                    "desc": "QChip size name or a CSS unit including unit name",
+                    "desc": "Q芯片尺寸名称或包含单元名称的CSS单元",
                     "examples": [
                         "xs",
                         "sm",
@@ -5685,12 +5723,12 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5701,7 +5739,7 @@ export const tagLists: any = [
                 },
                 "icon-right": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5712,7 +5750,7 @@ export const tagLists: any = [
                 },
                 "icon-remove": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5723,7 +5761,7 @@ export const tagLists: any = [
                 },
                 "icon-selected": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -5737,7 +5775,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Chip's content as string; overrides default slot if specified",
+                    "desc": "芯片的内容为字符串；如果指定，则覆盖默认插槽",
                     "examples": [
                         "John Doe",
                         "Book"
@@ -5746,7 +5784,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5755,7 +5793,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5763,7 +5801,7 @@ export const tagLists: any = [
                     "category": "style"
                 },
                 "model-value": {
-                    "desc": "Model of the component determining if QChip should be rendered or not",
+                    "desc": "确定是否应渲染QChip的组件模型",
                     "required": false,
                     "syncable": true,
                     "category": "model",
@@ -5773,7 +5811,7 @@ export const tagLists: any = [
                 "selected": {
                     "type": "Boolean",
                     "sync": true,
-                    "desc": "Model for QChip if it's selected or not",
+                    "desc": "QChip的模型（如果选择与否）",
                     "examples": [
                         "v-model:selected=\"myState\""
                     ],
@@ -5782,22 +5820,22 @@ export const tagLists: any = [
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Sets a low value for border-radius instead of the default one, making it close to a square",
+                    "desc": "为边界半径设置一个较低的值，而不是默认值，使其接近正方形",
                     "category": "style"
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Display using the 'outline' design",
+                    "desc": "使用“轮廓”设计显示",
                     "category": "style"
                 },
                 "clickable": {
                     "type": "Boolean",
-                    "desc": "Is QChip clickable? If it's the case, then it will add hover effects and emit 'click' events",
+                    "desc": "QChip可以点击吗？如果是这种情况，那么它将添加悬停效果并发出“点击”事件",
                     "category": "state"
                 },
                 "removable": {
                     "type": "Boolean",
-                    "desc": "If set, then it displays a 'remove' icon that when clicked the QChip emits 'remove' event",
+                    "desc": "如果设置了，则会显示一个“移除”图标，当点击该图标时，QChip会发出“移除”事件",
                     "category": "state"
                 },
                 "ripple": {
@@ -5805,7 +5843,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Object"
                     ],
-                    "desc": "Configure material ripple (disable it by setting it to 'false' or supply a config object)",
+                    "desc": "配置材料波纹（通过将其设置为“false”或提供配置对象来禁用它）",
                     "default": true,
                     "examples": [
                         false,
@@ -5816,7 +5854,7 @@ export const tagLists: any = [
                 },
                 "remove-aria-label": {
                     "type": "String",
-                    "desc": "aria-label to be used on the remove icon",
+                    "desc": "要在删除图标上使用的aria标签",
                     "examples": [
                         "Remove item"
                     ],
@@ -5828,7 +5866,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -5837,18 +5875,18 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where QChip content goes, if not using 'label' property"
+                    "desc": "如果不使用“label”属性，这就是QChip内容的去向"
                 }
             },
             "events": {
                 "click": {
-                    "desc": "Emitted on QChip click if 'clickable' property is set",
+                    "desc": "如果设置了“可点击”属性，则在Q芯片点击时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -5857,7 +5895,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:selected": {
-                    "desc": "Used by Vue on 'v-model:selected' for updating its value",
+                    "desc": "Vue在“v-model:selected”上用于更新其值",
                     "params": {
                         "state": {
                             "type": "Boolean",
@@ -5866,7 +5904,7 @@ export const tagLists: any = [
                     }
                 },
                 "remove": {
-                    "desc": "Works along with 'value' and 'removable' prop. Emitted when toggling rendering state of the QChip",
+                    "desc": "与“value”和“removable”道具一起使用。切换QChip的渲染状态时发出",
                     "params": {
                         "state": {
                             "type": "Boolean",
@@ -5878,7 +5916,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-circular-progress", desc: "循环进度", info: {
+        "name": "q-circular-progress",
+        "desc": "循环进度",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/circular-progress"
@@ -5886,7 +5926,7 @@ export const tagLists: any = [
             "props": {
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -5898,27 +5938,27 @@ export const tagLists: any = [
                 "value": {
                     "type": "Number",
                     "default": 0,
-                    "desc": "Current progress (must be between min/max)",
+                    "desc": "当前进度（必须介于最小值/最大值之间）",
                     "category": "model",
                     "required": false
                 },
                 "min": {
                     "type": "Number",
                     "default": 0,
-                    "desc": "Minimum value defining 'no progress' (must be lower than 'max')",
+                    "desc": "定义“无进展”的最小值（必须低于“最大值”）",
                     "category": "model",
                     "required": false
                 },
                 "max": {
                     "type": "Number",
                     "default": 100,
-                    "desc": "Maximum value defining 100% progress made (must be higher than 'min')",
+                    "desc": "定义100%进度的最大值（必须高于“min”）",
                     "category": "model",
                     "required": false
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for the arc progress from the Quasar Color Palette",
+                    "desc": "Quasar调色板中弧形进度的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5927,7 +5967,7 @@ export const tagLists: any = [
                 },
                 "center-color": {
                     "type": "String",
-                    "desc": "Color name for the center part of the component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件中心部分的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5936,7 +5976,7 @@ export const tagLists: any = [
                 },
                 "track-color": {
                     "type": "String",
-                    "desc": "Color name for the track of the component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件轨迹的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -5945,7 +5985,7 @@ export const tagLists: any = [
                 },
                 "font-size": {
                     "type": "String",
-                    "desc": "Size of text in CSS units, including unit name. Suggestion: use 'em' units to sync with component size",
+                    "desc": "以CSS为单位的文本大小，包括单位名称。建议：使用“em”单位与组件大小同步",
                     "default": "0.25em",
                     "examples": [
                         "1em",
@@ -5957,42 +5997,42 @@ export const tagLists: any = [
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Rounding the arc of progress",
+                    "desc": "使进步的弧线变圆",
                     "category": "style",
                     "addedIn": "v2.8.4"
                 },
                 "thickness": {
                     "type": "Number",
                     "default": 0.2,
-                    "desc": "Thickness of progress arc as a ratio (0.0 < x < 1.0) of component size",
+                    "desc": "进度弧的厚度与部件尺寸之比（0.0<x<1.0）",
                     "category": "style",
                     "required": false
                 },
                 "angle": {
                     "type": "Number",
-                    "desc": "Angle to rotate progress arc by",
+                    "desc": "旋转进度弧的角度",
                     "default": 0,
                     "category": "content",
                     "required": false
                 },
                 "indeterminate": {
                     "type": "Boolean",
-                    "desc": "Put component into 'indeterminate' state; Ignores 'value' prop",
+                    "desc": "将组件置于“不确定”状态；忽略“value”道具",
                     "category": "behavior"
                 },
                 "show-value": {
                     "type": "Boolean",
-                    "desc": "Enables the default slot and uses it (if available), otherwise it displays the 'value' prop as text; Make sure the text has enough space to be displayed inside the component",
+                    "desc": "启用默认槽并使用它（如果可用），否则它将“值”道具显示为文本；确保文本有足够的空间显示在组件内部",
                     "category": "content|behavior"
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Reverses the direction of progress; Only for determined state",
+                    "desc": "颠倒前进的方向；仅用于确定的状态",
                     "category": "behavior"
                 },
                 "instant-feedback": {
                     "type": "Boolean",
-                    "desc": "No animation when model changes",
+                    "desc": "模型更改时没有动画",
                     "category": "behavior"
                 },
                 "animation-speed": {
@@ -6000,7 +6040,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Animation speed (in milliseconds, without unit)",
+                    "desc": "动画速度（以毫秒为单位，无单位）",
                     "examples": [
                         500,
                         "1200"
@@ -6013,13 +6053,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Used for component content only if 'show-value' prop is set; Make sure the content has enough space to be displayed inside the component"
+                    "desc": "仅当设置了“显示值”道具时，才用于组件内容；确保内容有足够的空间显示在组件内部"
                 }
             }
         }
     },
     {
-        name: "q-color", desc: "颜色选择器", info: {
+        "name": "q-color",
+        "desc": "颜色选择器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/color-picker"
@@ -6027,14 +6069,14 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
                     "category": "behavior"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -6049,7 +6091,7 @@ export const tagLists: any = [
                 },
                 "default-value": {
                     "type": "String",
-                    "desc": "The default value to show when the model doesn't have one",
+                    "desc": "当模型没有时显示的默认值",
                     "examples": [
                         "default-value=\"#c0c0c0\""
                     ],
@@ -6057,7 +6099,7 @@ export const tagLists: any = [
                 },
                 "default-view": {
                     "type": "String",
-                    "desc": "The default view of the picker",
+                    "desc": "拾取器的默认视图",
                     "default": "spectrum",
                     "values": [
                         "spectrum",
@@ -6069,7 +6111,7 @@ export const tagLists: any = [
                 },
                 "format-model": {
                     "type": "String",
-                    "desc": "Forces a certain model format upon the model",
+                    "desc": "在模型上强制使用某种模型格式",
                     "default": "auto",
                     "values": [
                         "auto",
@@ -6083,7 +6125,7 @@ export const tagLists: any = [
                 },
                 "palette": {
                     "type": "Array",
-                    "desc": "Use a custom palette of colors for the palette tab",
+                    "desc": "使用调色板选项卡的自定义调色板",
                     "default": "(hard-coded palette)",
                     "examples": [
                         ":palette=\"[ '#019A9D', '#D9B801', 'rgb(23,120,0)', '#B2028A' ]\""
@@ -6093,54 +6135,54 @@ export const tagLists: any = [
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "no-header": {
                     "type": "Boolean",
-                    "desc": "Do not render header",
+                    "desc": "不渲染标头",
                     "category": "content"
                 },
                 "no-header-tabs": {
                     "type": "Boolean",
-                    "desc": "Do not render header tabs (only the input)",
+                    "desc": "不渲染标题选项卡（仅渲染输入）",
                     "category": "content",
                     "addedIn": "v2.2"
                 },
                 "no-footer": {
                     "type": "Boolean",
-                    "desc": "Do not render footer; Useful when you want a specific view ('default-view' prop) and don't want the user to be able to switch it",
+                    "desc": "不渲染页脚；当你想要一个特定的视图（“默认视图”道具）而不希望用户能够切换它时，这很有用",
                     "category": "content"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -6153,7 +6195,7 @@ export const tagLists: any = [
                     }
                 },
                 "change": {
-                    "desc": "Emitted on lazy model value change (after user finishes selecting a color)",
+                    "desc": "延迟模型值更改时发出（用户完成颜色选择后）",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -6166,7 +6208,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-dialog", desc: "对话框", info: {
+        "name": "q-dialog",
+        "desc": "对话框",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/dialog"
@@ -6174,7 +6218,7 @@ export const tagLists: any = [
             "props": {
                 "transition-show": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -6185,7 +6229,7 @@ export const tagLists: any = [
                 },
                 "transition-hide": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -6199,64 +6243,64 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "required": false
                 },
                 "model-value": {
                     "type": "Boolean",
-                    "desc": "Model of the component defining shown/hidden state; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "定义显示/隐藏状态的组件的模型；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "category": "model"
                 },
                 "persistent": {
                     "type": "Boolean",
-                    "desc": "User cannot dismiss Dialog if clicking outside of it or hitting ESC key; Also, an app route change won't dismiss it",
+                    "desc": "如果单击对话框外部或按ESC键，则用户无法关闭对话框；此外，应用程序路由更改不会取消它",
                     "category": "behavior"
                 },
                 "no-esc-dismiss": {
                     "type": "Boolean",
-                    "desc": "User cannot dismiss Dialog by hitting ESC key; No need to set it if 'persistent' prop is also set",
+                    "desc": "用户不能通过点击ESC键来关闭对话框；如果还设置了“persistent”道具，则无需设置",
                     "category": "behavior"
                 },
                 "no-backdrop-dismiss": {
                     "type": "Boolean",
-                    "desc": "User cannot dismiss Dialog by clicking outside of it; No need to set it if 'persistent' prop is also set",
+                    "desc": "用户无法通过单击对话框外部来关闭对话框；如果还设置了“persistent”道具，则无需设置",
                     "category": "behavior"
                 },
                 "no-route-dismiss": {
                     "type": "Boolean",
-                    "desc": "Changing route app won't dismiss Dialog; No need to set it if 'persistent' prop is also set",
+                    "desc": "更改路线应用程序不会关闭对话框；如果还设置了“persistent”道具，则无需设置",
                     "category": "behavior"
                 },
                 "auto-close": {
                     "type": "Boolean",
-                    "desc": "Any click/tap inside of the dialog will close it",
+                    "desc": "对话框内的任何点击/点击都将关闭它",
                     "category": "behavior"
                 },
                 "seamless": {
                     "type": "Boolean",
-                    "desc": "Put Dialog into seamless mode; Does not use a backdrop so user is able to interact with the rest of the page too",
+                    "desc": "将Dialog置于无缝模式；不使用背景，因此用户也可以与页面的其他部分进行交互",
                     "category": "content"
                 },
                 "maximized": {
                     "type": "Boolean",
-                    "desc": "Put Dialog into maximized mode",
+                    "desc": "将对话框置于最大化模式",
                     "category": "content"
                 },
                 "full-width": {
                     "type": "Boolean",
-                    "desc": "Dialog will try to render with same width as the window",
+                    "desc": "对话框将尝试以与窗口相同的宽度进行渲染",
                     "category": "content"
                 },
                 "full-height": {
                     "type": "Boolean",
-                    "desc": "Dialog will try to render with same height as the window",
+                    "desc": "对话框将尝试以与窗口相同的高度进行渲染",
                     "category": "content"
                 },
                 "position": {
                     "type": "String",
-                    "desc": "Stick dialog to one of the sides (top, right, bottom or left)",
+                    "desc": "将对话框粘贴到其中一侧（顶部、右侧、底部或左侧）",
                     "default": "standard",
                     "values": [
                         "standard",
@@ -6270,40 +6314,40 @@ export const tagLists: any = [
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Forces content to have squared borders",
+                    "desc": "强制内容具有方形边框",
                     "category": "style"
                 },
                 "no-refocus": {
                     "type": "Boolean",
-                    "desc": "(Accessibility) When Dialog gets hidden, do not refocus on the DOM element that previously had focus",
+                    "desc": "（辅助功能）当对话框被隐藏时，不要将焦点重新集中在以前有焦点的DOM元素上",
                     "category": "behavior"
                 },
                 "no-focus": {
                     "type": "Boolean",
-                    "desc": "(Accessibility) When Dialog gets shown, do not switch focus on it",
+                    "desc": "（辅助功能）当对话框显示时，不要将焦点切换到它上",
                     "category": "behavior"
                 },
                 "no-shake": {
                     "type": "Boolean",
-                    "desc": "Do not shake up the Dialog to catch user's attention",
+                    "desc": "不要为了引起用户的注意而摇晃对话框",
                     "category": "behavior",
                     "addedIn": "v2.1.1"
                 },
                 "allow-focus-outside": {
                     "type": "Boolean",
-                    "desc": "Allow elements outside of the Dialog to be focusable; By default, for accessibility reasons, QDialog does not allow outer focus",
+                    "desc": "允许对话框之外的元素可聚焦；默认情况下，出于可访问性的原因，QDialog不允许外部焦点",
                     "category": "behavior",
                     "addedIn": "v2.7.2"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when showing/hidden state changes; Is also used by v-model",
+                    "desc": "显示/隐藏状态更改时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Boolean",
@@ -6312,7 +6356,7 @@ export const tagLists: any = [
                     }
                 },
                 "show": {
-                    "desc": "Emitted after component has triggered show()",
+                    "desc": "在组件触发show（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -6322,7 +6366,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted when component triggers show() but before it finishes doing it",
+                    "desc": "当组件触发show（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -6332,7 +6376,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Emitted after component has triggered hide()",
+                    "desc": "在组件触发hide（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -6342,7 +6386,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-hide": {
-                    "desc": "Emitted when component triggers hide() but before it finishes doing it",
+                    "desc": "当组件触发hide（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -6352,15 +6396,15 @@ export const tagLists: any = [
                     }
                 },
                 "shake": {
-                    "desc": "Emitted when the Dialog shakes in order to catch user's attention, unless the 'no-shake' property is set"
+                    "desc": "除非设置了“no shake”属性，否则在对话框抖动以吸引用户注意力时发出"
                 },
                 "escape-key": {
-                    "desc": "Emitted when ESC key is pressed; Does not get emitted if Dialog is 'persistent' or it has 'no-esc-key' set"
+                    "desc": "按下ESC键时发出；如果Dialog为“persistent”或设置了“no esc key”，则不会发出"
                 }
             },
             "methods": {
                 "show": {
-                    "desc": "Triggers component to show",
+                    "desc": "触发要显示的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -6370,7 +6414,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Triggers component to hide",
+                    "desc": "触发要隐藏的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -6387,10 +6431,10 @@ export const tagLists: any = [
                             "required": false
                         }
                     },
-                    "desc": "Triggers component to toggle between show/hide"
+                    "desc": "触发组件在显示/隐藏之间切换"
                 },
                 "focus": {
-                    "desc": "Focus dialog; if you have content with autofocus attribute, it will directly focus it",
+                    "desc": "焦点对话框；如果您有具有自动对焦属性的内容，它将直接对其进行对焦",
                     "params": {
                         "selector": {
                             "type": "String",
@@ -6404,7 +6448,7 @@ export const tagLists: any = [
                     }
                 },
                 "shake": {
-                    "desc": "Shakes dialog",
+                    "desc": "Shakes对话框",
                     "params": {
                         "focusTarget": {
                             "type": "Element",
@@ -6420,14 +6464,16 @@ export const tagLists: any = [
             "computedProps": {
                 "contentEl": {
                     "type": "Element",
-                    "desc": "The DOM Element of the rendered content",
+                    "desc": "渲染内容的DOM元素",
                     "addedIn": "v2.10.1"
                 }
             }
         }
     },
     {
-        name: "q-editor", desc: "富文本编辑器", info: {
+        "name": "q-editor",
+        "desc": "富文本编辑器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/editor"
@@ -6436,7 +6482,7 @@ export const tagLists: any = [
                 "fullscreen": {
                     "type": "Boolean",
                     "sync": true,
-                    "desc": "Fullscreen mode",
+                    "desc": "全屏幕模式",
                     "examples": [
                         "v-model:fullscreen=\"isFullscreen\""
                     ],
@@ -6445,11 +6491,11 @@ export const tagLists: any = [
                 },
                 "no-route-fullscreen-exit": {
                     "type": "Boolean",
-                    "desc": "Changing route app won't exit fullscreen",
+                    "desc": "更改路线应用程序不会全屏退出",
                     "category": "behavior"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -6460,37 +6506,37 @@ export const tagLists: any = [
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no borders)",
+                    "desc": "应用“平面”设计（无边框）",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; toolbar buttons are shown on one-line only",
+                    "desc": "密集模式；工具栏按钮仅显示在一行上",
                     "category": "style"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "min-height": {
                     "type": "String",
-                    "desc": "CSS unit for the minimum height of the editable area",
+                    "desc": "可编辑区域最小高度的CSS单位",
                     "default": "10rem",
                     "examples": [
                         "15rem",
@@ -6501,7 +6547,7 @@ export const tagLists: any = [
                 },
                 "max-height": {
                     "type": "String",
-                    "desc": "CSS unit for maximum height of the input area",
+                    "desc": "输入区域最大高度的CSS单位",
                     "examples": [
                         "1000px",
                         "90vh"
@@ -6510,7 +6556,7 @@ export const tagLists: any = [
                 },
                 "height": {
                     "type": "String",
-                    "desc": "CSS value to set the height of the editable area",
+                    "desc": "设置可编辑区域高度的CSS值",
                     "examples": [
                         "100px",
                         "50vh"
@@ -6519,7 +6565,7 @@ export const tagLists: any = [
                 },
                 "definitions": {
                     "type": "Object",
-                    "desc": "Definition of commands and their buttons to be included in the 'toolbar' prop",
+                    "desc": "“工具栏”道具中包含的命令及其按钮的定义",
                     "examples": [
                         ":definitions=\"{ save: { tip: 'Save your work', icon: 'save', label: 'Save', handler: saveWork }, upload: { tip: 'Upload to cloud', icon: 'cloud_upload', label: 'Upload', handler: uploadIt } }\""
                     ],
@@ -6635,7 +6681,7 @@ export const tagLists: any = [
                 },
                 "fonts": {
                     "type": "Object",
-                    "desc": "Object with definitions of fonts",
+                    "desc": "具有字体定义的对象",
                     "examples": [
                         ":fonts=\"{ arial: 'Arial', arial_black: 'Arial Black', comic_sans: 'Comic Sans MS' }\""
                     ],
@@ -6643,7 +6689,7 @@ export const tagLists: any = [
                 },
                 "toolbar": {
                     "type": "Array",
-                    "desc": "An array of arrays of Objects/Strings that you use to define the construction of the elements and commands available in the toolbar",
+                    "desc": "对象/字符串数组的数组，用于定义工具栏中可用的元素和命令的构造",
                     "default": [
                         [
                             "left",
@@ -6675,7 +6721,7 @@ export const tagLists: any = [
                 },
                 "toolbar-color": {
                     "type": "String",
-                    "desc": "Font color (from the Quasar Palette) of buttons and text in the toolbar",
+                    "desc": "工具栏中按钮和文本的字体颜色（来自Quasar Palette）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -6684,7 +6730,7 @@ export const tagLists: any = [
                 },
                 "toolbar-text-color": {
                     "type": "String",
-                    "desc": "Text color (from the Quasar Palette) of toolbar commands",
+                    "desc": "工具栏命令的文本颜色（来自Quasar Palette）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -6693,7 +6739,7 @@ export const tagLists: any = [
                 },
                 "toolbar-toggle-color": {
                     "type": "String",
-                    "desc": "Choose the active color (from the Quasar Palette) of toolbar commands button",
+                    "desc": "选择工具栏命令按钮的活动颜色（从Quasar Palette）",
                     "default": "primary",
                     "examples": [
                         "secondary",
@@ -6704,7 +6750,7 @@ export const tagLists: any = [
                 },
                 "toolbar-bg": {
                     "type": "String",
-                    "desc": "Toolbar background color (from Quasar Palette)",
+                    "desc": "工具栏背景色（来自Quasar Palette）",
                     "default": "grey-3",
                     "examples": [
                         "secondary",
@@ -6715,22 +6761,22 @@ export const tagLists: any = [
                 },
                 "toolbar-outline": {
                     "type": "Boolean",
-                    "desc": "Toolbar buttons are rendered \"outlined\"",
+                    "desc": "工具栏按钮呈现为“轮廓”",
                     "category": "toolbar|style"
                 },
                 "toolbar-push": {
                     "type": "Boolean",
-                    "desc": "Toolbar buttons are rendered as a \"push-button\" type",
+                    "desc": "工具栏按钮呈现为“按钮”类型",
                     "category": "toolbar|style"
                 },
                 "toolbar-rounded": {
                     "type": "Boolean",
-                    "desc": "Toolbar buttons are rendered \"rounded\"",
+                    "desc": "工具栏按钮呈现为“圆形”",
                     "category": "toolbar|style"
                 },
                 "paragraph-tag": {
                     "type": "String",
-                    "desc": "Paragraph tag to be used",
+                    "desc": "要使用的段落标记",
                     "values": [
                         "div",
                         "p"
@@ -6740,7 +6786,7 @@ export const tagLists: any = [
                 "content-style": {
                     "type": "Object",
                     "tsType": "VueStyleObjectProp",
-                    "desc": "Object with CSS properties and values for styling the container of QEditor",
+                    "desc": "具有CSS属性和值的对象，用于设置QEditor容器的样式",
                     "examples": [
                         ":content-style=\"{ backgroundColor: '#C0C0C0' }\""
                     ],
@@ -6753,7 +6799,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "CSS classes for the input area",
+                    "desc": "输入区域的CSS类",
                     "examples": [
                         "my-special-class",
                         ":content-class=\"{ 'my-special-class': <condition> }\""
@@ -6762,7 +6808,7 @@ export const tagLists: any = [
                 },
                 "placeholder": {
                     "type": "String",
-                    "desc": "Text to display as placeholder",
+                    "desc": "显示为占位符的文本",
                     "examples": [
                         "Type your story here ..."
                     ],
@@ -6771,7 +6817,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "String",
@@ -6783,16 +6829,16 @@ export const tagLists: any = [
             },
             "methods": {
                 "toggleFullscreen": {
-                    "desc": "Toggle the view to be fullscreen or not fullscreen"
+                    "desc": "将视图切换为全屏或非全屏"
                 },
                 "setFullscreen": {
-                    "desc": "Enter the fullscreen view"
+                    "desc": "进入全屏视图"
                 },
                 "exitFullscreen": {
-                    "desc": "Leave the fullscreen view"
+                    "desc": "离开全屏视图"
                 },
                 "runCmd": {
-                    "desc": "Run contentEditable command at caret position and range",
+                    "desc": "在插入符号位置和范围运行contentEditable命令",
                     "params": {
                         "cmd": {
                             "type": "String",
@@ -6820,13 +6866,13 @@ export const tagLists: any = [
                     }
                 },
                 "refreshToolbar": {
-                    "desc": "Hide the link editor if visible and force the instance to re-render"
+                    "desc": "隐藏链接编辑器（如果可见），并强制实例重新渲染"
                 },
                 "focus": {
-                    "desc": "Focus on the contentEditable at saved cursor position"
+                    "desc": "关注内容可在保存的光标位置编辑"
                 },
                 "getContentEl": {
-                    "desc": "Retrieve the content of the Editor",
+                    "desc": "检索编辑器的内容",
                     "returns": {
                         "type": "Element",
                         "desc": "Provides the pure HTML within the editable area"
@@ -6837,13 +6883,15 @@ export const tagLists: any = [
                 "caret": {
                     "type": "Object",
                     "tsType": "QEditorCaret",
-                    "desc": "The current caret state"
+                    "desc": "当前插入符号状态"
                 }
             }
         }
     },
     {
-        name: "q-expansion-item", desc: "", info: {
+        "name": "q-expansion-item",
+        "desc": "",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/expansion-item"
@@ -6854,7 +6902,7 @@ export const tagLists: any = [
                         "String",
                         "Object"
                     ],
-                    "desc": "Equivalent to Vue Router <router-link> 'to' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“to”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "/home/dashboard",
                         ":to=\"{ name: 'my-route-name' }\""
@@ -6863,17 +6911,17 @@ export const tagLists: any = [
                 },
                 "exact": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'exact' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue路由器＜Router link＞的“精确”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "replace": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'replace' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“replace”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-active-class"
                     ],
@@ -6881,7 +6929,7 @@ export const tagLists: any = [
                 },
                 "exact-active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-exact-active-class"
                     ],
@@ -6889,7 +6937,7 @@ export const tagLists: any = [
                 },
                 "href": {
                     "type": "String",
-                    "desc": "Native <a> link href attribute; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接href属性；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "https://quasar.dev"
                     ],
@@ -6898,7 +6946,7 @@ export const tagLists: any = [
                 },
                 "target": {
                     "type": "String",
-                    "desc": "Native <a> link target attribute; Use it only along with 'href' prop; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接目标属性；只能与'href'道具一起使用；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "_blank",
                         "_self",
@@ -6910,11 +6958,11 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "model-value": {
-                    "desc": "Model of the component defining 'open' state; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "定义“打开”状态的组件的模型；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": false,
                     "syncable": true,
                     "category": "model",
@@ -6922,7 +6970,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -6933,7 +6981,7 @@ export const tagLists: any = [
                 },
                 "expand-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -6944,7 +6992,7 @@ export const tagLists: any = [
                 },
                 "expanded-icon": {
                     "type": "String",
-                    "desc": "Expand icon name (following Quasar convention) for when QExpansionItem is expanded; When used, it also disables the rotation animation of the expand icon; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "展开QExpanditionItem时的图标名称（遵循Quasar约定）；使用时，还会禁用展开图标的旋转动画；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -6960,7 +7008,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Apply custom class(es) to the expand icon item section",
+                    "desc": "将自定义类应用于展开图标项部分",
                     "examples": [
                         "text-purple"
                     ],
@@ -6968,7 +7016,7 @@ export const tagLists: any = [
                 },
                 "toggle-aria-label": {
                     "type": "String",
-                    "desc": "aria-label to be used on the expansion toggle element",
+                    "desc": "要在扩展切换元素上使用的aria标签",
                     "examples": [
                         "Open details"
                     ],
@@ -6977,7 +7025,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "Header label (unless using 'header' slot)",
+                    "desc": "标头标签（除非使用“标头”插槽）",
                     "examples": [
                         "My expansion item"
                     ],
@@ -6988,7 +7036,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Apply ellipsis when there's not enough space to render on the specified number of lines; If more than one line specified, then it will only work on webkit browsers because it uses the '-webkit-line-clamp' CSS property!",
+                    "desc": "当指定行数上没有足够的空间进行渲染时，应用省略号；如果指定了多行，那么它将仅在webkit浏览器上工作，因为它使用了“-webkit line clamp”CSS属性！",
                     "examples": [
                         "1",
                         "3",
@@ -6998,7 +7046,7 @@ export const tagLists: any = [
                 },
                 "caption": {
                     "type": "String",
-                    "desc": "Header sub-label (unless using 'header' slot)",
+                    "desc": "页眉子标签（除非使用“页眉”插槽）",
                     "examples": [
                         "Unread message: 5"
                     ],
@@ -7009,7 +7057,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Apply ellipsis when there's not enough space to render on the specified number of lines; If more than one line specified, then it will only work on webkit browsers because it uses the '-webkit-line-clamp' CSS property!",
+                    "desc": "当指定行数上没有足够的空间进行渲染时，应用省略号；如果指定了多行，那么它将仅在webkit浏览器上工作，因为它使用了“-webkit line clamp”CSS属性！",
                     "examples": [
                         "1",
                         "3",
@@ -7019,24 +7067,24 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "duration": {
                     "type": "Number",
-                    "desc": "Animation duration (in milliseconds)",
+                    "desc": "动画持续时间（以毫秒为单位）",
                     "default": 300,
                     "category": "behavior",
                     "required": false
                 },
                 "header-inset-level": {
                     "type": "Number",
-                    "desc": "Apply an inset to header (unless using 'header' slot); Useful when header avatar/left side is missing but you want to align content with other items that do have a left side, or when you're building a menu",
+                    "desc": "将插入应用于页眉（除非使用“页眉”插槽）；当标题头像/左侧缺失，但您想将内容与其他有左侧的项目对齐时，或者当您正在构建菜单时，这很有用",
                     "examples": [
                         ":header-inset-level=\"1\""
                     ],
@@ -7044,7 +7092,7 @@ export const tagLists: any = [
                 },
                 "content-inset-level": {
                     "type": "Number",
-                    "desc": "Apply an inset to content (changes content padding)",
+                    "desc": "将插入应用于内容（更改内容填充）",
                     "examples": [
                         ":content-inset-level=\"1\""
                     ],
@@ -7052,38 +7100,38 @@ export const tagLists: any = [
                 },
                 "expand-separator": {
                     "type": "Boolean",
-                    "desc": "Apply a top and bottom separator when expansion item is opened",
+                    "desc": "打开扩展项时应用顶部和底部分隔符",
                     "category": "content"
                 },
                 "default-opened": {
                     "type": "Boolean",
-                    "desc": "Puts expansion item into open state on initial render; Overridden by v-model if used",
+                    "desc": "在初始渲染时将展开项置于打开状态；被v-model覆盖（如果使用）",
                     "category": "behavior"
                 },
                 "hide-expand-icon": {
                     "type": "Boolean",
-                    "desc": "Do not show the expand icon",
+                    "desc": "不显示展开图标",
                     "category": "content",
                     "addedIn": "v2.8.4"
                 },
                 "expand-icon-toggle": {
                     "type": "Boolean",
-                    "desc": "Applies the expansion events to the expand icon only and not to the whole header",
+                    "desc": "仅将展开事件应用于展开图标，而不应用于整个页眉",
                     "category": "behavior"
                 },
                 "switch-toggle-side": {
                     "type": "Boolean",
-                    "desc": "Switch expand icon side (from default 'right' to 'left')",
+                    "desc": "切换展开图标侧（从默认的“右”到“左”）",
                     "category": "content"
                 },
                 "dense-toggle": {
                     "type": "Boolean",
-                    "desc": "Use dense mode for expand icon",
+                    "desc": "使用密集模式展开图标",
                     "category": "style"
                 },
                 "group": {
                     "type": "String",
-                    "desc": "Register expansion item into a group (unique name that must be applied to all expansion items in that group) for coordinated open/close state within the group a.k.a. 'accordion mode'",
+                    "desc": "将扩展项注册到组中（必须应用于该组中所有扩展项的唯一名称），以便在组内协调打开/关闭状态，也称为“手风琴模式”",
                     "examples": [
                         "my-emails"
                     ],
@@ -7091,7 +7139,7 @@ export const tagLists: any = [
                 },
                 "popup": {
                     "type": "Boolean",
-                    "desc": "Put expansion list into 'popup' mode",
+                    "desc": "将扩展列表置于“弹出”模式",
                     "category": "behavior"
                 },
                 "header-style": {
@@ -7101,7 +7149,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Apply custom style to the header",
+                    "desc": "将自定义样式应用于页眉",
                     "examples": [
                         "background: '#ff0000'",
                         ":header-style=\"{ backgroundColor: '#ff0000' }\""
@@ -7115,7 +7163,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Apply custom class(es) to the header",
+                    "desc": "将自定义类应用于标头",
                     "examples": [
                         "my-custom-class",
                         ":header-class=\"{ 'my-custom-class': someCondition }\""
@@ -7125,10 +7173,10 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Slot used for expansion item's content"
+                    "desc": "用于扩展项内容的插槽"
                 },
                 "header": {
-                    "desc": "Slot used for overriding default header",
+                    "desc": "用于覆盖默认标头的插槽",
                     "scope": {
                         "expanded": {
                             "type": "Boolean",
@@ -7184,7 +7232,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when showing/hidden state changes; Is also used by v-model",
+                    "desc": "显示/隐藏状态更改时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Boolean",
@@ -7193,7 +7241,7 @@ export const tagLists: any = [
                     }
                 },
                 "show": {
-                    "desc": "Emitted after component has triggered show()",
+                    "desc": "在组件触发show（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7203,7 +7251,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted when component triggers show() but before it finishes doing it",
+                    "desc": "当组件触发show（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7213,7 +7261,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Emitted after component has triggered hide()",
+                    "desc": "在组件触发hide（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7223,7 +7271,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-hide": {
-                    "desc": "Emitted when component triggers hide() but before it finishes doing it",
+                    "desc": "当组件触发hide（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7233,15 +7281,15 @@ export const tagLists: any = [
                     }
                 },
                 "after-show": {
-                    "desc": "Emitted when component show animation is finished"
+                    "desc": "组件显示动画完成时发射"
                 },
                 "after-hide": {
-                    "desc": "Emitted when component hide animation is finished"
+                    "desc": "组件隐藏动画完成时发射"
                 }
             },
             "methods": {
                 "show": {
-                    "desc": "Triggers component to show",
+                    "desc": "触发要显示的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7251,7 +7299,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Triggers component to hide",
+                    "desc": "触发要隐藏的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7268,13 +7316,15 @@ export const tagLists: any = [
                             "required": false
                         }
                     },
-                    "desc": "Triggers component to toggle between show/hide"
+                    "desc": "触发组件在显示/隐藏之间切换"
                 }
             }
         }
     },
     {
-        name: "q-fab", desc: "悬浮操作", info: {
+        "name": "q-fab",
+        "desc": "悬浮操作",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/floating-action-button"
@@ -7282,7 +7332,7 @@ export const tagLists: any = [
             "props": {
                 "type": {
                     "type": "String",
-                    "desc": "Define the button HTML DOM type",
+                    "desc": "定义按钮HTML DOM类型",
                     "default": "a",
                     "values": [
                         "a",
@@ -7295,27 +7345,27 @@ export const tagLists: any = [
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Use 'outline' design for Fab button",
+                    "desc": "Fab按钮采用“轮廓”设计",
                     "category": "style"
                 },
                 "push": {
                     "type": "Boolean",
-                    "desc": "Use 'push' design for Fab button",
+                    "desc": "Fab按钮采用“推”式设计",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Use 'flat' design for Fab button",
+                    "desc": "Fab按钮采用“扁平”设计",
                     "category": "style"
                 },
                 "unelevated": {
                     "type": "Boolean",
-                    "desc": "Remove shadow",
+                    "desc": "移除阴影",
                     "category": "style"
                 },
                 "padding": {
                     "type": "String",
-                    "desc": "Apply custom padding (vertical [horizontal]); Size in CSS units, including unit name or standard size name (none|xs|sm|md|lg|xl); Also removes the min width and height when set",
+                    "desc": "应用自定义填充（垂直[水平]）；以CSS为单位的大小，包括单元名称或标准大小名称（none|xs|sm|md|lg|xl）；设置时还删除最小宽度和高度",
                     "examples": [
                         "16px",
                         "10px 5px",
@@ -7327,7 +7377,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -7336,7 +7386,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -7345,12 +7395,12 @@ export const tagLists: any = [
                 },
                 "glossy": {
                     "type": "Boolean",
-                    "desc": "Apply the glossy effect over the button",
+                    "desc": "在按钮上应用光泽效果",
                     "category": "style"
                 },
                 "external-label": {
                     "type": "Boolean",
-                    "desc": "Display label besides the FABs, as external content",
+                    "desc": "在FAB旁边显示标签，作为外部内容",
                     "category": "style|content"
                 },
                 "label": {
@@ -7358,7 +7408,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "The label that will be shown when Fab is extended",
+                    "desc": "Fab扩展时将显示的标签",
                     "examples": [
                         "Button Label"
                     ],
@@ -7366,7 +7416,7 @@ export const tagLists: any = [
                 },
                 "label-position": {
                     "type": "String",
-                    "desc": "Position of the label around the icon",
+                    "desc": "图标周围标签的位置",
                     "values": [
                         "top",
                         "right",
@@ -7377,7 +7427,7 @@ export const tagLists: any = [
                 },
                 "hide-label": {
                     "type": "Boolean",
-                    "desc": "Hide the label; Useful for animation purposes where you toggle the visibility of the label",
+                    "desc": "隐藏标签；用于切换标签可见性的动画目的",
                     "category": "style|content"
                 },
                 "label-class": {
@@ -7387,7 +7437,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the label container",
+                    "desc": "要归因于标签容器的类定义",
                     "examples": [
                         "my-special-class",
                         ":input-class=\"{ 'my-special-class': <condition> }\""
@@ -7401,7 +7451,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the label container",
+                    "desc": "要归因于标签容器的样式定义",
                     "examples": [
                         "background-color: #ff0000",
                         ":input-style=\"{ backgroundColor: '#ff0000' }\""
@@ -7410,12 +7460,12 @@ export const tagLists: any = [
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Apply a rectangle aspect to the FAB",
+                    "desc": "将矩形方面应用于FAB",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "tabindex": {
@@ -7423,7 +7473,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -7431,7 +7481,7 @@ export const tagLists: any = [
                     "category": "general"
                 },
                 "model-value": {
-                    "desc": "Controls state of fab actions (showing/hidden); Works best with v-model directive, otherwise use along listening to 'update:modelValue' event",
+                    "desc": "控制晶圆厂动作的状态（显示/隐藏）；与v-model指令配合使用效果最好，否则与侦听“update:modelValue”事件一起使用",
                     "required": false,
                     "syncable": true,
                     "category": "model",
@@ -7439,7 +7489,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -7450,7 +7500,7 @@ export const tagLists: any = [
                 },
                 "active-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -7461,12 +7511,12 @@ export const tagLists: any = [
                 },
                 "hide-icon": {
                     "type": "Boolean",
-                    "desc": "Hide the icon (don't use any)",
+                    "desc": "隐藏图标（不使用任何图标）",
                     "category": "style|content"
                 },
                 "direction": {
                     "type": "String",
-                    "desc": "Direction to expand Fab Actions to",
+                    "desc": "将Fab Actions扩展到的方向",
                     "default": "right",
                     "values": [
                         "up",
@@ -7479,7 +7529,7 @@ export const tagLists: any = [
                 },
                 "vertical-actions-align": {
                     "type": "String",
-                    "desc": "The side of the Fab where Fab Actions will expand (only when direction is 'up' or 'down')",
+                    "desc": "Fab动作将展开的Fab一侧（仅当方向为“向上”或“向下”时）",
                     "default": "center",
                     "values": [
                         "left",
@@ -7491,19 +7541,19 @@ export const tagLists: any = [
                 },
                 "persistent": {
                     "type": "Boolean",
-                    "desc": "By default, Fab Actions are hidden when user navigates to another route and this prop disables this behavior",
+                    "desc": "默认情况下，当用户导航到另一条路线时，Fab操作是隐藏的，并且此道具禁用此行为",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where QFabActions may go into"
+                    "desc": "这就是QFabActions可能进入的领域"
                 },
                 "tooltip": {
-                    "desc": "Slot specifically designed for a QTooltip"
+                    "desc": "专门为QTooltip设计的插槽"
                 },
                 "icon": {
-                    "desc": "Slot for icon shown when FAB is closed; Suggestion: QIcon",
+                    "desc": "FAB关闭时显示的图标插槽；建议：QIcon",
                     "scope": {
                         "opened": {
                             "type": "Boolean",
@@ -7513,7 +7563,7 @@ export const tagLists: any = [
                     "addedIn": "v2.4"
                 },
                 "active-icon": {
-                    "desc": "Slot for icon shown when FAB is opened; Suggestion: QIcon",
+                    "desc": "FAB打开时显示的图标插槽；建议：QIcon",
                     "scope": {
                         "opened": {
                             "type": "Boolean",
@@ -7523,7 +7573,7 @@ export const tagLists: any = [
                     "addedIn": "v2.4"
                 },
                 "label": {
-                    "desc": "Slot for label",
+                    "desc": "标签插槽",
                     "scope": {
                         "opened": {
                             "type": "Boolean",
@@ -7535,7 +7585,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when fab actions are shown/hidden; Captured by v-model directive",
+                    "desc": "显示/隐藏晶圆厂动作时发出；由v-model指令捕获",
                     "params": {
                         "value": {
                             "type": "Boolean",
@@ -7544,7 +7594,7 @@ export const tagLists: any = [
                     }
                 },
                 "show": {
-                    "desc": "Emitted after component has triggered show()",
+                    "desc": "在组件触发show（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7554,7 +7604,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted when component triggers show() but before it finishes doing it",
+                    "desc": "当组件触发show（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7564,7 +7614,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Emitted after component has triggered hide()",
+                    "desc": "在组件触发hide（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7574,7 +7624,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-hide": {
-                    "desc": "Emitted when component triggers hide() but before it finishes doing it",
+                    "desc": "当组件触发hide（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7586,7 +7636,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "show": {
-                    "desc": "Expands fab actions list",
+                    "desc": "扩展晶圆厂行动列表",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7596,7 +7646,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Collapses fab actions list",
+                    "desc": "折叠晶圆厂操作列表",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -7613,13 +7663,15 @@ export const tagLists: any = [
                             "required": false
                         }
                     },
-                    "desc": "Triggers component to toggle between show/hide"
+                    "desc": "触发组件在显示/隐藏之间切换"
                 }
             }
         }
     },
     {
-        name: "q-input", desc: "输入框", info: {
+        "name": "q-input",
+        "desc": "输入框",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/input"
@@ -7627,7 +7679,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms; If not specified, it takes the value of 'for' prop, if it exists",
+                    "desc": "用于指定控件的名称；在处理表单时很有用；如果未指定，则采用值“for”prop（如果存在）",
                     "examples": [
                         "car_id",
                         "car_id"
@@ -7636,7 +7688,7 @@ export const tagLists: any = [
                 },
                 "mask": {
                     "type": "String",
-                    "desc": "Custom mask or one of the predefined mask names",
+                    "desc": "自定义遮罩或预定义遮罩名称之一",
                     "examples": [
                         "###-##",
                         "date",
@@ -7653,7 +7705,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Fills string with specified characters (or underscore if value is not string) to fill mask's length",
+                    "desc": "用指定字符填充字符串（如果值不是字符串，则使用下划线）以填充掩码的长度",
                     "examples": [
                         "true",
                         "'0'",
@@ -7663,16 +7715,16 @@ export const tagLists: any = [
                 },
                 "reverse-fill-mask": {
                     "type": "Boolean",
-                    "desc": "Fills string from the right side of the mask",
+                    "desc": "从遮罩右侧填充字符串",
                     "category": "behavior"
                 },
                 "unmasked-value": {
                     "type": "Boolean",
-                    "desc": "Model will be unmasked (won't contain tokens/separation characters)",
+                    "desc": "模型将被取消掩码（不包含标记/分隔字符）",
                     "category": "behavior"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -7688,12 +7740,12 @@ export const tagLists: any = [
                 },
                 "error": {
                     "type": "Boolean",
-                    "desc": "Does field have validation errors?",
+                    "desc": "字段是否存在验证错误？",
                     "category": "behavior"
                 },
                 "error-message": {
                     "type": "String",
-                    "desc": "Validation error message (gets displayed only if 'error' is set to 'true')",
+                    "desc": "验证错误消息（仅当“error”设置为“true”时才会显示）",
                     "examples": [
                         "Username must have at least 5 characters"
                     ],
@@ -7701,13 +7753,13 @@ export const tagLists: any = [
                 },
                 "no-error-icon": {
                     "type": "Boolean",
-                    "desc": "Hide error icon when there is an error",
+                    "desc": "出现错误时隐藏错误图标",
                     "category": "content"
                 },
                 "rules": {
                     "type": "Array",
                     "tsType": "ValidationRule",
-                    "desc": "Array of Functions/Strings; If String, then it must be a name of one of the embedded validation rules",
+                    "desc": "函数/字符串数组；如果是String，则它必须是嵌入的验证规则之一的名称",
                     "examples": [
                         ":rules=\"[ val => val.length <= 3 || 'Please use maximum 3 characters' ]\"",
                         ":rules=\"[ 'fulltime' ]\"",
@@ -7717,7 +7769,7 @@ export const tagLists: any = [
                 },
                 "reactive-rules": {
                     "type": "Boolean",
-                    "desc": "By default a change in the rules does not trigger a new validation until the model changes; If set to true then a change in the rules will trigger a validation; Has a performance penalty, so use it only when you really need it",
+                    "desc": "默认情况下，规则的更改在模型更改之前不会触发新的验证；如果设置为true，则规则的更改将触发验证；性能会受到影响，所以只有在真正需要时才使用",
                     "category": "behavior"
                 },
                 "lazy-rules": {
@@ -7725,7 +7777,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "If set to boolean true then it checks validation status against the 'rules' only after field loses focus for first time; If set to 'ondemand' then it will trigger only when component's validate() method is manually called or when the wrapper QForm submits itself",
+                    "desc": "如果设置为布尔值true，则只有在字段第一次失去焦点后，它才会根据“规则”检查验证状态；如果设置为“ondemand”，则仅当手动调用组件的validate（）方法或包装器QForm提交自身时才会触发",
                     "values": [
                         "(Boolean) true",
                         "(Boolean) false",
@@ -7735,7 +7787,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "A text label that will “float” up above the input field, once the field gets focus",
+                    "desc": "一旦字段获得焦点，文本标签将“浮动”在输入字段上方",
                     "examples": [
                         "Username"
                     ],
@@ -7743,12 +7795,12 @@ export const tagLists: any = [
                 },
                 "stack-label": {
                     "type": "Boolean",
-                    "desc": "Label will be always shown above the field regardless of field content (if any)",
+                    "desc": "无论字段内容如何（如果有），标签都将始终显示在字段上方",
                     "category": "content"
                 },
                 "hint": {
                     "type": "String",
-                    "desc": "Helper (hint) text which gets placed below your wrapped form component",
+                    "desc": "放置在包装表单组件下方的帮助程序（提示）文本",
                     "examples": [
                         "Fill in between 3 and 12 characters"
                     ],
@@ -7756,12 +7808,12 @@ export const tagLists: any = [
                 },
                 "hide-hint": {
                     "type": "Boolean",
-                    "desc": "Hide the helper (hint) text when field doesn't have focus",
+                    "desc": "当字段没有焦点时隐藏辅助对象（提示）文本",
                     "category": "content"
                 },
                 "prefix": {
                     "type": "String",
-                    "desc": "Prefix",
+                    "desc": "前缀",
                     "examples": [
                         "$"
                     ],
@@ -7769,7 +7821,7 @@ export const tagLists: any = [
                 },
                 "suffix": {
                     "type": "String",
-                    "desc": "Suffix",
+                    "desc": "后缀",
                     "examples": [
                         "@gmail.com"
                     ],
@@ -7777,7 +7829,7 @@ export const tagLists: any = [
                 },
                 "label-color": {
                     "type": "String",
-                    "desc": "Color name for the label from the Quasar Color Palette; Overrides the 'color' prop; The difference from 'color' prop is that the label will always have this color, even when field is not focused",
+                    "desc": "Quasar调色板中标签的颜色名称；覆盖“color”道具；与“color”道具的不同之处在于，即使字段未聚焦，标签也将始终具有此颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -7786,7 +7838,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -7795,7 +7847,7 @@ export const tagLists: any = [
                 },
                 "bg-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -7804,22 +7856,22 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "loading": {
                     "type": "Boolean",
-                    "desc": "Signals the user a process is in progress by displaying a spinner; Spinner can be customized by using the 'loading' slot.",
+                    "desc": "通过显示微调器向用户发出进程正在进行的信号；Spinner可以通过使用“加载”插槽进行自定义。",
                     "category": "behavior|content"
                 },
                 "clearable": {
                     "type": "Boolean",
-                    "desc": "Appends clearable icon when a value (not undefined or null) is set; When clicked, model becomes null",
+                    "desc": "当设置了一个值（未定义或为空）时，附加可清除的图标；单击时，模型变为空",
                     "category": "behavior|content"
                 },
                 "clear-icon": {
                     "type": "String",
-                    "desc": "Custom icon to use for the clear button when using along with 'clearable' prop",
+                    "desc": "与“可清除”道具一起使用时用于清除按钮的自定义图标",
                     "examples": [
                         "close"
                     ],
@@ -7827,17 +7879,17 @@ export const tagLists: any = [
                 },
                 "filled": {
                     "type": "Boolean",
-                    "desc": "Use 'filled' design for the field",
+                    "desc": "对字段使用“填充”设计",
                     "category": "style"
                 },
                 "outlined": {
                     "type": "Boolean",
-                    "desc": "Use 'outlined' design for the field",
+                    "desc": "现场采用“轮廓”设计",
                     "category": "style"
                 },
                 "borderless": {
                     "type": "Boolean",
-                    "desc": "Use 'borderless' design for the field",
+                    "desc": "对字段使用“无边框”设计",
                     "category": "style"
                 },
                 "standout": {
@@ -7845,7 +7897,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Use 'standout' design for the field; Specifies classes to be applied when focused (overriding default ones)",
+                    "desc": "现场采用“突出”设计；指定聚焦时要应用的类（覆盖默认类）",
                     "examples": [
                         "standout",
                         "standout=\"bg-primary text-white\""
@@ -7854,62 +7906,62 @@ export const tagLists: any = [
                 },
                 "label-slot": {
                     "type": "Boolean",
-                    "desc": "Enables label slot; You need to set it to force use of the 'label' slot if the 'label' prop is not set",
+                    "desc": "启用标签槽；如果未设置“label”道具，则需要将其设置为强制使用“label“插槽",
                     "category": "content"
                 },
                 "bottom-slots": {
                     "type": "Boolean",
-                    "desc": "Enables bottom slots ('error', 'hint', 'counter')",
+                    "desc": "启用底部插槽（“error”、“hint”、“counter”）",
                     "category": "content"
                 },
                 "hide-bottom-space": {
                     "type": "Boolean",
-                    "desc": "Do not reserve space for hint/error/counter anymore when these are not used; As a result, it also disables the animation for those; It also allows the hint/error area to stretch vertically based on its content",
+                    "desc": "当提示/错误/计数器不使用时，不要再为它们保留空间；因此，它也会禁用这些对象的动画；它还允许提示/错误区域根据其内容进行垂直拉伸",
                     "category": "style"
                 },
                 "counter": {
                     "type": "Boolean",
-                    "desc": "Show an automatic counter on bottom right",
+                    "desc": "在右下角显示自动计数器",
                     "category": "content"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a small standard border-radius for a squared shape of the component",
+                    "desc": "为零部件的方形应用小的标准边界半径",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Remove border-radius so borders are squared; Overrides 'rounded' prop",
+                    "desc": "删除边界半径，使边界为方形；覆盖“圆角”道具",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "item-aligned": {
                     "type": "Boolean",
-                    "desc": "Match inner content alignment to that of QItem",
+                    "desc": "将内部内容对齐方式与QItem的对齐方式相匹配",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "autofocus": {
                     "type": "Boolean",
-                    "desc": "Focus field on initial component render",
+                    "desc": "初始组件渲染上的焦点场",
                     "category": "behavior"
                 },
                 "for": {
                     "type": "String",
-                    "desc": "Used to specify the 'id' of the control and also the 'for' attribute of the label that wraps it; If no 'name' prop is specified, then it is used for this attribute as well",
+                    "desc": "用于指定控件的“id”以及包装控件的标签的“for”属性；如果未指定“name”道具，则也会将其用于此属性",
                     "examples": [
                         "myFieldsId"
                     ],
@@ -7917,7 +7969,7 @@ export const tagLists: any = [
                 },
                 "shadow-text": {
                     "type": "String",
-                    "desc": "Text to be displayed as shadow at the end of the text in the control; Does NOT applies to type=file",
+                    "desc": "要在控件中的文本末尾显示为阴影的文本；不适用于type=文件",
                     "examples": [
                         "rest of the fill value"
                     ],
@@ -7925,7 +7977,7 @@ export const tagLists: any = [
                 },
                 "type": {
                     "type": "String",
-                    "desc": "Input type",
+                    "desc": "输入类型",
                     "default": "text",
                     "values": [
                         "text",
@@ -7948,7 +8000,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Debounce amount (in milliseconds) when updating model",
+                    "desc": "更新模型时的抖动量（以毫秒为单位）",
                     "category": "model"
                 },
                 "maxlength": {
@@ -7956,12 +8008,12 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Specify a max length of model",
+                    "desc": "指定模型的最大长度",
                     "category": "model"
                 },
                 "autogrow": {
                     "type": "Boolean",
-                    "desc": "Make field autogrow along with its content (uses a textarea)",
+                    "desc": "使字段及其内容自动换行（使用文本区域）",
                     "category": "content"
                 },
                 "input-class": {
@@ -7971,7 +8023,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the underlying input tag",
+                    "desc": "要归因于基础输入标记的类定义",
                     "examples": [
                         "my-special-class",
                         ":input-class=\"{ 'my-special-class': <condition> }\""
@@ -7985,7 +8037,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the underlying input tag",
+                    "desc": "要归因于基础输入标记的样式定义",
                     "examples": [
                         "background-color: #ff0000",
                         ":input-style=\"{ backgroundColor: '#ff0000' }\""
@@ -7995,39 +8047,39 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Field main content"
+                    "desc": "字段主要内容"
                 },
                 "prepend": {
-                    "desc": "Prepend inner field; Suggestions: QIcon, QBtn"
+                    "desc": "预备内场；建议：QIcon、QBtn"
                 },
                 "append": {
-                    "desc": "Append to inner field; Suggestions: QIcon, QBtn"
+                    "desc": "附加到内部字段；建议：QIcon、QBtn"
                 },
                 "before": {
-                    "desc": "Prepend outer field; Suggestions: QIcon, QBtn"
+                    "desc": "准备外部字段；建议：QIcon、QBtn"
                 },
                 "after": {
-                    "desc": "Append outer field; Suggestions: QIcon, QBtn"
+                    "desc": "附加外部字段；建议：QIcon、QBtn"
                 },
                 "label": {
-                    "desc": "Slot for label; Used only if 'label-slot' prop is set or the 'label' prop is set; When it is used the text in the 'label' prop is ignored"
+                    "desc": "标签插槽；仅当设置了“label slot”道具或设置了“label”道具时使用；使用时，“label”道具中的文本将被忽略"
                 },
                 "error": {
-                    "desc": "Slot for errors; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "错误插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "hint": {
-                    "desc": "Slot for hint text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "提示文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "counter": {
-                    "desc": "Slot for counter text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "计数器文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "loading": {
-                    "desc": "Override default spinner when component is in loading mode; Use in conjunction with 'loading' prop"
+                    "desc": "组件处于加载模式时覆盖默认微调器；与“加载”道具一起使用"
                 }
             },
             "events": {
                 "clear": {
-                    "desc": "When using the 'clearable' property, this event is emitted when the clear icon is clicked",
+                    "desc": "使用“clearable”属性时，单击clear图标时会发出此事件",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -8036,7 +8088,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -8050,7 +8102,7 @@ export const tagLists: any = [
                     }
                 },
                 "focus": {
-                    "desc": "Emitted when component gets focused",
+                    "desc": "组件聚焦时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -8059,7 +8111,7 @@ export const tagLists: any = [
                     }
                 },
                 "blur": {
-                    "desc": "Emitted when component loses focus",
+                    "desc": "组件失去焦点时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -8070,10 +8122,10 @@ export const tagLists: any = [
             },
             "methods": {
                 "resetValidation": {
-                    "desc": "Reset validation status"
+                    "desc": "重置验证状态"
                 },
                 "validate": {
-                    "desc": "Trigger a validation",
+                    "desc": "触发验证",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -8093,16 +8145,16 @@ export const tagLists: any = [
                     }
                 },
                 "focus": {
-                    "desc": "Focus underlying input tag"
+                    "desc": "焦点基础输入标记"
                 },
                 "blur": {
-                    "desc": "Lose focus on underlying input tag"
+                    "desc": "失去对基础输入标记的关注"
                 },
                 "select": {
-                    "desc": "Select input text"
+                    "desc": "选择输入文本"
                 },
                 "getNativeElement": {
-                    "desc": "DEPRECATED; Access 'nativeEl' directly instead; Get the native input/textarea DOM Element",
+                    "desc": "不赞成；直接访问“nativeEl”；获取本机输入/textarea DOM元素",
                     "returns": {
                         "type": "Element",
                         "desc": "The underlying native input/textarea DOM Element"
@@ -8112,18 +8164,20 @@ export const tagLists: any = [
             "computedProps": {
                 "hasError": {
                     "type": "Boolean",
-                    "desc": "Whether the component is in error state"
+                    "desc": "组件是否处于错误状态"
                 },
                 "nativeEl": {
                     "type": "Element",
-                    "desc": "The native input/textarea DOM Element",
+                    "desc": "本机输入/文本区域DOM元素",
                     "addedIn": "v2.10.1"
                 }
             }
         }
     },
     {
-        name: "q-select", desc: "选择框", info: {
+        "name": "q-select",
+        "desc": "选择框",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/select"
@@ -8131,7 +8185,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms; If not specified, it takes the value of 'for' prop, if it exists",
+                    "desc": "用于指定控件的名称；在处理表单时很有用；如果未指定，则采用值“for”prop（如果存在）",
                     "examples": [
                         "car_id",
                         "car_id"
@@ -8140,7 +8194,7 @@ export const tagLists: any = [
                 },
                 "virtual-scroll-horizontal": {
                     "type": "Boolean",
-                    "desc": "Make virtual list work in horizontal mode",
+                    "desc": "使虚拟列表在水平模式下工作",
                     "category": "behavior"
                 },
                 "virtual-scroll-slice-size": {
@@ -8148,7 +8202,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Minimum number of items to render in the virtual list",
+                    "desc": "虚拟列表中要渲染的最小项目数",
                     "default": "30",
                     "examples": [
                         "virtual-scroll-slice-size=\"60\""
@@ -8161,7 +8215,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Ratio of number of items in visible zone to render before it",
+                    "desc": "可见区域中要在其之前渲染的项目数的比率",
                     "default": 1,
                     "category": "virtual-scroll",
                     "required": false
@@ -8171,7 +8225,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Ratio of number of items in visible zone to render after it",
+                    "desc": "可见区域中要在其之后渲染的项目数的比率",
                     "default": 1,
                     "category": "virtual-scroll",
                     "required": false
@@ -8181,7 +8235,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Default size in pixels (height if vertical, width if horizontal) of an item; This value is used for rendering the initial list; Try to use a value close to the minimum size of an item",
+                    "desc": "项目的默认像素大小（垂直时为高度，水平时为宽度）；该值用于呈现初始列表；尝试使用接近项目最小大小的值",
                     "default": 24,
                     "category": "virtual-scroll",
                     "required": false
@@ -8191,7 +8245,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Size in pixels (height if vertical, width if horizontal) of the sticky part (if using one) at the start of the list; A correct value will improve scroll precision",
+                    "desc": "列表开头的粘性部分（如果使用一个）的像素大小（垂直时为高度，水平时为宽度）；正确的值将提高滚动精度",
                     "default": "0",
                     "category": "virtual-scroll",
                     "required": false
@@ -8201,7 +8255,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Size in pixels (height if vertical, width if horizontal) of the sticky part (if using one) at the end of the list; A correct value will improve scroll precision",
+                    "desc": "列表末尾的粘性部分（如果使用）的像素大小（如果垂直，则为高度，如果水平，则为宽度）；正确的值将提高滚动精度",
                     "default": "0",
                     "category": "virtual-scroll",
                     "required": false
@@ -8211,11 +8265,11 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "The number of columns in the table (you need this if you use table-layout: fixed)",
+                    "desc": "表中的列数（如果使用表布局，则需要此项：固定）",
                     "category": "virtual-scroll|content"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Must be Array if using 'multiple' prop; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "部件的型号；如果使用“multiple”道具，则必须为Array；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -8226,12 +8280,12 @@ export const tagLists: any = [
                 },
                 "error": {
                     "type": "Boolean",
-                    "desc": "Does field have validation errors?",
+                    "desc": "字段是否存在验证错误？",
                     "category": "behavior"
                 },
                 "error-message": {
                     "type": "String",
-                    "desc": "Validation error message (gets displayed only if 'error' is set to 'true')",
+                    "desc": "验证错误消息（仅当“error”设置为“true”时才会显示）",
                     "examples": [
                         "Username must have at least 5 characters"
                     ],
@@ -8239,13 +8293,13 @@ export const tagLists: any = [
                 },
                 "no-error-icon": {
                     "type": "Boolean",
-                    "desc": "Hide error icon when there is an error",
+                    "desc": "出现错误时隐藏错误图标",
                     "category": "content"
                 },
                 "rules": {
                     "type": "Array",
                     "tsType": "ValidationRule",
-                    "desc": "Array of Functions/Strings; If String, then it must be a name of one of the embedded validation rules",
+                    "desc": "函数/字符串数组；如果是String，则它必须是嵌入的验证规则之一的名称",
                     "examples": [
                         ":rules=\"[ val => val.length <= 3 || 'Please use maximum 3 characters' ]\"",
                         ":rules=\"[ 'fulltime' ]\"",
@@ -8255,7 +8309,7 @@ export const tagLists: any = [
                 },
                 "reactive-rules": {
                     "type": "Boolean",
-                    "desc": "By default a change in the rules does not trigger a new validation until the model changes; If set to true then a change in the rules will trigger a validation; Has a performance penalty, so use it only when you really need it",
+                    "desc": "默认情况下，规则的更改在模型更改之前不会触发新的验证；如果设置为true，则规则的更改将触发验证；性能会受到影响，所以只有在真正需要时才使用",
                     "category": "behavior"
                 },
                 "lazy-rules": {
@@ -8263,7 +8317,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "If set to boolean true then it checks validation status against the 'rules' only after field loses focus for first time; If set to 'ondemand' then it will trigger only when component's validate() method is manually called or when the wrapper QForm submits itself",
+                    "desc": "如果设置为布尔值true，则只有在字段第一次失去焦点后，它才会根据“规则”检查验证状态；如果设置为“ondemand”，则仅当手动调用组件的validate（）方法或包装器QForm提交自身时才会触发",
                     "values": [
                         "(Boolean) true",
                         "(Boolean) false",
@@ -8273,7 +8327,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "A text label that will “float” up above the input field, once the field gets focus",
+                    "desc": "一旦字段获得焦点，文本标签将“浮动”在输入字段上方",
                     "examples": [
                         "Username"
                     ],
@@ -8281,12 +8335,12 @@ export const tagLists: any = [
                 },
                 "stack-label": {
                     "type": "Boolean",
-                    "desc": "Label will be always shown above the field regardless of field content (if any)",
+                    "desc": "无论字段内容如何（如果有），标签都将始终显示在字段上方",
                     "category": "content"
                 },
                 "hint": {
                     "type": "String",
-                    "desc": "Helper (hint) text which gets placed below your wrapped form component",
+                    "desc": "放置在包装表单组件下方的帮助程序（提示）文本",
                     "examples": [
                         "Fill in between 3 and 12 characters"
                     ],
@@ -8294,12 +8348,12 @@ export const tagLists: any = [
                 },
                 "hide-hint": {
                     "type": "Boolean",
-                    "desc": "Hide the helper (hint) text when field doesn't have focus",
+                    "desc": "当字段没有焦点时隐藏辅助对象（提示）文本",
                     "category": "content"
                 },
                 "prefix": {
                     "type": "String",
-                    "desc": "Prefix",
+                    "desc": "前缀",
                     "examples": [
                         "$"
                     ],
@@ -8307,7 +8361,7 @@ export const tagLists: any = [
                 },
                 "suffix": {
                     "type": "String",
-                    "desc": "Suffix",
+                    "desc": "后缀",
                     "examples": [
                         "@gmail.com"
                     ],
@@ -8315,7 +8369,7 @@ export const tagLists: any = [
                 },
                 "label-color": {
                     "type": "String",
-                    "desc": "Color name for the label from the Quasar Color Palette; Overrides the 'color' prop; The difference from 'color' prop is that the label will always have this color, even when field is not focused",
+                    "desc": "Quasar调色板中标签的颜色名称；覆盖“color”道具；与“color”道具的不同之处在于，即使字段未聚焦，标签也将始终具有此颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -8324,7 +8378,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -8333,7 +8387,7 @@ export const tagLists: any = [
                 },
                 "bg-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -8342,22 +8396,22 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "loading": {
                     "type": "Boolean",
-                    "desc": "Signals the user a process is in progress by displaying a spinner; Spinner can be customized by using the 'loading' slot.",
+                    "desc": "通过显示微调器向用户发出进程正在进行的信号；Spinner可以通过使用“加载”插槽进行自定义。",
                     "category": "behavior|content"
                 },
                 "clearable": {
                     "type": "Boolean",
-                    "desc": "Appends clearable icon when a value (not undefined or null) is set; When clicked, model becomes null",
+                    "desc": "当设置了一个值（未定义或为空）时，附加可清除的图标；单击时，模型变为空",
                     "category": "behavior|content"
                 },
                 "clear-icon": {
                     "type": "String",
-                    "desc": "Custom icon to use for the clear button when using along with 'clearable' prop",
+                    "desc": "与“可清除”道具一起使用时用于清除按钮的自定义图标",
                     "examples": [
                         "close"
                     ],
@@ -8365,17 +8419,17 @@ export const tagLists: any = [
                 },
                 "filled": {
                     "type": "Boolean",
-                    "desc": "Use 'filled' design for the field",
+                    "desc": "对字段使用“填充”设计",
                     "category": "style"
                 },
                 "outlined": {
                     "type": "Boolean",
-                    "desc": "Use 'outlined' design for the field",
+                    "desc": "现场采用“轮廓”设计",
                     "category": "style"
                 },
                 "borderless": {
                     "type": "Boolean",
-                    "desc": "Use 'borderless' design for the field",
+                    "desc": "对字段使用“无边框”设计",
                     "category": "style"
                 },
                 "standout": {
@@ -8383,7 +8437,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Use 'standout' design for the field; Specifies classes to be applied when focused (overriding default ones)",
+                    "desc": "现场采用“突出”设计；指定聚焦时要应用的类（覆盖默认类）",
                     "examples": [
                         "standout",
                         "standout=\"bg-primary text-white\""
@@ -8392,62 +8446,62 @@ export const tagLists: any = [
                 },
                 "label-slot": {
                     "type": "Boolean",
-                    "desc": "Enables label slot; You need to set it to force use of the 'label' slot if the 'label' prop is not set",
+                    "desc": "启用标签槽；如果未设置“label”道具，则需要将其设置为强制使用“label“插槽",
                     "category": "content"
                 },
                 "bottom-slots": {
                     "type": "Boolean",
-                    "desc": "Enables bottom slots ('error', 'hint', 'counter')",
+                    "desc": "启用底部插槽（“error”、“hint”、“counter”）",
                     "category": "content"
                 },
                 "hide-bottom-space": {
                     "type": "Boolean",
-                    "desc": "Do not reserve space for hint/error/counter anymore when these are not used; As a result, it also disables the animation for those; It also allows the hint/error area to stretch vertically based on its content",
+                    "desc": "当提示/错误/计数器不使用时，不要再为它们保留空间；因此，它也会禁用这些对象的动画；它还允许提示/错误区域根据其内容进行垂直拉伸",
                     "category": "style"
                 },
                 "counter": {
                     "type": "Boolean",
-                    "desc": "Show an automatic counter on bottom right",
+                    "desc": "在右下角显示自动计数器",
                     "category": "content"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a small standard border-radius for a squared shape of the component",
+                    "desc": "为零部件的方形应用小的标准边界半径",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Remove border-radius so borders are squared; Overrides 'rounded' prop",
+                    "desc": "删除边界半径，使边界为方形；覆盖“圆角”道具",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "item-aligned": {
                     "type": "Boolean",
-                    "desc": "Match inner content alignment to that of QItem",
+                    "desc": "将内部内容对齐方式与QItem的对齐方式相匹配",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "autofocus": {
                     "type": "Boolean",
-                    "desc": "Focus field on initial component render",
+                    "desc": "初始组件渲染上的焦点场",
                     "category": "behavior"
                 },
                 "for": {
                     "type": "String",
-                    "desc": "Used to specify the 'id' of the control and also the 'for' attribute of the label that wraps it; If no 'name' prop is specified, then it is used for this attribute as well",
+                    "desc": "用于指定控件的“id”以及包装控件的标签的“for”属性；如果未指定“name”道具，则也会将其用于此属性",
                     "examples": [
                         "myFieldsId"
                     ],
@@ -8455,7 +8509,7 @@ export const tagLists: any = [
                 },
                 "multiple": {
                     "type": "Boolean",
-                    "desc": "Allow multiple selection; Model must be Array",
+                    "desc": "允许多选；模型必须是数组",
                     "category": "model|selection"
                 },
                 "display-value": {
@@ -8463,7 +8517,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Override default selection string, if not using 'selected' slot/scoped slot and if not using 'use-chips' prop",
+                    "desc": "如果未使用“selected”插槽/作用域插槽，并且未使用“use chips”道具，则覆盖默认选择字符串",
                     "examples": [
                         "Options: x, y, z"
                     ],
@@ -8471,12 +8525,12 @@ export const tagLists: any = [
                 },
                 "display-value-html": {
                     "type": "Boolean",
-                    "desc": "Force render the selected option(s) as HTML; This can lead to XSS attacks so make sure that you sanitize the content; Does NOT apply when using 'selected' or 'selected-item' slots!",
+                    "desc": "将所选选项强制呈现为HTML；这可能会导致XSS攻击，因此请确保对内容进行消毒；使用“选定”或“选定项目”插槽时不适用！",
                     "category": "selection"
                 },
                 "options": {
                     "type": "Array",
-                    "desc": "Available options that the user can select from. For best performance freeze the list of options.",
+                    "desc": "用户可以从中选择的可用选项。为了获得最佳性能，请冻结选项列表。",
                     "default": "[]",
                     "examples": [
                         ":options=\"[ 'BMW', 'Samsung Phone' ]\"",
@@ -8490,7 +8544,7 @@ export const tagLists: any = [
                         "Function",
                         "String"
                     ],
-                    "desc": "Property of option which holds the 'value'; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "持有“值”的选项的属性；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "default": "value",
                     "params": {
                         "option": {
@@ -8526,7 +8580,7 @@ export const tagLists: any = [
                         "Function",
                         "String"
                     ],
-                    "desc": "Property of option which holds the 'label'; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "持有“标签”的选项的属性；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "default": "label",
                     "params": {
                         "option": {
@@ -8562,7 +8616,7 @@ export const tagLists: any = [
                         "Function",
                         "String"
                     ],
-                    "desc": "Property of option which tells it's disabled; The value of the property must be a Boolean; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "告诉已禁用的选项的属性；属性的值必须是布尔值；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "default": "disable",
                     "params": {
                         "option": {
@@ -8591,17 +8645,17 @@ export const tagLists: any = [
                 },
                 "hide-selected": {
                     "type": "Boolean",
-                    "desc": "Hides selection; Use the underlying input tag to hold the label (instead of showing it to the right of the input) of the selected option; Only works for non 'multiple' Selects",
+                    "desc": "隐藏所选内容；使用基础输入标签来固定所选选项的标签（而不是显示在输入的右侧）；仅适用于非“多个”选择",
                     "category": "selection"
                 },
                 "hide-dropdown-icon": {
                     "type": "Boolean",
-                    "desc": "Hides dropdown icon",
+                    "desc": "隐藏下拉图标",
                     "category": "content|behavior"
                 },
                 "dropdown-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -8615,22 +8669,22 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Allow a maximum number of selections that the user can do",
+                    "desc": "允许用户进行最大数量的选择",
                     "category": "selection"
                 },
                 "options-dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode for options list; occupies less space",
+                    "desc": "选项列表的密集模式；占用较少空间",
                     "category": "options"
                 },
                 "options-dark": {
                     "type": "Boolean",
-                    "desc": "Options menu will be colored with a dark color",
+                    "desc": "选项菜单将使用深色",
                     "category": "options"
                 },
                 "options-selected-class": {
                     "type": "String",
-                    "desc": "CSS class name for options that are active/selected; Set it to an empty string to stop applying the default (which is text-* where * is the 'color' prop value)",
+                    "desc": "活动/选定选项的CSS类名；将其设置为空字符串以停止应用默认值（即text-*，其中*是“color”道具值）",
                     "examples": [
                         "text-orange"
                     ],
@@ -8638,22 +8692,22 @@ export const tagLists: any = [
                 },
                 "options-html": {
                     "type": "Boolean",
-                    "desc": "Force render the options as HTML; This can lead to XSS attacks so make sure that you sanitize the content; Does NOT apply when using 'option' slot!",
+                    "desc": "强制将选项渲染为HTML；这可能会导致XSS攻击，因此请确保对内容进行消毒；使用“选项”插槽时不适用！",
                     "category": "options"
                 },
                 "options-cover": {
                     "type": "Boolean",
-                    "desc": "Expanded menu will cover the component (will not work along with 'use-input' prop for obvious reasons)",
+                    "desc": "扩展菜单将覆盖组件（由于明显的原因，无法与“使用输入”道具一起使用）",
                     "category": "options"
                 },
                 "menu-shrink": {
                     "type": "Boolean",
-                    "desc": "Allow the options list to be narrower than the field (only in menu mode)",
+                    "desc": "允许选项列表比字段窄（仅在菜单模式下）",
                     "category": "options"
                 },
                 "menu-anchor": {
                     "type": "String",
-                    "desc": "Two values setting the starting position or anchor point of the options list relative to the field (only in menu mode)",
+                    "desc": "两个值设置选项列表相对于字段的起始位置或锚点（仅在菜单模式下）",
                     "values": [
                         "top left",
                         "top middle",
@@ -8675,7 +8729,7 @@ export const tagLists: any = [
                 },
                 "menu-self": {
                     "type": "String",
-                    "desc": "Two values setting the options list's own position relative to its target (only in menu mode)",
+                    "desc": "两个值设置选项列表相对于其目标的自身位置（仅在菜单模式下）",
                     "values": [
                         "top left",
                         "top middle",
@@ -8697,7 +8751,7 @@ export const tagLists: any = [
                 },
                 "menu-offset": {
                     "type": "Array",
-                    "desc": "An array of two numbers to offset the options list horizontally and vertically in pixels (only in menu mode)",
+                    "desc": "两个数字的数组，以像素为单位水平和垂直偏移选项列表（仅在菜单模式下）",
                     "examples": [
                         "[8, 8]",
                         "[5, 10]"
@@ -8706,7 +8760,7 @@ export const tagLists: any = [
                 },
                 "popup-content-class": {
                     "type": "String",
-                    "desc": "Class definitions to be attributed to the popup content",
+                    "desc": "要归因于弹出内容的类定义",
                     "examples": [
                         "my-special-class"
                     ],
@@ -8719,7 +8773,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the popup content",
+                    "desc": "要归因于弹出内容的样式定义",
                     "examples": [
                         "background-color: #ff0000",
                         ":popup-content-style=\"{ backgroundColor: '#ff0000' }\""
@@ -8728,22 +8782,22 @@ export const tagLists: any = [
                 },
                 "use-input": {
                     "type": "Boolean",
-                    "desc": "Use an input tag where users can type",
+                    "desc": "使用用户可以键入的输入标记",
                     "category": "content"
                 },
                 "use-chips": {
                     "type": "Boolean",
-                    "desc": "Use QChip to show what is currently selected",
+                    "desc": "使用QChip显示当前选择的内容",
                     "category": "selection"
                 },
                 "fill-input": {
                     "type": "Boolean",
-                    "desc": "Fills the input with current value; Useful along with 'hide-selected'; Does NOT works along with 'multiple' selection",
+                    "desc": "用当前值填充输入；与“隐藏所选内容”一起使用很有用；不适用于“多重”选择",
                     "category": "behavior"
                 },
                 "new-value-mode": {
                     "type": "String",
-                    "desc": "Enables creation of new values and defines behavior when a new value is added: 'add' means it adds the value (even if possible duplicate), 'add-unique' adds only unique values, and 'toggle' adds or removes the value (based on if it exists or not already); When using this prop then listening for @new-value becomes optional (only to override the behavior defined by 'new-value-mode')",
+                    "desc": "允许创建新值并定义添加新值时的行为：“添加”表示添加值（即使可能重复），“添加唯一”仅添加唯一值，“切换”添加或删除值（基于值是否存在）；当使用此道具时，侦听@new value变为可选（仅用于覆盖“new value mode”定义的行为）",
                     "values": [
                         "add",
                         "add-unique",
@@ -8753,12 +8807,12 @@ export const tagLists: any = [
                 },
                 "map-options": {
                     "type": "Boolean",
-                    "desc": "Try to map labels of model from 'options' Array; has a small performance penalty; If you are using emit-value you will probably need to use map-options to display the label text in the select field rather than the value;  Refer to the 'Affecting model' section above",
+                    "desc": "尝试从“options”数组映射模型的标签；有一个小的性能惩罚；如果您使用的是发射值，则可能需要使用映射选项在选择字段中显示标签文本，而不是值；请参阅上面的“影响模型”部分",
                     "category": "options"
                 },
                 "emit-value": {
                     "type": "Boolean",
-                    "desc": "Update model with the value of the selected option instead of the whole option",
+                    "desc": "使用所选选项的值而不是整个选项更新模型",
                     "category": "model"
                 },
                 "input-debounce": {
@@ -8766,7 +8820,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Debounce the input model update with an amount of milliseconds",
+                    "desc": "以毫秒为单位取消对输入模型更新的影响",
                     "default": 500,
                     "category": "content",
                     "required": false
@@ -8778,7 +8832,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the underlying input tag",
+                    "desc": "要归因于基础输入标记的类定义",
                     "examples": [
                         "my-special-class",
                         ":input-class=\"{ 'my-special-class': <condition> }\""
@@ -8792,7 +8846,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the underlying input tag",
+                    "desc": "要归因于基础输入标记的样式定义",
                     "examples": [
                         "background-color: #ff0000",
                         ":input-style=\"{ backgroundColor: '#ff0000' }\""
@@ -8804,7 +8858,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -8813,7 +8867,7 @@ export const tagLists: any = [
                 },
                 "autocomplete": {
                     "type": "String",
-                    "desc": "Autocomplete attribute for field",
+                    "desc": "字段的自动完成属性",
                     "examples": [
                         "autocomplete=\"country\""
                     ],
@@ -8821,7 +8875,7 @@ export const tagLists: any = [
                 },
                 "transition-show": {
                     "type": "String",
-                    "desc": "Transition when showing the menu/dialog; One of Quasar's embedded transitions",
+                    "desc": "显示菜单/对话框时的转换；Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -8832,7 +8886,7 @@ export const tagLists: any = [
                 },
                 "transition-hide": {
                     "type": "String",
-                    "desc": "Transition when hiding the menu/dialog; One of Quasar's embedded transitions",
+                    "desc": "隐藏菜单/对话框时的转换；Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -8846,14 +8900,14 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration when hiding the menu/dialog (in milliseconds, without unit)",
+                    "desc": "隐藏菜单/对话框时的转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "behavior",
                     "required": false
                 },
                 "behavior": {
                     "type": "String",
-                    "desc": "Overrides the default dynamic mode of showing as menu on desktop and dialog on mobiles",
+                    "desc": "覆盖桌面上显示为菜单和手机上显示为对话框的默认动态模式",
                     "values": [
                         "default",
                         "menu",
@@ -8866,46 +8920,46 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Field main content"
+                    "desc": "字段主要内容"
                 },
                 "prepend": {
-                    "desc": "Prepend inner field; Suggestions: QIcon, QBtn"
+                    "desc": "预备内场；建议：QIcon、QBtn"
                 },
                 "append": {
-                    "desc": "Append to inner field; Suggestions: QIcon, QBtn"
+                    "desc": "附加到内部字段；建议：QIcon、QBtn"
                 },
                 "before": {
-                    "desc": "Prepend outer field; Suggestions: QIcon, QBtn"
+                    "desc": "准备外部字段；建议：QIcon、QBtn"
                 },
                 "after": {
-                    "desc": "Append outer field; Suggestions: QIcon, QBtn"
+                    "desc": "附加外部字段；建议：QIcon、QBtn"
                 },
                 "label": {
-                    "desc": "Slot for label; Used only if 'label-slot' prop is set or the 'label' prop is set; When it is used the text in the 'label' prop is ignored"
+                    "desc": "标签插槽；仅当设置了“label slot”道具或设置了“label”道具时使用；使用时，“label”道具中的文本将被忽略"
                 },
                 "error": {
-                    "desc": "Slot for errors; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "错误插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "hint": {
-                    "desc": "Slot for hint text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "提示文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "counter": {
-                    "desc": "Slot for counter text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "计数器文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "loading": {
-                    "desc": "Override default spinner when component is in loading mode; Suggestion: spinners"
+                    "desc": "组件处于加载模式时覆盖默认微调器；建议：纺纱机"
                 },
                 "selected": {
-                    "desc": "Override default selection slot; Suggestion: QChip"
+                    "desc": "覆盖默认选择槽；建议：QChip"
                 },
                 "before-options": {
-                    "desc": "Template slot for the elements that should be rendered before the list of options"
+                    "desc": "应在选项列表之前呈现的元素的模板槽"
                 },
                 "after-options": {
-                    "desc": "Template slot for the elements that should be rendered after the list of options"
+                    "desc": "应在选项列表之后呈现的元素的模板槽"
                 },
                 "no-option": {
-                    "desc": "What should the menu display after filtering options and none are left to be displayed; Suggestion: <div>",
+                    "desc": "过滤选项后的菜单应该显示什么，而没有留下任何显示选项；建议：＜div＞",
                     "scope": {
                         "inputValue": {
                             "type": "String",
@@ -8917,7 +8971,7 @@ export const tagLists: any = [
                     }
                 },
                 "selected-item": {
-                    "desc": "Override default selection slot; Suggestion: QChip",
+                    "desc": "覆盖默认选择槽；建议：QChip",
                     "scope": {
                         "index": {
                             "type": "Number",
@@ -8966,7 +9020,7 @@ export const tagLists: any = [
                     }
                 },
                 "option": {
-                    "desc": "Customize how options are rendered; Suggestion: QItem",
+                    "desc": "自定义选项的渲染方式；建议：QItem",
                     "scope": {
                         "index": {
                             "type": "Number",
@@ -9017,7 +9071,7 @@ export const tagLists: any = [
             },
             "events": {
                 "virtual-scroll": {
-                    "desc": "Emitted when the virtual scroll occurs",
+                    "desc": "发生虚拟滚动时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -9058,7 +9112,7 @@ export const tagLists: any = [
                     }
                 },
                 "clear": {
-                    "desc": "When using the 'clearable' property, this event is emitted when the clear icon is clicked",
+                    "desc": "使用“clearable”属性时，单击clear图标时会发出此事件",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -9067,7 +9121,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -9077,7 +9131,7 @@ export const tagLists: any = [
                     }
                 },
                 "input-value": {
-                    "desc": "Emitted when the value in the text input changes",
+                    "desc": "当文本输入中的值更改时发出",
                     "params": {
                         "value": {
                             "type": "String",
@@ -9086,7 +9140,7 @@ export const tagLists: any = [
                     }
                 },
                 "remove": {
-                    "desc": "Emitted when an option is removed from selection",
+                    "desc": "从选择中删除选项时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -9107,7 +9161,7 @@ export const tagLists: any = [
                     }
                 },
                 "add": {
-                    "desc": "Emitted when an option is added to the selection",
+                    "desc": "将选项添加到选择中时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -9128,7 +9182,7 @@ export const tagLists: any = [
                     }
                 },
                 "new-value": {
-                    "desc": "Enables creation of new values; Emitted when a new value has been created; You can override 'new-value-mode' property with it",
+                    "desc": "能够创造新的价值观；在创建新值时发出；您可以用它重写“新值模式”属性",
                     "params": {
                         "inputValue": {
                             "type": "String",
@@ -9163,7 +9217,7 @@ export const tagLists: any = [
                     }
                 },
                 "filter": {
-                    "desc": "Emitted when user wants to filter a value",
+                    "desc": "当用户想要筛选值时发出",
                     "params": {
                         "inputValue": {
                             "type": "String",
@@ -9209,10 +9263,10 @@ export const tagLists: any = [
                     }
                 },
                 "filter-abort": {
-                    "desc": "Emitted when a filtering was aborted; Probably a new one was requested?"
+                    "desc": "在中止筛选时发出；可能需要一个新的？"
                 },
                 "popup-show": {
-                    "desc": "Emitted when the select options menu or dialog is shown.",
+                    "desc": "当显示选择选项菜单或对话框时发出。",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -9221,7 +9275,7 @@ export const tagLists: any = [
                     }
                 },
                 "popup-hide": {
-                    "desc": "Emitted when the select options menu or dialog is hidden.",
+                    "desc": "当选择选项菜单或对话框隐藏时发出。",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -9232,7 +9286,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "scrollTo": {
-                    "desc": "Scroll the virtual scroll list to the item with the specified index (0 based)",
+                    "desc": "将虚拟滚动列表滚动到具有指定索引的项目（基于0）",
                     "params": {
                         "index": {
                             "type": [
@@ -9257,10 +9311,10 @@ export const tagLists: any = [
                     }
                 },
                 "reset": {
-                    "desc": "Resets the virtual scroll computations; Needed for custom edge-cases"
+                    "desc": "重置虚拟滚动计算；需要自定义边缘案例"
                 },
                 "refresh": {
-                    "desc": "Refreshes the virtual scroll list; Use it after appending items",
+                    "desc": "刷新虚拟滚动列表；附加项目后使用",
                     "params": {
                         "index": {
                             "type": [
@@ -9272,10 +9326,10 @@ export const tagLists: any = [
                     }
                 },
                 "resetValidation": {
-                    "desc": "Reset validation status"
+                    "desc": "重置验证状态"
                 },
                 "validate": {
-                    "desc": "Trigger a validation",
+                    "desc": "触发验证",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -9295,19 +9349,19 @@ export const tagLists: any = [
                     }
                 },
                 "focus": {
-                    "desc": "Focus component"
+                    "desc": "焦点组件"
                 },
                 "blur": {
-                    "desc": "Blur component (lose focus)"
+                    "desc": "模糊组件（失去焦点）"
                 },
                 "showPopup": {
-                    "desc": "Focus and open popup"
+                    "desc": "聚焦并打开弹出窗口"
                 },
                 "hidePopup": {
-                    "desc": "Hide popup"
+                    "desc": "隐藏弹出窗口"
                 },
                 "removeAtIndex": {
-                    "desc": "Remove selected option located at specific index",
+                    "desc": "删除位于特定索引的所选选项",
                     "params": {
                         "index": {
                             "type": "Number",
@@ -9317,7 +9371,7 @@ export const tagLists: any = [
                     }
                 },
                 "add": {
-                    "desc": "Adds option to model",
+                    "desc": "将选项添加到模型",
                     "params": {
                         "opt": {
                             "type": "Any",
@@ -9331,7 +9385,7 @@ export const tagLists: any = [
                     }
                 },
                 "toggleOption": {
-                    "desc": "Add/remove option from model",
+                    "desc": "从模型中添加/删除选项",
                     "params": {
                         "opt": {
                             "type": "Any",
@@ -9345,7 +9399,7 @@ export const tagLists: any = [
                     }
                 },
                 "getOptionIndex": {
-                    "desc": "Gets current focused option index from menu; It's -1 if no option is focused",
+                    "desc": "从菜单中获取当前关注的选项索引；如果没有选择，则为-1",
                     "returns": {
                         "type": "Number",
                         "desc": "Index of option from menu; It's -1 if no option is focused"
@@ -9353,7 +9407,7 @@ export const tagLists: any = [
                     "addedIn": "v2.5.4"
                 },
                 "setOptionIndex": {
-                    "desc": "Sets option from menu as 'focused'; -1 to focus none",
+                    "desc": "将菜单中的选项设置为“聚焦”-1无焦点",
                     "params": {
                         "index": {
                             "type": "Number",
@@ -9363,7 +9417,7 @@ export const tagLists: any = [
                     }
                 },
                 "moveOptionSelection": {
-                    "desc": "Move selected option from menu by index offset",
+                    "desc": "按索引偏移量移动菜单中的选定选项",
                     "params": {
                         "offset": {
                             "type": "Number",
@@ -9378,7 +9432,7 @@ export const tagLists: any = [
                     }
                 },
                 "filter": {
-                    "desc": "Filter options",
+                    "desc": "过滤器选项",
                     "params": {
                         "value": {
                             "type": "String",
@@ -9391,10 +9445,10 @@ export const tagLists: any = [
                     }
                 },
                 "updateMenuPosition": {
-                    "desc": "Recomputes menu position"
+                    "desc": "重新计算菜单位置"
                 },
                 "updateInputValue": {
-                    "desc": "If 'use-input' is specified, this updates the value that it holds",
+                    "desc": "如果指定了“use input”，则会更新它所包含的值",
                     "params": {
                         "value": {
                             "type": "String",
@@ -9411,7 +9465,7 @@ export const tagLists: any = [
                     }
                 },
                 "isOptionSelected": {
-                    "desc": "Tells if an option is selected",
+                    "desc": "告诉是否选择了某个选项",
                     "params": {
                         "opt": {
                             "type": "Any",
@@ -9425,7 +9479,7 @@ export const tagLists: any = [
                     }
                 },
                 "getEmittingOptionValue": {
-                    "desc": "Get the model value that would be emitted by QSelect when selecting a said option; Also takes into consideration if 'emit-value' is set",
+                    "desc": "获取QSelect在选择所述选项时将发出的模型值；如果设置了“发射值”，也会考虑",
                     "params": {
                         "opt": {
                             "type": "Any",
@@ -9439,7 +9493,7 @@ export const tagLists: any = [
                     }
                 },
                 "getOptionValue": {
-                    "desc": "Get the model value of an option; Takes into consideration 'option-value' (if used), but does not looks for 'emit-value', like getEmittingOptionValue() does",
+                    "desc": "获取一个选项的模型值；考虑“option-value”（如果使用），但不像getEmittingOptionValue（）那样查找“emit-value”",
                     "params": {
                         "opt": {
                             "type": "Any",
@@ -9453,7 +9507,7 @@ export const tagLists: any = [
                     }
                 },
                 "getOptionLabel": {
-                    "desc": "Get the label of an option; Takes into consideration the 'option-label' prop (if used)",
+                    "desc": "获取选项的标签；考虑“选项标签”道具（如果使用）",
                     "params": {
                         "opt": {
                             "type": "Any",
@@ -9467,7 +9521,7 @@ export const tagLists: any = [
                     }
                 },
                 "isOptionDisabled": {
-                    "desc": "Tells if an option is disabled; Takes into consideration 'option-disable' prop (if used)",
+                    "desc": "告诉某个选项是否被禁用；考虑“选项禁用”道具（如果使用）",
                     "params": {
                         "opt": {
                             "type": "Any",
@@ -9484,13 +9538,15 @@ export const tagLists: any = [
             "computedProps": {
                 "hasError": {
                     "type": "Boolean",
-                    "desc": "Whether the component is in error state"
+                    "desc": "组件是否处于错误状态"
                 }
             }
         }
     },
     {
-        name: "q-file", desc: "文件选择器", info: {
+        "name": "q-file",
+        "desc": "文件选择器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/file"
@@ -9498,7 +9554,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms; If not specified, it takes the value of 'for' prop, if it exists",
+                    "desc": "用于指定控件的名称；在处理表单时很有用；如果未指定，则采用值“for”prop（如果存在）",
                     "examples": [
                         "car_id",
                         "car_id"
@@ -9507,12 +9563,12 @@ export const tagLists: any = [
                 },
                 "multiple": {
                     "type": "Boolean",
-                    "desc": "Allow multiple file uploads",
+                    "desc": "允许多个文件上载",
                     "category": "behavior"
                 },
                 "accept": {
                     "type": "String",
-                    "desc": "Comma separated list of unique file type specifiers. Maps to 'accept' attribute of native input type=file element",
+                    "desc": "以逗号分隔的唯一文件类型说明符列表。映射到本机输入类型=文件元素的“accept”属性",
                     "examples": [
                         ".jpg, .pdf, image/*",
                         "image/jpeg, .pdf"
@@ -9521,7 +9577,7 @@ export const tagLists: any = [
                 },
                 "capture": {
                     "type": "String",
-                    "desc": "Optionally, specify that a new file should be captured, and which device should be used to capture that new media of a type defined by the 'accept' prop. Maps to 'capture' attribute of native input type=file element",
+                    "desc": "（可选）指定应捕获新文件，以及应使用哪个设备捕获由“accept”道具定义的类型的新媒体。映射到本机输入类型=文件元素的“capture”属性",
                     "values": [
                         "user",
                         "environment"
@@ -9533,7 +9589,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Maximum size of individual file in bytes",
+                    "desc": "单个文件的最大大小（字节）",
                     "examples": [
                         1024,
                         1048576
@@ -9545,7 +9601,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Maximum size of all files combined in bytes",
+                    "desc": "所有文件的最大大小（以字节为单位）",
                     "category": "behavior"
                 },
                 "max-files": {
@@ -9553,12 +9609,12 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Maximum number of files to contain",
+                    "desc": "要包含的最大文件数",
                     "category": "behavior"
                 },
                 "filter": {
                     "type": "Function",
-                    "desc": "Custom filter for added files; Only files that pass this filter will be added to the queue and uploaded; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "为添加的文件自定义过滤器；只有通过此筛选器的文件才会添加到队列中并上载；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "files": {
                             "type": [
@@ -9578,7 +9634,7 @@ export const tagLists: any = [
                     "category": "behavior"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Must be FileList or Array if using 'multiple' prop; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "部件的型号；如果使用“multiple”道具，则必须是FileList或Array；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -9595,12 +9651,12 @@ export const tagLists: any = [
                 },
                 "error": {
                     "type": "Boolean",
-                    "desc": "Does field have validation errors?",
+                    "desc": "字段是否存在验证错误？",
                     "category": "behavior"
                 },
                 "error-message": {
                     "type": "String",
-                    "desc": "Validation error message (gets displayed only if 'error' is set to 'true')",
+                    "desc": "验证错误消息（仅当“error”设置为“true”时才会显示）",
                     "examples": [
                         "Username must have at least 5 characters"
                     ],
@@ -9608,13 +9664,13 @@ export const tagLists: any = [
                 },
                 "no-error-icon": {
                     "type": "Boolean",
-                    "desc": "Hide error icon when there is an error",
+                    "desc": "出现错误时隐藏错误图标",
                     "category": "content"
                 },
                 "rules": {
                     "type": "Array",
                     "tsType": "ValidationRule",
-                    "desc": "Array of Functions/Strings; If String, then it must be a name of one of the embedded validation rules",
+                    "desc": "函数/字符串数组；如果是String，则它必须是嵌入的验证规则之一的名称",
                     "examples": [
                         ":rules=\"[ val => val.length <= 3 || 'Please use maximum 3 characters' ]\"",
                         ":rules=\"[ 'fulltime' ]\"",
@@ -9624,7 +9680,7 @@ export const tagLists: any = [
                 },
                 "reactive-rules": {
                     "type": "Boolean",
-                    "desc": "By default a change in the rules does not trigger a new validation until the model changes; If set to true then a change in the rules will trigger a validation; Has a performance penalty, so use it only when you really need it",
+                    "desc": "默认情况下，规则的更改在模型更改之前不会触发新的验证；如果设置为true，则规则的更改将触发验证；性能会受到影响，所以只有在真正需要时才使用",
                     "category": "behavior"
                 },
                 "lazy-rules": {
@@ -9632,7 +9688,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "If set to boolean true then it checks validation status against the 'rules' only after field loses focus for first time; If set to 'ondemand' then it will trigger only when component's validate() method is manually called or when the wrapper QForm submits itself",
+                    "desc": "如果设置为布尔值true，则只有在字段第一次失去焦点后，它才会根据“规则”检查验证状态；如果设置为“ondemand”，则仅当手动调用组件的validate（）方法或包装器QForm提交自身时才会触发",
                     "values": [
                         "(Boolean) true",
                         "(Boolean) false",
@@ -9642,7 +9698,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "A text label that will “float” up above the input field, once the field gets focus",
+                    "desc": "一旦字段获得焦点，文本标签将“浮动”在输入字段上方",
                     "examples": [
                         "Username"
                     ],
@@ -9650,12 +9706,12 @@ export const tagLists: any = [
                 },
                 "stack-label": {
                     "type": "Boolean",
-                    "desc": "Label will be always shown above the field regardless of field content (if any)",
+                    "desc": "无论字段内容如何（如果有），标签都将始终显示在字段上方",
                     "category": "content"
                 },
                 "hint": {
                     "type": "String",
-                    "desc": "Helper (hint) text which gets placed below your wrapped form component",
+                    "desc": "放置在包装表单组件下方的帮助程序（提示）文本",
                     "examples": [
                         "Fill in between 3 and 12 characters"
                     ],
@@ -9663,12 +9719,12 @@ export const tagLists: any = [
                 },
                 "hide-hint": {
                     "type": "Boolean",
-                    "desc": "Hide the helper (hint) text when field doesn't have focus",
+                    "desc": "当字段没有焦点时隐藏辅助对象（提示）文本",
                     "category": "content"
                 },
                 "prefix": {
                     "type": "String",
-                    "desc": "Prefix",
+                    "desc": "前缀",
                     "examples": [
                         "$"
                     ],
@@ -9676,7 +9732,7 @@ export const tagLists: any = [
                 },
                 "suffix": {
                     "type": "String",
-                    "desc": "Suffix",
+                    "desc": "后缀",
                     "examples": [
                         "@gmail.com"
                     ],
@@ -9684,7 +9740,7 @@ export const tagLists: any = [
                 },
                 "label-color": {
                     "type": "String",
-                    "desc": "Color name for the label from the Quasar Color Palette; Overrides the 'color' prop; The difference from 'color' prop is that the label will always have this color, even when field is not focused",
+                    "desc": "Quasar调色板中标签的颜色名称；覆盖“color”道具；与“color”道具的不同之处在于，即使字段未聚焦，标签也将始终具有此颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -9693,7 +9749,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -9702,7 +9758,7 @@ export const tagLists: any = [
                 },
                 "bg-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -9711,22 +9767,22 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "loading": {
                     "type": "Boolean",
-                    "desc": "Signals the user a process is in progress by displaying a spinner; Spinner can be customized by using the 'loading' slot.",
+                    "desc": "通过显示微调器向用户发出进程正在进行的信号；Spinner可以通过使用“加载”插槽进行自定义。",
                     "category": "behavior|content"
                 },
                 "clearable": {
                     "type": "Boolean",
-                    "desc": "Appends clearable icon when a value (not undefined or null) is set; When clicked, model becomes null",
+                    "desc": "当设置了一个值（未定义或为空）时，附加可清除的图标；单击时，模型变为空",
                     "category": "behavior|content"
                 },
                 "clear-icon": {
                     "type": "String",
-                    "desc": "Custom icon to use for the clear button when using along with 'clearable' prop",
+                    "desc": "与“可清除”道具一起使用时用于清除按钮的自定义图标",
                     "examples": [
                         "close"
                     ],
@@ -9734,17 +9790,17 @@ export const tagLists: any = [
                 },
                 "filled": {
                     "type": "Boolean",
-                    "desc": "Use 'filled' design for the field",
+                    "desc": "对字段使用“填充”设计",
                     "category": "style"
                 },
                 "outlined": {
                     "type": "Boolean",
-                    "desc": "Use 'outlined' design for the field",
+                    "desc": "现场采用“轮廓”设计",
                     "category": "style"
                 },
                 "borderless": {
                     "type": "Boolean",
-                    "desc": "Use 'borderless' design for the field",
+                    "desc": "对字段使用“无边框”设计",
                     "category": "style"
                 },
                 "standout": {
@@ -9752,7 +9808,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Use 'standout' design for the field; Specifies classes to be applied when focused (overriding default ones)",
+                    "desc": "现场采用“突出”设计；指定聚焦时要应用的类（覆盖默认类）",
                     "examples": [
                         "standout",
                         "standout=\"bg-primary text-white\""
@@ -9761,62 +9817,62 @@ export const tagLists: any = [
                 },
                 "label-slot": {
                     "type": "Boolean",
-                    "desc": "Enables label slot; You need to set it to force use of the 'label' slot if the 'label' prop is not set",
+                    "desc": "启用标签槽；如果未设置“label”道具，则需要将其设置为强制使用“label“插槽",
                     "category": "content"
                 },
                 "bottom-slots": {
                     "type": "Boolean",
-                    "desc": "Enables bottom slots ('error', 'hint', 'counter')",
+                    "desc": "启用底部插槽（“error”、“hint”、“counter”）",
                     "category": "content"
                 },
                 "hide-bottom-space": {
                     "type": "Boolean",
-                    "desc": "Do not reserve space for hint/error/counter anymore when these are not used; As a result, it also disables the animation for those; It also allows the hint/error area to stretch vertically based on its content",
+                    "desc": "当提示/错误/计数器不使用时，不要再为它们保留空间；因此，它也会禁用这些对象的动画；它还允许提示/错误区域根据其内容进行垂直拉伸",
                     "category": "style"
                 },
                 "counter": {
                     "type": "Boolean",
-                    "desc": "Show an automatic counter on bottom right",
+                    "desc": "在右下角显示自动计数器",
                     "category": "content"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a small standard border-radius for a squared shape of the component",
+                    "desc": "为零部件的方形应用小的标准边界半径",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Remove border-radius so borders are squared; Overrides 'rounded' prop",
+                    "desc": "删除边界半径，使边界为方形；覆盖“圆角”道具",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "item-aligned": {
                     "type": "Boolean",
-                    "desc": "Match inner content alignment to that of QItem",
+                    "desc": "将内部内容对齐方式与QItem的对齐方式相匹配",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "autofocus": {
                     "type": "Boolean",
-                    "desc": "Focus field on initial component render",
+                    "desc": "初始组件渲染上的焦点场",
                     "category": "behavior"
                 },
                 "for": {
                     "type": "String",
-                    "desc": "Used to specify the 'id' of the control and also the 'for' attribute of the label that wraps it; If no 'name' prop is specified, then it is used for this attribute as well",
+                    "desc": "用于指定控件的“id”以及包装控件的标签的“for”属性；如果未指定“name”道具，则也会将其用于此属性",
                     "examples": [
                         "myFieldsId"
                     ],
@@ -9824,7 +9880,7 @@ export const tagLists: any = [
                 },
                 "append": {
                     "type": "Boolean",
-                    "desc": "Append file(s) to current model rather than replacing them; Has effect only when using 'multiple' mode",
+                    "desc": "将文件附加到当前模型，而不是替换它们；仅在使用“多重”模式时有效",
                     "category": "behavior"
                 },
                 "display-value": {
@@ -9832,7 +9888,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Override default selection string, if not using 'file' or 'selected' scoped slots and if not using 'use-chips' prop",
+                    "desc": "如果未使用“file”或“selected”作用域插槽，并且未使用“use chips”道具，则覆盖默认选择字符串",
                     "examples": [
                         "Options: x, y, z"
                     ],
@@ -9840,12 +9896,12 @@ export const tagLists: any = [
                 },
                 "use-chips": {
                     "type": "Boolean",
-                    "desc": "Use QChip to show picked files",
+                    "desc": "使用QChip显示拾取的文件",
                     "category": "selection"
                 },
                 "counter-label": {
                     "type": "Function",
-                    "desc": "Label for the counter; The 'counter' prop is necessary to enable this one",
+                    "desc": "计数器标签；“计数器”道具是启用此道具所必需的",
                     "params": {
                         "props": {
                             "type": "Object",
@@ -9889,7 +9945,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -9903,7 +9959,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the underlying selection container",
+                    "desc": "要归因于基础选择容器的类定义",
                     "examples": [
                         "my-special-class",
                         ":input-class=\"{ 'my-special-class': <condition> }\""
@@ -9917,7 +9973,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the underlying selection container",
+                    "desc": "要归因于基础选择容器的样式定义",
                     "examples": [
                         "background-color: #ff0000",
                         ":input-style=\"{ backgroundColor: '#ff0000' }\""
@@ -9927,37 +9983,37 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Field main content"
+                    "desc": "字段主要内容"
                 },
                 "prepend": {
-                    "desc": "Prepend inner field; Suggestions: QIcon, QBtn"
+                    "desc": "预备内场；建议：QIcon、QBtn"
                 },
                 "append": {
-                    "desc": "Append to inner field; Suggestions: QIcon, QBtn"
+                    "desc": "附加到内部字段；建议：QIcon、QBtn"
                 },
                 "before": {
-                    "desc": "Prepend outer field; Suggestions: QIcon, QBtn"
+                    "desc": "准备外部字段；建议：QIcon、QBtn"
                 },
                 "after": {
-                    "desc": "Append outer field; Suggestions: QIcon, QBtn"
+                    "desc": "附加外部字段；建议：QIcon、QBtn"
                 },
                 "label": {
-                    "desc": "Slot for label; Used only if 'label-slot' prop is set or the 'label' prop is set; When it is used the text in the 'label' prop is ignored"
+                    "desc": "标签插槽；仅当设置了“label slot”道具或设置了“label”道具时使用；使用时，“label”道具中的文本将被忽略"
                 },
                 "error": {
-                    "desc": "Slot for errors; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "错误插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "hint": {
-                    "desc": "Slot for hint text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "提示文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "counter": {
-                    "desc": "Slot for counter text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "计数器文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "loading": {
-                    "desc": "Override default spinner when component is in loading mode; Use in conjunction with 'loading' prop"
+                    "desc": "组件处于加载模式时覆盖默认微调器；与“加载”道具一起使用"
                 },
                 "file": {
-                    "desc": "Override default node to render a file from the user picked list",
+                    "desc": "覆盖默认节点以从用户拾取的列表中渲染文件",
                     "scope": {
                         "index": {
                             "type": "Number",
@@ -9975,7 +10031,7 @@ export const tagLists: any = [
                     }
                 },
                 "selected": {
-                    "desc": "Override default selection slot; Suggestion: QChip",
+                    "desc": "覆盖默认选择槽；建议：QChip",
                     "scope": {
                         "files": {
                             "type": [
@@ -9994,7 +10050,7 @@ export const tagLists: any = [
             },
             "events": {
                 "rejected": {
-                    "desc": "Emitted after files are picked and some do not pass the validation props (accept, max-file-size, max-total-size, filter, etc)",
+                    "desc": "在拾取文件后发出，有些文件未通过验证道具（accept、最大文件大小、最大总大小、筛选器等）",
                     "params": {
                         "rejectedEntries": {
                             "type": "Array",
@@ -10004,7 +10060,7 @@ export const tagLists: any = [
                     }
                 },
                 "clear": {
-                    "desc": "When using the 'clearable' property, this event is emitted when the clear icon is clicked",
+                    "desc": "使用“clearable”属性时，单击clear图标时会发出此事件",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -10013,7 +10069,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -10025,7 +10081,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "pickFiles": {
-                    "desc": "Trigger file pick; Must be called as a direct consequence of user interaction (eg. in a click handler), due to browsers security policy",
+                    "desc": "触发文件拾取；由于浏览器的安全策略，必须作为用户交互的直接结果（例如在点击处理程序中）调用",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -10034,7 +10090,7 @@ export const tagLists: any = [
                     }
                 },
                 "addFiles": {
-                    "desc": "Add files programmatically",
+                    "desc": "以编程方式添加文件",
                     "params": {
                         "files": {
                             "type": [
@@ -10047,10 +10103,10 @@ export const tagLists: any = [
                     }
                 },
                 "resetValidation": {
-                    "desc": "Reset validation status"
+                    "desc": "重置验证状态"
                 },
                 "validate": {
-                    "desc": "Trigger a validation",
+                    "desc": "触发验证",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -10070,13 +10126,13 @@ export const tagLists: any = [
                     }
                 },
                 "focus": {
-                    "desc": "Focus component"
+                    "desc": "焦点组件"
                 },
                 "blur": {
-                    "desc": "Blur component (lose focus)"
+                    "desc": "模糊组件（失去焦点）"
                 },
                 "removeAtIndex": {
-                    "desc": "Remove file located at specific index in the model",
+                    "desc": "删除位于模型中特定索引处的文件",
                     "params": {
                         "index": {
                             "type": "Number",
@@ -10086,7 +10142,7 @@ export const tagLists: any = [
                     }
                 },
                 "removeFile": {
-                    "desc": "Remove specified file from the model",
+                    "desc": "从模型中删除指定的文件",
                     "params": {
                         "file": {
                             "type": "File",
@@ -10096,7 +10152,7 @@ export const tagLists: any = [
                     }
                 },
                 "getNativeElement": {
-                    "desc": "DEPRECATED; Access 'nativeEl' directly; Gets the native input DOM Element",
+                    "desc": "不赞成；直接访问“nativeEl”；获取本机输入DOM元素",
                     "returns": {
                         "type": "Element",
                         "desc": "The underlying native input DOM Element"
@@ -10106,18 +10162,20 @@ export const tagLists: any = [
             "computedProps": {
                 "hasError": {
                     "type": "Boolean",
-                    "desc": "Whether the component is in error state"
+                    "desc": "组件是否处于错误状态"
                 },
                 "nativeEl": {
                     "type": "Element",
-                    "desc": "The native input DOM Element",
+                    "desc": "本机输入DOM元素",
                     "addedIn": "v2.10.1"
                 }
             }
         }
     },
     {
-        name: "q-form", desc: "表单", info: {
+        "name": "q-form",
+        "desc": "表单",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/form"
@@ -10125,33 +10183,33 @@ export const tagLists: any = [
             "props": {
                 "autofocus": {
                     "type": "Boolean",
-                    "desc": "Focus first focusable element on initial component render",
+                    "desc": "将第一个可聚焦元素聚焦在初始组件渲染上",
                     "category": "behavior"
                 },
                 "no-error-focus": {
                     "type": "Boolean",
-                    "desc": "Do not try to focus on first component that has a validation error when submitting form",
+                    "desc": "提交表单时，不要试图将注意力集中在第一个出现验证错误的组件上",
                     "category": "behavior"
                 },
                 "no-reset-focus": {
                     "type": "Boolean",
-                    "desc": "Do not try to focus on first component when resetting form",
+                    "desc": "重置表单时不要试图将注意力集中在第一个组件上",
                     "category": "behavior"
                 },
                 "greedy": {
                     "type": "Boolean",
-                    "desc": "Validate all fields in form (by default it stops after finding the first invalid field with synchronous validation)",
+                    "desc": "验证表单中的所有字段（默认情况下，在通过同步验证找到第一个无效字段后停止）",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "submit": {
-                    "desc": "Emitted when all validations have passed when tethered to a submit button",
+                    "desc": "当连接到提交按钮时所有验证都已通过时发出",
                     "params": {
                         "evt": {
                             "type": [
@@ -10163,13 +10221,13 @@ export const tagLists: any = [
                     }
                 },
                 "reset": {
-                    "desc": "Emitted when all validations have been reset when tethered to a reset button; It is recommended to manually reset the wrapped components models in this handler"
+                    "desc": "当连接到重置按钮时，所有验证都已重置时发出；建议手动重置此处理程序中的包装组件模型"
                 },
                 "validation-success": {
-                    "desc": "Emitted after a validation was triggered and all inner Quasar components models are valid"
+                    "desc": "在触发验证且所有内部Quasar组件模型有效后发出"
                 },
                 "validation-error": {
-                    "desc": "Emitted after a validation was triggered and at least one of the inner Quasar components models are NOT valid",
+                    "desc": "在触发验证且至少有一个内部Quasar组件模型无效后发出",
                     "params": {
                         "ref": {
                             "type": "Component",
@@ -10180,10 +10238,10 @@ export const tagLists: any = [
             },
             "methods": {
                 "focus": {
-                    "desc": "Focus on first focusable element/component in the form"
+                    "desc": "关注表单中的第一个可聚焦元素/组件"
                 },
                 "validate": {
-                    "desc": "Triggers a validation on all applicable inner Quasar components",
+                    "desc": "触发对所有适用的内部Quasar组件的验证",
                     "params": {
                         "shouldFocus": {
                             "type": "Boolean",
@@ -10199,10 +10257,10 @@ export const tagLists: any = [
                     }
                 },
                 "resetValidation": {
-                    "desc": "Resets the validation on all applicable inner Quasar components"
+                    "desc": "重置所有适用的内部Quasar组件的验证"
                 },
                 "submit": {
-                    "desc": "Manually trigger form validation and submit",
+                    "desc": "手动触发表单验证并提交",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -10211,7 +10269,7 @@ export const tagLists: any = [
                     }
                 },
                 "reset": {
-                    "desc": "Manually trigger form reset",
+                    "desc": "手动触发表单重置",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -10220,7 +10278,7 @@ export const tagLists: any = [
                     }
                 },
                 "getValidationComponents": {
-                    "desc": "Get array of children vue components that support validation",
+                    "desc": "获取支持验证的子级vue组件数组",
                     "returns": {
                         "type": "Array",
                         "desc": "Vue components that support Quasar validation API"
@@ -10230,7 +10288,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-field", desc: "字段", info: {
+        "name": "q-field",
+        "desc": "字段",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/field"
@@ -10238,17 +10298,17 @@ export const tagLists: any = [
             "props": {
                 "model-value": {
                     "type": "Any",
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "category": "model"
                 },
                 "error": {
                     "type": "Boolean",
-                    "desc": "Does field have validation errors?",
+                    "desc": "字段是否存在验证错误？",
                     "category": "behavior"
                 },
                 "error-message": {
                     "type": "String",
-                    "desc": "Validation error message (gets displayed only if 'error' is set to 'true')",
+                    "desc": "验证错误消息（仅当“error”设置为“true”时才会显示）",
                     "examples": [
                         "Username must have at least 5 characters"
                     ],
@@ -10256,13 +10316,13 @@ export const tagLists: any = [
                 },
                 "no-error-icon": {
                     "type": "Boolean",
-                    "desc": "Hide error icon when there is an error",
+                    "desc": "出现错误时隐藏错误图标",
                     "category": "content"
                 },
                 "rules": {
                     "type": "Array",
                     "tsType": "ValidationRule",
-                    "desc": "Array of Functions/Strings; If String, then it must be a name of one of the embedded validation rules",
+                    "desc": "函数/字符串数组；如果是String，则它必须是嵌入的验证规则之一的名称",
                     "examples": [
                         ":rules=\"[ val => val.length <= 3 || 'Please use maximum 3 characters' ]\"",
                         ":rules=\"[ 'fulltime' ]\"",
@@ -10272,7 +10332,7 @@ export const tagLists: any = [
                 },
                 "reactive-rules": {
                     "type": "Boolean",
-                    "desc": "By default a change in the rules does not trigger a new validation until the model changes; If set to true then a change in the rules will trigger a validation; Has a performance penalty, so use it only when you really need it",
+                    "desc": "默认情况下，规则的更改在模型更改之前不会触发新的验证；如果设置为true，则规则的更改将触发验证；性能会受到影响，所以只有在真正需要时才使用",
                     "category": "behavior"
                 },
                 "lazy-rules": {
@@ -10280,7 +10340,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "If set to boolean true then it checks validation status against the 'rules' only after field loses focus for first time; If set to 'ondemand' then it will trigger only when component's validate() method is manually called or when the wrapper QForm submits itself",
+                    "desc": "如果设置为布尔值true，则只有在字段第一次失去焦点后，它才会根据“规则”检查验证状态；如果设置为“ondemand”，则仅当手动调用组件的validate（）方法或包装器QForm提交自身时才会触发",
                     "values": [
                         "(Boolean) true",
                         "(Boolean) false",
@@ -10290,7 +10350,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "A text label that will “float” up above the input field, once the field gets focus",
+                    "desc": "一旦字段获得焦点，文本标签将“浮动”在输入字段上方",
                     "examples": [
                         "Username"
                     ],
@@ -10298,12 +10358,12 @@ export const tagLists: any = [
                 },
                 "stack-label": {
                     "type": "Boolean",
-                    "desc": "Label will be always shown above the field regardless of field content (if any)",
+                    "desc": "无论字段内容如何（如果有），标签都将始终显示在字段上方",
                     "category": "content"
                 },
                 "hint": {
                     "type": "String",
-                    "desc": "Helper (hint) text which gets placed below your wrapped form component",
+                    "desc": "放置在包装表单组件下方的帮助程序（提示）文本",
                     "examples": [
                         "Fill in between 3 and 12 characters"
                     ],
@@ -10311,12 +10371,12 @@ export const tagLists: any = [
                 },
                 "hide-hint": {
                     "type": "Boolean",
-                    "desc": "Hide the helper (hint) text when field doesn't have focus",
+                    "desc": "当字段没有焦点时隐藏辅助对象（提示）文本",
                     "category": "content"
                 },
                 "prefix": {
                     "type": "String",
-                    "desc": "Prefix",
+                    "desc": "前缀",
                     "examples": [
                         "$"
                     ],
@@ -10324,7 +10384,7 @@ export const tagLists: any = [
                 },
                 "suffix": {
                     "type": "String",
-                    "desc": "Suffix",
+                    "desc": "后缀",
                     "examples": [
                         "@gmail.com"
                     ],
@@ -10332,7 +10392,7 @@ export const tagLists: any = [
                 },
                 "label-color": {
                     "type": "String",
-                    "desc": "Color name for the label from the Quasar Color Palette; Overrides the 'color' prop; The difference from 'color' prop is that the label will always have this color, even when field is not focused",
+                    "desc": "Quasar调色板中标签的颜色名称；覆盖“color”道具；与“color”道具的不同之处在于，即使字段未聚焦，标签也将始终具有此颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -10341,7 +10401,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -10350,7 +10410,7 @@ export const tagLists: any = [
                 },
                 "bg-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -10359,22 +10419,22 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "loading": {
                     "type": "Boolean",
-                    "desc": "Signals the user a process is in progress by displaying a spinner; Spinner can be customized by using the 'loading' slot.",
+                    "desc": "通过显示微调器向用户发出进程正在进行的信号；Spinner可以通过使用“加载”插槽进行自定义。",
                     "category": "behavior|content"
                 },
                 "clearable": {
                     "type": "Boolean",
-                    "desc": "Appends clearable icon when a value (not undefined or null) is set; When clicked, model becomes null",
+                    "desc": "当设置了一个值（未定义或为空）时，附加可清除的图标；单击时，模型变为空",
                     "category": "behavior|content"
                 },
                 "clear-icon": {
                     "type": "String",
-                    "desc": "Custom icon to use for the clear button when using along with 'clearable' prop",
+                    "desc": "与“可清除”道具一起使用时用于清除按钮的自定义图标",
                     "examples": [
                         "close"
                     ],
@@ -10382,17 +10442,17 @@ export const tagLists: any = [
                 },
                 "filled": {
                     "type": "Boolean",
-                    "desc": "Use 'filled' design for the field",
+                    "desc": "对字段使用“填充”设计",
                     "category": "style"
                 },
                 "outlined": {
                     "type": "Boolean",
-                    "desc": "Use 'outlined' design for the field",
+                    "desc": "现场采用“轮廓”设计",
                     "category": "style"
                 },
                 "borderless": {
                     "type": "Boolean",
-                    "desc": "Use 'borderless' design for the field",
+                    "desc": "对字段使用“无边框”设计",
                     "category": "style"
                 },
                 "standout": {
@@ -10400,7 +10460,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Use 'standout' design for the field; Specifies classes to be applied when focused (overriding default ones)",
+                    "desc": "现场采用“突出”设计；指定聚焦时要应用的类（覆盖默认类）",
                     "examples": [
                         "standout",
                         "standout=\"bg-primary text-white\""
@@ -10409,62 +10469,62 @@ export const tagLists: any = [
                 },
                 "label-slot": {
                     "type": "Boolean",
-                    "desc": "Enables label slot; You need to set it to force use of the 'label' slot if the 'label' prop is not set",
+                    "desc": "启用标签槽；如果未设置“label”道具，则需要将其设置为强制使用“label“插槽",
                     "category": "content"
                 },
                 "bottom-slots": {
                     "type": "Boolean",
-                    "desc": "Enables bottom slots ('error', 'hint', 'counter')",
+                    "desc": "启用底部插槽（“error”、“hint”、“counter”）",
                     "category": "content"
                 },
                 "hide-bottom-space": {
                     "type": "Boolean",
-                    "desc": "Do not reserve space for hint/error/counter anymore when these are not used; As a result, it also disables the animation for those; It also allows the hint/error area to stretch vertically based on its content",
+                    "desc": "当提示/错误/计数器不使用时，不要再为它们保留空间；因此，它也会禁用这些对象的动画；它还允许提示/错误区域根据其内容进行垂直拉伸",
                     "category": "style"
                 },
                 "counter": {
                     "type": "Boolean",
-                    "desc": "Show an automatic counter on bottom right",
+                    "desc": "在右下角显示自动计数器",
                     "category": "content"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a small standard border-radius for a squared shape of the component",
+                    "desc": "为零部件的方形应用小的标准边界半径",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Remove border-radius so borders are squared; Overrides 'rounded' prop",
+                    "desc": "删除边界半径，使边界为方形；覆盖“圆角”道具",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "item-aligned": {
                     "type": "Boolean",
-                    "desc": "Match inner content alignment to that of QItem",
+                    "desc": "将内部内容对齐方式与QItem的对齐方式相匹配",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "autofocus": {
                     "type": "Boolean",
-                    "desc": "Focus field on initial component render",
+                    "desc": "初始组件渲染上的焦点场",
                     "category": "behavior"
                 },
                 "for": {
                     "type": "String",
-                    "desc": "Used to specify the 'id' of the control and also the 'for' attribute of the label that wraps it; If no 'name' prop is specified, then it is used for this attribute as well",
+                    "desc": "用于指定控件的“id”以及包装控件的标签的“for”属性；如果未指定“name”道具，则也会将其用于此属性",
                     "examples": [
                         "myFieldsId"
                     ],
@@ -10472,7 +10532,7 @@ export const tagLists: any = [
                 },
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms; If not specified, it takes the value of 'for' prop, if it exists",
+                    "desc": "用于指定控件的名称；在处理表单时很有用；如果未指定，则采用值“for”prop（如果存在）",
                     "examples": [
                         "car_id"
                     ],
@@ -10483,43 +10543,43 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Specify a max length of model",
+                    "desc": "指定模型的最大长度",
                     "category": "model"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Field main content"
+                    "desc": "字段主要内容"
                 },
                 "prepend": {
-                    "desc": "Prepend inner field; Suggestions: QIcon, QBtn"
+                    "desc": "预备内场；建议：QIcon、QBtn"
                 },
                 "append": {
-                    "desc": "Append to inner field; Suggestions: QIcon, QBtn"
+                    "desc": "附加到内部字段；建议：QIcon、QBtn"
                 },
                 "before": {
-                    "desc": "Prepend outer field; Suggestions: QIcon, QBtn"
+                    "desc": "准备外部字段；建议：QIcon、QBtn"
                 },
                 "after": {
-                    "desc": "Append outer field; Suggestions: QIcon, QBtn"
+                    "desc": "附加外部字段；建议：QIcon、QBtn"
                 },
                 "label": {
-                    "desc": "Slot for label; Used only if 'label-slot' prop is set or the 'label' prop is set; When it is used the text in the 'label' prop is ignored"
+                    "desc": "标签插槽；仅当设置了“label slot”道具或设置了“label”道具时使用；使用时，“label”道具中的文本将被忽略"
                 },
                 "error": {
-                    "desc": "Slot for errors; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "错误插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "hint": {
-                    "desc": "Slot for hint text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "提示文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "counter": {
-                    "desc": "Slot for counter text; Enabled only if 'bottom-slots' prop is used; Suggestion: <div>"
+                    "desc": "计数器文本插槽；仅当使用“底部插槽”道具时才启用；建议：＜div＞"
                 },
                 "loading": {
-                    "desc": "Override default spinner when component is in loading mode; Use in conjunction with 'loading' prop"
+                    "desc": "组件处于加载模式时覆盖默认微调器；与“加载”道具一起使用"
                 },
                 "control": {
-                    "desc": "Slot for controls; Suggestion QSlider, QRange, QKnob, ...",
+                    "desc": "控件插槽；建议QSlider，QRange，QKnob。。。",
                     "scope": {
                         "id": {
                             "type": "String",
@@ -10576,7 +10636,7 @@ export const tagLists: any = [
             },
             "events": {
                 "clear": {
-                    "desc": "When using the 'clearable' property, this event is emitted when the clear icon is clicked",
+                    "desc": "使用“clearable”属性时，单击clear图标时会发出此事件",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -10585,7 +10645,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:model-value": {
-                    "desc": "Emitted when the model changes, only when used with 'clearable' or the 'control' scoped slot.",
+                    "desc": "当模型更改时发出，仅当与“clearable”或“control”范围的插槽一起使用时发出。",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -10595,7 +10655,7 @@ export const tagLists: any = [
                     }
                 },
                 "focus": {
-                    "desc": "Emitted when component gets focused",
+                    "desc": "组件聚焦时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -10604,7 +10664,7 @@ export const tagLists: any = [
                     }
                 },
                 "blur": {
-                    "desc": "Emitted when component loses focus",
+                    "desc": "组件失去焦点时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -10615,10 +10675,10 @@ export const tagLists: any = [
             },
             "methods": {
                 "resetValidation": {
-                    "desc": "Reset validation status"
+                    "desc": "重置验证状态"
                 },
                 "validate": {
-                    "desc": "Trigger a validation",
+                    "desc": "触发验证",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -10638,22 +10698,24 @@ export const tagLists: any = [
                     }
                 },
                 "focus": {
-                    "desc": "Focus field"
+                    "desc": "聚焦场"
                 },
                 "blur": {
-                    "desc": "Blur field (lose focus)"
+                    "desc": "模糊场（失去焦点）"
                 }
             },
             "computedProps": {
                 "hasError": {
                     "type": "Boolean",
-                    "desc": "Whether the component is in error state"
+                    "desc": "组件是否处于错误状态"
                 }
             }
         }
     },
     {
-        name: "q-radio", desc: "单选框", info: {
+        "name": "q-radio",
+        "desc": "单选框",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/radio"
@@ -10661,7 +10723,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -10669,7 +10731,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -10679,7 +10741,7 @@ export const tagLists: any = [
                     "category": "style"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -10701,7 +10763,7 @@ export const tagLists: any = [
                         "undefined"
                     ],
                     "required": true,
-                    "desc": "The actual value of the option with which model value is changed",
+                    "desc": "用于更改模型值的选项的实际值",
                     "examples": [
                         "opt1",
                         50
@@ -10710,7 +10772,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "Label to display along the radio control (or use the default slot instead of this prop)",
+                    "desc": "沿无线电控制显示的标签（或使用默认插槽而不是此道具）",
                     "examples": [
                         "label=\"Option 1\""
                     ],
@@ -10718,12 +10780,12 @@ export const tagLists: any = [
                 },
                 "left-label": {
                     "type": "Boolean",
-                    "desc": "Label (if any specified) should be displayed on the left side of the checkbox",
+                    "desc": "标签（如果指定）应显示在复选框的左侧",
                     "category": "label"
                 },
                 "checked-icon": {
                     "type": "String",
-                    "desc": "The icon to be used when selected (instead of the default design)",
+                    "desc": "选择时要使用的图标（而不是默认设计）",
                     "examples": [
                         "visibility"
                     ],
@@ -10732,7 +10794,7 @@ export const tagLists: any = [
                 },
                 "unchecked-icon": {
                     "type": "String",
-                    "desc": "The icon to be used when un-selected (instead of the default design)",
+                    "desc": "取消选择时要使用的图标（而不是默认设计）",
                     "examples": [
                         "visibility_off"
                     ],
@@ -10741,7 +10803,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -10750,22 +10812,22 @@ export const tagLists: any = [
                 },
                 "keep-color": {
                     "type": "Boolean",
-                    "desc": "Should the color (if specified any) be kept when checkbox is unticked?",
+                    "desc": "取消选中复选框时是否应保留颜色（如果指定）？",
                     "category": "behavior"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "tabindex": {
@@ -10773,7 +10835,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -10783,12 +10845,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot can be used as label, unless 'label' prop is specified; Suggestion: string"
+                    "desc": "默认槽可以用作标签，除非指定了“label”道具；建议：字符串"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -10805,13 +10867,15 @@ export const tagLists: any = [
             },
             "methods": {
                 "set": {
-                    "desc": "Sets the Radio's v-model to equal the val"
+                    "desc": "将收音机的v型设置为等于val"
                 }
             }
         }
     },
     {
-        name: "q-checkbox", desc: "复选框", info: {
+        "name": "q-checkbox",
+        "desc": "复选框",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/checkbox"
@@ -10819,7 +10883,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -10827,7 +10891,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -10837,7 +10901,7 @@ export const tagLists: any = [
                     "category": "style"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -10852,7 +10916,7 @@ export const tagLists: any = [
                 },
                 "val": {
                     "type": "Any",
-                    "desc": "Works when model ('value') is Array. It tells the component which value should add/remove when ticked/unticked",
+                    "desc": "当模型（“value”）为Array时有效。它告诉组件在勾选/取消勾选时应添加/删除哪个值",
                     "examples": [
                         "car"
                     ],
@@ -10860,7 +10924,7 @@ export const tagLists: any = [
                 },
                 "true-value": {
                     "type": "Any",
-                    "desc": "What model value should be considered as checked/ticked/on?",
+                    "desc": "检查/勾选/打开时应考虑哪些型号值？",
                     "default": true,
                     "examples": [
                         "Agreed"
@@ -10870,7 +10934,7 @@ export const tagLists: any = [
                 },
                 "false-value": {
                     "type": "Any",
-                    "desc": "What model value should be considered as unchecked/unticked/off?",
+                    "desc": "什么模型值应该被视为未检查/未检查/关闭？",
                     "default": false,
                     "examples": [
                         "Disagree"
@@ -10880,7 +10944,7 @@ export const tagLists: any = [
                 },
                 "indeterminate-value": {
                     "type": "Any",
-                    "desc": "What model value should be considered as 'indeterminate'?",
+                    "desc": "什么模型值应该被视为“不确定”？",
                     "default": null,
                     "examples": [
                         0,
@@ -10891,7 +10955,7 @@ export const tagLists: any = [
                 },
                 "toggle-order": {
                     "type": "String",
-                    "desc": "Determines toggle order of the two states ('t' stands for state of true, 'f' for state of false); If 'toggle-indeterminate' is true, then the order is: indet -> first state -> second state -> indet (and repeat), otherwise: indet -> first state -> second state -> first state -> second state -> ...",
+                    "desc": "确定两种状态的切换顺序（'t'表示true的状态，'f'表示false的状态）；如果“toggle undefined”为true，则顺序为：indet->第一状态->第二状态->indet（and repeat），否则：indet-->第一状态->第一状态->第二状态->第一状态->二状态->。。。",
                     "default": "tf",
                     "values": [
                         "tf",
@@ -10902,12 +10966,12 @@ export const tagLists: any = [
                 },
                 "toggle-indeterminate": {
                     "type": "Boolean",
-                    "desc": "When user clicks/taps on the component, should we toggle through the indeterminate state too?",
+                    "desc": "当用户点击/点击组件时，我们是否也应该切换到不确定状态？",
                     "category": "behavior"
                 },
                 "label": {
                     "type": "String",
-                    "desc": "Label to display along the component (or use the default slot instead of this prop)",
+                    "desc": "沿组件显示的标签（或使用默认槽而不是此道具）",
                     "examples": [
                         "I agree with the Terms and Conditions"
                     ],
@@ -10915,7 +10979,7 @@ export const tagLists: any = [
                 },
                 "left-label": {
                     "type": "Boolean",
-                    "desc": "Label (if any specified) should be displayed on the left side of the component",
+                    "desc": "标签（如果指定）应显示在组件的左侧",
                     "category": "label"
                 },
                 "checked-icon": {
@@ -10924,7 +10988,7 @@ export const tagLists: any = [
                         "visibility"
                     ],
                     "category": "icons",
-                    "desc": "The icon to be used when the model is truthy (instead of the default design)",
+                    "desc": "模型真实时要使用的图标（而不是默认设计）",
                     "addedIn": "v2.5"
                 },
                 "unchecked-icon": {
@@ -10933,7 +10997,7 @@ export const tagLists: any = [
                         "visibility_off"
                     ],
                     "category": "icons",
-                    "desc": "The icon to be used when the toggle is falsy (instead of the default design)",
+                    "desc": "切换错误时要使用的图标（而不是默认设计）",
                     "addedIn": "v2.5"
                 },
                 "indeterminate-icon": {
@@ -10942,12 +11006,12 @@ export const tagLists: any = [
                         "help"
                     ],
                     "category": "icons",
-                    "desc": "The icon to be used when the model is indeterminate (instead of the default design)",
+                    "desc": "模型不确定时要使用的图标（而不是默认设计）",
                     "addedIn": "v2.5"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -10956,22 +11020,22 @@ export const tagLists: any = [
                 },
                 "keep-color": {
                     "type": "Boolean",
-                    "desc": "Should the color (if specified any) be kept when the component is unticked/ off?",
+                    "desc": "当组件被取消勾选/关闭时，是否应该保留颜色（如果指定的话）？",
                     "category": "behavior"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "tabindex": {
@@ -10979,7 +11043,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -10989,12 +11053,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot can be used as label, unless 'label' prop is specified; Suggestion: string"
+                    "desc": "默认槽可以用作标签，除非指定了“label”道具；建议：字符串"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -11011,13 +11075,15 @@ export const tagLists: any = [
             },
             "methods": {
                 "toggle": {
-                    "desc": "Toggle the state (of the model)"
+                    "desc": "切换（模型的）状态"
                 }
             }
         }
     },
     {
-        name: "q-toggle", desc: "switch切换", info: {
+        "name": "q-toggle",
+        "desc": "switch切换",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/toggle"
@@ -11025,7 +11091,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -11033,7 +11099,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -11043,7 +11109,7 @@ export const tagLists: any = [
                     "category": "style"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -11058,7 +11124,7 @@ export const tagLists: any = [
                 },
                 "val": {
                     "type": "Any",
-                    "desc": "Works when model ('value') is Array. It tells the component which value should add/remove when ticked/unticked",
+                    "desc": "当模型（“value”）为Array时有效。它告诉组件在勾选/取消勾选时应添加/删除哪个值",
                     "examples": [
                         "car"
                     ],
@@ -11066,7 +11132,7 @@ export const tagLists: any = [
                 },
                 "true-value": {
                     "type": "Any",
-                    "desc": "What model value should be considered as checked/ticked/on?",
+                    "desc": "检查/勾选/打开时应考虑哪些型号值？",
                     "default": true,
                     "examples": [
                         "Agreed"
@@ -11076,7 +11142,7 @@ export const tagLists: any = [
                 },
                 "false-value": {
                     "type": "Any",
-                    "desc": "What model value should be considered as unchecked/unticked/off?",
+                    "desc": "什么模型值应该被视为未检查/未检查/关闭？",
                     "default": false,
                     "examples": [
                         "Disagree"
@@ -11086,7 +11152,7 @@ export const tagLists: any = [
                 },
                 "indeterminate-value": {
                     "type": "Any",
-                    "desc": "What model value should be considered as 'indeterminate'?",
+                    "desc": "什么模型值应该被视为“不确定”？",
                     "default": null,
                     "examples": [
                         0,
@@ -11097,7 +11163,7 @@ export const tagLists: any = [
                 },
                 "toggle-order": {
                     "type": "String",
-                    "desc": "Determines toggle order of the two states ('t' stands for state of true, 'f' for state of false); If 'toggle-indeterminate' is true, then the order is: indet -> first state -> second state -> indet (and repeat), otherwise: indet -> first state -> second state -> first state -> second state -> ...",
+                    "desc": "确定两种状态的切换顺序（'t'表示true的状态，'f'表示false的状态）；如果“toggle undefined”为true，则顺序为：indet->第一状态->第二状态->indet（and repeat），否则：indet-->第一状态->第一状态->第二状态->第一状态->二状态->。。。",
                     "default": "tf",
                     "values": [
                         "tf",
@@ -11108,12 +11174,12 @@ export const tagLists: any = [
                 },
                 "toggle-indeterminate": {
                     "type": "Boolean",
-                    "desc": "When user clicks/taps on the component, should we toggle through the indeterminate state too?",
+                    "desc": "当用户点击/点击组件时，我们是否也应该切换到不确定状态？",
                     "category": "behavior"
                 },
                 "label": {
                     "type": "String",
-                    "desc": "Label to display along the component (or use the default slot instead of this prop)",
+                    "desc": "沿组件显示的标签（或使用默认槽而不是此道具）",
                     "examples": [
                         "I agree with the Terms and Conditions"
                     ],
@@ -11121,7 +11187,7 @@ export const tagLists: any = [
                 },
                 "left-label": {
                     "type": "Boolean",
-                    "desc": "Label (if any specified) should be displayed on the left side of the component",
+                    "desc": "标签（如果指定）应显示在组件的左侧",
                     "category": "label"
                 },
                 "checked-icon": {
@@ -11130,7 +11196,7 @@ export const tagLists: any = [
                         "visibility"
                     ],
                     "category": "icons",
-                    "desc": "The icon to be used when the toggle is on"
+                    "desc": "打开切换时要使用的图标"
                 },
                 "unchecked-icon": {
                     "type": "String",
@@ -11138,7 +11204,7 @@ export const tagLists: any = [
                         "visibility_off"
                     ],
                     "category": "icons",
-                    "desc": "The icon to be used when the toggle is off"
+                    "desc": "关闭切换时要使用的图标"
                 },
                 "indeterminate-icon": {
                     "type": "String",
@@ -11146,11 +11212,11 @@ export const tagLists: any = [
                         "help"
                     ],
                     "category": "icons",
-                    "desc": "The icon to be used when the model is indeterminate"
+                    "desc": "模型不确定时要使用的图标"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11159,22 +11225,22 @@ export const tagLists: any = [
                 },
                 "keep-color": {
                     "type": "Boolean",
-                    "desc": "Should the color (if specified any) be kept when the component is unticked/ off?",
+                    "desc": "当组件被取消勾选/关闭时，是否应该保留颜色（如果指定的话）？",
                     "category": "behavior"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "tabindex": {
@@ -11182,7 +11248,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -11191,7 +11257,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -11202,7 +11268,7 @@ export const tagLists: any = [
                 },
                 "icon-color": {
                     "type": "String",
-                    "desc": "Override default icon color (for truthy state only); Color name for component from the Quasar Color Palette",
+                    "desc": "覆盖默认图标颜色（仅适用于真实状态）；Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11212,12 +11278,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot can be used as label, unless 'label' prop is specified; Suggestion: string"
+                    "desc": "默认槽可以用作标签，除非指定了“label”道具；建议：字符串"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -11234,13 +11300,15 @@ export const tagLists: any = [
             },
             "methods": {
                 "toggle": {
-                    "desc": "Toggle the state (of the model)"
+                    "desc": "切换（模型的）状态"
                 }
             }
         }
     },
     {
-        name: "q-btn-toggle", desc: "按钮切换", info: {
+        "name": "q-btn-toggle",
+        "desc": "按钮切换",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/button-toggle"
@@ -11248,14 +11316,14 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
                     "category": "behavior"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -11266,7 +11334,7 @@ export const tagLists: any = [
                 },
                 "options": {
                     "type": "Array",
-                    "desc": "Array of Objects defining each option",
+                    "desc": "定义每个选项的对象阵列",
                     "required": true,
                     "definition": {
                         "attrs": {
@@ -11318,7 +11386,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11327,7 +11395,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11336,7 +11404,7 @@ export const tagLists: any = [
                 },
                 "toggle-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11347,7 +11415,7 @@ export const tagLists: any = [
                 },
                 "toggle-text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11356,42 +11424,42 @@ export const tagLists: any = [
                 },
                 "spread": {
                     "type": "Boolean",
-                    "desc": "Spread horizontally to all available space",
+                    "desc": "水平分布到所有可用空间",
                     "category": "content"
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Use 'outline' design",
+                    "desc": "使用“大纲”设计",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Use 'flat' design",
+                    "desc": "使用“平面”设计",
                     "category": "style"
                 },
                 "unelevated": {
                     "type": "Boolean",
-                    "desc": "Remove shadow",
+                    "desc": "移除阴影",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a more prominent border-radius for a squared shape button",
+                    "desc": "为方形按钮应用更突出的边框半径",
                     "category": "style"
                 },
                 "push": {
                     "type": "Boolean",
-                    "desc": "Use 'push' design",
+                    "desc": "使用“推送”设计",
                     "category": "style"
                 },
                 "glossy": {
                     "type": "Boolean",
-                    "desc": "Applies a glossy effect",
+                    "desc": "应用光泽效果",
                     "category": "style"
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Button size name or a CSS unit including unit name",
+                    "desc": "按钮大小名称或包含单元名称的CSS单元",
                     "examples": [
                         "xs",
                         "sm",
@@ -11405,7 +11473,7 @@ export const tagLists: any = [
                 },
                 "padding": {
                     "type": "String",
-                    "desc": "Apply custom padding (vertical [horizontal]); Size in CSS units, including unit name or standard size name (none|xs|sm|md|lg|xl); Also removes the min width and height when set",
+                    "desc": "应用自定义填充（垂直[水平]）；以CSS为单位的大小，包括单元名称或标准大小名称（none|xs|sm|md|lg|xl）；设置时还删除最小宽度和高度",
                     "examples": [
                         "16px",
                         "10px 5px",
@@ -11418,12 +11486,12 @@ export const tagLists: any = [
                 },
                 "no-caps": {
                     "type": "Boolean",
-                    "desc": "Avoid turning label text into caps (which happens by default)",
+                    "desc": "避免将标签文本变成大写（默认情况下会发生这种情况）",
                     "category": "content"
                 },
                 "no-wrap": {
                     "type": "Boolean",
-                    "desc": "Avoid label text wrapping",
+                    "desc": "避免标签文本换行",
                     "category": "content"
                 },
                 "ripple": {
@@ -11431,7 +11499,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Object"
                     ],
-                    "desc": "Configure material ripple (disable it by setting it to 'false' or supply a config object)",
+                    "desc": "配置材料波纹（通过将其设置为“false”或提供配置对象来禁用它）",
                     "default": true,
                     "examples": [
                         false,
@@ -11442,46 +11510,46 @@ export const tagLists: any = [
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "stack": {
                     "type": "Boolean",
-                    "desc": "Stack icon and label vertically instead of on same line (like it is by default)",
+                    "desc": "垂直堆叠图标和标签，而不是在同一行（就像默认情况下一样）",
                     "category": "content"
                 },
                 "stretch": {
                     "type": "Boolean",
-                    "desc": "When used on flexbox parent, button will stretch to parent's height",
+                    "desc": "当在flexbox父对象上使用时，按钮将拉伸到父对象的高度",
                     "category": "content"
                 },
                 "clearable": {
                     "type": "Boolean",
-                    "desc": "Clears model on click of the already selected button",
+                    "desc": "单击已选择的按钮时清除模型",
                     "category": "model"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestions: QTooltip, QBadge"
+                    "desc": "建议：QTooltip，QBadge"
                 },
                 "...": {
-                    "desc": "Any other dynamic slots to be used with 'slot' property of the 'options' prop"
+                    "desc": "与“options”道具的“slot”属性一起使用的任何其他动态插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -11491,13 +11559,15 @@ export const tagLists: any = [
                     }
                 },
                 "clear": {
-                    "desc": "When using the 'clearable' property, this event is emitted when the already selected button is clicked"
+                    "desc": "使用“clearable”属性时，单击已选择的按钮时会发出此事件"
                 }
             }
         }
     },
     {
-        name: "q-option-group", desc: "选项组", info: {
+        "name": "q-option-group",
+        "desc": "选项组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/option-group"
@@ -11505,7 +11575,7 @@ export const tagLists: any = [
             "props": {
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -11515,7 +11585,7 @@ export const tagLists: any = [
                     "category": "style"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -11526,7 +11596,7 @@ export const tagLists: any = [
                 },
                 "options": {
                     "type": "Array",
-                    "desc": "Array of objects with value, label, and disable (optional) props. The binary components will be created according to this array; Props from QToggle, QCheckbox or QRadio can also be added as key/value pairs to control the components singularly",
+                    "desc": "具有值、标签和禁用（可选）道具的对象数组。二进制组件将根据此数组创建；QToggle、QCheckbox或QRadio中的道具也可以添加为键/值对，以单独控制组件",
                     "definition": {
                         "label": {
                             "type": "String",
@@ -11569,7 +11639,7 @@ export const tagLists: any = [
                 },
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the controls; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -11577,7 +11647,7 @@ export const tagLists: any = [
                 },
                 "type": {
                     "type": "String",
-                    "desc": "The type of input component to be used",
+                    "desc": "要使用的输入组件的类型",
                     "values": [
                         "radio",
                         "checkbox",
@@ -11589,7 +11659,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11598,38 +11668,38 @@ export const tagLists: any = [
                 },
                 "keep-color": {
                     "type": "Boolean",
-                    "desc": "Should the color (if specified any) be kept when input components are unticked?",
+                    "desc": "当输入组件被取消勾选时，是否应该保留颜色（如果指定的话）？",
                     "category": "behavior"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "left-label": {
                     "type": "Boolean",
-                    "desc": "Label (if any specified) should be displayed on the left side of the input components",
+                    "desc": "标签（如果指定）应显示在输入组件的左侧",
                     "category": "content"
                 },
                 "inline": {
                     "type": "Boolean",
-                    "desc": "Show input components as inline-block rather than each having their own row",
+                    "desc": "将输入组件显示为内联块，而不是每个组件都有自己的行",
                     "category": "content"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 }
             },
             "slots": {
                 "label": {
-                    "desc": "Generic slot for all labels",
+                    "desc": "所有标签的通用槽",
                     "scope": {
                         "...self": {
                             "type": "Object",
@@ -11674,7 +11744,7 @@ export const tagLists: any = [
                     "addedIn": "v2.2"
                 },
                 "label-[name]": {
-                    "desc": "Slot to define the specific label for the option at '[name]' where name is a 0-based index; Overrides the generic 'label' slot if used",
+                    "desc": "插槽，用于定义'[name]'处选项的特定标签，其中name是基于0的索引；覆盖通用“标签”插槽（如果使用）",
                     "scope": {
                         "...self": {
                             "type": "Object",
@@ -11721,7 +11791,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -11734,7 +11804,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-slider", desc: "滑块", info: {
+        "name": "q-slider",
+        "desc": "滑块",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/slider"
@@ -11742,7 +11814,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -11750,7 +11822,7 @@ export const tagLists: any = [
                 },
                 "min": {
                     "type": "Number",
-                    "desc": "Minimum value of the model; Set track's minimum value",
+                    "desc": "模型的最小值；设置轨迹的最小值",
                     "default": 0,
                     "examples": [
                         ":min=\"0\""
@@ -11760,48 +11832,48 @@ export const tagLists: any = [
                 },
                 "max": {
                     "type": "Number",
-                    "desc": "Maximum value of the model; Set track's maximum value",
+                    "desc": "模型的最大值；设置曲目的最大值",
                     "default": 100,
                     "category": "model",
                     "required": false
                 },
                 "inner-min": {
                     "type": "Number",
-                    "desc": "Inner minimum value of the model; Use in case you need the model value to be inside of the track's min-max values; Needs to be higher or equal to 'min' prop; Defaults to 'min' prop",
+                    "desc": "模型的内部最小值；如果您需要模型值位于轨迹的最小-最大值之内，请使用；需要高于或等于“min”道具；默认为“min”道具",
                     "category": "model",
                     "addedIn": "v2.4"
                 },
                 "inner-max": {
                     "type": "Number",
-                    "desc": "Inner maximum value of the model; Use in case you need the model value to be inside of the track's min-max values; Needs to be lower or equal to 'max' prop; Defaults to 'max' prop",
+                    "desc": "模型的内部最大值；如果您需要模型值位于轨迹的最小-最大值之内，请使用；需要低于或等于“最大”道具；默认为“最大”道具",
                     "category": "model",
                     "addedIn": "v2.4"
                 },
                 "step": {
                     "type": "Number",
-                    "desc": "Specify step amount between valid values (> 0.0); When step equals to 0 it defines infinite granularity",
+                    "desc": "指定有效值之间的步长（>0.0）；当步长等于0时，它定义了无限粒度",
                     "default": 1,
                     "category": "model",
                     "required": false
                 },
                 "snap": {
                     "type": "Boolean",
-                    "desc": "Snap on valid values, rather than sliding freely; Suggestion: use with 'step' prop",
+                    "desc": "捕捉有效值，而不是自由滑动；建议：与“step”道具一起使用",
                     "category": "behavior"
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Work in reverse (changes direction)",
+                    "desc": "反向工作（改变方向）",
                     "category": "behavior"
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "Display in vertical direction",
+                    "desc": "垂直方向显示",
                     "category": "behavior"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11810,7 +11882,7 @@ export const tagLists: any = [
                 },
                 "track-color": {
                     "type": "String",
-                    "desc": "Color name for the track (can be 'transparent' too) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中轨道的颜色名称（也可以是“透明的”）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11820,7 +11892,7 @@ export const tagLists: any = [
                 },
                 "track-img": {
                     "type": "String",
-                    "desc": "Apply a pattern image on the track",
+                    "desc": "在轨迹上应用图案图像",
                     "transformAssetUrls": true,
                     "examples": [
                         "~assets/my-pattern.png"
@@ -11830,7 +11902,7 @@ export const tagLists: any = [
                 },
                 "inner-track-color": {
                     "type": "String",
-                    "desc": "Color name for the inner track (can be 'transparent' too) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中内部轨迹的颜色名称（也可以是“透明的”）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11840,7 +11912,7 @@ export const tagLists: any = [
                 },
                 "inner-track-img": {
                     "type": "String",
-                    "desc": "Apply a pattern image on the inner track",
+                    "desc": "在内部轨迹上应用图案图像",
                     "transformAssetUrls": true,
                     "examples": [
                         "~assets/my-pattern.png"
@@ -11850,7 +11922,7 @@ export const tagLists: any = [
                 },
                 "selection-color": {
                     "type": "String",
-                    "desc": "Color name for the selection bar (can be 'transparent' too) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中选择栏的颜色名称（也可以是“透明的”）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11860,7 +11932,7 @@ export const tagLists: any = [
                 },
                 "selection-img": {
                     "type": "String",
-                    "desc": "Apply a pattern image on the selection bar",
+                    "desc": "在选择栏上应用图案图像",
                     "transformAssetUrls": true,
                     "examples": [
                         "~assets/my-pattern.png"
@@ -11870,12 +11942,12 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "Boolean",
-                    "desc": "Popup a label when user clicks/taps on the slider thumb and moves it",
+                    "desc": "当用户单击/点击滑块拇指并移动它时弹出标签",
                     "category": "content"
                 },
                 "label-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11884,7 +11956,7 @@ export const tagLists: any = [
                 },
                 "label-text-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -11893,13 +11965,13 @@ export const tagLists: any = [
                 },
                 "switch-label-side": {
                     "type": "Boolean",
-                    "desc": "Switch the position of the label (top <-> bottom or left <-> right)",
+                    "desc": "切换标签的位置（顶部<->底部或左侧<->右侧）",
                     "category": "style",
                     "addedIn": "v2.4"
                 },
                 "label-always": {
                     "type": "Boolean",
-                    "desc": "Always display the label",
+                    "desc": "始终显示标签",
                     "category": "behavior|content"
                 },
                 "markers": {
@@ -11907,7 +11979,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Number"
                     ],
-                    "desc": "Display markers on the track, one for each possible value for the model or using a custom step (when specifying a Number)",
+                    "desc": "在轨迹上显示标记，每个标记对应模型的每个可能值，或使用自定义步骤（指定数字时）",
                     "category": "content",
                     "examples": [
                         "markers",
@@ -11922,7 +11994,7 @@ export const tagLists: any = [
                         "Function"
                     ],
                     "tsType": "SliderMarkerLabels",
-                    "desc": "Configure the marker labels (or show the default ones if 'true'); Array of definition Objects or Object with key-value where key is the model and the value is the marker label definition",
+                    "desc": "配置标记标签（如果为true，则显示默认标签）；定义数组对象或具有键值的对象，其中键是模型，值是标记标签定义",
                     "definition": {
                         "value": {
                             "type": "Number",
@@ -12016,7 +12088,7 @@ export const tagLists: any = [
                 },
                 "marker-labels-class": {
                     "type": "String",
-                    "desc": "CSS class(es) to apply to the marker labels container",
+                    "desc": "要应用于标记标签容器的CSS类",
                     "examples": [
                         "text-orange"
                     ],
@@ -12025,13 +12097,13 @@ export const tagLists: any = [
                 },
                 "switch-marker-labels-side": {
                     "type": "Boolean",
-                    "desc": "Switch the position of the marker labels (top <-> bottom or left <-> right)",
+                    "desc": "切换标记标签的位置（顶部<->底部或左侧<->右侧）",
                     "category": "style",
                     "addedIn": "v2.4"
                 },
                 "track-size": {
                     "type": "String",
-                    "desc": "Track size (including CSS unit)",
+                    "desc": "轨道大小（包括CSS单元）",
                     "default": "4px",
                     "examples": [
                         "35px"
@@ -12042,7 +12114,7 @@ export const tagLists: any = [
                 },
                 "thumb-size": {
                     "type": "String",
-                    "desc": "Thumb size (including CSS unit)",
+                    "desc": "拇指大小（包括CSS单元）",
                     "default": "20px",
                     "examples": [
                         "20px"
@@ -12053,7 +12125,7 @@ export const tagLists: any = [
                 },
                 "thumb-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12063,7 +12135,7 @@ export const tagLists: any = [
                 },
                 "thumb-path": {
                     "type": "String",
-                    "desc": "Set custom thumb svg path",
+                    "desc": "设置自定义拇指svg路径",
                     "default": "M 4, 10 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0",
                     "examples": [
                         "M5 5 h10 v10 h-10 v-10"
@@ -12073,22 +12145,22 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "tabindex": {
@@ -12096,7 +12168,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -12104,7 +12176,7 @@ export const tagLists: any = [
                     "category": "general"
                 },
                 "model-value": {
-                    "desc": "Model of the component (must be between min/max); Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "组件的型号（必须介于最小值/最大值之间）；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -12122,7 +12194,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Override default label value",
+                    "desc": "替代默认标签值",
                     "examples": [
                         ":label-value=\"model + 'px'\""
                     ],
@@ -12131,7 +12203,7 @@ export const tagLists: any = [
             },
             "slots": {
                 "marker-label": {
-                    "desc": "What should the menu display after filtering options and none are left to be displayed; Suggestion: <div>",
+                    "desc": "过滤选项后的菜单应该显示什么，而没有留下任何显示选项；建议：＜div＞",
                     "addedIn": "v2.4",
                     "scope": {
                         "marker": {
@@ -12264,7 +12336,7 @@ export const tagLists: any = [
                     }
                 },
                 "marker-label-group": {
-                    "desc": "What should the menu display after filtering options and none are left to be displayed; Suggestion: <div>",
+                    "desc": "过滤选项后的菜单应该显示什么，而没有留下任何显示选项；建议：＜div＞",
                     "addedIn": "v2.4",
                     "scope": {
                         "markerList": {
@@ -12365,7 +12437,7 @@ export const tagLists: any = [
             },
             "events": {
                 "change": {
-                    "desc": "Emitted on lazy model value change (after user slides then releases the thumb)",
+                    "desc": "延迟模型值更改时发出（用户滑动后释放拇指）",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -12375,7 +12447,7 @@ export const tagLists: any = [
                     }
                 },
                 "pan": {
-                    "desc": "Triggered when user starts panning on the component",
+                    "desc": "当用户开始平移组件时触发",
                     "params": {
                         "phase": {
                             "type": "String",
@@ -12388,7 +12460,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -12404,7 +12476,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-range", desc: "范围", info: {
+        "name": "q-range",
+        "desc": "范围",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/range"
@@ -12412,7 +12486,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -12420,7 +12494,7 @@ export const tagLists: any = [
                 },
                 "min": {
                     "type": "Number",
-                    "desc": "Minimum value of the model; Set track's minimum value",
+                    "desc": "模型的最小值；设置轨迹的最小值",
                     "default": 0,
                     "examples": [
                         ":min=\"0\""
@@ -12430,48 +12504,48 @@ export const tagLists: any = [
                 },
                 "max": {
                     "type": "Number",
-                    "desc": "Maximum value of the model; Set track's maximum value",
+                    "desc": "模型的最大值；设置曲目的最大值",
                     "default": 100,
                     "category": "model",
                     "required": false
                 },
                 "inner-min": {
                     "type": "Number",
-                    "desc": "Inner minimum value of the model; Use in case you need the model value to be inside of the track's min-max values; Needs to be higher or equal to 'min' prop; Defaults to 'min' prop",
+                    "desc": "模型的内部最小值；如果您需要模型值位于轨迹的最小-最大值之内，请使用；需要高于或等于“min”道具；默认为“min”道具",
                     "category": "model",
                     "addedIn": "v2.4"
                 },
                 "inner-max": {
                     "type": "Number",
-                    "desc": "Inner maximum value of the model; Use in case you need the model value to be inside of the track's min-max values; Needs to be lower or equal to 'max' prop; Defaults to 'max' prop",
+                    "desc": "模型的内部最大值；如果您需要模型值位于轨迹的最小-最大值之内，请使用；需要低于或等于“最大”道具；默认为“最大”道具",
                     "category": "model",
                     "addedIn": "v2.4"
                 },
                 "step": {
                     "type": "Number",
-                    "desc": "Specify step amount between valid values (> 0.0); When step equals to 0 it defines infinite granularity",
+                    "desc": "指定有效值之间的步长（>0.0）；当步长等于0时，它定义了无限粒度",
                     "default": 1,
                     "category": "model",
                     "required": false
                 },
                 "snap": {
                     "type": "Boolean",
-                    "desc": "Snap on valid values, rather than sliding freely; Suggestion: use with 'step' prop",
+                    "desc": "捕捉有效值，而不是自由滑动；建议：与“step”道具一起使用",
                     "category": "behavior"
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Work in reverse (changes direction)",
+                    "desc": "反向工作（改变方向）",
                     "category": "behavior"
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "Display in vertical direction",
+                    "desc": "垂直方向显示",
                     "category": "behavior"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12480,7 +12554,7 @@ export const tagLists: any = [
                 },
                 "track-color": {
                     "type": "String",
-                    "desc": "Color name for the track (can be 'transparent' too) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中轨道的颜色名称（也可以是“透明的”）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12490,7 +12564,7 @@ export const tagLists: any = [
                 },
                 "track-img": {
                     "type": "String",
-                    "desc": "Apply a pattern image on the track",
+                    "desc": "在轨迹上应用图案图像",
                     "transformAssetUrls": true,
                     "examples": [
                         "~assets/my-pattern.png"
@@ -12500,7 +12574,7 @@ export const tagLists: any = [
                 },
                 "inner-track-color": {
                     "type": "String",
-                    "desc": "Color name for the inner track (can be 'transparent' too) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中内部轨迹的颜色名称（也可以是“透明的”）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12510,7 +12584,7 @@ export const tagLists: any = [
                 },
                 "inner-track-img": {
                     "type": "String",
-                    "desc": "Apply a pattern image on the inner track",
+                    "desc": "在内部轨迹上应用图案图像",
                     "transformAssetUrls": true,
                     "examples": [
                         "~assets/my-pattern.png"
@@ -12520,7 +12594,7 @@ export const tagLists: any = [
                 },
                 "selection-color": {
                     "type": "String",
-                    "desc": "Color name for the selection bar (can be 'transparent' too) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中选择栏的颜色名称（也可以是“透明的”）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12530,7 +12604,7 @@ export const tagLists: any = [
                 },
                 "selection-img": {
                     "type": "String",
-                    "desc": "Apply a pattern image on the selection bar",
+                    "desc": "在选择栏上应用图案图像",
                     "transformAssetUrls": true,
                     "examples": [
                         "~assets/my-pattern.png"
@@ -12540,12 +12614,12 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "Boolean",
-                    "desc": "Popup a label when user clicks/taps on the slider thumb and moves it",
+                    "desc": "当用户单击/点击滑块拇指并移动它时弹出标签",
                     "category": "content"
                 },
                 "label-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12554,7 +12628,7 @@ export const tagLists: any = [
                 },
                 "label-text-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12563,13 +12637,13 @@ export const tagLists: any = [
                 },
                 "switch-label-side": {
                     "type": "Boolean",
-                    "desc": "Switch the position of the label (top <-> bottom or left <-> right)",
+                    "desc": "切换标签的位置（顶部<->底部或左侧<->右侧）",
                     "category": "style",
                     "addedIn": "v2.4"
                 },
                 "label-always": {
                     "type": "Boolean",
-                    "desc": "Always display the label",
+                    "desc": "始终显示标签",
                     "category": "behavior|content"
                 },
                 "markers": {
@@ -12577,7 +12651,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Number"
                     ],
-                    "desc": "Display markers on the track, one for each possible value for the model or using a custom step (when specifying a Number)",
+                    "desc": "在轨迹上显示标记，每个标记对应模型的每个可能值，或使用自定义步骤（指定数字时）",
                     "category": "content",
                     "examples": [
                         "markers",
@@ -12592,7 +12666,7 @@ export const tagLists: any = [
                         "Function"
                     ],
                     "tsType": "SliderMarkerLabels",
-                    "desc": "Configure the marker labels (or show the default ones if 'true'); Array of definition Objects or Object with key-value where key is the model and the value is the marker label definition",
+                    "desc": "配置标记标签（如果为true，则显示默认标签）；定义数组对象或具有键值的对象，其中键是模型，值是标记标签定义",
                     "definition": {
                         "value": {
                             "type": "Number",
@@ -12686,7 +12760,7 @@ export const tagLists: any = [
                 },
                 "marker-labels-class": {
                     "type": "String",
-                    "desc": "CSS class(es) to apply to the marker labels container",
+                    "desc": "要应用于标记标签容器的CSS类",
                     "examples": [
                         "text-orange"
                     ],
@@ -12695,13 +12769,13 @@ export const tagLists: any = [
                 },
                 "switch-marker-labels-side": {
                     "type": "Boolean",
-                    "desc": "Switch the position of the marker labels (top <-> bottom or left <-> right)",
+                    "desc": "切换标记标签的位置（顶部<->底部或左侧<->右侧）",
                     "category": "style",
                     "addedIn": "v2.4"
                 },
                 "track-size": {
                     "type": "String",
-                    "desc": "Track size (including CSS unit)",
+                    "desc": "轨道大小（包括CSS单元）",
                     "default": "4px",
                     "examples": [
                         "35px"
@@ -12712,7 +12786,7 @@ export const tagLists: any = [
                 },
                 "thumb-size": {
                     "type": "String",
-                    "desc": "Thumb size (including CSS unit)",
+                    "desc": "拇指大小（包括CSS单元）",
                     "default": "20px",
                     "examples": [
                         "20px"
@@ -12723,7 +12797,7 @@ export const tagLists: any = [
                 },
                 "thumb-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12733,7 +12807,7 @@ export const tagLists: any = [
                 },
                 "thumb-path": {
                     "type": "String",
-                    "desc": "Set custom thumb svg path",
+                    "desc": "设置自定义拇指svg路径",
                     "default": "M 4, 10 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0",
                     "examples": [
                         "M5 5 h10 v10 h-10 v-10"
@@ -12743,22 +12817,22 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "tabindex": {
@@ -12766,7 +12840,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -12774,7 +12848,7 @@ export const tagLists: any = [
                     "category": "general"
                 },
                 "model-value": {
-                    "desc": "Model of the component of type { min, max } (both values must be between global min/max); Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "类型为｛min，max｝的组件的模型（两个值必须介于全局最小值/最大值之间）；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -12805,17 +12879,17 @@ export const tagLists: any = [
                 },
                 "drag-range": {
                     "type": "Boolean",
-                    "desc": "User can drag range instead of just the two thumbs",
+                    "desc": "用户可以拖动范围，而不仅仅是两个拇指",
                     "category": "content"
                 },
                 "drag-only-range": {
                     "type": "Boolean",
-                    "desc": "User can drag only the range instead and NOT the two thumbs",
+                    "desc": "用户只能拖动范围，而不能拖动两个拇指",
                     "category": "content"
                 },
                 "left-label-color": {
                     "type": "String",
-                    "desc": "Color name for left label background from the Quasar Color Palette",
+                    "desc": "Quasar调色板中左标签背景的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12824,7 +12898,7 @@ export const tagLists: any = [
                 },
                 "left-label-text-color": {
                     "type": "String",
-                    "desc": "Color name for left label text from the Quasar Color Palette",
+                    "desc": "Quasar调色板中左标签文本的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12833,7 +12907,7 @@ export const tagLists: any = [
                 },
                 "right-label-color": {
                     "type": "String",
-                    "desc": "Color name for right label background from the Quasar Color Palette",
+                    "desc": "Quasar调色板中右侧标签背景的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12842,7 +12916,7 @@ export const tagLists: any = [
                 },
                 "right-label-text-color": {
                     "type": "String",
-                    "desc": "Color name for right label text from the Quasar Color Palette",
+                    "desc": "Quasar调色板中右侧标签文本的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12854,7 +12928,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Override default label for min value",
+                    "desc": "覆盖最小值的默认标签",
                     "examples": [
                         ":left-label-value=\"model.min + 'px'\""
                     ],
@@ -12865,7 +12939,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Override default label for max value",
+                    "desc": "覆盖最大值的默认标签",
                     "examples": [
                         ":right-label-value=\"model.max + 'px'\""
                     ],
@@ -12873,7 +12947,7 @@ export const tagLists: any = [
                 },
                 "left-thumb-color": {
                     "type": "String",
-                    "desc": "Color name (from the Quasar Color Palette) for left thumb",
+                    "desc": "左手拇指的颜色名称（来自Quasar调色板）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12883,7 +12957,7 @@ export const tagLists: any = [
                 },
                 "right-thumb-color": {
                     "type": "String",
-                    "desc": "Color name (from the Quasar Color Palette) for right thumb",
+                    "desc": "右手拇指的颜色名称（来自Quasar调色板）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -12894,7 +12968,7 @@ export const tagLists: any = [
             },
             "slots": {
                 "marker-label": {
-                    "desc": "What should the menu display after filtering options and none are left to be displayed; Suggestion: <div>",
+                    "desc": "过滤选项后的菜单应该显示什么，而没有留下任何显示选项；建议：＜div＞",
                     "addedIn": "v2.4",
                     "scope": {
                         "marker": {
@@ -13027,7 +13101,7 @@ export const tagLists: any = [
                     }
                 },
                 "marker-label-group": {
-                    "desc": "What should the menu display after filtering options and none are left to be displayed; Suggestion: <div>",
+                    "desc": "过滤选项后的菜单应该显示什么，而没有留下任何显示选项；建议：＜div＞",
                     "addedIn": "v2.4",
                     "scope": {
                         "markerList": {
@@ -13128,7 +13202,7 @@ export const tagLists: any = [
             },
             "events": {
                 "change": {
-                    "desc": "Emitted on lazy model value change (after user slides then releases the thumb)",
+                    "desc": "延迟模型值更改时发出（用户滑动后释放拇指）",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -13138,7 +13212,7 @@ export const tagLists: any = [
                     }
                 },
                 "pan": {
-                    "desc": "Triggered when user starts panning on the component",
+                    "desc": "当用户开始平移组件时触发",
                     "params": {
                         "phase": {
                             "type": "String",
@@ -13151,7 +13225,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -13164,7 +13238,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-time", desc: "时间选择器", info: {
+        "name": "q-time",
+        "desc": "时间选择器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/time"
@@ -13172,7 +13248,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -13180,12 +13256,12 @@ export const tagLists: any = [
                 },
                 "landscape": {
                     "type": "Boolean",
-                    "desc": "Display the component in landscape mode",
+                    "desc": "以横向模式显示组件",
                     "category": "behavior"
                 },
                 "mask": {
                     "type": "String",
-                    "desc": "Mask (formatting string) used for parsing and formatting value",
+                    "desc": "用于分析和格式化值的掩码（格式化字符串）",
                     "category": "model",
                     "default": "HH:mm",
                     "examples": [
@@ -13197,7 +13273,7 @@ export const tagLists: any = [
                 },
                 "locale": {
                     "type": "Object",
-                    "desc": "Locale formatting options",
+                    "desc": "区域设置格式选项",
                     "examples": [
                         ":locale=\"{ monthsShort: ['Ian', 'Feb', 'Mar', '...'] }\""
                     ],
@@ -13235,7 +13311,7 @@ export const tagLists: any = [
                 },
                 "calendar": {
                     "type": "String",
-                    "desc": "Specify calendar type",
+                    "desc": "指定日历类型",
                     "default": "gregorian",
                     "values": [
                         "gregorian",
@@ -13246,7 +13322,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -13255,7 +13331,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -13264,36 +13340,36 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "model-value": {
-                    "desc": "Time of the component; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "组件的时间；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -13308,14 +13384,14 @@ export const tagLists: any = [
                 },
                 "format24h": {
                     "type": "Boolean",
-                    "desc": "Forces 24 hour time display instead of AM/PM system",
+                    "desc": "强制显示24小时时间，而不是AM/PM系统",
                     "default": "(based on Quasar lang language being used)",
                     "category": "behavior",
                     "required": false
                 },
                 "default-date": {
                     "type": "String",
-                    "desc": "The default date to use (in YYYY/MM/DD format) when model is unfilled (undefined or null)",
+                    "desc": "模型未填充（未定义或为null）时要使用的默认日期（YYYY/MM/DD格式）",
                     "default": "current day",
                     "examples": [
                         "1995/02/23"
@@ -13325,7 +13401,7 @@ export const tagLists: any = [
                 },
                 "options": {
                     "type": "Function",
-                    "desc": "Optionally configure what time is the user allowed to set; Overridden by 'hour-options', 'minute-options' and 'second-options' if those are set; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "可选配置用户允许设置的时间；被“小时选项”、“分钟选项”和“秒选项”覆盖（如果已设置）；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "hr": {
                             "type": "Number",
@@ -13354,7 +13430,7 @@ export const tagLists: any = [
                 },
                 "hour-options": {
                     "type": "Array",
-                    "desc": "Optionally configure what hours is the user allowed to set; Overrides 'options' prop if that is also set",
+                    "desc": "可选地配置用户允许设置的小时数；覆盖“选项”道具（如果也设置了该道具）",
                     "examples": [
                         ":hour-options=\"[ 3, 6, 9 ]\""
                     ],
@@ -13362,7 +13438,7 @@ export const tagLists: any = [
                 },
                 "minute-options": {
                     "type": "Array",
-                    "desc": "Optionally configure what minutes is the user allowed to set; Overrides 'options' prop if that is also set",
+                    "desc": "可选地配置用户允许设置的分钟数；覆盖“选项”道具（如果也设置了该道具）",
                     "examples": [
                         ":minute-options=\"[0, 15, 30, 45]\""
                     ],
@@ -13370,7 +13446,7 @@ export const tagLists: any = [
                 },
                 "second-options": {
                     "type": "Array",
-                    "desc": "Optionally configure what seconds is the user allowed to set; Overrides 'options' prop if that is also set",
+                    "desc": "可选配置用户允许设置的秒数；覆盖“选项”道具（如果也设置了该道具）",
                     "examples": [
                         ":second-options=\"[0, 7, 10, 23]\""
                     ],
@@ -13378,23 +13454,23 @@ export const tagLists: any = [
                 },
                 "with-seconds": {
                     "type": "Boolean",
-                    "desc": "Allow the time to be set with seconds",
+                    "desc": "允许将时间设置为秒",
                     "category": "model|behavior"
                 },
                 "now-btn": {
                     "type": "Boolean",
-                    "desc": "Display a button that selects the current time",
+                    "desc": "显示选择当前时间的按钮",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where additional buttons can go"
+                    "desc": "这是附加按钮的位置"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -13455,13 +13531,15 @@ export const tagLists: any = [
             },
             "methods": {
                 "setNow": {
-                    "desc": "Change model to current moment"
+                    "desc": "将模型更改为当前时刻"
                 }
             }
         }
     },
     {
-        name: "q-date", desc: "日期选择器", info: {
+        "name": "q-date",
+        "desc": "日期选择器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/date"
@@ -13469,7 +13547,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -13477,12 +13555,12 @@ export const tagLists: any = [
                 },
                 "landscape": {
                     "type": "Boolean",
-                    "desc": "Display the component in landscape mode",
+                    "desc": "以横向模式显示组件",
                     "category": "behavior"
                 },
                 "mask": {
                     "type": "String",
-                    "desc": "Mask (formatting string) used for parsing and formatting value",
+                    "desc": "用于分析和格式化值的掩码（格式化字符串）",
                     "category": "model",
                     "default": "YYYY/MM/DD",
                     "examples": [
@@ -13494,7 +13572,7 @@ export const tagLists: any = [
                 },
                 "locale": {
                     "type": "Object",
-                    "desc": "Locale formatting options",
+                    "desc": "区域设置格式选项",
                     "examples": [
                         ":locale=\"{ monthsShort: ['Ian', 'Feb', 'Mar', '...'] }\""
                     ],
@@ -13532,7 +13610,7 @@ export const tagLists: any = [
                 },
                 "calendar": {
                     "type": "String",
-                    "desc": "Specify calendar type",
+                    "desc": "指定日历类型",
                     "default": "gregorian",
                     "values": [
                         "gregorian",
@@ -13543,7 +13621,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -13552,7 +13630,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -13561,36 +13639,36 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "model-value": {
-                    "desc": "Date(s) of the component; Must be Array if using 'multiple' prop; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "组件的日期；如果使用“multiple”道具，则必须为Array；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -13610,7 +13688,7 @@ export const tagLists: any = [
                 },
                 "title": {
                     "type": "String",
-                    "desc": "When specified, it overrides the default header title; Makes sense when not in 'minimal' mode",
+                    "desc": "指定时，它将覆盖默认的标题；不处于“最小”模式时有意义",
                     "examples": [
                         "Birthday"
                     ],
@@ -13618,7 +13696,7 @@ export const tagLists: any = [
                 },
                 "subtitle": {
                     "type": "String",
-                    "desc": "When specified, it overrides the default header subtitle; Makes sense when not in 'minimal' mode",
+                    "desc": "指定时，它将覆盖默认的标题副标题；不处于“最小”模式时有意义",
                     "examples": [
                         "John Doe"
                     ],
@@ -13626,7 +13704,7 @@ export const tagLists: any = [
                 },
                 "default-year-month": {
                     "type": "String",
-                    "desc": "The default year and month to display (in YYYY/MM format) when model is unfilled (undefined or null); Please ensure it is within the navigation min/max year-month (if using them)",
+                    "desc": "当模型未填充（未定义或为空）时，要显示的默认年份和月份（YYYY/MM格式）；请确保它在导航最小/最大年月内（如果使用它们）",
                     "examples": [
                         "1986/02"
                     ],
@@ -13634,7 +13712,7 @@ export const tagLists: any = [
                 },
                 "default-view": {
                     "type": "String",
-                    "desc": "The view which will be displayed by default",
+                    "desc": "默认情况下将显示的视图",
                     "default": "Calendar",
                     "values": [
                         "Calendar",
@@ -13646,7 +13724,7 @@ export const tagLists: any = [
                 },
                 "years-in-month-view": {
                     "type": "Boolean",
-                    "desc": "Show the years selector in months view",
+                    "desc": "在月份视图中显示年份选择器",
                     "category": "behavior"
                 },
                 "events": {
@@ -13654,7 +13732,7 @@ export const tagLists: any = [
                         "Array",
                         "Function"
                     ],
-                    "desc": "A list of events to highlight on the calendar; If using a function, it receives the date as a String and must return a Boolean (matches or not); If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "要在日历上突出显示的事件列表；如果使用函数，它将日期作为字符串接收，并且必须返回布尔值（匹配与否）；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "params": {
                         "date": {
                             "type": "String",
@@ -13680,7 +13758,7 @@ export const tagLists: any = [
                         "String",
                         "Function"
                     ],
-                    "desc": "Color name (from the Quasar Color Palette); If using a function, it receives the date as a String and must return a String (color for the received date); If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "颜色名称（来自Quasar调色板）；如果使用函数，它将日期作为字符串接收，并且必须返回字符串（接收日期的颜色）；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "params": {
                         "date": {
                             "type": "String",
@@ -13710,7 +13788,7 @@ export const tagLists: any = [
                         "Array",
                         "Function"
                     ],
-                    "desc": "Optionally configure the days that are selectable; If using a function, it receives the date as a String and must return a Boolean (is date acceptable or not); If using a function then for best performance, reference it from your scope and do not define it inline; Incompatible with 'range' prop",
+                    "desc": "可选地配置可选择的日期；如果使用函数，它将日期作为字符串接收，并且必须返回布尔值（日期是否可接受）；如果使用一个函数，那么为了获得最佳性能，请从您的范围中引用它，不要内联定义它；与“范围”道具不兼容",
                     "params": {
                         "date": {
                             "type": "String",
@@ -13734,7 +13812,7 @@ export const tagLists: any = [
                 },
                 "navigation-min-year-month": {
                     "type": "String",
-                    "desc": "Lock user from navigating below a specific year+month (in YYYY/MM format); This prop is not used to correct the model; You might want to also use 'default-year-month' prop",
+                    "desc": "锁定用户在特定年份+月份以下导航（YYYY/MM格式）；此道具不用于校正模型；您可能还想使用“默认年-月”道具",
                     "examples": [
                         "2020/07"
                     ],
@@ -13742,7 +13820,7 @@ export const tagLists: any = [
                 },
                 "navigation-max-year-month": {
                     "type": "String",
-                    "desc": "Lock user from navigating above a specific year+month (in YYYY/MM format); This prop is not used to correct the model; You might want to also use 'default-year-month' prop",
+                    "desc": "锁定用户在特定年份+月份以上导航（YYYY/MM格式）；此道具不用于校正模型；您可能还想使用“默认年-月”道具",
                     "examples": [
                         "2020/10"
                     ],
@@ -13750,7 +13828,7 @@ export const tagLists: any = [
                 },
                 "no-unset": {
                     "type": "Boolean",
-                    "desc": "Remove ability to unselect a date; It does not apply to selecting a range over already selected dates",
+                    "desc": "取消选择日期的功能；它不适用于在已经选择的日期上选择范围",
                     "category": "selection"
                 },
                 "first-day-of-week": {
@@ -13758,7 +13836,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Sets the day of the week that is considered the first day (0 - Sunday, 1 - Monday, ...); This day will show in the left-most column of the calendar",
+                    "desc": "设置一周中被视为第一天的日期（0-周日，1-周一，…）；这一天将显示在日历的最左列",
                     "default": "(based on configured Quasar lang language)",
                     "examples": [
                         "first-day-of-week=\"1\"",
@@ -13769,38 +13847,38 @@ export const tagLists: any = [
                 },
                 "today-btn": {
                     "type": "Boolean",
-                    "desc": "Display a button that selects the current day",
+                    "desc": "显示选择当前日期的按钮",
                     "category": "content"
                 },
                 "minimal": {
                     "type": "Boolean",
-                    "desc": "Don’t display the header",
+                    "desc": "不显示标题",
                     "category": "content"
                 },
                 "multiple": {
                     "type": "Boolean",
-                    "desc": "Allow multiple selection; Model must be Array",
+                    "desc": "允许多选；模型必须是数组",
                     "category": "model|selection"
                 },
                 "range": {
                     "type": "Boolean",
-                    "desc": "Allow range selection; Partial compatibility with 'options' prop: selected ranges might also include 'unselectable' days",
+                    "desc": "允许范围选择；与“options”道具部分兼容：选定的范围也可能包括“不可选择”的天数",
                     "category": "model|selection"
                 },
                 "emit-immediately": {
                     "type": "Boolean",
-                    "desc": "Emit model when user browses month and year too; ONLY for single selection (non-multiple, non-range)",
+                    "desc": "用户浏览月份和年份时也会发出模型；仅用于单选（非多选，非范围）",
                     "category": "model"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where additional buttons can go"
+                    "desc": "这是附加按钮的位置"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -13894,7 +13972,7 @@ export const tagLists: any = [
                     }
                 },
                 "navigation": {
-                    "desc": "Emitted when user navigates to a different month or year (and even when the model changes from an outside source)",
+                    "desc": "当用户导航到不同的月份或年份时（甚至当模型从外部来源更改时）发出",
                     "params": {
                         "view": {
                             "type": "Object",
@@ -13915,7 +13993,7 @@ export const tagLists: any = [
                     }
                 },
                 "range-start": {
-                    "desc": "User has started a range selection",
+                    "desc": "用户已开始范围选择",
                     "params": {
                         "from": {
                             "type": "Object",
@@ -13941,7 +14019,7 @@ export const tagLists: any = [
                     }
                 },
                 "range-end": {
-                    "desc": "User has ended a range selection",
+                    "desc": "用户已结束范围选择",
                     "params": {
                         "range": {
                             "type": "Object",
@@ -13998,10 +14076,10 @@ export const tagLists: any = [
             },
             "methods": {
                 "setToday": {
-                    "desc": "Change model to today"
+                    "desc": "将模型更改为今天"
                 },
                 "setView": {
-                    "desc": "Change current view",
+                    "desc": "更改当前视图",
                     "params": {
                         "view": {
                             "type": "String",
@@ -14016,7 +14094,7 @@ export const tagLists: any = [
                     }
                 },
                 "offsetCalendar": {
-                    "desc": "Increment or decrement calendar view's month or year",
+                    "desc": "递增或递减日历视图的月份或年份",
                     "params": {
                         "type": {
                             "type": "String",
@@ -14034,7 +14112,7 @@ export const tagLists: any = [
                     }
                 },
                 "setCalendarTo": {
-                    "desc": "Change current year and month of the Calendar view; It gets corrected if using navigation-min/max-year-month and sets the current view to Calendar",
+                    "desc": "更改“日历”视图的当前年份和月份；如果使用导航最小/最大年-月并将当前视图设置为日历，则会更正此错误",
                     "params": {
                         "year": {
                             "type": "Number",
@@ -14047,7 +14125,7 @@ export const tagLists: any = [
                     }
                 },
                 "setEditingRange": {
-                    "desc": "Configure the current editing range",
+                    "desc": "配置当前编辑范围",
                     "params": {
                         "from": {
                             "type": "Object",
@@ -14091,7 +14169,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-icon", desc: "图标", info: {
+        "name": "q-icon",
+        "desc": "图标",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/icon"
@@ -14099,7 +14179,7 @@ export const tagLists: any = [
             "props": {
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -14110,7 +14190,7 @@ export const tagLists: any = [
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to render, unless no icon is supplied or it's an svg icon",
+                    "desc": "要呈现的HTML标记，除非没有提供图标或是svg图标",
                     "examples": [
                         "div",
                         "span",
@@ -14123,7 +14203,7 @@ export const tagLists: any = [
                 },
                 "name": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -14134,7 +14214,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -14143,24 +14223,26 @@ export const tagLists: any = [
                 },
                 "left": {
                     "type": "Boolean",
-                    "desc": "Useful if icon is on the left side of something: applies a standard margin on the right side of Icon",
+                    "desc": "如果图标在某个东西的左侧，则很有用：在图标的右侧应用标准边距",
                     "category": "content"
                 },
                 "right": {
                     "type": "Boolean",
-                    "desc": "Useful if icon is on the right side of something: applies a standard margin on the left side of Icon",
+                    "desc": "如果图标在某个东西的右侧，则很有用：在图标的左侧应用标准边距",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestions: QTooltip or QMenu"
+                    "desc": "建议：QTooltip或QMenu"
                 }
             }
         }
     },
     {
-        name: "q-img", desc: "图像", info: {
+        "name": "q-img",
+        "desc": "图像",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/img"
@@ -14171,7 +14253,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Force the component to maintain an aspect ratio",
+                    "desc": "强制零部件保持纵横比",
                     "examples": [
                         ":ratio=\"4/3\"",
                         ":ratio=\"16/9\"",
@@ -14183,7 +14265,7 @@ export const tagLists: any = [
                 },
                 "src": {
                     "type": "String",
-                    "desc": "Path to image",
+                    "desc": "图像的路径",
                     "transformAssetUrls": true,
                     "examples": [
                         "(public folder) src=\"img/something.png\"",
@@ -14195,7 +14277,7 @@ export const tagLists: any = [
                 },
                 "srcset": {
                     "type": "String",
-                    "desc": "Same syntax as <img> srcset attribute",
+                    "desc": "语法与＜img＞srcset属性相同",
                     "link": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Different_sizes",
                     "examples": [
                         "elva-fairy-320w.jpg 320w, elva-fairy-480w.jpg 480w"
@@ -14204,7 +14286,7 @@ export const tagLists: any = [
                 },
                 "sizes": {
                     "type": "String",
-                    "desc": "Same syntax as <img> sizes attribute",
+                    "desc": "语法与＜img＞size属性相同",
                     "link": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Different_sizes",
                     "examples": [
                         "(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
@@ -14213,7 +14295,7 @@ export const tagLists: any = [
                 },
                 "placeholder-src": {
                     "type": "String",
-                    "desc": "While waiting for your image to load, you can use a placeholder image",
+                    "desc": "在等待加载图像时，可以使用占位符图像",
                     "transformAssetUrls": true,
                     "examples": [
                         "(public folder) src=\"img/some-placeholder.png\"",
@@ -14228,7 +14310,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Use it when not specifying 'ratio' but still wanting an initial aspect ratio",
+                    "desc": "当未指定“ratio”但仍需要初始纵横比时使用它",
                     "default": "16/9",
                     "examples": [
                         "(Number format) :initial-ratio=\"16/9\"",
@@ -14239,7 +14321,7 @@ export const tagLists: any = [
                 },
                 "width": {
                     "type": "String",
-                    "desc": "Forces image width; Must also include the unit (px or %)",
+                    "desc": "强制图像宽度；还必须包括单位（px或%）",
                     "examples": [
                         "280px",
                         "70%"
@@ -14248,7 +14330,7 @@ export const tagLists: any = [
                 },
                 "height": {
                     "type": "String",
-                    "desc": "Forces image height; Must also include the unit (px or %)",
+                    "desc": "强制图像高度；还必须包括单位（px或%）",
                     "examples": [
                         "280px",
                         "70%"
@@ -14257,7 +14339,7 @@ export const tagLists: any = [
                 },
                 "loading": {
                     "type": "String",
-                    "desc": "Lazy or immediate load; Same syntax as <img> loading attribute",
+                    "desc": "懒散的或即时的负荷；与＜img＞加载属性语法相同",
                     "default": "lazy",
                     "values": [
                         "lazy",
@@ -14268,7 +14350,7 @@ export const tagLists: any = [
                 },
                 "crossorigin": {
                     "type": "String",
-                    "desc": "Same syntax as <img> crossorigin attribute",
+                    "desc": "语法与＜img＞交叉原点属性相同",
                     "values": [
                         "anonymous",
                         "use-credentials"
@@ -14277,7 +14359,7 @@ export const tagLists: any = [
                 },
                 "decoding": {
                     "type": "String",
-                    "desc": "Same syntax as <img> decoding attribute",
+                    "desc": "语法与＜img＞解码属性相同",
                     "values": [
                         "sync",
                         "async",
@@ -14287,7 +14369,7 @@ export const tagLists: any = [
                 },
                 "referrerpolicy": {
                     "type": "String",
-                    "desc": "Same syntax as <img> referrerpolicy attribute",
+                    "desc": "语法与＜img＞referrpolicy属性相同",
                     "values": [
                         "no-referrer",
                         "no-referrer-when-downgrade",
@@ -14302,7 +14384,7 @@ export const tagLists: any = [
                 },
                 "fetchpriority": {
                     "type": "String",
-                    "desc": "Provides a hint of the relative priority to use when fetching the image",
+                    "desc": "提供获取图像时要使用的相对优先级的提示",
                     "default": "auto",
                     "values": [
                         "high",
@@ -14315,7 +14397,7 @@ export const tagLists: any = [
                 },
                 "fit": {
                     "type": "String",
-                    "desc": "How the image will fit into the container; Equivalent of the object-fit prop; Can be coordinated with 'position' prop",
+                    "desc": "图像将如何融入容器；物体适合道具的等效物；可以与“位置”道具协调",
                     "default": "cover",
                     "values": [
                         "cover",
@@ -14329,7 +14411,7 @@ export const tagLists: any = [
                 },
                 "position": {
                     "type": "String",
-                    "desc": "The alignment of the image into the container; Equivalent of the object-position CSS prop",
+                    "desc": "将图像对齐到容器中；对象位置CSS道具的等效项",
                     "default": "50% 50%",
                     "examples": [
                         "0 0",
@@ -14340,7 +14422,7 @@ export const tagLists: any = [
                 },
                 "alt": {
                     "type": "String",
-                    "desc": "Specifies an alternate text for the image, if the image cannot be displayed",
+                    "desc": "如果图像无法显示，则为图像指定替代文本",
                     "examples": [
                         "Two cats"
                     ],
@@ -14348,12 +14430,12 @@ export const tagLists: any = [
                 },
                 "draggable": {
                     "type": "Boolean",
-                    "desc": "Adds the native 'draggable' attribute",
+                    "desc": "添加本机“可拖动”属性",
                     "category": "behavior"
                 },
                 "img-class": {
                     "type": "String",
-                    "desc": "CSS classes to be attributed to the native img element",
+                    "desc": "要归属于本机img元素的CSS类",
                     "examples": [
                         "my-special-class"
                     ],
@@ -14362,7 +14444,7 @@ export const tagLists: any = [
                 "img-style": {
                     "type": "Object",
                     "tsType": "VueStyleObjectProp",
-                    "desc": "Apply CSS to the native img element",
+                    "desc": "将CSS应用于本机img元素",
                     "examples": [
                         ":img-style=\"{ transform: 'rotate(45deg)' }\" "
                     ],
@@ -14370,7 +14452,7 @@ export const tagLists: any = [
                 },
                 "spinner-color": {
                     "type": "String",
-                    "desc": "Color name for default Spinner (unless using a 'loading' slot)",
+                    "desc": "默认微调器的颜色名称（除非使用“加载”插槽）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -14379,7 +14461,7 @@ export const tagLists: any = [
                 },
                 "spinner-size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name, for default Spinner (unless using a 'loading' slot)",
+                    "desc": "默认Spinner的大小（以CSS为单位，包括单元名称）（除非使用“加载”插槽）",
                     "examples": [
                         "16px",
                         "2rem"
@@ -14388,34 +14470,34 @@ export const tagLists: any = [
                 },
                 "no-spinner": {
                     "type": "Boolean",
-                    "desc": "Do not display the default spinner while waiting for the image to be loaded; It is overriden by the 'loading' slot when one is present",
+                    "desc": "在等待加载图像时，不要显示默认微调器；当有一个插槽时，它会被“加载”插槽覆盖",
                     "category": "behavior"
                 },
                 "no-native-menu": {
                     "type": "Boolean",
-                    "desc": "Disables the native context menu for the image",
+                    "desc": "禁用映像的本机上下文菜单",
                     "category": "behavior"
                 },
                 "no-transition": {
                     "type": "Boolean",
-                    "desc": "Disable default transition when switching between old and new image",
+                    "desc": "在新旧图像之间切换时禁用默认转换",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot can be used for captions. See examples"
+                    "desc": "默认插槽可用于字幕。参见示例"
                 },
                 "loading": {
-                    "desc": "While image is loading, this slot is being displayed on top of the component; Suggestions: a spinner or text"
+                    "desc": "加载图像时，此插槽显示在组件的顶部；建议：微调器或文本"
                 },
                 "error": {
-                    "desc": "Optional slot to be used when image could not be loaded; make sure you assign a min-height and min-width to the component through CSS"
+                    "desc": "无法加载图像时使用的可选插槽；确保通过CSS为组件指定最小高度和最小宽度"
                 }
             },
             "events": {
                 "load": {
-                    "desc": "Emitted when image has been loaded by the browser",
+                    "desc": "当浏览器加载图像时发出",
                     "params": {
                         "src": {
                             "type": "String",
@@ -14427,7 +14509,7 @@ export const tagLists: any = [
                     }
                 },
                 "error": {
-                    "desc": "Emitted when browser could not load the image",
+                    "desc": "当浏览器无法加载图像时发出",
                     "params": {
                         "src": {
                             "type": "Error",
@@ -14439,7 +14521,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-infinite-scroll", desc: "无限滚动", info: {
+        "name": "q-infinite-scroll",
+        "desc": "无限滚动",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/infinite-scroll"
@@ -14447,7 +14531,7 @@ export const tagLists: any = [
             "props": {
                 "offset": {
                     "type": "Number",
-                    "desc": "Offset (pixels) to bottom of Infinite Scroll container from which the component should start loading more content in advance",
+                    "desc": "组件应提前开始加载更多内容的“无限滚动”容器底部的偏移量（像素）",
                     "default": 500,
                     "category": "behavior",
                     "required": false
@@ -14457,14 +14541,14 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Debounce amount (in milliseconds)",
+                    "desc": "去抖动量（以毫秒为单位）",
                     "default": 100,
                     "category": "behavior",
                     "required": false
                 },
                 "initial-index": {
                     "type": "Number",
-                    "desc": "Initialize the pagination index (used for the @load event)",
+                    "desc": "初始化分页索引（用于@load事件）",
                     "default": 0,
                     "category": "behavior",
                     "required": false
@@ -14474,7 +14558,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -14485,26 +14569,26 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Scroll area should behave like a messenger - starting scrolled to bottom and loading when reaching the top",
+                    "desc": "滚动区域的行为应该像信使一样——从滚动到底部开始，到达顶部时加载",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 },
                 "loading": {
-                    "desc": "Slot displaying something while loading content; Example: QSpinner"
+                    "desc": "加载内容时显示内容的插槽；示例：QSpinner"
                 }
             },
             "events": {
                 "load": {
-                    "desc": "Emitted when Infinite Scroll needs to load more data",
+                    "desc": "当无限滚动需要加载更多数据时发出",
                     "params": {
                         "index": {
                             "type": "Number",
@@ -14526,22 +14610,22 @@ export const tagLists: any = [
             },
             "methods": {
                 "poll": {
-                    "desc": "Checks scroll position and loads more content if necessary"
+                    "desc": "检查滚动位置并在必要时加载更多内容"
                 },
                 "trigger": {
-                    "desc": "Tells Infinite Scroll to load more content, regardless of the scroll position"
+                    "desc": "告诉无限滚动加载更多内容，无论滚动位置如何"
                 },
                 "reset": {
-                    "desc": "Resets calling index to 0"
+                    "desc": "将调用索引重置为0"
                 },
                 "stop": {
-                    "desc": "Stops working, regardless of scroll position"
+                    "desc": "停止工作，无论滚动位置如何"
                 },
                 "resume": {
-                    "desc": "Starts working. Checks scroll position upon call and if trigger is hit, it loads more content"
+                    "desc": "开始工作。调用时检查滚动位置，如果触发，则加载更多内容"
                 },
                 "setIndex": {
-                    "desc": "Overwrite the current pagination index",
+                    "desc": "覆盖当前分页索引",
                     "params": {
                         "newIndex": {
                             "type": "Number",
@@ -14551,13 +14635,15 @@ export const tagLists: any = [
                     }
                 },
                 "updateScrollTarget": {
-                    "desc": "Updates the scroll target; Useful when the parent elements change so that the scrolling target also changes"
+                    "desc": "更新滚动目标；当父元素发生变化从而滚动目标也发生变化时，这很有用"
                 }
             }
         }
     },
     {
-        name: "q-inner-loading", desc: "内部加载", info: {
+        "name": "q-inner-loading",
+        "desc": "内部加载",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/inner-loading"
@@ -14565,7 +14651,7 @@ export const tagLists: any = [
             "props": {
                 "transition-show": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -14576,7 +14662,7 @@ export const tagLists: any = [
                 },
                 "transition-hide": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -14590,14 +14676,14 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "required": false
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name, or standard size name (xs|sm|md|lg|xl), for the inner Spinner (unless using the default slot)",
+                    "desc": "内部Spinner的大小（以CSS为单位），包括单元名称或标准大小名称（xs|sm|md|lg|xl）（除非使用默认插槽）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -14610,12 +14696,12 @@ export const tagLists: any = [
                 },
                 "showing": {
                     "type": "Boolean",
-                    "desc": "State - loading or not",
+                    "desc": "状态-是否加载",
                     "category": "state"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette for the inner Spinner (unless using the default slot)",
+                    "desc": "内部微调器的Quasar调色板中组件的颜色名称（除非使用默认插槽）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -14624,7 +14710,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "Add a label; Gets overriden when using the default slot",
+                    "desc": "添加标签；使用默认插槽时获取覆盖",
                     "examples": [
                         "Please wait..."
                     ],
@@ -14633,7 +14719,7 @@ export const tagLists: any = [
                 },
                 "label-class": {
                     "type": "String",
-                    "desc": "Add CSS class(es) to the label; Works along the 'label' prop only",
+                    "desc": "将CSS类添加到标签中；仅适用于“标签”道具",
                     "examples": [
                         "text-red q-mt-xl"
                     ],
@@ -14647,7 +14733,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Apply custom style to the label; Works along the 'label' prop only",
+                    "desc": "将自定义样式应用于标签；仅适用于“标签”道具",
                     "examples": [
                         "font-size: 28px",
                         ":label-style=\"{ color: '#ff0000' }\""
@@ -14657,19 +14743,21 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot is used for replacing default Spinner; Suggestions: a spinner or text"
+                    "desc": "默认插槽用于替换默认Spinner；建议：微调器或文本"
                 }
             }
         }
     },
     {
-        name: "q-intersection", desc: "交叉", info: {
+        "name": "q-intersection",
+        "desc": "交叉",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/intersection"
@@ -14677,7 +14765,7 @@ export const tagLists: any = [
             "props": {
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to use",
+                    "desc": "要使用的HTML标记",
                     "examples": [
                         "div",
                         "span",
@@ -14691,17 +14779,17 @@ export const tagLists: any = [
                 },
                 "once": {
                     "type": "Boolean",
-                    "desc": "Get triggered only once",
+                    "desc": "只触发一次",
                     "category": "behavior"
                 },
                 "ssr-prerender": {
                     "type": "Boolean",
-                    "desc": "Pre-render content on server side if using SSR (use it to pre-render above the fold content)",
+                    "desc": "如果使用SSR，则在服务器端预渲染内容（用于在折叠内容上方预渲染）",
                     "category": "behavior"
                 },
                 "root": {
                     "type": "Element",
-                    "desc": "[Intersection API root prop] Lets you define an alternative to the viewport as your root (through its DOM element); It is important to keep in mind that root needs to be an ancestor of the observed element",
+                    "desc": "[交叉点API根道具]用于将视口的替代项定义为根（通过其DOM元素）；重要的是要记住，根需要是观测元素的祖先",
                     "examples": [
                         "$refs.myTable.$el",
                         "getElementById(\"myTable\")"
@@ -14710,7 +14798,7 @@ export const tagLists: any = [
                 },
                 "margin": {
                     "type": "String",
-                    "desc": "[Intersection API rootMargin prop] Allows you to specify the margins for the root, effectively allowing you to either grow or shrink the area used for intersections",
+                    "desc": "[交叉点API rootMargin prop]允许您指定根的边缘，有效地允许您扩大或缩小用于交叉点的区域",
                     "examples": [
                         "-20px 0px",
                         "10px 20px 30px 40px"
@@ -14722,7 +14810,7 @@ export const tagLists: any = [
                         "Array",
                         "Number"
                     ],
-                    "desc": "[Intersection API threshold prop] Threshold(s) at which to trigger, specified as a ratio, or list of ratios, of (visible area / total area) of the observed element",
+                    "desc": "[交叉点API阈值道具]触发的阈值，指定为观察元素（可见面积/总面积）的比率或比率列表",
                     "examples": [
                         "[ 0, 0.25, 0.5, 0.75, 1 ]",
                         ":threshold=\"1\""
@@ -14731,7 +14819,7 @@ export const tagLists: any = [
                 },
                 "transition": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -14743,7 +14831,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "behavior",
                     "addedIn": "v2.3.1",
@@ -14751,18 +14839,18 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Disable visibility observable (content will remain as it was, visible or hidden)",
+                    "desc": "禁用可观察的可见性（内容将保持原样，可见或隐藏）",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "visibility": {
-                    "desc": "Fires when visibility changes",
+                    "desc": "可见性更改时激发",
                     "params": {
                         "isVisible": {
                             "type": "Boolean",
@@ -14774,7 +14862,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-knob", desc: "球形进度条", info: {
+        "name": "q-knob",
+        "desc": "球形进度条",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/knob"
@@ -14782,7 +14872,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -14790,7 +14880,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -14800,7 +14890,7 @@ export const tagLists: any = [
                     "category": "style"
                 },
                 "model-value": {
-                    "desc": "Any number to indicate the given value of the knob. Either use this property (along with a listener for 'update:modelValue' event) OR use the v-model directive",
+                    "desc": "表示旋钮给定值的任何数字。使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -14811,46 +14901,46 @@ export const tagLists: any = [
                 },
                 "min": {
                     "type": "Number",
-                    "desc": "The minimum value that the model (the knob value) should start at",
+                    "desc": "模型（旋钮值）应开始的最小值",
                     "category": "model"
                 },
                 "max": {
                     "type": "Number",
-                    "desc": "The maximum value that the model (the knob value) should go to",
+                    "desc": "模型（旋钮值）应达到的最大值",
                     "category": "model"
                 },
                 "inner-min": {
                     "type": "Number",
-                    "desc": "Inner minimum value of the model; Use in case you need the model value to be inside of the track's min-max values; Needs to be higher or equal to 'min' prop; Defaults to 'min' prop",
+                    "desc": "模型的内部最小值；如果您需要模型值位于轨迹的最小-最大值之内，请使用；需要高于或等于“min”道具；默认为“min”道具",
                     "category": "model",
                     "addedIn": "v2.5.4"
                 },
                 "inner-max": {
                     "type": "Number",
-                    "desc": "Inner maximum value of the model; Use in case you need the model value to be inside of the track's min-max values; Needs to be lower or equal to 'max' prop; Defaults to 'max' prop",
+                    "desc": "模型的内部最大值；如果您需要模型值位于轨迹的最小-最大值之内，请使用；需要低于或等于“最大”道具；默认为“最大”道具",
                     "category": "model",
                     "addedIn": "v2.5.4"
                 },
                 "step": {
                     "type": "Number",
                     "default": 1,
-                    "desc": "A number representing steps in the value of the model, while adjusting the knob",
+                    "desc": "一个数字，表示在调整旋钮时模型值的步长",
                     "category": "model",
                     "required": false
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Reverses the direction of progress",
+                    "desc": "颠倒前进方向",
                     "category": "behavior"
                 },
                 "instant-feedback": {
                     "type": "Boolean",
-                    "desc": "No animation when model changes",
+                    "desc": "模型更改时没有动画",
                     "category": "behavior"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -14859,7 +14949,7 @@ export const tagLists: any = [
                 },
                 "center-color": {
                     "type": "String",
-                    "desc": "Color name for the center part of the component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件中心部分的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -14868,7 +14958,7 @@ export const tagLists: any = [
                 },
                 "track-color": {
                     "type": "String",
-                    "desc": "Color name for the track of the component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件轨迹的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -14877,7 +14967,7 @@ export const tagLists: any = [
                 },
                 "font-size": {
                     "type": "String",
-                    "desc": "Size of text in CSS units, including unit name. Suggestion: use 'em' units to sync with component size",
+                    "desc": "以CSS为单位的文本大小，包括单位名称。建议：使用“em”单位与组件大小同步",
                     "default": "0.25em",
                     "examples": [
                         "1em",
@@ -14890,20 +14980,20 @@ export const tagLists: any = [
                 "thickness": {
                     "type": "Number",
                     "default": 0.2,
-                    "desc": "Thickness of progress arc as a ratio (0.0 < x < 1.0) of component size",
+                    "desc": "进度弧的厚度与部件尺寸之比（0.0<x<1.0）",
                     "category": "style",
                     "required": false
                 },
                 "angle": {
                     "type": "Number",
-                    "desc": "Angle to rotate progress arc by",
+                    "desc": "旋转进度弧的角度",
                     "default": 0,
                     "category": "content",
                     "required": false
                 },
                 "show-value": {
                     "type": "Boolean",
-                    "desc": "Enables the default slot and uses it (if available), otherwise it displays the 'value' prop as text; Make sure the text has enough space to be displayed inside the component",
+                    "desc": "启用默认槽并使用它（如果可用），否则它将“值”道具显示为文本；确保文本有足够的空间显示在组件内部",
                     "category": "content|behavior"
                 },
                 "tabindex": {
@@ -14911,7 +15001,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -14920,23 +15010,23 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Number",
@@ -14946,7 +15036,7 @@ export const tagLists: any = [
                     }
                 },
                 "change": {
-                    "desc": "Fires at the end of a knob's adjustment and offers the value of the model",
+                    "desc": "在旋钮调整结束时激发，并提供模型的值",
                     "params": {
                         "value": {
                             "type": "Number",
@@ -14955,7 +15045,7 @@ export const tagLists: any = [
                     }
                 },
                 "drag-value": {
-                    "desc": "The value of the model while dragging is still in progress",
+                    "desc": "拖动时模型的值仍在进行中",
                     "params": {
                         "value": {
                             "type": "Number",
@@ -14967,7 +15057,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-linear-progress", desc: "线性进度", info: {
+        "name": "q-linear-progress",
+        "desc": "线性进度",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/linear-progress"
@@ -14975,7 +15067,7 @@ export const tagLists: any = [
             "props": {
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -14986,19 +15078,19 @@ export const tagLists: any = [
                 },
                 "value": {
                     "type": "Number",
-                    "desc": "Progress value (0.0 < x < 1.0)",
+                    "desc": "进度值（0.0<x<1.0）",
                     "default": 0,
                     "category": "model",
                     "required": false
                 },
                 "buffer": {
                     "type": "Number",
-                    "desc": "Optional buffer value (0.0 < x < 1.0)",
+                    "desc": "可选缓冲区值（0.0<x<1.0）",
                     "category": "behavior"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -15007,7 +15099,7 @@ export const tagLists: any = [
                 },
                 "track-color": {
                     "type": "String",
-                    "desc": "Color name for component's track from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件轨迹的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -15016,37 +15108,37 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Reverse direction of progress",
+                    "desc": "前进方向相反",
                     "category": "behavior"
                 },
                 "stripe": {
                     "type": "Boolean",
-                    "desc": "Draw stripes; For determinate state only (for performance reasons)",
+                    "desc": "绘制条纹；仅用于确定状态（出于性能原因）",
                     "category": "content"
                 },
                 "indeterminate": {
                     "type": "Boolean",
-                    "desc": "Put component into indeterminate mode",
+                    "desc": "将组件置于不确定模式",
                     "category": "behavior"
                 },
                 "query": {
                     "type": "Boolean",
-                    "desc": "Put component into query mode",
+                    "desc": "将组件置于查询模式",
                     "category": "behavior"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a small standard border-radius for a squared shape of the component",
+                    "desc": "为零部件的方形应用小的标准边界半径",
                     "category": "style"
                 },
                 "instant-feedback": {
                     "type": "Boolean",
-                    "desc": "No transition when model changes",
+                    "desc": "模型更改时没有转换",
                     "category": "behavior"
                 },
                 "animation-speed": {
@@ -15054,7 +15146,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Animation speed (in milliseconds, without unit)",
+                    "desc": "动画速度（以毫秒为单位，无单位）",
                     "examples": [
                         500,
                         "1200"
@@ -15067,13 +15159,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestion: QTooltip"
+                    "desc": "建议：QTooltip"
                 }
             }
         }
     },
     {
-        name: "q-list", desc: "列表", info: {
+        "name": "q-list",
+        "desc": "列表",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/list-and-list-items"
@@ -15081,32 +15175,32 @@ export const tagLists: any = [
             "props": {
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "separator": {
                     "type": "Boolean",
-                    "desc": "Applies a separator between contained items",
+                    "desc": "在包含的项目之间应用分隔符",
                     "category": "content"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "padding": {
                     "type": "Boolean",
-                    "desc": "Applies a material design-like padding on top and bottom",
+                    "desc": "在顶部和底部应用类似填充物的材质设计",
                     "category": "content"
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to use",
+                    "desc": "要使用的HTML标记",
                     "examples": [
                         "div",
                         "span",
@@ -15122,13 +15216,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "This is where the content goes; Suggestion: QItem, QExpansionItem, ..."
+                    "desc": "这就是内容的去向；建议：QItem，Q扩展项。。。"
                 }
             }
         }
     },
     {
-        name: "q-item", desc: "列表项", info: {
+        "name": "q-item",
+        "desc": "列表项",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/list-and-list-items"
@@ -15139,7 +15235,7 @@ export const tagLists: any = [
                         "String",
                         "Object"
                     ],
-                    "desc": "Equivalent to Vue Router <router-link> 'to' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“to”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "/home/dashboard",
                         ":to=\"{ name: 'my-route-name' }\""
@@ -15148,17 +15244,17 @@ export const tagLists: any = [
                 },
                 "exact": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'exact' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue路由器＜Router link＞的“精确”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "replace": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'replace' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“replace”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-active-class"
                     ],
@@ -15166,7 +15262,7 @@ export const tagLists: any = [
                 },
                 "exact-active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-exact-active-class"
                     ],
@@ -15174,7 +15270,7 @@ export const tagLists: any = [
                 },
                 "href": {
                     "type": "String",
-                    "desc": "Native <a> link href attribute; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接href属性；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "https://quasar.dev"
                     ],
@@ -15183,7 +15279,7 @@ export const tagLists: any = [
                 },
                 "target": {
                     "type": "String",
-                    "desc": "Native <a> link target attribute; Use it only along with 'href' prop; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接目标属性；只能与'href'道具一起使用；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "_blank",
                         "_self",
@@ -15195,34 +15291,34 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "active": {
                     "type": "Boolean",
-                    "desc": "Put item into 'active' state",
+                    "desc": "将项目置于“活动”状态",
                     "category": "state",
                     "default": null,
                     "required": false
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "clickable": {
                     "type": "Boolean",
-                    "desc": "Is QItem clickable? If it's the case, then it will add hover effects and emit 'click' events",
+                    "desc": "QItem可点击吗？如果是这种情况，那么它将添加悬停效果并发出“点击”事件",
                     "category": "state"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "inset-level": {
                     "type": "Number",
-                    "desc": "Apply an inset; Useful when avatar/left side is missing but you want to align content with other items that do have a left side, or when you're building a menu",
+                    "desc": "应用插入；当头像/左侧缺失，但您想将内容与其他有左侧的项目对齐时，或者当您正在构建菜单时，这很有用",
                     "examples": [
                         ":inset-level=\"1\""
                     ],
@@ -15233,7 +15329,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -15242,7 +15338,7 @@ export const tagLists: any = [
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to render; Suggestion: use 'label' when encapsulating a QCheckbox/QRadio/QToggle so that when user clicks/taps on the whole item it will trigger a model change for the mentioned components",
+                    "desc": "要呈现的HTML标记；建议：在封装Q复选框/QRadio/QLogge时使用“标签”，这样当用户点击/点击整个项目时，就会触发上述组件的型号更改",
                     "examples": [
                         "div",
                         "span",
@@ -15256,23 +15352,23 @@ export const tagLists: any = [
                 },
                 "manual-focus": {
                     "type": "Boolean",
-                    "desc": "Put item into a manual focus state; Enables 'focused' prop which will determine if item is focused or not, rather than relying on native hover/focus states",
+                    "desc": "将项目置于手动对焦状态；启用“聚焦”道具，该道具将决定项目是否聚焦，而不是依赖于本机悬停/聚焦状态",
                     "category": "state"
                 },
                 "focused": {
                     "type": "Boolean",
-                    "desc": "Determines focus state, ONLY if 'manual-focus' is enabled / set to true",
+                    "desc": "仅当“手动聚焦”已启用/设置为true时，才确定聚焦状态",
                     "category": "state"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where QItem's content goes"
+                    "desc": "这就是QItem的内容所在"
                 }
             },
             "events": {
                 "click": {
-                    "desc": "Emitted when the component is clicked",
+                    "desc": "单击组件时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -15325,7 +15421,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-item-section", desc: "列表项选项", info: {
+        "name": "q-item-section",
+        "desc": "列表项选项",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/list-and-list-items"
@@ -15333,39 +15431,41 @@ export const tagLists: any = [
             "props": {
                 "avatar": {
                     "type": "Boolean",
-                    "desc": "Render an avatar item side (does not needs 'side' prop to be set)",
+                    "desc": "渲染化身项目侧面（不需要设置“侧面”道具）",
                     "category": "content"
                 },
                 "thumbnail": {
                     "type": "Boolean",
-                    "desc": "Render a thumbnail item side (does not needs 'side' prop to be set)",
+                    "desc": "侧面渲染缩略图项目（不需要设置“侧面”道具）",
                     "category": "content"
                 },
                 "side": {
                     "type": "Boolean",
-                    "desc": "Renders as a side of the item",
+                    "desc": "作为项的一侧进行渲染",
                     "category": "content"
                 },
                 "top": {
                     "type": "Boolean",
-                    "desc": "Align content to top (useful for multi-line items)",
+                    "desc": "将内容顶部对齐（适用于多行项目）",
                     "category": "content"
                 },
                 "no-wrap": {
                     "type": "Boolean",
-                    "desc": "Do not wrap text (useful for item's main content)",
+                    "desc": "不换行文本（对项目的主要内容有用）",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Section's actual content"
+                    "desc": "章节的实际内容"
                 }
             }
         }
     },
     {
-        name: "q-item-label", desc: "列表项选项", info: {
+        "name": "q-item-label",
+        "desc": "列表项选项",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/list-and-list-items"
@@ -15373,17 +15473,17 @@ export const tagLists: any = [
             "props": {
                 "overline": {
                     "type": "Boolean",
-                    "desc": "Renders an overline label",
+                    "desc": "渲染覆盖线标签",
                     "category": "content"
                 },
                 "caption": {
                     "type": "Boolean",
-                    "desc": "Renders a caption label",
+                    "desc": "呈现标题标签",
                     "category": "content"
                 },
                 "header": {
                     "type": "Boolean",
-                    "desc": "Renders a header label",
+                    "desc": "呈现标头标签",
                     "category": "content"
                 },
                 "lines": {
@@ -15391,19 +15491,21 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Apply ellipsis when there's not enough space to render on the specified number of lines;",
+                    "desc": "当指定行数上没有足够的空间进行渲染时，应用省略号；",
                     "category": "content|behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "The content of the label; Suggestion: text"
+                    "desc": "标签的内容；建议：文本"
                 }
             }
         }
     },
     {
-        name: "q-makeup-table", desc: "表格", info: {
+        "name": "q-makeup-table",
+        "desc": "表格",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/markup-table"
@@ -15411,32 +15513,32 @@ export const tagLists: any = [
             "props": {
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "separator": {
                     "type": "String",
-                    "desc": "Use a separator/border between rows, columns or all cells",
+                    "desc": "在行、列或所有单元格之间使用分隔符/边框",
                     "default": "horizontal",
                     "values": [
                         "horizontal",
@@ -15452,19 +15554,21 @@ export const tagLists: any = [
                 },
                 "wrap-cells": {
                     "type": "Boolean",
-                    "desc": "Wrap text within table cells",
+                    "desc": "在表格单元格中换行文本",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-menu", desc: "菜单", info: {
+        "name": "q-menu",
+        "desc": "菜单",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/menu"
@@ -15472,7 +15576,7 @@ export const tagLists: any = [
             "props": {
                 "transition-show": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -15483,7 +15587,7 @@ export const tagLists: any = [
                 },
                 "transition-hide": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -15497,7 +15601,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "required": false
@@ -15508,7 +15612,7 @@ export const tagLists: any = [
                         "String",
                         "Element"
                     ],
-                    "desc": "Configure a target element to trigger component toggle; 'true' means it enables the parent DOM element, 'false' means it disables attaching events to any DOM elements; By using a String (CSS selector) or a DOM element it attaches the events to the specified DOM element (if it exists)",
+                    "desc": "配置目标元素以触发组件切换；'true表示启用父DOM元素，false表示禁用将事件附加到任何DOM元素；通过使用String（CSS选择器）或DOM元素，它将事件附加到指定的DOM元素（如果存在）",
                     "default": true,
                     "values": [
                         "(Boolean) true",
@@ -15527,37 +15631,37 @@ export const tagLists: any = [
                 },
                 "no-parent-event": {
                     "type": "Boolean",
-                    "desc": "Skips attaching events to the target DOM element (that trigger the element to get shown)",
+                    "desc": "跳过将事件附加到目标DOM元素（触发元素显示）",
                     "category": "behavior"
                 },
                 "context-menu": {
                     "type": "Boolean",
-                    "desc": "Allows the component to behave like a context menu, which opens with a right mouse click (or long tap on mobile)",
+                    "desc": "允许组件的行为类似于上下文菜单，该菜单通过鼠标右键单击（或长按移动设备）打开",
                     "category": "behavior"
                 },
                 "model-value": {
                     "type": "Boolean",
-                    "desc": "Model of the component defining shown/hidden state; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "定义显示/隐藏状态的组件的模型；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "category": "model"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "fit": {
                     "type": "Boolean",
-                    "desc": "Allows the menu to match at least the full width of its target",
+                    "desc": "允许菜单至少与其目标的全宽相匹配",
                     "category": "position"
                 },
                 "cover": {
                     "type": "Boolean",
-                    "desc": "Allows the menu to cover its target. When used, the 'self' and 'fit' props are no longer effective",
+                    "desc": "允许菜单覆盖其目标。使用时，“self”和“fit”道具不再有效",
                     "category": "position"
                 },
                 "anchor": {
                     "type": "String",
-                    "desc": "Two values setting the starting position or anchor point of the menu relative to its target",
+                    "desc": "设置菜单相对于目标的起始位置或锚点的两个值",
                     "values": [
                         "top left",
                         "top middle",
@@ -15579,7 +15683,7 @@ export const tagLists: any = [
                 },
                 "self": {
                     "type": "String",
-                    "desc": "Two values setting the menu's own position relative to its target",
+                    "desc": "两个值设置菜单自身相对于目标的位置",
                     "values": [
                         "top left",
                         "top middle",
@@ -15601,7 +15705,7 @@ export const tagLists: any = [
                 },
                 "offset": {
                     "type": "Array",
-                    "desc": "An array of two numbers to offset the menu horizontally and vertically in pixels",
+                    "desc": "两个数字的数组，以像素为单位水平和垂直偏移菜单",
                     "examples": [
                         "[8, 8]",
                         "[5, 10]"
@@ -15613,7 +15717,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -15624,47 +15728,47 @@ export const tagLists: any = [
                 },
                 "touch-position": {
                     "type": "Boolean",
-                    "desc": "Allows for the target position to be set by the mouse position, when the target of the menu is either clicked or touched",
+                    "desc": "当单击或触摸菜单的目标时，允许通过鼠标位置设置目标位置",
                     "category": "behavior"
                 },
                 "persistent": {
                     "type": "Boolean",
-                    "desc": "Allows the menu to not be dismissed by a click/tap outside of the menu or by hitting the ESC key",
+                    "desc": "允许菜单不被菜单外的点击/轻击或按ESC键取消",
                     "category": "behavior"
                 },
                 "no-route-dismiss": {
                     "type": "Boolean",
-                    "desc": "Changing route app won't dismiss the popup; No need to set it if 'persistent' prop is also set",
+                    "desc": "更改路线应用程序不会关闭弹出窗口；如果还设置了“persistent”道具，则无需设置",
                     "category": "behavior"
                 },
                 "auto-close": {
                     "type": "Boolean",
-                    "desc": "Allows any click/tap in the menu to close it; Useful instead of attaching events to each menu item that should close the menu on click/tap",
+                    "desc": "允许在菜单中单击/点击以关闭它；很有用，而不是将事件附加到单击/点击时应关闭菜单的每个菜单项",
                     "category": "behavior"
                 },
                 "separate-close-popup": {
                     "type": "Boolean",
-                    "desc": "Separate from parent menu, marking it as a separate closing point for v-close-popup (without this, chained menus close all together)",
+                    "desc": "与父菜单分离，将其标记为v-close-popup的单独关闭点（如果没有这一点，链接菜单将全部关闭）",
                     "category": "behavior"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Forces content to have squared borders",
+                    "desc": "强制内容具有方形边框",
                     "category": "style"
                 },
                 "no-refocus": {
                     "type": "Boolean",
-                    "desc": "(Accessibility) When Menu gets hidden, do not refocus on the DOM element that previously had focus",
+                    "desc": "（辅助功能）当Menu被隐藏时，不要将焦点重新集中在以前有焦点的DOM元素上",
                     "category": "behavior"
                 },
                 "no-focus": {
                     "type": "Boolean",
-                    "desc": "(Accessibility) When Menu gets shown, do not switch focus on it",
+                    "desc": "（辅助功能）显示菜单时，不要将焦点切换到菜单上",
                     "category": "behavior"
                 },
                 "max-height": {
                     "type": "String",
-                    "desc": "The maximum height of the menu; Size in CSS units, including unit name",
+                    "desc": "菜单的最大高度；以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -15673,7 +15777,7 @@ export const tagLists: any = [
                 },
                 "max-width": {
                     "type": "String",
-                    "desc": "The maximum width of the menu; Size in CSS units, including unit name",
+                    "desc": "菜单的最大宽度；以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -15683,12 +15787,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when showing/hidden state changes; Is also used by v-model",
+                    "desc": "显示/隐藏状态更改时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Boolean",
@@ -15697,7 +15801,7 @@ export const tagLists: any = [
                     }
                 },
                 "show": {
-                    "desc": "Emitted after component has triggered show()",
+                    "desc": "在组件触发show（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -15707,7 +15811,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted when component triggers show() but before it finishes doing it",
+                    "desc": "当组件触发show（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -15717,7 +15821,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Emitted after component has triggered hide()",
+                    "desc": "在组件触发hide（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -15727,7 +15831,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-hide": {
-                    "desc": "Emitted when component triggers hide() but before it finishes doing it",
+                    "desc": "当组件触发hide（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -15737,12 +15841,12 @@ export const tagLists: any = [
                     }
                 },
                 "escape-key": {
-                    "desc": "Emitted when ESC key is pressed; Does not get emitted if Menu is 'persistent'"
+                    "desc": "按下ESC键时发出；如果Menu为“persistent”，则不会发出"
                 }
             },
             "methods": {
                 "show": {
-                    "desc": "Triggers component to show",
+                    "desc": "触发要显示的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -15752,7 +15856,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Triggers component to hide",
+                    "desc": "触发要隐藏的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -15769,26 +15873,28 @@ export const tagLists: any = [
                             "required": false
                         }
                     },
-                    "desc": "Triggers component to toggle between show/hide"
+                    "desc": "触发组件在显示/隐藏之间切换"
                 },
                 "updatePosition": {
-                    "desc": "There are some custom scenarios for which Quasar cannot automatically reposition the menu without significant performance drawbacks so the optimal solution is for you to call this method when you need it"
+                    "desc": "在某些自定义场景中，Quasar无法自动重新定位菜单而不会出现显著的性能缺陷，因此最佳解决方案是在需要时调用此方法"
                 },
                 "focus": {
-                    "desc": "Focus menu; if you have content with autofocus attribute, it will directly focus it"
+                    "desc": "焦点菜单；如果您有具有自动对焦属性的内容，它将直接对其进行对焦"
                 }
             },
             "computedProps": {
                 "contentEl": {
                     "type": "Element",
-                    "desc": "The DOM Element of the rendered content",
+                    "desc": "渲染内容的DOM元素",
                     "addedIn": "v2.10.1"
                 }
             }
         }
     },
     {
-        name: "q-no-ssr", desc: "无ssr", info: {
+        "name": "q-no-ssr",
+        "desc": "无ssr",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/no-ssr"
@@ -15796,7 +15902,7 @@ export const tagLists: any = [
             "props": {
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to use",
+                    "desc": "要使用的HTML标记",
                     "examples": [
                         "div",
                         "span",
@@ -15810,7 +15916,7 @@ export const tagLists: any = [
                 },
                 "placeholder": {
                     "type": "String",
-                    "desc": "Text to display on server-side render (unless using 'placeholder' slot)",
+                    "desc": "要在服务器端渲染上显示的文本（除非使用“占位符”插槽）",
                     "examples": [
                         "This is server-side only"
                     ],
@@ -15819,16 +15925,18 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot is used to render content on client-side"
+                    "desc": "默认槽用于在客户端上呈现内容"
                 },
                 "placeholder": {
-                    "desc": "Slot used as placeholder on server-side render, which gets replaced by the default slot on client-side; overrides 'placeholder' prop"
+                    "desc": "在服务器端渲染中用作占位符的插槽，将被客户端上的默认插槽取代；覆盖“占位符”道具"
                 }
             }
         }
     },
     {
-        name: "q-resize-observer", desc: "大小侦听器", info: {
+        "name": "q-resize-observer",
+        "desc": "大小侦听器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/resize-observer"
@@ -15839,7 +15947,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Debounce amount (in milliseconds)",
+                    "desc": "去抖动量（以毫秒为单位）",
                     "default": 100,
                     "examples": [
                         "0",
@@ -15851,7 +15959,7 @@ export const tagLists: any = [
             },
             "events": {
                 "resize": {
-                    "desc": "Parent element has resized (width or height changed)",
+                    "desc": "父元素已调整大小（宽度或高度已更改）",
                     "params": {
                         "size": {
                             "type": "Object",
@@ -15874,7 +15982,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "trigger": {
-                    "desc": "Emit a 'resize' event",
+                    "desc": "发出“调整大小”事件",
                     "params": {
                         "immediately": {
                             "type": "Boolean",
@@ -15886,7 +15994,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-scroll-observer", desc: "滚动侦听器", info: {
+        "name": "q-scroll-observer",
+        "desc": "滚动侦听器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/scroll-observer"
@@ -15897,7 +16007,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Debounce amount (in milliseconds)",
+                    "desc": "去抖动量（以毫秒为单位）",
                     "examples": [
                         "0",
                         "530"
@@ -15906,7 +16016,7 @@ export const tagLists: any = [
                 },
                 "axis": {
                     "type": "String",
-                    "desc": "Axis on which to detect changes",
+                    "desc": "检测更改的轴",
                     "values": [
                         "both",
                         "vertical",
@@ -15921,7 +16031,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -15933,7 +16043,7 @@ export const tagLists: any = [
             },
             "events": {
                 "scroll": {
-                    "desc": "Emitted when scroll position changes",
+                    "desc": "滚动位置更改时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -16013,7 +16123,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "trigger": {
-                    "desc": "Emit a 'scroll' event",
+                    "desc": "发出“滚动”事件",
                     "params": {
                         "immediately": {
                             "type": "Boolean",
@@ -16022,20 +16132,22 @@ export const tagLists: any = [
                     }
                 },
                 "getPosition": {
-                    "desc": "Get current scroll details under the form of an Object: { position, direction, directionChanged, inflectionPoint }"
+                    "desc": "以Object的形式获取当前滚动的详细信息：｛position，direction，directionChanged，inflectionPoint｝"
                 }
             }
         }
     },
     {
-        name: "q-pagination", desc: "分页", info: {
+        "name": "q-pagination",
+        "desc": "分页",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/pagination"
             },
             "props": {
                 "model-value": {
-                    "desc": "Current page (must be between min/max)",
+                    "desc": "当前页面（必须介于最小值/最大值之间）",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -16046,7 +16158,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Minimum page (must be lower than 'max')",
+                    "desc": "最小页面（必须低于“max”）",
                     "default": 1,
                     "category": "model",
                     "required": false
@@ -16056,18 +16168,18 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Number of last page (must be higher than 'min')",
+                    "desc": "最后一页的页数（必须大于“min”）",
                     "required": true,
                     "category": "model"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color (useful when you are using it along with the 'input' prop)",
+                    "desc": "通知组件背景为深色（当您将其与“输入”道具一起使用时很有用）",
                     "category": "style"
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Button size in CSS units, including unit name",
+                    "desc": "以CSS为单位的按钮大小，包括单元名称",
                     "examples": [
                         "20px"
                     ],
@@ -16075,17 +16187,17 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "input": {
                     "type": "Boolean",
-                    "desc": "Use an input instead of buttons",
+                    "desc": "使用输入而不是按钮",
                     "category": "content"
                 },
                 "icon-prev": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -16096,7 +16208,7 @@ export const tagLists: any = [
                 },
                 "icon-next": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -16107,7 +16219,7 @@ export const tagLists: any = [
                 },
                 "icon-first": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -16118,7 +16230,7 @@ export const tagLists: any = [
                 },
                 "icon-last": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -16129,7 +16241,7 @@ export const tagLists: any = [
                 },
                 "to-fn": {
                     "type": "Function",
-                    "desc": "Generate link for page buttons; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "为页面按钮生成链接；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "page": {
                             "type": "Number",
@@ -16150,22 +16262,22 @@ export const tagLists: any = [
                 },
                 "boundary-links": {
                     "type": "Boolean",
-                    "desc": "Show boundary button links",
+                    "desc": "显示边界按钮链接",
                     "category": "content"
                 },
                 "boundary-numbers": {
                     "type": "Boolean",
-                    "desc": "Always show first and last page buttons (if not using 'input')",
+                    "desc": "始终显示第一页和最后一页按钮（如果不使用“输入”）",
                     "category": "content"
                 },
                 "direction-links": {
                     "type": "Boolean",
-                    "desc": "Show direction buttons",
+                    "desc": "显示方向按钮",
                     "category": "content"
                 },
                 "ellipses": {
                     "type": "Boolean",
-                    "desc": "Show ellipses (...) when pages are available",
+                    "desc": "页面可用时显示省略号（…）",
                     "category": "content"
                 },
                 "max-pages": {
@@ -16174,33 +16286,33 @@ export const tagLists: any = [
                         "String"
                     ],
                     "default": 0,
-                    "desc": "Maximum number of page links to display at a time; 0 means Infinite",
+                    "desc": "一次显示的最大页面链接数；0表示无限",
                     "category": "content",
                     "required": false
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Use 'flat' design for non-active buttons (it's the default option)",
+                    "desc": "对非活动按钮使用“平面”设计（这是默认选项）",
                     "category": "style"
                 },
                 "outline": {
                     "type": "Boolean",
-                    "desc": "Use 'outline' design for non-active buttons",
+                    "desc": "对非活动按钮使用“轮廓”设计",
                     "category": "style"
                 },
                 "unelevated": {
                     "type": "Boolean",
-                    "desc": "Remove shadow for non-active buttons",
+                    "desc": "移除非活动按钮的阴影",
                     "category": "style"
                 },
                 "push": {
                     "type": "Boolean",
-                    "desc": "Use 'push' design for non-active buttons",
+                    "desc": "非活动按钮采用“推”式设计",
                     "category": "style"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name from the Quasar Color Palette for the non-active buttons",
+                    "desc": "非活动按钮的Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -16211,7 +16323,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Text color name from the Quasar Color Palette for the ACTIVE buttons",
+                    "desc": "ACTIVE按钮的Quasar调色板中的文本颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -16220,7 +16332,7 @@ export const tagLists: any = [
                 },
                 "active-design": {
                     "type": "String",
-                    "desc": "The design of the ACTIVE button, similar to the flat/outline/push/unelevated props (but those are used for non-active buttons)",
+                    "desc": "活动按钮的设计，类似于平面/轮廓/按钮/无升降道具（但这些用于非活动按钮）",
                     "values": [
                         "flat",
                         "outline",
@@ -16232,7 +16344,7 @@ export const tagLists: any = [
                 },
                 "active-color": {
                     "type": "String",
-                    "desc": "Color name from the Quasar Color Palette for the ACTIVE button",
+                    "desc": "ACTIVE按钮的Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -16243,7 +16355,7 @@ export const tagLists: any = [
                 },
                 "active-text-color": {
                     "type": "String",
-                    "desc": "Text color name from the Quasar Color Palette for the ACTIVE button",
+                    "desc": "ACTIVE按钮的Quasar调色板中的文本颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -16252,22 +16364,22 @@ export const tagLists: any = [
                 },
                 "round": {
                     "type": "Boolean",
-                    "desc": "Makes a circle shaped button for all buttons",
+                    "desc": "为所有按钮制作一个圆形按钮",
                     "category": "style"
                 },
                 "rounded": {
                     "type": "Boolean",
-                    "desc": "Applies a more prominent border-radius for a squared shape button for all buttons",
+                    "desc": "为所有按钮的方形按钮应用更突出的边框半径",
                     "category": "style"
                 },
                 "glossy": {
                     "type": "Boolean",
-                    "desc": "Applies a glossy effect for all buttons",
+                    "desc": "为所有按钮应用光泽效果",
                     "category": "style"
                 },
                 "gutter": {
                     "type": "String",
-                    "desc": "Apply custom gutter; Size in CSS units, including unit name or standard size name (none|xs|sm|md|lg|xl)",
+                    "desc": "应用自定义檐沟；以CSS为单位的大小，包括单元名称或标准大小名称（none|xs|sm|md|lg|xl）",
                     "default": "2px",
                     "examples": [
                         "16px",
@@ -16283,7 +16395,7 @@ export const tagLists: any = [
                 },
                 "padding": {
                     "type": "String",
-                    "desc": "Apply custom padding (vertical [horizontal]); Size in CSS units, including unit name or standard size name (none|xs|sm|md|lg|xl); Also removes the min width and height when set",
+                    "desc": "应用自定义填充（垂直[水平]）；以CSS为单位的大小，包括单元名称或标准大小名称（none|xs|sm|md|lg|xl）；设置时还删除最小宽度和高度",
                     "examples": [
                         "16px",
                         "10px 5px",
@@ -16301,7 +16413,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the input (if using one)",
+                    "desc": "要归因于输入的样式定义（如果使用）",
                     "examples": [
                         "background-color: #ff0000",
                         ":input-style=\"{ backgroundColor: '#ff0000' }\""
@@ -16315,7 +16427,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the input (if using one)",
+                    "desc": "要归因于输入的类定义（如果使用）",
                     "examples": [
                         "my-special-class",
                         ":input-class=\"{ 'my-special-class': <condition> }\""
@@ -16327,7 +16439,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Object"
                     ],
-                    "desc": "Configure buttons material ripple (disable it by setting it to 'false' or supply a config object); Does not applies to boundary and ellipsis buttons",
+                    "desc": "配置按钮材料波纹（通过将其设置为“false”或提供配置对象来禁用它）；不适用于边界和省略号按钮",
                     "default": true,
                     "examples": [
                         false,
@@ -16339,7 +16451,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Number",
@@ -16351,7 +16463,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "set": {
-                    "desc": "Go directly to the specified page",
+                    "desc": "直接转到指定页面",
                     "params": {
                         "pageNumber": {
                             "type": "Number",
@@ -16360,7 +16472,7 @@ export const tagLists: any = [
                     }
                 },
                 "setByOffset": {
-                    "desc": "Increment/Decrement current page by offset",
+                    "desc": "按偏移量增加/减少当前页面",
                     "params": {
                         "offset": {
                             "type": "Number",
@@ -16372,7 +16484,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-parallax", desc: "视差", info: {
+        "name": "q-parallax",
+        "desc": "视差",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/parallax"
@@ -16380,7 +16494,7 @@ export const tagLists: any = [
             "props": {
                 "src": {
                     "type": "String",
-                    "desc": "Path to image (unless a 'media' slot is used)",
+                    "desc": "映像的路径（除非使用了“媒体”插槽）",
                     "transformAssetUrls": true,
                     "examples": [
                         "(public folder) src=\"img/something.png\"",
@@ -16392,14 +16506,14 @@ export const tagLists: any = [
                 },
                 "height": {
                     "type": "Number",
-                    "desc": "Height of component (in pixels)",
+                    "desc": "组件的高度（像素）",
                     "default": 500,
                     "category": "style",
                     "required": false
                 },
                 "speed": {
                     "type": "Number",
-                    "desc": "Speed of parallax effect (0.0 < x < 1.0)",
+                    "desc": "视差效果的速度（0.0<x<1.0）",
                     "category": "behavior"
                 },
                 "scroll-target": {
@@ -16407,7 +16521,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -16419,13 +16533,13 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot can be used for content that gets displayed on top of the component"
+                    "desc": "默认槽可用于显示在组件顶部的内容"
                 },
                 "media": {
-                    "desc": "Slot for describing <img> or <video> tags"
+                    "desc": "用于描述＜img＞或＜video＞标签的插槽"
                 },
                 "content": {
-                    "desc": "Scoped slot for describing content that gets displayed on top of the component; If specified, it overrides the default slot",
+                    "desc": "用于描述显示在组件顶部的内容的作用域槽；如果指定，它将覆盖默认插槽",
                     "scope": {
                         "percentScrolled": {
                             "type": "Number",
@@ -16436,7 +16550,7 @@ export const tagLists: any = [
             },
             "events": {
                 "scroll": {
-                    "desc": "Emitted when scrolling occurs",
+                    "desc": "发生滚动时发出",
                     "params": {
                         "percentage": {
                             "type": "Number",
@@ -16448,14 +16562,16 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-popup-edit", desc: "弹出编辑", info: {
+        "name": "q-popup-edit",
+        "desc": "弹出编辑",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/popup-edit"
             },
             "props": {
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -16466,7 +16582,7 @@ export const tagLists: any = [
                 },
                 "title": {
                     "type": "String",
-                    "desc": "Optional title (unless 'title' slot is used)",
+                    "desc": "可选标题（除非使用了“title”插槽）",
                     "examples": [
                         "Calories"
                     ],
@@ -16474,12 +16590,12 @@ export const tagLists: any = [
                 },
                 "buttons": {
                     "type": "Boolean",
-                    "desc": "Show Set and Cancel buttons",
+                    "desc": "显示“设置”和“取消”按钮",
                     "category": "content"
                 },
                 "label-set": {
                     "type": "String",
-                    "desc": "Override Set button label",
+                    "desc": "覆盖“设置”按钮标签",
                     "examples": [
                         "OK"
                     ],
@@ -16487,7 +16603,7 @@ export const tagLists: any = [
                 },
                 "label-cancel": {
                     "type": "String",
-                    "desc": "Override Cancel button label",
+                    "desc": "覆盖“取消”按钮标签",
                     "examples": [
                         "Cancel"
                     ],
@@ -16495,12 +16611,12 @@ export const tagLists: any = [
                 },
                 "auto-save": {
                     "type": "Boolean",
-                    "desc": "Automatically save the model (if changed) when user clicks/taps outside of the popup; It does not apply to ESC key",
+                    "desc": "当用户点击/点击弹出窗口外时，自动保存模型（如果更改）；它不适用于ESC键",
                     "category": "behavior"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -16511,7 +16627,7 @@ export const tagLists: any = [
                 },
                 "validate": {
                     "type": "Function",
-                    "desc": "Validates model then triggers 'save' and closes Popup; Returns a Boolean ('true' means valid, 'false' means abort); Syntax: validate(value); For best performance, reference it from your scope and do not define it inline",
+                    "desc": "验证模型，然后触发“保存”并关闭Popup；返回布尔值（'true'表示有效，'false'表示中止）；语法：validate（value）；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -16532,24 +16648,24 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "fit": {
                     "type": "Boolean",
-                    "desc": "Allows the menu to match at least the full width of its target",
+                    "desc": "允许菜单至少与其目标的全宽相匹配",
                     "category": "position"
                 },
                 "cover": {
                     "type": "Boolean",
                     "default": true,
-                    "desc": "Allows the menu to cover its target. When used, the 'self' and 'fit' props are no longer effective",
+                    "desc": "允许菜单覆盖其目标。使用时，“self”和“fit”道具不再有效",
                     "category": "position",
                     "required": false
                 },
                 "anchor": {
                     "type": "String",
-                    "desc": "Two values setting the starting position or anchor point of the menu relative to its target",
+                    "desc": "设置菜单相对于目标的起始位置或锚点的两个值",
                     "values": [
                         "top left",
                         "top middle",
@@ -16571,7 +16687,7 @@ export const tagLists: any = [
                 },
                 "self": {
                     "type": "String",
-                    "desc": "Two values setting the menu's own position relative to its target",
+                    "desc": "两个值设置菜单自身相对于目标的位置",
                     "values": [
                         "top left",
                         "top middle",
@@ -16593,7 +16709,7 @@ export const tagLists: any = [
                 },
                 "offset": {
                     "type": "Array",
-                    "desc": "An array of two numbers to offset the menu horizontally and vertically in pixels",
+                    "desc": "两个数字的数组，以像素为单位水平和垂直偏移菜单",
                     "examples": [
                         "[8, 8]",
                         "[5, 10]"
@@ -16602,27 +16718,27 @@ export const tagLists: any = [
                 },
                 "touch-position": {
                     "type": "Boolean",
-                    "desc": "Allows for the target position to be set by the mouse position, when the target of the menu is either clicked or touched",
+                    "desc": "当单击或触摸菜单的目标时，允许通过鼠标位置设置目标位置",
                     "category": "behavior"
                 },
                 "persistent": {
                     "type": "Boolean",
-                    "desc": "Avoid menu closing by hitting ESC key or by clicking/tapping outside of the Popup",
+                    "desc": "点击ESC键或点击弹出菜单外部以避免关闭菜单",
                     "category": "behavior"
                 },
                 "separate-close-popup": {
                     "type": "Boolean",
-                    "desc": "Separate from parent menu, marking it as a separate closing point for v-close-popup (without this, chained menus close all together)",
+                    "desc": "与父菜单分离，将其标记为v-close-popup的单独关闭点（如果没有这一点，链接菜单将全部关闭）",
                     "category": "behavior"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Forces menu to have squared borders",
+                    "desc": "强制菜单具有方形边框",
                     "category": "style"
                 },
                 "max-height": {
                     "type": "String",
-                    "desc": "The maximum height of the menu; Size in CSS units, including unit name",
+                    "desc": "菜单的最大高度；以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -16631,7 +16747,7 @@ export const tagLists: any = [
                 },
                 "max-width": {
                     "type": "String",
-                    "desc": "The maximum width of the menu; Size in CSS units, including unit name",
+                    "desc": "菜单的最大宽度；以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -16641,7 +16757,7 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Used for injecting the form component; Do NOT destructure it",
+                    "desc": "用于注射成型组件；不要破坏它",
                     "scope": {
                         "initialValue": {
                             "type": "Any",
@@ -16701,7 +16817,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when Popup gets cancelled in order to reset model to its initial value; Is also used by v-model",
+                    "desc": "当Popup被取消以将模型重置为其初始值时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -16711,19 +16827,19 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted right before Popup gets shown"
+                    "desc": "在弹出菜单显示之前发出"
                 },
                 "show": {
-                    "desc": "Emitted right after Popup gets shown"
+                    "desc": "在弹出菜单显示后立即发出"
                 },
                 "before-hide": {
-                    "desc": "Emitted right before Popup gets dismissed"
+                    "desc": "在Popup被驳回之前发出"
                 },
                 "hide": {
-                    "desc": "Emitted right after Popup gets dismissed"
+                    "desc": "Popup被驳回后立即发出"
                 },
                 "save": {
-                    "desc": "Emitted when value has been successfully validated and it should be saved",
+                    "desc": "在值已成功验证且应保存时发出",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -16736,7 +16852,7 @@ export const tagLists: any = [
                     }
                 },
                 "cancel": {
-                    "desc": "Emitted when user cancelled the change (hit ESC key or clicking outside of Popup or hit 'Cancel' button)",
+                    "desc": "当用户取消更改时发出（按ESC键或在弹出菜单外单击或按“取消”按钮）",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -16751,13 +16867,13 @@ export const tagLists: any = [
             },
             "methods": {
                 "set": {
-                    "desc": "Trigger a model update; Validates model (and emits 'save' event if it's the case) then closes Popup"
+                    "desc": "触发模型更新；验证模型（如果是这种情况，则发出“保存”事件），然后关闭Popup"
                 },
                 "cancel": {
-                    "desc": "Triggers a model reset to its initial value ('cancel' event is emitted) then closes Popup"
+                    "desc": "触发模型重置为其初始值（发出“取消”事件），然后关闭弹出菜单"
                 },
                 "show": {
-                    "desc": "Triggers component to show",
+                    "desc": "触发要显示的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16767,7 +16883,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Triggers component to hide",
+                    "desc": "触发要隐藏的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16777,13 +16893,15 @@ export const tagLists: any = [
                     }
                 },
                 "updatePosition": {
-                    "desc": "There are some custom scenarios for which Quasar cannot automatically reposition the component without significant performance drawbacks so the optimal solution is for you to call this method when you need it"
+                    "desc": "在某些自定义场景中，Quasar无法自动重新定位组件而不会出现显著的性能缺陷，因此最佳解决方案是在需要时调用此方法"
                 }
             }
         }
     },
     {
-        name: "q-popup-proxy", desc: "弹出代理", info: {
+        "name": "q-popup-proxy",
+        "desc": "弹出代理",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/popup-proxy"
@@ -16795,7 +16913,7 @@ export const tagLists: any = [
                         "String",
                         "Element"
                     ],
-                    "desc": "Configure a target element to trigger component toggle; 'true' means it enables the parent DOM element, 'false' means it disables attaching events to any DOM elements; By using a String (CSS selector) or a DOM element it attaches the events to the specified DOM element (if it exists)",
+                    "desc": "配置目标元素以触发组件切换；'true表示启用父DOM元素，false表示禁用将事件附加到任何DOM元素；通过使用String（CSS选择器）或DOM元素，它将事件附加到指定的DOM元素（如果存在）",
                     "default": true,
                     "values": [
                         "(Boolean) true",
@@ -16814,16 +16932,16 @@ export const tagLists: any = [
                 },
                 "no-parent-event": {
                     "type": "Boolean",
-                    "desc": "Skips attaching events to the target DOM element (that trigger the element to get shown)",
+                    "desc": "跳过将事件附加到目标DOM元素（触发元素显示）",
                     "category": "behavior"
                 },
                 "context-menu": {
                     "type": "Boolean",
-                    "desc": "Allows the component to behave like a context menu, which opens with a right mouse click (or long tap on mobile)",
+                    "desc": "允许组件的行为类似于上下文菜单，该菜单通过鼠标右键单击（或长按移动设备）打开",
                     "category": "behavior"
                 },
                 "model-value": {
-                    "desc": "Defines the state of the component (shown/hidden); Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "定义组件的状态（显示/隐藏）；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": false,
                     "syncable": true,
                     "category": "model",
@@ -16834,7 +16952,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Breakpoint (in pixels) of window width/height (whichever is smaller) from where a Menu will get to be used instead of a Dialog",
+                    "desc": "窗口宽度/高度的断点（以像素为单位）（以较小者为准），从该断点开始使用菜单而不是对话框",
                     "default": 450,
                     "category": "behavior",
                     "required": false
@@ -16842,12 +16960,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -16857,7 +16975,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted when component triggers show() but before it finishes doing it",
+                    "desc": "当组件触发show（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16867,7 +16985,7 @@ export const tagLists: any = [
                     }
                 },
                 "show": {
-                    "desc": "Emitted after component has triggered show()",
+                    "desc": "在组件触发show（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16877,7 +16995,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-hide": {
-                    "desc": "Emitted when component triggers hide() but before it finishes doing it",
+                    "desc": "当组件触发hide（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16887,7 +17005,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Emitted after component has triggered hide()",
+                    "desc": "在组件触发hide（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16899,7 +17017,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "show": {
-                    "desc": "Triggers component to show",
+                    "desc": "触发要显示的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16909,7 +17027,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Triggers component to hide",
+                    "desc": "触发要隐藏的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -16926,13 +17044,15 @@ export const tagLists: any = [
                             "required": false
                         }
                     },
-                    "desc": "Triggers component to toggle between show/hide"
+                    "desc": "触发组件在显示/隐藏之间切换"
                 }
             }
         }
     },
     {
-        name: "q-pull-to-refresh", desc: "拉动刷新", info: {
+        "name": "q-pull-to-refresh",
+        "desc": "拉动刷新",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/pull-to-refresh"
@@ -16940,7 +17060,7 @@ export const tagLists: any = [
             "props": {
                 "color": {
                     "type": "String",
-                    "desc": "Color name for the icon from the Quasar Color Palette",
+                    "desc": "Quasar调色板中图标的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -16949,7 +17069,7 @@ export const tagLists: any = [
                 },
                 "bg-color": {
                     "type": "String",
-                    "desc": "Color name for background of the icon container from the Quasar Color Palette",
+                    "desc": "Quasar调色板中图标容器背景的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -16958,7 +17078,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon to display when refreshing the content",
+                    "desc": "刷新内容时要显示的图标",
                     "examples": [
                         "map",
                         "ion-add",
@@ -16969,12 +17089,12 @@ export const tagLists: any = [
                 },
                 "no-mouse": {
                     "type": "Boolean",
-                    "desc": "Don't listen for mouse events",
+                    "desc": "不监听鼠标事件",
                     "category": "behavior"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "scroll-target": {
@@ -16982,7 +17102,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -16994,12 +17114,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Content (area controlled by the component) goes here"
+                    "desc": "此处显示内容（由组件控制的区域）"
                 }
             },
             "events": {
                 "refresh": {
-                    "desc": "Called whenever a refresh is triggered; at this time, your function should load more data",
+                    "desc": "每当触发刷新时调用；此时，您的函数应该加载更多的数据",
                     "params": {
                         "done": {
                             "type": "Function",
@@ -17012,16 +17132,18 @@ export const tagLists: any = [
             },
             "methods": {
                 "trigger": {
-                    "desc": "Triggers a refresh"
+                    "desc": "触发刷新"
                 },
                 "updateScrollTarget": {
-                    "desc": "Updates the scroll target; Useful when the parent elements change so that the scrolling target also changes"
+                    "desc": "更新滚动目标；当父元素发生变化从而滚动目标也发生变化时，这很有用"
                 }
             }
         }
     },
     {
-        name: "q-rating", desc: "评分", info: {
+        "name": "q-rating",
+        "desc": "评分",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/rating"
@@ -17029,7 +17151,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "String",
-                    "desc": "Used to specify the name of the control; Useful if dealing with forms submitted directly to a URL",
+                    "desc": "用于指定控件的名称；在处理直接提交到URL的表单时很有用",
                     "examples": [
                         "car_id"
                     ],
@@ -17037,7 +17159,7 @@ export const tagLists: any = [
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -17047,7 +17169,7 @@ export const tagLists: any = [
                     "category": "style"
                 },
                 "model-value": {
-                    "desc": "Model of the component; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "部件的型号；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -17063,7 +17185,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Number of icons to display",
+                    "desc": "要显示的图标数",
                     "default": 5,
                     "category": "general",
                     "required": false
@@ -17073,7 +17195,7 @@ export const tagLists: any = [
                         "String",
                         "Array"
                     ],
-                    "desc": "Icon name following Quasar convention; make sure you have the icon library installed unless you are using 'img:' prefix; If an array is provided each rating value will use the corresponding icon in the array (0 based)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果提供了阵列，则每个评级值将使用阵列中的相应图标（基于0）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -17087,7 +17209,7 @@ export const tagLists: any = [
                         "String",
                         "Array"
                     ],
-                    "desc": "Icon name following Quasar convention to be used when selected (optional); make sure you have the icon library installed unless you are using 'img:' prefix; If an array is provided each rating value will use the corresponding icon in the array (0 based)",
+                    "desc": "选择时要使用的符合Quasar约定的图标名称（可选）；除非使用“img：”前缀，否则请确保已安装图标库；如果提供了阵列，则每个评级值将使用阵列中的相应图标（基于0）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -17101,7 +17223,7 @@ export const tagLists: any = [
                         "String",
                         "Array"
                     ],
-                    "desc": "Icon name following Quasar convention to be used when selected (optional); make sure you have the icon library installed unless you are using 'img:' prefix; If an array is provided each rating value will use the corresponding icon in the array (0 based)",
+                    "desc": "选择时要使用的符合Quasar约定的图标名称（可选）；除非使用“img：”前缀，否则请确保已安装图标库；如果提供了阵列，则每个评级值将使用阵列中的相应图标（基于0）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -17115,7 +17237,7 @@ export const tagLists: any = [
                         "String",
                         "Array"
                     ],
-                    "desc": "Label to be set on aria-label for Icon; If an array is provided each rating value will use the corresponding aria-label in the array (0 based); If string value is provided the rating value will be appended; If not provided the name of the icon will be used",
+                    "desc": "在图标的咏叹调标签上设置标签；如果提供了数组，则每个评级值将使用数组中相应的咏叹调标签（基于0）；如果提供字符串值，则会附加评级值；如果未提供，将使用图标的名称",
                     "examples": [
                         "Rating",
                         "[\"Bad\", \"Normal\", \"Good\"]"
@@ -17128,7 +17250,7 @@ export const tagLists: any = [
                         "String",
                         "Array"
                     ],
-                    "desc": "Color name for component from the Quasar Color Palette; v1.5.0+: If an array is provided each rating value will use the corresponding color in the array (0 based)",
+                    "desc": "Quasar调色板中组件的颜色名称；v1.5.0+：如果提供阵列，则每个评级值将使用阵列中的相应颜色（基于0）",
                     "examples": [
                         "primary",
                         "teal-10",
@@ -17143,7 +17265,7 @@ export const tagLists: any = [
                         "String",
                         "Array"
                     ],
-                    "desc": "Color name from the Quasar Palette for selected icons",
+                    "desc": "所选图标的Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -17155,7 +17277,7 @@ export const tagLists: any = [
                         "String",
                         "Array"
                     ],
-                    "desc": "Color name from the Quasar Palette for half selected icons",
+                    "desc": "半选定图标的Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -17164,33 +17286,33 @@ export const tagLists: any = [
                 },
                 "no-dimming": {
                     "type": "Boolean",
-                    "desc": "Does not lower opacity for unselected icons",
+                    "desc": "不会降低未选定图标的不透明度",
                     "category": "style"
                 },
                 "no-reset": {
                     "type": "Boolean",
-                    "desc": "When used, disables default behavior of clicking/tapping on icon which represents current model value to reset model to 0",
+                    "desc": "使用时，禁用单击/点击表示当前模型值的图标的默认行为，以将模型重置为0",
                     "category": "model"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 }
             },
             "slots": {
                 "tip-[name]": {
-                    "desc": "Slot to define the tooltip of icon at '[name]' where name is a 1-based index; Suggestion: QTooltip"
+                    "desc": "在“[名称]”处定义图标工具提示的插槽，其中名称是基于1的索引；建议：QTooltip"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -17203,7 +17325,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-responsive", desc: "响应式", info: {
+        "name": "q-responsive",
+        "desc": "响应式",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/responsive"
@@ -17214,7 +17338,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Aspect ratio for the content; If value is a String, then avoid using a computational statement (like '16/9') and instead specify the String value of the result directly (eg. '1.7777')",
+                    "desc": "内容的纵横比；如果值是String，则避免使用计算语句（如“16/9”），而是直接指定结果的String值（如“1.7777”）",
                     "examples": [
                         ":ratio=\"4/3\"",
                         ":ratio=\"16/9\"",
@@ -17225,13 +17349,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-scroll-area", desc: "滚动区域", info: {
+        "name": "q-scroll-area",
+        "desc": "滚动区域",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/scroll-area"
@@ -17239,7 +17365,7 @@ export const tagLists: any = [
             "props": {
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "bar-style": {
@@ -17249,7 +17375,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Object with CSS properties and values for custom styling the scrollbars (both vertical and horizontal)",
+                    "desc": "具有CSS属性和值的对象，用于自定义滚动条样式（垂直和水平）",
                     "examples": [
                         ":bar-style=\"{ borderRadius: '5px', background: 'red', opacity: 1 }\""
                     ],
@@ -17262,7 +17388,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Object with CSS properties and values for custom styling the vertical scrollbar; Is applied on top of 'bar-style' prop",
+                    "desc": "具有CSS属性和值的对象，用于自定义垂直滚动条的样式；应用于“条形”道具的顶部",
                     "examples": [
                         ":bar-style=\"{ right: '4px', borderRadius: '5px', background: 'red', width: '10px', opacity: 1 }\""
                     ],
@@ -17275,7 +17401,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Object with CSS properties and values for custom styling the horizontal scrollbar; Is applied on top of 'bar-style' prop",
+                    "desc": "具有CSS属性和值的对象，用于自定义水平滚动条的样式；应用于“条形”道具的顶部",
                     "examples": [
                         ":bar-style=\"{ bottom: '4px', borderRadius: '5px', background: 'red', height: '10px', opacity: 1 }\""
                     ],
@@ -17284,7 +17410,7 @@ export const tagLists: any = [
                 "thumb-style": {
                     "type": "Object",
                     "tsType": "VueStyleObjectProp",
-                    "desc": "Object with CSS properties and values for custom styling the thumb of scrollbars (both vertical and horizontal)",
+                    "desc": "具有CSS属性和值的对象，用于自定义滚动条拇指的样式（垂直和水平）",
                     "examples": [
                         ":thumb-style=\"{ right: '4px', borderRadius: '5px', background: 'red', width: '10px', opacity: 1 }\""
                     ],
@@ -17293,7 +17419,7 @@ export const tagLists: any = [
                 "vertical-thumb-style": {
                     "type": "Object",
                     "tsType": "VueStyleObjectProp",
-                    "desc": "Object with CSS properties and values for custom styling the thumb of the vertical scrollbar; Is applied on top of 'thumb-style' prop",
+                    "desc": "具有CSS属性和值的对象，用于自定义垂直滚动条的拇指样式；应用于“拇指样式”道具的顶部",
                     "examples": [
                         ":thumb-style=\"{ right: '4px', borderRadius: '5px', background: 'red', width: '10px', opacity: 1 }\""
                     ],
@@ -17302,7 +17428,7 @@ export const tagLists: any = [
                 "horizontal-thumb-style": {
                     "type": "Object",
                     "tsType": "VueStyleObjectProp",
-                    "desc": "Object with CSS properties and values for custom styling the thumb of the horizontal scrollbar; Is applied on top of 'thumb-style' prop",
+                    "desc": "具有CSS属性和值的对象，用于自定义水平滚动条的拇指样式；应用于“拇指样式”道具的顶部",
                     "examples": [
                         ":thumb-style=\"{ bottom: '4px', borderRadius: '5px', background: 'red', height: '10px', opacity: 1 }\""
                     ],
@@ -17315,7 +17441,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Object with CSS properties and values for styling the container of QScrollArea",
+                    "desc": "具有CSS属性和值的对象，用于设置QScrollArea容器的样式",
                     "examples": [
                         ":content-style=\"{ backgroundColor: '#C0C0C0' }\""
                     ],
@@ -17328,7 +17454,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Object with CSS properties and values for styling the container of QScrollArea when scroll area becomes active (is mouse hovered)",
+                    "desc": "具有CSS属性和值的对象，用于在滚动区域变为活动状态（鼠标悬停）时设置QScrollArea容器的样式",
                     "examples": [
                         ":content-active-style=\"{ backgroundColor: 'white' }\""
                     ],
@@ -17336,7 +17462,7 @@ export const tagLists: any = [
                 },
                 "visible": {
                     "type": "Boolean",
-                    "desc": "Manually control the visibility of the scrollbar; Overrides default mouse over/leave behavior",
+                    "desc": "手动控制滚动条的可见性；覆盖默认鼠标悬停/离开行为",
                     "category": "behavior"
                 },
                 "delay": {
@@ -17344,7 +17470,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "When content changes, the scrollbar appears; this delay defines the amount of time (in milliseconds) before scrollbars disappear again (if component is not hovered)",
+                    "desc": "当内容发生更改时，会出现滚动条；此延迟定义滚动条再次消失之前的时间量（以毫秒为单位）（如果组件没有悬停）",
                     "default": 1000,
                     "category": "behavior",
                     "required": false
@@ -17354,7 +17480,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -17364,12 +17490,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "scroll": {
-                    "desc": "Emitted when scroll information changes (and listener is configured)",
+                    "desc": "滚动信息更改时发出（并且已配置侦听器）",
                     "params": {
                         "info": {
                             "type": "Object",
@@ -17428,14 +17554,14 @@ export const tagLists: any = [
             },
             "methods": {
                 "getScrollTarget": {
-                    "desc": "Get the scrolling DOM element target",
+                    "desc": "获取滚动DOM元素目标",
                     "returns": {
                         "type": "Element",
                         "desc": "DOM element upon which scrolling takes place"
                     }
                 },
                 "getScroll": {
-                    "desc": "Get the current scroll information",
+                    "desc": "获取当前滚动信息",
                     "returns": {
                         "type": "Object",
                         "desc": "Scroll information",
@@ -17484,7 +17610,7 @@ export const tagLists: any = [
                     }
                 },
                 "getScrollPosition": {
-                    "desc": "Get current scroll position",
+                    "desc": "获取当前滚动位置",
                     "returns": {
                         "type": "Object",
                         "desc": "An object containing scroll position information",
@@ -17506,7 +17632,7 @@ export const tagLists: any = [
                     }
                 },
                 "getScrollPercentage": {
-                    "desc": "Get current scroll position in percentage (0.0 <= x <= 1.0)",
+                    "desc": "获取当前滚动位置的百分比（0.0<=x<=1.0）",
                     "returns": {
                         "type": "Object",
                         "desc": "An object containing scroll position information in percentage",
@@ -17528,7 +17654,7 @@ export const tagLists: any = [
                     }
                 },
                 "setScrollPosition": {
-                    "desc": "Set scroll position to an offset; If a duration (in milliseconds) is specified then the scroll is animated",
+                    "desc": "将滚动位置设置为偏移；如果指定了持续时间（以毫秒为单位），则为滚动设置动画",
                     "params": {
                         "axis": {
                             "type": "String",
@@ -17551,7 +17677,7 @@ export const tagLists: any = [
                     }
                 },
                 "setScrollPercentage": {
-                    "desc": "Set scroll position to a percentage (0.0 <= x <= 1.0) of the total scrolling size; If a duration (in milliseconds) is specified then the scroll is animated",
+                    "desc": "将滚动位置设置为总滚动大小的百分比（0.0<=x<=1.0）；如果指定了持续时间（以毫秒为单位），则为滚动设置动画",
                     "params": {
                         "axis": {
                             "type": "String",
@@ -17577,7 +17703,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-separator", desc: "分隔条", info: {
+        "name": "q-separator",
+        "desc": "分隔条",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/separator"
@@ -17585,7 +17713,7 @@ export const tagLists: any = [
             "props": {
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "spaced": {
@@ -17593,7 +17721,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "If set to true, the corresponding direction margins will be set to 8px; It can also be set to a size in CSS units, including unit name, or one of the xs|sm|md|lg|xl predefined sizes",
+                    "desc": "如果设置为true，则相应的方向边距将设置为8px；它也可以设置为CSS单位的大小，包括单位名称，或者xs|sm|md|lg|xl预定义的大小之一",
                     "default": "md",
                     "examples": [
                         "12px",
@@ -17608,7 +17736,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "If set to Boolean true, the left and right margins will be set to 16px. If set to 'item' then it will match a QItem's design. If set to 'item-thumbnail' then it will match the design of a QItem with a thumbnail on the left side",
+                    "desc": "如果设置为布尔值true，则左右边距将设置为16px。如果设置为“item”，则它将与QItem的设计相匹配。如果设置为“项目缩略图”，则会将QItem的设计与左侧的缩略图相匹配",
                     "examples": [
                         "item",
                         "item-thumbnail"
@@ -17617,12 +17745,12 @@ export const tagLists: any = [
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "If set to true, the separator will be vertical.",
+                    "desc": "如果设置为true，分隔符将是垂直的。",
                     "category": "content"
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name",
+                    "desc": "以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -17631,7 +17759,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -17642,7 +17770,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-skeleton", desc: "骨架屏", info: {
+        "name": "q-skeleton",
+        "desc": "骨架屏",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/skeleton"
@@ -17650,12 +17780,12 @@ export const tagLists: any = [
             "props": {
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "type": {
                     "type": "String",
-                    "desc": "Type of skeleton placeholder",
+                    "desc": "骨架占位符的类型",
                     "values": [
                         "text",
                         "rect",
@@ -17678,7 +17808,7 @@ export const tagLists: any = [
                 },
                 "animation": {
                     "type": "String",
-                    "desc": "The animation effect of the skeleton placeholder",
+                    "desc": "骨架占位符的动画效果",
                     "values": [
                         "wave",
                         "pulse",
@@ -17697,7 +17827,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Animation speed (in milliseconds, without unit)",
+                    "desc": "动画速度（以毫秒为单位，无单位）",
                     "examples": [
                         500,
                         "1200"
@@ -17709,17 +17839,17 @@ export const tagLists: any = [
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name; Overrides 'height' and 'width' props and applies the value to both height and width",
+                    "desc": "以CSS为单位的大小，包括单位名称；覆盖“高度”和“宽度”道具，并将该值应用于高度和宽度",
                     "examples": [
                         "16px",
                         "2rem"
@@ -17728,7 +17858,7 @@ export const tagLists: any = [
                 },
                 "width": {
                     "type": "String",
-                    "desc": "Width in CSS units, including unit name; Apply custom width; Use this prop or through CSS; Overridden by 'size' prop if used",
+                    "desc": "宽度（以CSS为单位），包括单位名称；应用自定义宽度；使用此道具或通过CSS；如果使用，则被“size”道具覆盖",
                     "examples": [
                         "16px",
                         "2rem"
@@ -17737,7 +17867,7 @@ export const tagLists: any = [
                 },
                 "height": {
                     "type": "String",
-                    "desc": "Height in CSS units, including unit name; Apply custom height; Use this prop or through CSS; Overridden by 'size' prop if used",
+                    "desc": "以CSS为单位的高度，包括单位名称；应用自定义高度；使用此道具或通过CSS；如果使用，则被“size”道具覆盖",
                     "examples": [
                         "16px",
                         "2rem"
@@ -17746,7 +17876,7 @@ export const tagLists: any = [
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "HTML tag to use",
+                    "desc": "要使用的HTML标记",
                     "examples": [
                         "div",
                         "span",
@@ -17760,13 +17890,15 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-slideItem", desc: "可滑动项", info: {
+        "name": "q-slideItem",
+        "desc": "可滑动项",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/slide-item"
@@ -17774,7 +17906,7 @@ export const tagLists: any = [
             "props": {
                 "left-color": {
                     "type": "String",
-                    "desc": "Color name for left-side background from the Quasar Color Palette",
+                    "desc": "Quasar调色板左侧背景的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -17783,7 +17915,7 @@ export const tagLists: any = [
                 },
                 "right-color": {
                     "type": "String",
-                    "desc": "Color name for right-side background from the Quasar Color Palette",
+                    "desc": "Quasar调色板右侧背景的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -17792,7 +17924,7 @@ export const tagLists: any = [
                 },
                 "top-color": {
                     "type": "String",
-                    "desc": "Color name for top-side background from the Quasar Color Palette",
+                    "desc": "Quasar调色板顶部背景的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -17801,7 +17933,7 @@ export const tagLists: any = [
                 },
                 "bottom-color": {
                     "type": "String",
-                    "desc": "Color name for bottom-side background from the Quasar Color Palette",
+                    "desc": "Quasar调色板底部背景的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -17810,30 +17942,30 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "This is where item's sections go; Suggestion: QItemSection"
+                    "desc": "这就是项目的部分所在的位置；建议：QItemSection"
                 },
                 "left": {
-                    "desc": "Left side content when sliding"
+                    "desc": "滑动时的左侧内容"
                 },
                 "right": {
-                    "desc": "Right side content when sliding"
+                    "desc": "滑动时的右侧内容"
                 },
                 "top": {
-                    "desc": "Top side content when sliding"
+                    "desc": "滑动时的顶部内容"
                 },
                 "bottom": {
-                    "desc": "Bottom side content when sliding"
+                    "desc": "滑动时的底部内容"
                 }
             },
             "events": {
                 "left": {
-                    "desc": "Emitted when user finished sliding the item to the left",
+                    "desc": "当用户完成向左滑动项目时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -17851,7 +17983,7 @@ export const tagLists: any = [
                     }
                 },
                 "right": {
-                    "desc": "Emitted when user finished sliding the item to the right",
+                    "desc": "当用户完成向右滑动项目时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -17869,7 +18001,7 @@ export const tagLists: any = [
                     }
                 },
                 "top": {
-                    "desc": "Emitted when user finished sliding the item up",
+                    "desc": "当用户完成向上滑动项目时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -17887,7 +18019,7 @@ export const tagLists: any = [
                     }
                 },
                 "bottom": {
-                    "desc": "Emitted when user finished sliding the item down",
+                    "desc": "当用户完成向下滑动项目时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -17905,7 +18037,7 @@ export const tagLists: any = [
                     }
                 },
                 "slide": {
-                    "desc": "Emitted while user is sliding the item to one of the available sides",
+                    "desc": "当用户将项目滑动到可用的一侧时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -17937,7 +18069,7 @@ export const tagLists: any = [
                     }
                 },
                 "action": {
-                    "desc": "Emitted when user finished sliding the item to either sides",
+                    "desc": "当用户完成将项目滑动到两侧时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -17968,13 +18100,15 @@ export const tagLists: any = [
             },
             "methods": {
                 "reset": {
-                    "desc": "Reset to initial state (not swiped to any side)"
+                    "desc": "重置为初始状态（未滑动到任何一侧）"
                 }
             }
         }
     },
     {
-        name: "q-slide-transition", desc: "幻灯片过渡", info: {
+        "name": "q-slide-transition",
+        "desc": "幻灯片过渡",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/slide-transition"
@@ -17982,12 +18116,12 @@ export const tagLists: any = [
             "props": {
                 "appear": {
                     "type": "Boolean",
-                    "desc": "If set to true, the transition will be applied on the initial render.",
+                    "desc": "如果设置为true，则过渡将应用于初始渲染。",
                     "category": "behavior"
                 },
                 "duration": {
                     "type": "Number",
-                    "desc": "Duration (in milliseconds) enabling animated scroll.",
+                    "desc": "启用动画滚动的持续时间（以毫秒为单位）。",
                     "default": 300,
                     "category": "behavior",
                     "required": false
@@ -17995,22 +18129,28 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "This is where content goes"
+                    "desc": "这就是内容的去向"
                 }
             },
             "events": {
                 "show": {
-                    "desc": "Emitted when component show animation is finished"
+                    "desc": "组件显示动画完成时发射"
                 },
                 "hide": {
-                    "desc": "Emitted when component hide animation is finished"
+                    "desc": "组件隐藏动画完成时发射"
                 }
             }
         }
     },
-    {name: "q-space", desc: "间距", info: {}},
     {
-        name: "q-spinner", desc: "旋转器", info: {
+        "name": "q-space",
+        "desc": "间距",
+        "info": {}
+    },
+    {
+        "name": "q-spinner",
+        "desc": "旋转器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/spinners"
@@ -18018,7 +18158,7 @@ export const tagLists: any = [
             "props": {
                 "size": {
                     "type": "String",
-                    "desc": "Size in CSS units, including unit name or standard size name (xs|sm|md|lg|xl)",
+                    "desc": "以CSS为单位的大小，包括单元名称或标准大小名称（xs|sm|md|lg|xl）",
                     "examples": [
                         "16px",
                         "2rem",
@@ -18029,7 +18169,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18038,7 +18178,7 @@ export const tagLists: any = [
                 },
                 "thickness": {
                     "type": "Number",
-                    "desc": "Override value to use for stroke-width",
+                    "desc": "替代用于笔划宽度的值",
                     "default": 5,
                     "category": "style",
                     "required": false
@@ -18047,14 +18187,16 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-splitter", desc: "拆分器", info: {
+        "name": "q-splitter",
+        "desc": "拆分器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/splitter"
             },
             "props": {
                 "model-value": {
-                    "desc": "Model of the component defining the size of first panel (or second if using reverse) in the unit specified (for '%' it's the split ratio percent - 0.0 < x < 100.0; for 'px' it's the size in px); Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "以指定的单位定义第一个面板（如果使用反向，则为第二个面板）大小的组件模型（对于“%”，它是分割比百分比-0.0<x<100.0；对于“px”，它的大小以px为单位）；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": true,
                     "syncable": true,
                     "category": "model",
@@ -18065,12 +18207,12 @@ export const tagLists: any = [
                 },
                 "reverse": {
                     "type": "Boolean",
-                    "desc": "Apply the model size to the second panel (by default it applies to the first)",
+                    "desc": "将模型大小应用于第二个面板（默认情况下应用于第一个面板）",
                     "category": "model"
                 },
                 "unit": {
                     "type": "String",
-                    "desc": "CSS unit for the model",
+                    "desc": "模型的CSS单元",
                     "default": "%",
                     "values": [
                         "%",
@@ -18081,17 +18223,17 @@ export const tagLists: any = [
                 },
                 "emit-immediately": {
                     "type": "Boolean",
-                    "desc": "Emit model while user is panning on the separator",
+                    "desc": "用户在分隔符上平移时发射模型",
                     "category": "model"
                 },
                 "horizontal": {
                     "type": "Boolean",
-                    "desc": "Allows the splitter to split its two panels horizontally, instead of vertically",
+                    "desc": "允许拆分器水平拆分其两个面板，而不是垂直拆分",
                     "category": "content"
                 },
                 "limits": {
                     "type": "Array",
-                    "desc": "An array of two values representing the minimum and maximum split size of the two panels; When 'px' unit is set then you can use Infinity as the second value to make it unbound on the other side",
+                    "desc": "两个值的数组，表示两个面板的最小和最大分割尺寸；当设置了“px”单位时，您可以使用Infinity作为第二个值，使其在另一侧未绑定",
                     "default": "For '%' unit: [10, 90]; For 'px' unit: [50, Infinity]",
                     "examples": [
                         ":limits=\"[30, 70]\"",
@@ -18102,7 +18244,7 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "before-class": {
@@ -18112,7 +18254,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the 'before' panel",
+                    "desc": "要归因于“before”面板的类定义",
                     "examples": [
                         "bg-deep-orange",
                         ":before-class=\"{ 'my-special-class': <condition> }\""
@@ -18126,7 +18268,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the 'after' panel",
+                    "desc": "要归因于“after”面板的类定义",
                     "examples": [
                         "bg-deep-orange",
                         ":after-class=\"{ 'my-special-class': <condition> }\""
@@ -18140,7 +18282,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "Class definitions to be attributed to the splitter separator",
+                    "desc": "要归因于拆分器分隔符的类定义",
                     "examples": [
                         "bg-deep-orange",
                         ":separator-class=\"{ 'my-special-class': <condition> }\""
@@ -18154,7 +18296,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "Style definitions to be attributed to the splitter separator",
+                    "desc": "要归因于拆分器分隔符的样式定义",
                     "examples": [
                         "background-color: #ff0000",
                         ":separator-style=\"{ backgroundColor: '#ff0000' }\""
@@ -18163,27 +18305,27 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Applies a default lighter color on the separator; To be used when background is darker; Avoid using when you are overriding through separator-class or separator-style props",
+                    "desc": "在分隔符上应用默认较浅的颜色；当背景较暗时使用；在通过分隔符类或分隔符样式的道具重写时避免使用",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component; Suggestion: QTooltip, QMenu"
+                    "desc": "默认插槽中devland未插槽的组件内容；建议：QTooltip，QMenu"
                 },
                 "before": {
-                    "desc": "Content of the panel on left/top"
+                    "desc": "左侧/顶部面板的内容"
                 },
                 "after": {
-                    "desc": "Content of the panel on right/bottom"
+                    "desc": "右侧/底部面板的内容"
                 },
                 "separator": {
-                    "desc": "Content to be placed inside the separator; By default it is centered"
+                    "desc": "要放置在分离器内的内容；默认情况下，它居中"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when component's model value changes; Is also used by v-model",
+                    "desc": "当组件的模型值发生变化时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Number",
@@ -18195,7 +18337,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-stepper", desc: "步进器组", info: {
+        "name": "q-stepper",
+        "desc": "步进器组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/stepper"
@@ -18203,7 +18347,7 @@ export const tagLists: any = [
             "props": {
                 "model-value": {
                     "type": "Any",
-                    "desc": "Model of the component defining the current panel's name; If a Number is used, it does not define the panel's index, but rather the panel's name which can also be an Integer; Either use this property (along with a listener for 'update:model-value' event) OR use the v-model directive.",
+                    "desc": "定义当前面板名称的组件的模型；如果使用数字，它不会定义面板的索引，而是定义面板的名称，该名称也可以是Integer；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令。",
                     "examples": [
                         "v-model=\"panelName\""
                     ],
@@ -18211,7 +18355,7 @@ export const tagLists: any = [
                 },
                 "keep-alive": {
                     "type": "Boolean",
-                    "desc": "Equivalent to using Vue's native <keep-alive> component on the content",
+                    "desc": "相当于在内容上使用Vue的原生＜keep-alive＞组件",
                     "category": "behavior"
                 },
                 "keep-alive-include": {
@@ -18220,7 +18364,7 @@ export const tagLists: any = [
                         "Array",
                         "RegExp"
                     ],
-                    "desc": "Equivalent to using Vue's native include prop for <keep-alive>; Values must be valid Vue component names",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生include道具；值必须是有效的Vue组件名称",
                     "examples": [
                         "a,b",
                         "/a|b/",
@@ -18234,7 +18378,7 @@ export const tagLists: any = [
                         "Array",
                         "RegExp"
                     ],
-                    "desc": "Equivalent to using Vue's native exclude prop for <keep-alive>; Values must be valid Vue component names",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生exclude道具；值必须是有效的Vue组件名称",
                     "examples": [
                         "a,b",
                         "/a|b/",
@@ -18244,32 +18388,32 @@ export const tagLists: any = [
                 },
                 "keep-alive-max": {
                     "type": "Number",
-                    "desc": "Equivalent to using Vue's native max prop for <keep-alive>",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生最大道具",
                     "category": "behavior"
                 },
                 "animated": {
                     "type": "Boolean",
-                    "desc": "Enable transitions between panel (also see 'transition-prev' and 'transition-next' props)",
+                    "desc": "启用面板之间的转换（另请参阅“转换前一个”和“转换下一个”道具）",
                     "category": "behavior"
                 },
                 "infinite": {
                     "type": "Boolean",
-                    "desc": "Makes component appear as infinite (when reaching last panel, next one will become the first one)",
+                    "desc": "使组件显示为无穷大（当到达最后一个面板时，下一个面板将成为第一个面板）",
                     "category": "behavior"
                 },
                 "swipeable": {
                     "type": "Boolean",
-                    "desc": "Enable swipe events (may interfere with content's touch/mouse events)",
+                    "desc": "启用滑动事件（可能会干扰内容的触摸/鼠标事件）",
                     "category": "behavior"
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "Put Stepper in vertical mode (instead of horizontal by default)",
+                    "desc": "将步进器置于垂直模式（默认情况下不是水平模式）",
                     "category": "behavior"
                 },
                 "transition-prev": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+                    "desc": "Quasar的嵌入过渡之一（仅当设置了“动画”道具时才有效）",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -18280,7 +18424,7 @@ export const tagLists: any = [
                 },
                 "transition-next": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+                    "desc": "Quasar的嵌入过渡之一（仅当设置了“动画”道具时才有效）",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -18294,7 +18438,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "addedIn": "v2.2",
@@ -18302,37 +18446,37 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "alternative-labels": {
                     "type": "Boolean",
-                    "desc": "Use alternative labels - stacks the icon on top of the label (applies only to horizontal stepper)",
+                    "desc": "使用替代标签-将图标堆叠在标签顶部（仅适用于水平步进器）",
                     "category": "header"
                 },
                 "header-nav": {
                     "type": "Boolean",
-                    "desc": "Allow navigation through the header",
+                    "desc": "允许在标题中导航",
                     "category": "behavior"
                 },
                 "contracted": {
                     "type": "Boolean",
-                    "desc": "Hide header labels on narrow windows",
+                    "desc": "隐藏窄窗口上的标题标签",
                     "category": "header|behavior"
                 },
                 "inactive-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18343,7 +18487,7 @@ export const tagLists: any = [
                 },
                 "inactive-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18352,7 +18496,7 @@ export const tagLists: any = [
                 },
                 "done-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; If 'none' (String) is used as value, then it will defer to prefix or the regular icon for this state; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "遵循Quasar约定的图标名称；如果使用“none”（字符串）作为值，则它将遵循前缀或该状态的常规图标；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18363,7 +18507,7 @@ export const tagLists: any = [
                 },
                 "done-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18372,7 +18516,7 @@ export const tagLists: any = [
                 },
                 "active-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; If 'none' (String) is used as value, then it will defer to prefix or the regular icon for this state; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "遵循Quasar约定的图标名称；如果使用“none”（字符串）作为值，则它将遵循前缀或该状态的常规图标；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18383,7 +18527,7 @@ export const tagLists: any = [
                 },
                 "active-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18392,7 +18536,7 @@ export const tagLists: any = [
                 },
                 "error-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; If 'none' (String) is used as value, then it will defer to prefix or the regular icon for this state; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "遵循Quasar约定的图标名称；如果使用“none”（字符串）作为值，则它将遵循前缀或该状态的常规图标；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18403,7 +18547,7 @@ export const tagLists: any = [
                 },
                 "error-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18412,7 +18556,7 @@ export const tagLists: any = [
                 },
                 "header-class": {
                     "type": "String",
-                    "desc": "Class definitions to be attributed to the header",
+                    "desc": "要归因于标头的类定义",
                     "examples": [
                         "my-special-class"
                     ],
@@ -18421,18 +18565,18 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestion: QStep"
+                    "desc": "建议：QStep"
                 },
                 "navigation": {
-                    "desc": "Slot specific for the global navigation; Suggestion: QStepperNavigation"
+                    "desc": "全球导航专用插槽；建议：QStepperNavigation"
                 },
                 "message": {
-                    "desc": "Slot specific for putting a message on top of each step (if horizontal stepper) or above steps (if vertical); Suggestion: QBanner, div.q-pa-lg"
+                    "desc": "专用于将消息放在每一步的顶部（如果是水平步进器）或高于每一步（如果是垂直）的插槽；建议：QBanner，div.q-pa-lg"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component changes the model; This event _isn't_ fired if the model is changed externally; Is also used by v-model",
+                    "desc": "当组件更改模型时发出；如果模型在外部发生更改，则会触发此事件_isn't_；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -18447,7 +18591,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-transition": {
-                    "desc": "Emitted before transitioning to a new panel",
+                    "desc": "在转换到新面板之前发出",
                     "params": {
                         "newVal": {
                             "type": [
@@ -18472,7 +18616,7 @@ export const tagLists: any = [
                     }
                 },
                 "transition": {
-                    "desc": "Emitted after component transitioned to a new panel",
+                    "desc": "在组件转换到新面板后发出",
                     "params": {
                         "newVal": {
                             "type": [
@@ -18499,13 +18643,13 @@ export const tagLists: any = [
             },
             "methods": {
                 "next": {
-                    "desc": "Go to next panel"
+                    "desc": "转到下一个面板"
                 },
                 "previous": {
-                    "desc": "Go to previous panel"
+                    "desc": "转到上一个面板"
                 },
                 "goTo": {
-                    "desc": "Go to specific panel",
+                    "desc": "转到特定面板",
                     "params": {
                         "panelName": {
                             "type": [
@@ -18524,7 +18668,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-step", desc: "步进器", info: {
+        "name": "q-step",
+        "desc": "步进器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/stepper"
@@ -18532,7 +18678,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "Any",
-                    "desc": "Panel name",
+                    "desc": "面板名称",
                     "required": true,
                     "examples": [
                         "accounts",
@@ -18543,12 +18689,12 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18559,7 +18705,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18568,7 +18714,7 @@ export const tagLists: any = [
                 },
                 "title": {
                     "type": "String",
-                    "desc": "Step title",
+                    "desc": "步骤标题",
                     "required": true,
                     "examples": [
                         "Ad Groups",
@@ -18578,7 +18724,7 @@ export const tagLists: any = [
                 },
                 "caption": {
                     "type": "String",
-                    "desc": "Step’s additional information that appears beneath the title",
+                    "desc": "标题下显示的步骤的附加信息",
                     "examples": [
                         "Create an account",
                         "Payment details"
@@ -18590,7 +18736,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Step's prefix (max 2 characters) which replaces the icon if step does not has error, is being edited or is marked as done",
+                    "desc": "步骤的前缀（最多2个字符），如果步骤没有错误、正在编辑或标记为已完成，则替换图标",
                     "examples": [
                         "1",
                         "2",
@@ -18601,7 +18747,7 @@ export const tagLists: any = [
                 },
                 "done-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; If 'none' (String) is used as value, then it will defer to prefix or the regular icon for this state; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "遵循Quasar约定的图标名称；如果使用“none”（字符串）作为值，则它将遵循前缀或该状态的常规图标；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18612,7 +18758,7 @@ export const tagLists: any = [
                 },
                 "done-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18621,7 +18767,7 @@ export const tagLists: any = [
                 },
                 "active-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; If 'none' (String) is used as value, then it will defer to prefix or the regular icon for this state; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "遵循Quasar约定的图标名称；如果使用“none”（字符串）作为值，则它将遵循前缀或该状态的常规图标；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18632,7 +18778,7 @@ export const tagLists: any = [
                 },
                 "active-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18641,7 +18787,7 @@ export const tagLists: any = [
                 },
                 "error-icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; If 'none' (String) is used as value, then it will defer to prefix or the regular icon for this state; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "遵循Quasar约定的图标名称；如果使用“none”（字符串）作为值，则它将遵循前缀或该状态的常规图标；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18652,7 +18798,7 @@ export const tagLists: any = [
                 },
                 "error-color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18662,43 +18808,47 @@ export const tagLists: any = [
                 "header-nav": {
                     "type": "Boolean",
                     "default": true,
-                    "desc": "Allow navigation through the header",
+                    "desc": "允许在标题中导航",
                     "category": "behavior",
                     "required": false
                 },
                 "done": {
                     "type": "Boolean",
-                    "desc": "Mark the step as 'done'",
+                    "desc": "将步骤标记为“完成”",
                     "category": "state"
                 },
                 "error": {
                     "type": "Boolean",
-                    "desc": "Mark the step as having an error",
+                    "desc": "将步骤标记为有错误",
                     "category": "state"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "The content of the step; Can also contain a QStepperNavigation if you want to handle step navigation and don't have a global navigation in place"
+                    "desc": "步骤的内容；如果您想处理步骤导航并且没有全局导航，也可以包含QStepperNavigation"
                 }
             }
         }
     },
     {
-        name: "q-stepper-navigation", desc: "步进器导航按钮", info: {
+        "name": "q-stepper-navigation",
+        "desc": "步进器导航按钮",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/stepper"
             },
             "slots": {
                 "default": {
-                    "desc": "The content of the custom navigation, child of a QStep or of a QStepper (globally, through 'navigation' slot)"
+                    "desc": "自定义导航的内容，QStep或QStepper的子级（全局，通过“导航”槽）"
                 }
             }
         }
     },
     {
-        name: "q-table", desc: "表格", info: {
+        "name": "q-table",
+        "desc": "表格",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/table"
@@ -18707,7 +18857,7 @@ export const tagLists: any = [
                 "fullscreen": {
                     "type": "Boolean",
                     "sync": true,
-                    "desc": "Fullscreen mode",
+                    "desc": "全屏幕模式",
                     "examples": [
                         "v-model:fullscreen=\"isFullscreen\""
                     ],
@@ -18716,12 +18866,12 @@ export const tagLists: any = [
                 },
                 "no-route-fullscreen-exit": {
                     "type": "Boolean",
-                    "desc": "Changing route app won't exit fullscreen",
+                    "desc": "更改路线应用程序不会全屏退出",
                     "category": "behavior"
                 },
                 "rows": {
                     "type": "Array",
-                    "desc": "Rows of data to display",
+                    "desc": "要显示的数据行",
                     "examples": [
                         ":rows=\"myData\""
                     ],
@@ -18732,7 +18882,7 @@ export const tagLists: any = [
                         "String",
                         "Function"
                     ],
-                    "desc": "Property of each row that defines the unique key of each row (the result must be a primitive, not Object, Array, etc); The value of property must be string or a function taking a row and returning the desired (nested) key in the row; If supplying a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "每行的属性，定义每行的唯一键（结果必须是基元，而不是Object、Array等）；属性的值必须是字符串或函数，该函数取一行并返回行中所需的（嵌套的）键；如果提供一个函数以获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "default": "id",
                     "params": {
                         "row": {
@@ -18760,7 +18910,7 @@ export const tagLists: any = [
                 },
                 "virtual-scroll": {
                     "type": "Boolean",
-                    "desc": "Display data using QVirtualScroll (for non-grid mode only)",
+                    "desc": "使用QVirtualScroll显示数据（仅适用于非网格模式）",
                     "category": "virtual-scroll"
                 },
                 "virtual-scroll-target": {
@@ -18768,7 +18918,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -18782,7 +18932,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Minimum number of rows to render in the virtual list",
+                    "desc": "虚拟列表中要渲染的最小行数",
                     "default": 30,
                     "category": "virtual-scroll",
                     "required": false
@@ -18792,7 +18942,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Ratio of number of rows in visible zone to render before it",
+                    "desc": "可见区域中要在其之前渲染的行数的比率",
                     "default": 1,
                     "category": "virtual-scroll",
                     "required": false
@@ -18802,7 +18952,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Ratio of number of rows in visible zone to render after it",
+                    "desc": "可见区域中要在其之后渲染的行数的比率",
                     "default": 1,
                     "category": "virtual-scroll",
                     "required": false
@@ -18812,7 +18962,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Default size in pixels of a row; This value is used for rendering the initial table; Try to use a value close to the minimum size of a row",
+                    "desc": "默认大小（以一行的像素为单位）；该值用于呈现初始表格；尝试使用接近行的最小大小的值",
                     "default": "48 (24 if dense)",
                     "category": "virtual-scroll",
                     "required": false
@@ -18822,7 +18972,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Size in pixels of the sticky header (if using one); A correct value will improve scroll precision; Will be also used for non-virtual-scroll tables for fixing top alignment when using scrollTo method",
+                    "desc": "粘性标头的大小（以像素为单位）（如果使用）；正确的值将提高滚动精度；也将用于非虚拟滚动表，以在使用scrollTo方法时修复顶部对齐",
                     "default": "0",
                     "category": "virtual-scroll|behavior",
                     "required": false
@@ -18832,7 +18982,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Size in pixels of the sticky footer part (if using one); A correct value will improve scroll precision",
+                    "desc": "粘性页脚部分的大小（以像素为单位）（如果使用）；正确的值将提高滚动精度",
                     "default": "0",
                     "category": "virtual-scroll",
                     "required": false
@@ -18842,12 +18992,12 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "The number of columns in the table (you need this if you use table-layout: fixed)",
+                    "desc": "表中的列数（如果使用表布局，则需要此项：固定）",
                     "category": "virtual-scroll|content"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -18858,7 +19008,7 @@ export const tagLists: any = [
                 },
                 "icon-first-page": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention for stepping to first page; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "图标名称遵循Quasar惯例，用于进入第一页；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18869,7 +19019,7 @@ export const tagLists: any = [
                 },
                 "icon-prev-page": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention for stepping to previous page; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "图标名称遵循Quasar惯例，用于跳转到上一页；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18880,7 +19030,7 @@ export const tagLists: any = [
                 },
                 "icon-next-page": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention for stepping to next page; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "图标名称遵循Quasar惯例，用于进入下一页；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18891,7 +19041,7 @@ export const tagLists: any = [
                 },
                 "icon-last-page": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention for stepping to last page; Make sure you have the icon library installed unless you are using 'img:' prefix",
+                    "desc": "图标名称遵循Quasar惯例，用于进入最后一页；除非使用“img：”前缀，否则请确保已安装图标库",
                     "examples": [
                         "map",
                         "ion-add",
@@ -18902,22 +19052,22 @@ export const tagLists: any = [
                 },
                 "grid": {
                     "type": "Boolean",
-                    "desc": "Display data as a grid instead of the default table",
+                    "desc": "将数据显示为网格而不是默认表",
                     "category": "behavior"
                 },
                 "grid-header": {
                     "type": "Boolean",
-                    "desc": "Display header for grid-mode also",
+                    "desc": "也显示网格模式的标题",
                     "category": "behavior|content"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; Connect with $q.screen for responsive behavior",
+                    "desc": "密集模式；连接$q.screen以实现响应行为",
                     "category": "style"
                 },
                 "columns": {
                     "type": "Array",
-                    "desc": "The column definitions (Array of Objects)",
+                    "desc": "列定义（对象阵列）",
                     "examples": [
                         ":columns=\"tableColumns\""
                     ],
@@ -19151,7 +19301,7 @@ export const tagLists: any = [
                 },
                 "visible-columns": {
                     "type": "Array",
-                    "desc": "Array of Strings defining column names ('name' property of each column from 'columns' prop definitions); Columns marked as 'required' are not affected by this property",
+                    "desc": "定义列名的字符串数组（“columns”道具定义中每列的“name”属性）；标记为“必需”的列不受此属性的影响",
                     "examples": [
                         ":visible-columns=\"myCols\"",
                         "[ 'desc', 'carbs', 'protein' ]"
@@ -19160,12 +19310,12 @@ export const tagLists: any = [
                 },
                 "loading": {
                     "type": "Boolean",
-                    "desc": "Put Table into 'loading' state; Notify the user something is happening behind the scenes",
+                    "desc": "将表置于“加载”状态；通知用户幕后发生的事情",
                     "category": "behavior|content"
                 },
                 "title": {
                     "type": "String",
-                    "desc": "Table title",
+                    "desc": "表格标题",
                     "examples": [
                         "Device list"
                     ],
@@ -19173,52 +19323,52 @@ export const tagLists: any = [
                 },
                 "hide-header": {
                     "type": "Boolean",
-                    "desc": "Hide table header layer",
+                    "desc": "隐藏表头图层",
                     "category": "content"
                 },
                 "hide-bottom": {
                     "type": "Boolean",
-                    "desc": "Hide table bottom layer regardless of what it has to display",
+                    "desc": "隐藏表底层，不管它必须显示什么",
                     "category": "content"
                 },
                 "hide-selected-banner": {
                     "type": "Boolean",
-                    "desc": "Hide the selected rows banner (if any)",
+                    "desc": "隐藏所选行横幅（如果有）",
                     "category": "content"
                 },
                 "hide-no-data": {
                     "type": "Boolean",
-                    "desc": "Hide the default no data bottom layer",
+                    "desc": "隐藏默认的无数据底层",
                     "category": "content"
                 },
                 "hide-pagination": {
                     "type": "Boolean",
-                    "desc": "Hide the pagination controls at the bottom",
+                    "desc": "隐藏底部的分页控件",
                     "category": "content"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "separator": {
                     "type": "String",
-                    "desc": "Use a separator/border between rows, columns or all cells",
+                    "desc": "在行、列或所有单元格之间使用分隔符/边框",
                     "default": "horizontal",
                     "values": [
                         "horizontal",
@@ -19231,17 +19381,17 @@ export const tagLists: any = [
                 },
                 "wrap-cells": {
                     "type": "Boolean",
-                    "desc": "Wrap text within table cells",
+                    "desc": "在表格单元格中换行文本",
                     "category": "content"
                 },
                 "binary-state-sort": {
                     "type": "Boolean",
-                    "desc": "Skip the third state (unsorted) when user toggles column sort direction",
+                    "desc": "当用户切换列排序方向时，跳过第三种状态（未排序）",
                     "category": "sorting"
                 },
                 "column-sort-order": {
                     "type": "String",
-                    "desc": "Set column sort order: 'ad' (ascending-descending) or 'da' (descending-ascending); It gets applied to all columns unless a column has its own sortOrder specified in the 'columns' definition prop",
+                    "desc": "设置列排序顺序：“ad”（升序-降序）或“da”（降序-升序）；它将应用于所有列，除非列在“columns”定义道具中指定了自己的sortOrder",
                     "values": [
                         "ad",
                         "da"
@@ -19252,7 +19402,7 @@ export const tagLists: any = [
                 },
                 "no-data-label": {
                     "type": "String",
-                    "desc": "Override default text to display when no data is available",
+                    "desc": "在没有可用数据时覆盖要显示的默认文本",
                     "examples": [
                         "No devices available"
                     ],
@@ -19260,7 +19410,7 @@ export const tagLists: any = [
                 },
                 "no-results-label": {
                     "type": "String",
-                    "desc": "Override default text to display when user filters the table and no matched results are found",
+                    "desc": "当用户筛选表但未找到匹配的结果时，覆盖要显示的默认文本",
                     "examples": [
                         "No matched records"
                     ],
@@ -19268,7 +19418,7 @@ export const tagLists: any = [
                 },
                 "loading-label": {
                     "type": "String",
-                    "desc": "Override default text to display when table is in loading state (see 'loading' prop)",
+                    "desc": "覆盖表处于加载状态时显示的默认文本（请参阅“加载”道具）",
                     "examples": [
                         "Loading devices..."
                     ],
@@ -19276,7 +19426,7 @@ export const tagLists: any = [
                 },
                 "selected-rows-label": {
                     "type": "Function",
-                    "desc": "Text to display when user selected at least one row; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "当用户选择至少一行时要显示的文本；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "numberOfRows": {
                             "type": "Number",
@@ -19297,7 +19447,7 @@ export const tagLists: any = [
                 },
                 "rows-per-page-label": {
                     "type": "String",
-                    "desc": "Text to override default rows per page label at bottom of table",
+                    "desc": "用于覆盖表底部每页标签默认行的文本",
                     "examples": [
                         "Records per page:"
                     ],
@@ -19305,7 +19455,7 @@ export const tagLists: any = [
                 },
                 "pagination-label": {
                     "type": "Function",
-                    "desc": "Text to override default pagination label at bottom of table (unless 'pagination' scoped slot is used); For best performance, reference it from your scope and do not define it inline",
+                    "desc": "覆盖表底部默认分页标签的文本（除非使用了“分页”范围的槽）；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "firstRowIndex": {
                             "type": "Number",
@@ -19339,7 +19489,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "CSS style to apply to native HTML <table> element's wrapper (which is a DIV)",
+                    "desc": "CSS样式应用于原生HTML＜table＞元素的包装器（它是一个DIV）",
                     "examples": [
                         "background-color: #ff0000",
                         ":table-style=\"{ backgroundColor: '#ff0000' }\""
@@ -19353,7 +19503,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "CSS classes to apply to native HTML <table> element's wrapper (which is a DIV)",
+                    "desc": "CSS类应用于原生HTML＜table＞元素的包装器（它是一个DIV）",
                     "examples": [
                         "my-special-class",
                         ":table-class=\"{ 'my-special-class': [Boolean condition] }\""
@@ -19367,7 +19517,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "CSS style to apply to header of native HTML <table> (which is a TR)",
+                    "desc": "CSS样式应用于本地HTML＜table＞的标头（这是一个TR）",
                     "examples": [
                         "background-color: #ff0000",
                         ":table-header-style=\"{ backgroundColor: '#ff0000' }\""
@@ -19381,7 +19531,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "CSS classes to apply to header of native HTML <table> (which is a TR)",
+                    "desc": "CSS类应用于本地HTML＜table＞的头（这是一个TR）",
                     "examples": [
                         "my-special-class",
                         ":table-header-class=\"{ 'my-special-class': [Boolean condition] }\""
@@ -19395,7 +19545,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "CSS style to apply to the cards container (when in grid mode)",
+                    "desc": "应用于卡片容器的CSS样式（在网格模式下）",
                     "examples": [
                         "background-color: #ff0000",
                         ":card-container-style=\"{ backgroundColor: '#ff0000' }\""
@@ -19409,7 +19559,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "CSS classes to apply to the cards container (when in grid mode)",
+                    "desc": "应用于卡片容器的CSS类（在网格模式下）",
                     "examples": [
                         "my-special-class",
                         "justify-center",
@@ -19424,7 +19574,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueStyleProp",
-                    "desc": "CSS style to apply to the card (when in grid mode) or container card (when not in grid mode)",
+                    "desc": "应用于卡（在网格模式下）或容器卡（不在网格模式时）的CSS样式",
                     "examples": [
                         "background-color: #ff0000",
                         ":card-style=\"{ backgroundColor: '#ff0000' }\""
@@ -19438,7 +19588,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "CSS classes to apply to the card (when in grid mode) or container card (when not in grid mode)",
+                    "desc": "应用于卡（处于网格模式时）或容器卡（不处于网格模式下）的CSS类",
                     "examples": [
                         "my-special-class",
                         ":card-class=\"{ 'my-special-class': [Boolean condition] }\""
@@ -19452,7 +19602,7 @@ export const tagLists: any = [
                         "Object"
                     ],
                     "tsType": "VueClassProp",
-                    "desc": "CSS classes to apply to the title (if using 'title' prop)",
+                    "desc": "要应用于标题的CSS类（如果使用“title”道具）",
                     "examples": [
                         "my-special-class",
                         "text-h1",
@@ -19465,7 +19615,7 @@ export const tagLists: any = [
                         "String",
                         "Object"
                     ],
-                    "desc": "String/Object to filter table with; When using an Object it requires 'filter-method' to also be specified since it will be a custom filtering",
+                    "desc": "用于筛选表的字符串/对象；当使用对象时，它还需要指定“筛选方法”，因为它将是自定义筛选",
                     "examples": [
                         ":filter=\"myFilterInput\""
                     ],
@@ -19473,7 +19623,7 @@ export const tagLists: any = [
                 },
                 "filter-method": {
                     "type": "Function",
-                    "desc": "The actual filtering mechanism; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "实际的过滤机制；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "rows": {
                             "type": "Array",
@@ -19527,7 +19677,7 @@ export const tagLists: any = [
                 },
                 "pagination": {
                     "type": "Object",
-                    "desc": "Pagination object; You can also use the 'v-model:pagination' for synching; When not synching it simply initializes the pagination on first render",
+                    "desc": "分页对象；您还可以使用“v-model:分页”进行同步；当不同步时，它只是在第一次渲染时初始化分页",
                     "definition": {
                         "sortBy": {
                             "type": "String",
@@ -19562,7 +19712,7 @@ export const tagLists: any = [
                 },
                 "rows-per-page-options": {
                     "type": "Array",
-                    "desc": "Options for user to pick (Numbers); Number 0 means 'Show all rows in one page'",
+                    "desc": "供用户选择的选项（数字）；数字0表示“在一页中显示所有行”",
                     "default": "[ 3, 5, 7, 10, 15, 20, 25, 50, 0 ]",
                     "examples": [
                         ":rows-per-page-options=\"[10, 20]\""
@@ -19572,7 +19722,7 @@ export const tagLists: any = [
                 },
                 "selection": {
                     "type": "String",
-                    "desc": "Selection type",
+                    "desc": "选择类型",
                     "default": "none",
                     "values": [
                         "single",
@@ -19584,7 +19734,7 @@ export const tagLists: any = [
                 },
                 "selected": {
                     "type": "Array",
-                    "desc": "Keeps the user selection array",
+                    "desc": "保留用户选择数组",
                     "default": "[]",
                     "syncable": true,
                     "examples": [
@@ -19595,7 +19745,7 @@ export const tagLists: any = [
                 },
                 "expanded": {
                     "type": "Array",
-                    "desc": "Keeps the array with expanded rows keys",
+                    "desc": "保留具有扩展行键的数组",
                     "default": "[]",
                     "syncable": true,
                     "examples": [
@@ -19606,7 +19756,7 @@ export const tagLists: any = [
                 },
                 "sort-method": {
                     "type": "Function",
-                    "desc": "The actual sort mechanism. Function (rows, sortBy, descending) => sorted rows; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "实际的排序机制。函数（rows，sortBy，descending）=>已排序的行；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "rows": {
                             "type": "Array",
@@ -19638,10 +19788,10 @@ export const tagLists: any = [
             },
             "slots": {
                 "loading": {
-                    "desc": "Override default effect when table is in loading state; Suggestion: QInnerLoading"
+                    "desc": "当表处于加载状态时，覆盖默认效果；建议：QInnerLoading"
                 },
                 "item": {
-                    "desc": "Slot to use for defining an item when in 'grid' mode; Suggestion: QCard",
+                    "desc": "在“网格”模式下用于定义项目的插槽；建议：QCard",
                     "scope": {
                         "key": {
                             "type": "Any",
@@ -19717,7 +19867,7 @@ export const tagLists: any = [
                     }
                 },
                 "body": {
-                    "desc": "Slot to define how a body row looks like; Suggestion: QTr + Td",
+                    "desc": "槽，用于定义正文行的外观；建议：QTr+Td",
                     "scope": {
                         "key": {
                             "type": "Any",
@@ -19797,7 +19947,7 @@ export const tagLists: any = [
                     }
                 },
                 "body-cell": {
-                    "desc": "Slot to define how all body cells look like; Suggestion: QTd",
+                    "desc": "插槽，用于定义所有身体细胞的外观；建议：QTd",
                     "scope": {
                         "col": {
                             "type": "Object",
@@ -19881,7 +20031,7 @@ export const tagLists: any = [
                     }
                 },
                 "body-cell-[name]": {
-                    "desc": "Slot to define how a specific column cell looks like; replace '[name]' with column name (from columns definition object)",
+                    "desc": "槽，用于定义特定列单元格的外观；将“[name]”替换为列名（来自列定义对象）",
                     "scope": {
                         "col": {
                             "type": "Object",
@@ -19965,7 +20115,7 @@ export const tagLists: any = [
                     }
                 },
                 "header": {
-                    "desc": "Slot to define how header looks like; Suggestion: QTr + QTh",
+                    "desc": "插槽，用于定义标头的外观；建议：QTr+QTh",
                     "scope": {
                         "cols": {
                             "type": "Object",
@@ -20033,7 +20183,7 @@ export const tagLists: any = [
                     }
                 },
                 "header-cell": {
-                    "desc": "Slot to define how each header cell looks like; Suggestion: QTh",
+                    "desc": "插槽，用于定义每个标头单元格的外观；建议：QTh",
                     "scope": {
                         "col": {
                             "type": "Object",
@@ -20097,7 +20247,7 @@ export const tagLists: any = [
                     }
                 },
                 "header-cell-[name]": {
-                    "desc": "Slot to define how a specific header cell looks like; replace '[name]' with column name (from columns definition object)",
+                    "desc": "槽，用于定义特定标题单元格的外观；将“[name]”替换为列名（来自列定义对象）",
                     "scope": {
                         "col": {
                             "type": "Object",
@@ -20161,7 +20311,7 @@ export const tagLists: any = [
                     }
                 },
                 "body-selection": {
-                    "desc": "Slot to define how body selection column looks like; Suggestion: QCheckbox",
+                    "desc": "用于定义正文选择列外观的槽；建议：Q复选框",
                     "scope": {
                         "key": {
                             "type": "Any",
@@ -20237,7 +20387,7 @@ export const tagLists: any = [
                     }
                 },
                 "header-selection": {
-                    "desc": "Slot to define how header selection column looks like (available only for multiple selection mode); Suggestion: QCheckbox",
+                    "desc": "用于定义标题选择列外观的插槽（仅适用于多选模式）；建议：Q复选框",
                     "scope": {
                         "cols": {
                             "type": "Object",
@@ -20297,7 +20447,7 @@ export const tagLists: any = [
                     }
                 },
                 "top-row": {
-                    "desc": "Slot to define how top extra row looks like",
+                    "desc": "插槽，用于定义顶部额外行的外观",
                     "scope": {
                         "cols": {
                             "type": "Object",
@@ -20306,7 +20456,7 @@ export const tagLists: any = [
                     }
                 },
                 "bottom-row": {
-                    "desc": "Slot to define how bottom extra row looks like",
+                    "desc": "插槽，用于定义底部额外行的外观",
                     "scope": {
                         "cols": {
                             "type": "Object",
@@ -20315,7 +20465,7 @@ export const tagLists: any = [
                     }
                 },
                 "top": {
-                    "desc": "Slot to define how table top looks like",
+                    "desc": "用于定义桌面外观的插槽",
                     "scope": {
                         "pagination": {
                             "type": "Object",
@@ -20395,7 +20545,7 @@ export const tagLists: any = [
                     }
                 },
                 "bottom": {
-                    "desc": "Slot to define how table bottom looks like",
+                    "desc": "用于定义桌子底部外观的插槽",
                     "scope": {
                         "pagination": {
                             "type": "Object",
@@ -20475,7 +20625,7 @@ export const tagLists: any = [
                     }
                 },
                 "pagination": {
-                    "desc": "Slot to override default pagination label and buttons",
+                    "desc": "用于覆盖默认分页标签和按钮的插槽",
                     "scope": {
                         "pagination": {
                             "type": "Object",
@@ -20555,7 +20705,7 @@ export const tagLists: any = [
                     }
                 },
                 "top-left": {
-                    "desc": "Slot to define how left part of the table top looks like",
+                    "desc": "用于定义桌面左侧部分外观的插槽",
                     "scope": {
                         "pagination": {
                             "type": "Object",
@@ -20635,7 +20785,7 @@ export const tagLists: any = [
                     }
                 },
                 "top-right": {
-                    "desc": "Slot to define how right part of the table top looks like",
+                    "desc": "用于定义桌面右侧部分外观的插槽",
                     "scope": {
                         "pagination": {
                             "type": "Object",
@@ -20715,7 +20865,7 @@ export const tagLists: any = [
                     }
                 },
                 "top-selection": {
-                    "desc": "Slot to define how top table section looks like when user has selected at least one row",
+                    "desc": "定义当用户至少选择了一行时顶部表格部分的样子的槽",
                     "scope": {
                         "pagination": {
                             "type": "Object",
@@ -20795,7 +20945,7 @@ export const tagLists: any = [
                     }
                 },
                 "no-data": {
-                    "desc": "Slot to define how the bottom will look like when is nothing to display",
+                    "desc": "插槽，用于定义当没有显示内容时底部的外观",
                     "scope": {
                         "message": {
                             "type": "String",
@@ -20816,7 +20966,7 @@ export const tagLists: any = [
             },
             "events": {
                 "row-click": {
-                    "desc": "Emitted when user clicks/taps on a row; Is not emitted when using body/row/item scoped slots",
+                    "desc": "当用户点击/点击一行时发出；在使用主体/行/项范围的插槽时不发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -20833,7 +20983,7 @@ export const tagLists: any = [
                     }
                 },
                 "row-dblclick": {
-                    "desc": "Emitted when user quickly double clicks/taps on a row; Is not emitted when using body/row/item scoped slots; Please check JS dblclick event support before using",
+                    "desc": "当用户快速双击/点击一行时发出；在使用主体/行/项范围的插槽时不发出；使用前请检查JS dblclick事件支持",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -20850,7 +21000,7 @@ export const tagLists: any = [
                     }
                 },
                 "row-contextmenu": {
-                    "desc": "Emitted when user right clicks/long taps on a row; Is not emitted when using body/row/item scoped slots",
+                    "desc": "当用户右键单击/长按一行时发出；在使用主体/行/项范围的插槽时不发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -20867,7 +21017,7 @@ export const tagLists: any = [
                     }
                 },
                 "request": {
-                    "desc": "Emitted when a server request is triggered",
+                    "desc": "在触发服务器请求时发出",
                     "params": {
                         "requestProp": {
                             "type": "Object",
@@ -20939,7 +21089,7 @@ export const tagLists: any = [
                     }
                 },
                 "selection": {
-                    "desc": "Emitted when user selects/unselects row(s)",
+                    "desc": "当用户选择/取消选择行时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -20970,7 +21120,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:pagination": {
-                    "desc": "Used by Vue on 'v-model:pagination' for updating its value",
+                    "desc": "Vue在“v-model:paging”上用于更新其值",
                     "params": {
                         "newPagination": {
                             "type": "Object",
@@ -21009,7 +21159,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:selected": {
-                    "desc": "Used by Vue on 'v-model:selected' prop for updating its value",
+                    "desc": "Vue在“v-model:selected”道具上用于更新其值",
                     "params": {
                         "newSelected": {
                             "type": "Array",
@@ -21021,7 +21171,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:expanded": {
-                    "desc": "Used by Vue on 'v-model:expanded' prop for updating its value",
+                    "desc": "Vue在“v-model:expanded”道具上用于更新其值",
                     "params": {
                         "newExpanded": {
                             "type": "Array",
@@ -21033,7 +21183,7 @@ export const tagLists: any = [
                     }
                 },
                 "virtual-scroll": {
-                    "desc": "Emitted when the virtual scroll occurs, if using virtual scroll",
+                    "desc": "如果使用虚拟滚动，则在发生虚拟滚动时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -21070,16 +21220,16 @@ export const tagLists: any = [
             },
             "methods": {
                 "toggleFullscreen": {
-                    "desc": "Toggles fullscreen mode"
+                    "desc": "切换全屏模式"
                 },
                 "setFullscreen": {
-                    "desc": "Enter the fullscreen view"
+                    "desc": "进入全屏视图"
                 },
                 "exitFullscreen": {
-                    "desc": "Leave the fullscreen view"
+                    "desc": "离开全屏视图"
                 },
                 "requestServerInteraction": {
-                    "desc": "Trigger a server request (emits 'request' event)",
+                    "desc": "触发服务器请求（发出“请求”事件）",
                     "params": {
                         "props": {
                             "type": "Object",
@@ -21169,7 +21319,7 @@ export const tagLists: any = [
                     }
                 },
                 "setPagination": {
-                    "desc": "Unless using an external pagination Object (through 'v-model:pagination' prop), you can use this method and force the internal pagination to change",
+                    "desc": "除非使用外部分页对象（通过“v-model:pagition”道具），否则可以使用此方法并强制更改内部分页",
                     "params": {
                         "pagination": {
                             "type": "Object",
@@ -21204,19 +21354,19 @@ export const tagLists: any = [
                     }
                 },
                 "firstPage": {
-                    "desc": "Navigates to first page"
+                    "desc": "导航到第一页"
                 },
                 "prevPage": {
-                    "desc": "Navigates to previous page, if available"
+                    "desc": "导航到上一页（如果可用）"
                 },
                 "nextPage": {
-                    "desc": "Navigates to next page, if available"
+                    "desc": "导航到下一页（如果可用）"
                 },
                 "lastPage": {
-                    "desc": "Navigates to last page"
+                    "desc": "导航到最后一页"
                 },
                 "isRowSelected": {
-                    "desc": "Determine if a row has been selected by user",
+                    "desc": "确定用户是否已选择行",
                     "params": {
                         "key": {
                             "type": "Any",
@@ -21233,10 +21383,10 @@ export const tagLists: any = [
                     }
                 },
                 "clearSelection": {
-                    "desc": "Clears user selection (emits 'update:selected' with empty array)"
+                    "desc": "清除用户选择（使用空数组发出“update:selected”）"
                 },
                 "isRowExpanded": {
-                    "desc": "Determine if a row is expanded or not",
+                    "desc": "确定行是否展开",
                     "params": {
                         "key": {
                             "type": "Any",
@@ -21253,7 +21403,7 @@ export const tagLists: any = [
                     }
                 },
                 "setExpanded": {
-                    "desc": "Sets the expanded rows keys array; Especially useful if not using an external 'expanded' state otherwise just emits 'update:expanded' with the value",
+                    "desc": "设置展开的行键数组；特别有用的是，如果不使用外部“扩展”状态，否则只会发出带有值的“update:expanded”",
                     "params": {
                         "expanded": {
                             "type": "Array",
@@ -21266,7 +21416,7 @@ export const tagLists: any = [
                     }
                 },
                 "sort": {
-                    "desc": "Trigger a table sort",
+                    "desc": "触发表排序",
                     "params": {
                         "col": {
                             "type": [
@@ -21282,10 +21432,10 @@ export const tagLists: any = [
                     }
                 },
                 "resetVirtualScroll": {
-                    "desc": "Resets the virtual scroll (if using it) computations; Needed for custom edge-cases"
+                    "desc": "重置虚拟滚动（如果使用）计算；需要自定义边缘案例"
                 },
                 "scrollTo": {
-                    "desc": "Scroll the table to the row with the specified index in page (0 based)",
+                    "desc": "将表滚动到页面中具有指定索引的行（基于0）",
                     "params": {
                         "index": {
                             "type": [
@@ -21314,28 +21464,30 @@ export const tagLists: any = [
             },
             "computedProps": {
                 "filteredSortedRows": {
-                    "desc": "The filtered and sorted rows (same as the rows prop if using server-side fetching)",
+                    "desc": "过滤和排序的行（如果使用服务器端获取，则与行道具相同）",
                     "type": "Array",
                     "examples": [
                         "[ { name: 'Ice Cream Sandwich', calories: 237, fat: 9.0, carbs: 37, protein: 4.3, sodium: 129, calcium: 8, iron: 1 }, ... ]"
                     ]
                 },
                 "computedRows": {
-                    "desc": "Paginated, filtered, and sorted rows (same as the rows prop if using server-side fetching)",
+                    "desc": "分页、过滤和排序的行（如果使用服务器端获取，则与行道具相同）",
                     "type": "Array",
                     "examples": [
                         "[ { name: 'Ice Cream Sandwich', calories: 237, fat: 9.0, carbs: 37, protein: 4.3, sodium: 129, calcium: 8, iron: 1 }, ... ]"
                     ]
                 },
                 "computedRowsNumber": {
-                    "desc": "The number of computed rows",
+                    "desc": "计算的行数",
                     "type": "Number"
                 }
             }
         }
     },
     {
-        name: "q-th", desc: "", info: {
+        "name": "q-th",
+        "desc": "",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/table"
@@ -21343,7 +21495,7 @@ export const tagLists: any = [
             "props": {
                 "props": {
                     "type": "Object",
-                    "desc": "QTable's header column scoped slot property",
+                    "desc": "QTable的头列作用域槽属性",
                     "examples": [
                         ":props=\"props\""
                     ],
@@ -21351,19 +21503,21 @@ export const tagLists: any = [
                 },
                 "auto-width": {
                     "type": "Boolean",
-                    "desc": "Tries to shrink header column width size; Useful for columns with a checkbox/radio/toggle",
+                    "desc": "尝试缩小标题列宽大小；适用于带有复选框/单选框/切换的列",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-tr", desc: "", info: {
+        "name": "q-tr",
+        "desc": "",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/table"
@@ -21371,7 +21525,7 @@ export const tagLists: any = [
             "props": {
                 "props": {
                     "type": "Object",
-                    "desc": "QTable's row scoped slot property",
+                    "desc": "QTable的行范围插槽属性",
                     "examples": [
                         ":props=\"props\""
                     ],
@@ -21379,19 +21533,21 @@ export const tagLists: any = [
                 },
                 "no-hover": {
                     "type": "Boolean",
-                    "desc": "Disable hover effect",
+                    "desc": "禁用悬停效果",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-td", desc: "", info: {
+        "name": "q-td",
+        "desc": "",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/table"
@@ -21399,7 +21555,7 @@ export const tagLists: any = [
             "props": {
                 "props": {
                     "type": "Object",
-                    "desc": "QTable's column scoped slot property",
+                    "desc": "QTable的列范围槽属性",
                     "examples": [
                         ":props=\"props\""
                     ],
@@ -21407,31 +21563,33 @@ export const tagLists: any = [
                 },
                 "auto-width": {
                     "type": "Boolean",
-                    "desc": "Tries to shrink column width size; Useful for columns with a checkbox/radio/toggle",
+                    "desc": "尝试缩小列宽大小；适用于带有复选框/单选框/切换的列",
                     "category": "content"
                 },
                 "no-hover": {
                     "type": "Boolean",
-                    "desc": "Disable hover effect",
+                    "desc": "禁用悬停效果",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-tabs", desc: "选项卡组", info: {
+        "name": "q-tabs",
+        "desc": "选项卡组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/tabs"
             },
             "props": {
                 "model-value": {
-                    "desc": "Model of the component defining current panel name; Either use this property (along with a listener for 'update:modelValue' event) OR use v-model directive",
+                    "desc": "定义当前面板名称的组件的模型；使用此属性（以及“update:modelValue”事件的侦听器）或使用v-model指令",
                     "required": false,
                     "syncable": true,
                     "category": "model",
@@ -21447,22 +21605,22 @@ export const tagLists: any = [
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "Use vertical design (tabs one on top of each other rather than one next to the other horizontally)",
+                    "desc": "使用垂直设计（选项卡一个在另一个顶部，而不是一个在水平方向相邻）",
                     "category": "content"
                 },
                 "outside-arrows": {
                     "type": "Boolean",
-                    "desc": "Reserve space for arrows to place them on each side of the tabs (the arrows fade when inactive)",
+                    "desc": "为箭头保留空间，以便将它们放置在选项卡的两侧（箭头在不活动时会褪色）",
                     "category": "content"
                 },
                 "mobile-arrows": {
                     "type": "Boolean",
-                    "desc": "Force display of arrows (if needed) on mobile",
+                    "desc": "在移动设备上强制显示箭头（如果需要）",
                     "category": "content"
                 },
                 "align": {
                     "type": "String",
-                    "desc": "Horizontal alignment the tabs within the tabs container",
+                    "desc": "水平对齐选项卡容器中的选项卡",
                     "default": "center",
                     "values": [
                         "left",
@@ -21478,14 +21636,14 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Breakpoint (in pixels) of tabs container width at which the tabs automatically turn to a justify alignment",
+                    "desc": "选项卡容器宽度的断点（以像素为单位），选项卡在该宽度处自动转向对齐对齐",
                     "default": 600,
                     "category": "content|behavior",
                     "required": false
                 },
                 "active-color": {
                     "type": "String",
-                    "desc": "The color to be attributed to the text of the active tab",
+                    "desc": "要归因于活动选项卡的文本的颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -21494,7 +21652,7 @@ export const tagLists: any = [
                 },
                 "active-bg-color": {
                     "type": "String",
-                    "desc": "The color to be attributed to the background of the active tab",
+                    "desc": "要归因于活动选项卡背景的颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -21503,7 +21661,7 @@ export const tagLists: any = [
                 },
                 "indicator-color": {
                     "type": "String",
-                    "desc": "The color to be attributed to the indicator (the underline) of the active tab",
+                    "desc": "要归因于活动选项卡的指示符（下划线）的颜色",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -21512,7 +21670,7 @@ export const tagLists: any = [
                 },
                 "content-class": {
                     "type": "String",
-                    "desc": "Class definitions to be attributed to the content wrapper",
+                    "desc": "要归因于内容包装的类定义",
                     "examples": [
                         "my-special-class"
                     ],
@@ -21520,7 +21678,7 @@ export const tagLists: any = [
                 },
                 "active-class": {
                     "type": "String",
-                    "desc": "The class to be set on the active tab",
+                    "desc": "要在活动选项卡上设置的类",
                     "examples": [
                         "my-active-class"
                     ],
@@ -21529,7 +21687,7 @@ export const tagLists: any = [
                 },
                 "left-icon": {
                     "type": "String",
-                    "desc": "The name of an icon to replace the default arrow used to scroll through the tabs to the left, when the tabs extend past the width of the tabs container",
+                    "desc": "当选项卡延伸超过选项卡容器的宽度时，替换用于向左滚动选项卡的默认箭头的图标的名称",
                     "examples": [
                         "arrow_left"
                     ],
@@ -21537,7 +21695,7 @@ export const tagLists: any = [
                 },
                 "right-icon": {
                     "type": "String",
-                    "desc": "The name of an icon to replace the default arrow used to scroll through the tabs to the right, when the tabs extend past the width of the tabs container",
+                    "desc": "当选项卡延伸超过选项卡容器的宽度时，替换用于向右滚动选项卡的默认箭头的图标的名称",
                     "examples": [
                         "arrow_right"
                     ],
@@ -21545,48 +21703,48 @@ export const tagLists: any = [
                 },
                 "stretch": {
                     "type": "Boolean",
-                    "desc": "When used on flexbox parent, tabs will stretch to parent's height",
+                    "desc": "在柔性盒父对象上使用时，选项卡将拉伸到父对象的高度",
                     "category": "content"
                 },
                 "shrink": {
                     "type": "Boolean",
-                    "desc": "By default, QTabs is set to grow to the available space; However, you can reverse that with this prop; Useful (and required) when placing the component in a QToolbar",
+                    "desc": "默认情况下，QTabs设置为增长到可用空间；然而，你可以用这个道具扭转这种局面；在QToolbar中放置零部件时有用（也是必需的）",
                     "category": "content"
                 },
                 "switch-indicator": {
                     "type": "Boolean",
-                    "desc": "Switches the indicator position (on left of tab for vertical mode or above the tab for default horizontal mode)",
+                    "desc": "切换指示器位置（在选项卡左侧用于垂直模式，或在选项卡上方用于默认水平模式）",
                     "category": "content"
                 },
                 "narrow-indicator": {
                     "type": "Boolean",
-                    "desc": "Allows the indicator to be the same width as the tab's content (text or icon), instead of the whole width of the tab",
+                    "desc": "允许指示器的宽度与选项卡的内容（文本或图标）相同，而不是选项卡的整个宽度",
                     "category": "content"
                 },
                 "inline-label": {
                     "type": "Boolean",
-                    "desc": "Allows the text to be inline with the icon, should one be used",
+                    "desc": "如果使用图标，则允许文本与图标内联",
                     "category": "content"
                 },
                 "no-caps": {
                     "type": "Boolean",
-                    "desc": "Turns off capitalizing all letters within the tab (which is the default)",
+                    "desc": "关闭选项卡中所有字母的大写（这是默认设置）",
                     "category": "content"
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+                    "desc": "当组件需要更改模型时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Any",
@@ -21599,7 +21757,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-tab", desc: "选项卡", info: {
+        "name": "q-tab",
+        "desc": "选项卡",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/tabs"
@@ -21607,7 +21767,7 @@ export const tagLists: any = [
             "props": {
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -21621,7 +21781,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "A number or string to label the tab",
+                    "desc": "用于标记选项卡的数字或字符串",
                     "examples": [
                         "Home"
                     ],
@@ -21632,7 +21792,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Adds an alert symbol to the tab, notifying the user there are some updates; If its value is not a Boolean, then you can specify a color",
+                    "desc": "在选项卡中添加一个警告符号，通知用户有一些更新；如果其值不是布尔值，则可以指定颜色",
                     "examples": [
                         "alert",
                         "alert=\"purple\""
@@ -21641,7 +21801,7 @@ export const tagLists: any = [
                 },
                 "alert-icon": {
                     "type": "String",
-                    "desc": "Adds a floating icon to the tab, notifying the user there are some updates; It's displayed only if 'alert' is set; Can use the color specified by 'alert' prop",
+                    "desc": "在选项卡中添加一个浮动图标，通知用户有一些更新；仅当设置了“alert”时才显示；可以使用“alert”道具指定的颜色",
                     "examples": [
                         "alert-icon=\"alarm_on\""
                     ],
@@ -21652,7 +21812,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Panel name",
+                    "desc": "面板名称",
                     "default": "A random UID",
                     "examples": [
                         "home",
@@ -21663,12 +21823,12 @@ export const tagLists: any = [
                 },
                 "no-caps": {
                     "type": "Boolean",
-                    "desc": "Turns off capitalizing all letters within the tab (which is the default)",
+                    "desc": "关闭选项卡中所有字母的大写（这是默认设置）",
                     "category": "content"
                 },
                 "content-class": {
                     "type": "String",
-                    "desc": "Class definitions to be attributed to the content wrapper",
+                    "desc": "要归因于内容包装的类定义",
                     "examples": [
                         "my-special-class"
                     ],
@@ -21679,7 +21839,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Object"
                     ],
-                    "desc": "Configure material ripple (disable it by setting it to 'false' or supply a config object)",
+                    "desc": "配置材料波纹（通过将其设置为“false”或提供配置对象来禁用它）",
                     "default": true,
                     "examples": [
                         false,
@@ -21693,7 +21853,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -21702,19 +21862,21 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestion: QMenu, QTooltip"
+                    "desc": "建议：QMenu，QTooltip"
                 }
             }
         }
     },
     {
-        name: "q-route-tab", desc: "选项卡路由", info: {
+        "name": "q-route-tab",
+        "desc": "选项卡路由",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/tabs"
@@ -21725,7 +21887,7 @@ export const tagLists: any = [
                         "String",
                         "Object"
                     ],
-                    "desc": "Equivalent to Vue Router <router-link> 'to' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“to”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "/home/dashboard",
                         ":to=\"{ name: 'my-route-name' }\""
@@ -21734,17 +21896,17 @@ export const tagLists: any = [
                 },
                 "exact": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'exact' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue路由器＜Router link＞的“精确”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "replace": {
                     "type": "Boolean",
-                    "desc": "Equivalent to Vue Router <router-link> 'replace' property; Superseded by 'href' prop if used",
+                    "desc": "相当于Vue Router＜Router link＞的“replace”属性；被'href'道具取代（如果使用）",
                     "category": "navigation"
                 },
                 "active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-active-class"
                     ],
@@ -21752,7 +21914,7 @@ export const tagLists: any = [
                 },
                 "exact-active-class": {
                     "type": "String",
-                    "desc": "Equivalent to Vue Router <router-link> 'active-class' property; Superseded by 'href' prop if used",
+                    "desc": "等效于Vue Router＜Router link＞“活动类”属性；被'href'道具取代（如果使用）",
                     "examples": [
                         "my-exact-active-class"
                     ],
@@ -21760,7 +21922,7 @@ export const tagLists: any = [
                 },
                 "href": {
                     "type": "String",
-                    "desc": "Native <a> link href attribute; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接href属性；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "https://quasar.dev"
                     ],
@@ -21769,7 +21931,7 @@ export const tagLists: any = [
                 },
                 "target": {
                     "type": "String",
-                    "desc": "Native <a> link target attribute; Use it only along with 'href' prop; Has priority over the 'to'/'exact'/'replace'/'active-class'/'exact-active-class' props",
+                    "desc": "本机<a>链接目标属性；只能与'href'道具一起使用；优先于“到”/“精确”/“替换”/“活动类”/“准确活动类”道具",
                     "examples": [
                         "_blank",
                         "_self",
@@ -21781,12 +21943,12 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -21800,7 +21962,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "A number or string to label the tab",
+                    "desc": "用于标记选项卡的数字或字符串",
                     "examples": [
                         "Home"
                     ],
@@ -21811,7 +21973,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Adds an alert symbol to the tab, notifying the user there are some updates; If its value is not a Boolean, then you can specify a color",
+                    "desc": "在选项卡中添加一个警告符号，通知用户有一些更新；如果其值不是布尔值，则可以指定颜色",
                     "examples": [
                         "alert",
                         "alert=\"purple\""
@@ -21820,7 +21982,7 @@ export const tagLists: any = [
                 },
                 "alert-icon": {
                     "type": "String",
-                    "desc": "Adds a floating icon to the tab, notifying the user there are some updates; It's displayed only if 'alert' is set; Can use the color specified by 'alert' prop",
+                    "desc": "在选项卡中添加一个浮动图标，通知用户有一些更新；仅当设置了“alert”时才显示；可以使用“alert”道具指定的颜色",
                     "examples": [
                         "alert-icon=\"alarm_on\""
                     ],
@@ -21831,7 +21993,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Panel name",
+                    "desc": "面板名称",
                     "default": "A random UID",
                     "examples": [
                         "home",
@@ -21842,12 +22004,12 @@ export const tagLists: any = [
                 },
                 "no-caps": {
                     "type": "Boolean",
-                    "desc": "Turns off capitalizing all letters within the tab (which is the default)",
+                    "desc": "关闭选项卡中所有字母的大写（这是默认设置）",
                     "category": "content"
                 },
                 "content-class": {
                     "type": "String",
-                    "desc": "Class definitions to be attributed to the content wrapper",
+                    "desc": "要归因于内容包装的类定义",
                     "examples": [
                         "my-special-class"
                     ],
@@ -21858,7 +22020,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Object"
                     ],
-                    "desc": "Configure material ripple (disable it by setting it to 'false' or supply a config object)",
+                    "desc": "配置材料波纹（通过将其设置为“false”或提供配置对象来禁用它）",
                     "default": true,
                     "examples": [
                         false,
@@ -21872,7 +22034,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Tabindex HTML attribute value",
+                    "desc": "Tabindex HTML属性值",
                     "examples": [
                         "0",
                         "100"
@@ -21882,12 +22044,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Suggestion: QMenu, QTooltip"
+                    "desc": "建议：QMenu，QTooltip"
                 }
             },
             "events": {
                 "click": {
-                    "desc": "Emitted when the component is clicked",
+                    "desc": "单击组件时发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -21941,7 +22103,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-tab-panels", desc: "选项卡组", info: {
+        "name": "q-tab-panels",
+        "desc": "选项卡组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/tab-panels"
@@ -21949,7 +22113,7 @@ export const tagLists: any = [
             "props": {
                 "model-value": {
                     "type": "Any",
-                    "desc": "Model of the component defining the current panel's name; If a Number is used, it does not define the panel's index, but rather the panel's name which can also be an Integer; Either use this property (along with a listener for 'update:model-value' event) OR use the v-model directive.",
+                    "desc": "定义当前面板名称的组件的模型；如果使用数字，它不会定义面板的索引，而是定义面板的名称，该名称也可以是Integer；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令。",
                     "examples": [
                         "v-model=\"panelName\""
                     ],
@@ -21957,7 +22121,7 @@ export const tagLists: any = [
                 },
                 "keep-alive": {
                     "type": "Boolean",
-                    "desc": "Equivalent to using Vue's native <keep-alive> component on the content",
+                    "desc": "相当于在内容上使用Vue的原生＜keep-alive＞组件",
                     "category": "behavior"
                 },
                 "keep-alive-include": {
@@ -21966,7 +22130,7 @@ export const tagLists: any = [
                         "Array",
                         "RegExp"
                     ],
-                    "desc": "Equivalent to using Vue's native include prop for <keep-alive>; Values must be valid Vue component names",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生include道具；值必须是有效的Vue组件名称",
                     "examples": [
                         "a,b",
                         "/a|b/",
@@ -21980,7 +22144,7 @@ export const tagLists: any = [
                         "Array",
                         "RegExp"
                     ],
-                    "desc": "Equivalent to using Vue's native exclude prop for <keep-alive>; Values must be valid Vue component names",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生exclude道具；值必须是有效的Vue组件名称",
                     "examples": [
                         "a,b",
                         "/a|b/",
@@ -21990,32 +22154,32 @@ export const tagLists: any = [
                 },
                 "keep-alive-max": {
                     "type": "Number",
-                    "desc": "Equivalent to using Vue's native max prop for <keep-alive>",
+                    "desc": "相当于在＜keep-alive＞中使用Vue的原生最大道具",
                     "category": "behavior"
                 },
                 "animated": {
                     "type": "Boolean",
-                    "desc": "Enable transitions between panel (also see 'transition-prev' and 'transition-next' props)",
+                    "desc": "启用面板之间的转换（另请参阅“转换前一个”和“转换下一个”道具）",
                     "category": "behavior"
                 },
                 "infinite": {
                     "type": "Boolean",
-                    "desc": "Makes component appear as infinite (when reaching last panel, next one will become the first one)",
+                    "desc": "使组件显示为无穷大（当到达最后一个面板时，下一个面板将成为第一个面板）",
                     "category": "behavior"
                 },
                 "swipeable": {
                     "type": "Boolean",
-                    "desc": "Enable swipe events (may interfere with content's touch/mouse events)",
+                    "desc": "启用滑动事件（可能会干扰内容的触摸/鼠标事件）",
                     "category": "behavior"
                 },
                 "vertical": {
                     "type": "Boolean",
-                    "desc": "Default transitions and swipe actions will be on the vertical axis",
+                    "desc": "默认转换和滑动动作将在垂直轴上",
                     "category": "behavior"
                 },
                 "transition-prev": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+                    "desc": "Quasar的嵌入过渡之一（仅当设置了“动画”道具时才有效）",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -22026,7 +22190,7 @@ export const tagLists: any = [
                 },
                 "transition-next": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+                    "desc": "Quasar的嵌入过渡之一（仅当设置了“动画”道具时才有效）",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -22040,7 +22204,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "addedIn": "v2.2",
@@ -22049,12 +22213,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when the component changes the model; This event _isn't_ fired if the model is changed externally; Is also used by v-model",
+                    "desc": "当组件更改模型时发出；如果模型在外部发生更改，则会触发此事件_isn't_；也被v-model使用",
                     "params": {
                         "value": {
                             "type": [
@@ -22069,7 +22233,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-transition": {
-                    "desc": "Emitted before transitioning to a new panel",
+                    "desc": "在转换到新面板之前发出",
                     "params": {
                         "newVal": {
                             "type": [
@@ -22094,7 +22258,7 @@ export const tagLists: any = [
                     }
                 },
                 "transition": {
-                    "desc": "Emitted after component transitioned to a new panel",
+                    "desc": "在组件转换到新面板后发出",
                     "params": {
                         "newVal": {
                             "type": [
@@ -22121,13 +22285,13 @@ export const tagLists: any = [
             },
             "methods": {
                 "next": {
-                    "desc": "Go to next panel"
+                    "desc": "转到下一个面板"
                 },
                 "previous": {
-                    "desc": "Go to previous panel"
+                    "desc": "转到上一个面板"
                 },
                 "goTo": {
-                    "desc": "Go to specific panel",
+                    "desc": "转到特定面板",
                     "params": {
                         "panelName": {
                             "type": [
@@ -22146,7 +22310,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-tab-panel", desc: "选项卡", info: {
+        "name": "q-tab-panel",
+        "desc": "选项卡",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/tab-panels"
@@ -22154,7 +22320,7 @@ export const tagLists: any = [
             "props": {
                 "name": {
                     "type": "Any",
-                    "desc": "Panel name",
+                    "desc": "面板名称",
                     "required": true,
                     "examples": [
                         "accounts",
@@ -22165,24 +22331,26 @@ export const tagLists: any = [
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-time-line", desc: "时间线组", info: {
+        "name": "q-time-line",
+        "desc": "时间线组",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/timeline"
@@ -22190,7 +22358,7 @@ export const tagLists: any = [
             "props": {
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -22199,7 +22367,7 @@ export const tagLists: any = [
                 },
                 "side": {
                     "type": "String",
-                    "desc": "Side to place the timeline entries in dense and comfortable layout; For loose layout it gets overridden by QTimelineEntry side prop",
+                    "desc": "侧面以密集舒适的布局放置时间线条目；对于松散布局，它会被QTimelineEntry侧支柱覆盖",
                     "default": "right",
                     "values": [
                         "left",
@@ -22210,7 +22378,7 @@ export const tagLists: any = [
                 },
                 "layout": {
                     "type": "String",
-                    "desc": "Layout of the timeline. Dense keeps content and labels on one side. Comfortable keeps content on one side and labels on the opposite side. Loose puts content on both sides.",
+                    "desc": "时间线的布局。Dense将内容和标签放在一边。Comfortable将内容放在一边，标签放在另一边。宽松将内容放在两边。",
                     "default": "dense",
                     "values": [
                         "dense",
@@ -22222,19 +22390,21 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Used for content of component"
+                    "desc": "用于组件内容"
                 }
             }
         }
     },
     {
-        name: "q-time-line-entry", desc: "时间线", info: {
+        "name": "q-time-line-entry",
+        "desc": "时间线",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/timeline"
@@ -22242,12 +22412,12 @@ export const tagLists: any = [
             "props": {
                 "heading": {
                     "type": "Boolean",
-                    "desc": "Defines a heading timeline item",
+                    "desc": "定义标题时间线项目",
                     "category": "content"
                 },
                 "tag": {
                     "type": "String",
-                    "desc": "Tag to use, if of type 'heading' only",
+                    "desc": "要使用的标记，如果仅为“heading”类型",
                     "examples": [
                         "div",
                         "span",
@@ -22259,7 +22429,7 @@ export const tagLists: any = [
                 },
                 "side": {
                     "type": "String",
-                    "desc": "Side to place the timeline entry; Works only if QTimeline layout is loose.",
+                    "desc": "侧面放置时间线条目；仅适用于QTimeline布局松散的情况。",
                     "default": "right",
                     "values": [
                         "left",
@@ -22270,7 +22440,7 @@ export const tagLists: any = [
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -22281,7 +22451,7 @@ export const tagLists: any = [
                 },
                 "avatar": {
                     "type": "String",
-                    "desc": "URL to the avatar image; Icon takes precedence if used, so it replaces avatar",
+                    "desc": "到化身图像的URL；图标在使用时优先，因此它会替换化身",
                     "transformAssetUrls": true,
                     "examples": [
                         "(public folder) src=\"img/my-bg.png\"",
@@ -22293,7 +22463,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -22302,7 +22472,7 @@ export const tagLists: any = [
                 },
                 "title": {
                     "type": "String",
-                    "desc": "Title of timeline entry; Is overridden if using 'title' slot",
+                    "desc": "时间线条目的标题；如果使用“title”槽，则被覆盖",
                     "examples": [
                         "December party"
                     ],
@@ -22310,7 +22480,7 @@ export const tagLists: any = [
                 },
                 "subtitle": {
                     "type": "String",
-                    "desc": "Subtitle of timeline entry; Is overridden if using 'subtitle' slot",
+                    "desc": "时间线条目的副标题；如果使用“字幕”槽，则被覆盖",
                     "examples": [
                         "All invited"
                     ],
@@ -22318,7 +22488,7 @@ export const tagLists: any = [
                 },
                 "body": {
                     "type": "String",
-                    "desc": "Body content of timeline entry; Use this prop or the default slot",
+                    "desc": "时间线条目的正文内容；使用此道具或默认插槽",
                     "examples": [
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
                     ],
@@ -22327,19 +22497,21 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Timeline entry content (body)"
+                    "desc": "日程表条目内容（正文）"
                 },
                 "title": {
-                    "desc": "Optional slot for title; When used, it overrides 'title' prop"
+                    "desc": "标题的可选插槽；使用时，它会覆盖“title”道具"
                 },
                 "subtitle": {
-                    "desc": "Optional slot for subtitle; When used, it overrides 'subtitle' prop"
+                    "desc": "字幕可选插槽；使用时，它会覆盖“字幕”道具"
                 }
             }
         }
     },
     {
-        name: "q-toolbar", desc: "工具栏", info: {
+        "name": "q-toolbar",
+        "desc": "工具栏",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/toolbar"
@@ -22347,19 +22519,21 @@ export const tagLists: any = [
             "props": {
                 "inset": {
                     "type": "Boolean",
-                    "desc": "Apply an inset to content (useful for subsequent toolbars)",
+                    "desc": "将插入应用于内容（对后续工具栏有用）",
                     "category": "content"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-toolbar-title", desc: "工具栏标题", info: {
+        "name": "q-toolbar-title",
+        "desc": "工具栏标题",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/toolbar"
@@ -22367,19 +22541,21 @@ export const tagLists: any = [
             "props": {
                 "shrink": {
                     "type": "Boolean",
-                    "desc": "By default, QToolbarTitle is set to grow to the available space. However, you can reverse that with this prop",
+                    "desc": "默认情况下，QToolbarTitle设置为增长到可用空间。然而，你可以用这个道具扭转这种局面",
                     "category": "behavior"
                 }
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             }
         }
     },
     {
-        name: "q-tooltip", desc: "工具提示", info: {
+        "name": "q-tooltip",
+        "desc": "工具提示",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/tooltip"
@@ -22387,7 +22563,7 @@ export const tagLists: any = [
             "props": {
                 "transition-show": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -22398,7 +22574,7 @@ export const tagLists: any = [
                 },
                 "transition-hide": {
                     "type": "String",
-                    "desc": "One of Quasar's embedded transitions",
+                    "desc": "Quasar的嵌入式转换之一",
                     "examples": [
                         "fade",
                         "slide-down"
@@ -22412,19 +22588,19 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Transition duration (in milliseconds, without unit)",
+                    "desc": "转换持续时间（以毫秒为单位，无单位）",
                     "default": 300,
                     "category": "transition",
                     "required": false
                 },
                 "model-value": {
                     "type": "Boolean",
-                    "desc": "Model of the component defining shown/hidden state; Either use this property (along with a listener for 'update:model-value' event) OR use v-model directive",
+                    "desc": "定义显示/隐藏状态的组件的模型；使用此属性（以及“update:model-value”事件的侦听器）或使用v-model指令",
                     "category": "model"
                 },
                 "max-height": {
                     "type": "String",
-                    "desc": "The maximum height of the Tooltip; Size in CSS units, including unit name",
+                    "desc": "工具提示的最大高度；以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -22433,7 +22609,7 @@ export const tagLists: any = [
                 },
                 "max-width": {
                     "type": "String",
-                    "desc": "The maximum width of the Tooltip; Size in CSS units, including unit name",
+                    "desc": "工具提示的最大宽度；以CSS为单位的大小，包括单位名称",
                     "examples": [
                         "16px",
                         "2rem"
@@ -22442,7 +22618,7 @@ export const tagLists: any = [
                 },
                 "anchor": {
                     "type": "String",
-                    "desc": "Two values setting the starting position or anchor point of the Tooltip relative to its target",
+                    "desc": "两个值设置工具提示相对于其目标的起始位置或锚点",
                     "values": [
                         "top left",
                         "top middle",
@@ -22466,7 +22642,7 @@ export const tagLists: any = [
                 },
                 "self": {
                     "type": "String",
-                    "desc": "Two values setting the Tooltip's own position relative to its target",
+                    "desc": "两个值设置工具提示相对于其目标的自身位置",
                     "values": [
                         "top left",
                         "top middle",
@@ -22490,7 +22666,7 @@ export const tagLists: any = [
                 },
                 "offset": {
                     "type": "Array",
-                    "desc": "An array of two numbers to offset the Tooltip horizontally and vertically in pixels",
+                    "desc": "一个由两个数字组成的数组，用于以像素为单位水平和垂直偏移工具提示",
                     "default": "[14, 14]",
                     "examples": [
                         "[8, 8]",
@@ -22504,7 +22680,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -22518,7 +22694,7 @@ export const tagLists: any = [
                         "Boolean",
                         "String"
                     ],
-                    "desc": "Configure a target element to trigger Tooltip toggle; 'true' means it enables the parent DOM element, 'false' means it disables attaching events to any DOM elements; By using a String (CSS selector) it attaches the events to the specified DOM element (if it exists)",
+                    "desc": "配置目标元素以触发Tooltip切换；'true表示启用父DOM元素，false表示禁用将事件附加到任何DOM元素；通过使用String（CSS选择器），它将事件附加到指定的DOM元素（如果存在）",
                     "default": true,
                     "values": [
                         "(Boolean) true",
@@ -22534,19 +22710,19 @@ export const tagLists: any = [
                 },
                 "no-parent-event": {
                     "type": "Boolean",
-                    "desc": "Skips attaching events to the target DOM element (that trigger the element to get shown)",
+                    "desc": "跳过将事件附加到目标DOM元素（触发元素显示）",
                     "category": "behavior"
                 },
                 "delay": {
                     "type": "Number",
-                    "desc": "Configure Tooltip to appear with delay",
+                    "desc": "将工具提示配置为延迟显示",
                     "default": 0,
                     "category": "behavior",
                     "required": false
                 },
                 "hide-delay": {
                     "type": "Number",
-                    "desc": "Configure Tooltip to disappear with delay",
+                    "desc": "将工具提示配置为延迟消失",
                     "default": 0,
                     "category": "behavior",
                     "required": false
@@ -22554,12 +22730,12 @@ export const tagLists: any = [
             },
             "slots": {
                 "default": {
-                    "desc": "Default slot in the devland unslotted content of the component"
+                    "desc": "组件的devland未插槽内容中的默认插槽"
                 }
             },
             "events": {
                 "update:model-value": {
-                    "desc": "Emitted when showing/hidden state changes; Is also used by v-model",
+                    "desc": "显示/隐藏状态更改时发出；也被v-model使用",
                     "params": {
                         "value": {
                             "type": "Boolean",
@@ -22568,7 +22744,7 @@ export const tagLists: any = [
                     }
                 },
                 "show": {
-                    "desc": "Emitted after component has triggered show()",
+                    "desc": "在组件触发show（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -22578,7 +22754,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-show": {
-                    "desc": "Emitted when component triggers show() but before it finishes doing it",
+                    "desc": "当组件触发show（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -22588,7 +22764,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Emitted after component has triggered hide()",
+                    "desc": "在组件触发hide（）后发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -22598,7 +22774,7 @@ export const tagLists: any = [
                     }
                 },
                 "before-hide": {
-                    "desc": "Emitted when component triggers hide() but before it finishes doing it",
+                    "desc": "当组件触发hide（）但在完成之前发出",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -22610,7 +22786,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "show": {
-                    "desc": "Triggers component to show",
+                    "desc": "触发要显示的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -22620,7 +22796,7 @@ export const tagLists: any = [
                     }
                 },
                 "hide": {
-                    "desc": "Triggers component to hide",
+                    "desc": "触发要隐藏的组件",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -22637,23 +22813,25 @@ export const tagLists: any = [
                             "required": false
                         }
                     },
-                    "desc": "Triggers component to toggle between show/hide"
+                    "desc": "触发组件在显示/隐藏之间切换"
                 },
                 "updatePosition": {
-                    "desc": "There are some custom scenarios for which Quasar cannot automatically reposition the tooltip without significant performance drawbacks so the optimal solution is for you to call this method when you need it"
+                    "desc": "在某些自定义场景中，Quasar无法自动重新定位工具提示而不会出现显著的性能缺陷，因此最佳解决方案是在需要时调用此方法"
                 }
             },
             "computedProps": {
                 "contentEl": {
                     "type": "Element",
-                    "desc": "The DOM Element of the rendered content",
+                    "desc": "渲染内容的DOM元素",
                     "addedIn": "v2.10.1"
                 }
             }
         }
     },
     {
-        name: "q-tree", desc: "树", info: {
+        "name": "q-tree",
+        "desc": "树",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/tree"
@@ -22662,7 +22840,7 @@ export const tagLists: any = [
                 "nodes": {
                     "type": "Array",
                     "tsType": "QTreeNode",
-                    "desc": "The array of nodes that designates the tree structure",
+                    "desc": "指定树结构的节点数组",
                     "required": true,
                     "examples": [
                         "[ {...}, {...} ]"
@@ -22671,7 +22849,7 @@ export const tagLists: any = [
                 },
                 "node-key": {
                     "type": "String",
-                    "desc": "The property name of each node object that holds a unique node id",
+                    "desc": "持有唯一节点id的每个节点对象的属性名称",
                     "required": true,
                     "examples": [
                         "key",
@@ -22681,7 +22859,7 @@ export const tagLists: any = [
                 },
                 "label-key": {
                     "type": "String",
-                    "desc": "The property name of each node object that holds the label of the node",
+                    "desc": "包含节点标签的每个节点对象的属性名称",
                     "default": "label",
                     "examples": [
                         "name",
@@ -22692,7 +22870,7 @@ export const tagLists: any = [
                 },
                 "children-key": {
                     "type": "String",
-                    "desc": "The property name of each node object that holds the list of children of the node",
+                    "desc": "包含节点子级列表的每个节点对象的属性名",
                     "default": "children",
                     "examples": [
                         "roles",
@@ -22703,12 +22881,12 @@ export const tagLists: any = [
                 },
                 "no-connectors": {
                     "type": "Boolean",
-                    "desc": "Do not display the connector lines between nodes",
+                    "desc": "不显示节点之间的连接线",
                     "category": "style"
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -22717,7 +22895,7 @@ export const tagLists: any = [
                 },
                 "control-color": {
                     "type": "String",
-                    "desc": "Color name for controls (like checkboxes) from the Quasar Color Palette",
+                    "desc": "Quasar调色板中控件（如复选框）的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -22726,7 +22904,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -22735,7 +22913,7 @@ export const tagLists: any = [
                 },
                 "selected-color": {
                     "type": "String",
-                    "desc": "Color name for selected nodes (from the Quasar Color Palette)",
+                    "desc": "选定节点的颜色名称（来自Quasar调色板）",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -22744,18 +22922,18 @@ export const tagLists: any = [
                 },
                 "dense": {
                     "type": "Boolean",
-                    "desc": "Dense mode; occupies less space",
+                    "desc": "密集模式；占用较少空间",
                     "category": "style",
                     "addedIn": "v2.2.4"
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "icon": {
                     "type": "String",
-                    "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix; If 'none' (String) is used as value then no icon is rendered (but screen real estate will still be used for it)",
+                    "desc": "遵循Quasar约定的图标名称；除非使用“img：”前缀，否则请确保已安装图标库；如果使用“none”（字符串）作为值，则不会呈现任何图标（但仍将使用屏幕不动产）",
                     "examples": [
                         "map",
                         "ion-add",
@@ -22766,7 +22944,7 @@ export const tagLists: any = [
                 },
                 "tick-strategy": {
                     "type": "String",
-                    "desc": "The type of strategy to use for the selection of the nodes",
+                    "desc": "用于选择节点的策略类型",
                     "default": "none",
                     "values": [
                         "none",
@@ -22779,7 +22957,7 @@ export const tagLists: any = [
                 },
                 "ticked": {
                     "type": "Array",
-                    "desc": "Keys of nodes that are ticked",
+                    "desc": "勾选的节点的键",
                     "sync": true,
                     "examples": [
                         "v-model:ticked=\"tickedKeys\""
@@ -22789,7 +22967,7 @@ export const tagLists: any = [
                 },
                 "expanded": {
                     "type": "Array",
-                    "desc": "Keys of nodes that are expanded",
+                    "desc": "展开的节点的键",
                     "sync": true,
                     "examples": [
                         "v-model:expanded=\"expandedKeys\""
@@ -22799,7 +22977,7 @@ export const tagLists: any = [
                 },
                 "selected": {
                     "type": "Any",
-                    "desc": "Key of node currently selected",
+                    "desc": "当前所选节点的密钥",
                     "sync": true,
                     "examples": [
                         "v-model:selected=\"selectedKey\""
@@ -22809,29 +22987,29 @@ export const tagLists: any = [
                 },
                 "no-selection-unset": {
                     "type": "Boolean",
-                    "desc": "Do not allow un-selection when clicking currently selected node",
+                    "desc": "单击当前选定的节点时不允许取消选择",
                     "category": "behavior",
                     "addedIn": "v2.4.10"
                 },
                 "default-expand-all": {
                     "type": "Boolean",
-                    "desc": "Allow the tree to have all its branches expanded, when first rendered",
+                    "desc": "首次渲染时允许树展开其所有分支",
                     "category": "behavior"
                 },
                 "accordion": {
                     "type": "Boolean",
-                    "desc": "Allows the tree to be set in accordion mode",
+                    "desc": "允许将树设置为手风琴模式",
                     "category": "behavior"
                 },
                 "no-transition": {
                     "type": "Boolean",
-                    "desc": "Turn off transition effects when expanding/collapsing nodes; Also enhances perf by a lot as a side-effect; Recommended for big trees",
+                    "desc": "在展开/折叠节点时关闭过渡效果；作为副作用，性能也提高了很多；推荐用于大树",
                     "category": "behavior",
                     "addedIn": "v2.9.2"
                 },
                 "filter": {
                     "type": "String",
-                    "desc": "The text value to be used for filtering nodes",
+                    "desc": "用于筛选节点的文本值",
                     "examples": [
                         ":filter=\"searchText\""
                     ],
@@ -22839,7 +23017,7 @@ export const tagLists: any = [
                 },
                 "filter-method": {
                     "type": "Function",
-                    "desc": "The function to use to filter the tree nodes; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "用于过滤树节点的函数；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "default": "(see source code)",
                     "params": {
                         "node": {
@@ -22860,14 +23038,14 @@ export const tagLists: any = [
                 },
                 "duration": {
                     "type": "Number",
-                    "desc": "Toggle animation duration (in milliseconds)",
+                    "desc": "切换动画持续时间（以毫秒为单位）",
                     "default": 300,
                     "category": "style",
                     "required": false
                 },
                 "no-nodes-label": {
                     "type": "String",
-                    "desc": "Override default such label for when no nodes are available",
+                    "desc": "当没有节点可用时，覆盖默认的此类标签",
                     "examples": [
                         "No nodes to show!"
                     ],
@@ -22875,7 +23053,7 @@ export const tagLists: any = [
                 },
                 "no-results-label": {
                     "type": "String",
-                    "desc": "Override default such label for when no nodes are available due to filtering",
+                    "desc": "由于筛选而没有可用节点时，覆盖默认的此类标签",
                     "examples": [
                         "No results"
                     ],
@@ -22884,7 +23062,7 @@ export const tagLists: any = [
             },
             "slots": {
                 "default-header": {
-                    "desc": "Slot to use for defining the header of a node",
+                    "desc": "用于定义节点标头的插槽",
                     "scope": {
                         "expanded": {
                             "type": "Boolean",
@@ -22923,7 +23101,7 @@ export const tagLists: any = [
                     }
                 },
                 "header-[name]": {
-                    "desc": "Header template slot for describing node header; Used by nodes which have their 'header' prop set to '[name]', where '[name]' can be any string",
+                    "desc": "用于描述节点头的头模板槽；由将其“header”属性设置为“[name]”的节点使用，其中“[name]”可以是任何字符串",
                     "scope": {
                         "expanded": {
                             "type": "Boolean",
@@ -22962,7 +23140,7 @@ export const tagLists: any = [
                     }
                 },
                 "default-body": {
-                    "desc": "Slot to use for defining the body of a node",
+                    "desc": "用于定义节点主体的插槽",
                     "scope": {
                         "expanded": {
                             "type": "Boolean",
@@ -23001,7 +23179,7 @@ export const tagLists: any = [
                     }
                 },
                 "body-[name]": {
-                    "desc": "Body template slot for describing node body; Used by nodes which have their 'body' prop set to '[name]', where '[name]' can be any string",
+                    "desc": "用于描述节点主体的主体模板槽；由将其“body”属性设置为“[name]”的节点使用，其中“[name]”可以是任何字符串",
                     "scope": {
                         "expanded": {
                             "type": "Boolean",
@@ -23042,7 +23220,7 @@ export const tagLists: any = [
             },
             "events": {
                 "update:expanded": {
-                    "desc": "Triggered when nodes are expanded or collapsed; Used by Vue on 'v-model:update' to update its value",
+                    "desc": "当节点展开或折叠时触发；Vue在“v-model:update”上使用以更新其值",
                     "params": {
                         "expanded": {
                             "type": "Array",
@@ -23054,7 +23232,7 @@ export const tagLists: any = [
                     }
                 },
                 "lazy-load": {
-                    "desc": "Emitted when the lazy loading of nodes is finished",
+                    "desc": "节点的延迟加载完成时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -23099,7 +23277,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:ticked": {
-                    "desc": "Emitted when nodes are ticked/unticked via the checkbox; Used by Vue on 'v-model:ticked' to update its value",
+                    "desc": "通过复选框勾选/取消勾选节点时发出；Vue在“v-model：勾选”上使用以更新其值",
                     "params": {
                         "target": {
                             "type": "Array",
@@ -23111,7 +23289,7 @@ export const tagLists: any = [
                     }
                 },
                 "update:selected": {
-                    "desc": "Emitted when selected node changes; Used by Vue on 'v-model:selected' to update its value",
+                    "desc": "当选定节点发生更改时发出；Vue在“v-model:selected”上使用以更新其值",
                     "params": {
                         "target": {
                             "type": "Any",
@@ -23123,15 +23301,15 @@ export const tagLists: any = [
                     }
                 },
                 "after-show": {
-                    "desc": "Emitted when component show animation is finished"
+                    "desc": "组件显示动画完成时发射"
                 },
                 "after-hide": {
-                    "desc": "Emitted when component hide animation is finished"
+                    "desc": "组件隐藏动画完成时发射"
                 }
             },
             "methods": {
                 "getNodeByKey": {
-                    "desc": "Get the node with the given key",
+                    "desc": "获取具有给定密钥的节点",
                     "params": {
                         "key": {
                             "type": "Any",
@@ -23148,21 +23326,21 @@ export const tagLists: any = [
                     }
                 },
                 "getTickedNodes": {
-                    "desc": "Get array of nodes that are ticked",
+                    "desc": "获取勾选的节点数组",
                     "returns": {
                         "type": "Array",
                         "desc": "Ticked node objects"
                     }
                 },
                 "getExpandedNodes": {
-                    "desc": "Get array of nodes that are expanded",
+                    "desc": "获取展开的节点阵列",
                     "returns": {
                         "type": "Array",
                         "desc": "Expanded node objects"
                     }
                 },
                 "isExpanded": {
-                    "desc": "Determine if a node is expanded",
+                    "desc": "确定节点是否展开",
                     "params": {
                         "key": {
                             "type": "Any",
@@ -23179,13 +23357,13 @@ export const tagLists: any = [
                     }
                 },
                 "expandAll": {
-                    "desc": "Use to expand all branches of the tree"
+                    "desc": "用于展开树的所有分支"
                 },
                 "collapseAll": {
-                    "desc": "Use to collapse all branches of the tree"
+                    "desc": "用于折叠树的所有分支"
                 },
                 "setExpanded": {
-                    "desc": "Expands the tree at the point of the node with the key given",
+                    "desc": "使用给定的键展开节点点处的树",
                     "params": {
                         "key": {
                             "type": "Any",
@@ -23203,7 +23381,7 @@ export const tagLists: any = [
                     }
                 },
                 "isTicked": {
-                    "desc": "Method to check if a node's checkbox is selected or not",
+                    "desc": "方法来检查是否选中了节点的复选框",
                     "params": {
                         "key": {
                             "type": "Any",
@@ -23220,7 +23398,7 @@ export const tagLists: any = [
                     }
                 },
                 "setTicked": {
-                    "desc": "Method to set a node's checkbox programmatically",
+                    "desc": "方法以编程方式设置节点的复选框",
                     "params": {
                         "keys": {
                             "type": "Array",
@@ -23241,7 +23419,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-uploader", desc: "上传器", info: {
+        "name": "q-uploader",
+        "desc": "上传器",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/uploader"
@@ -23250,7 +23430,7 @@ export const tagLists: any = [
                 "factory": {
                     "type": "Function",
                     "tsType": "QUploaderFactoryFn",
-                    "desc": "Function which should return an Object or a Promise resolving with an Object; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "函数，该函数应返回一个Object或用Object解析的Promise；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "files": {
                             "type": "Array",
@@ -23271,7 +23451,7 @@ export const tagLists: any = [
                         "String",
                         "Function"
                     ],
-                    "desc": "URL or path to the server which handles the upload. Takes String or factory function, which returns String. Function is called right before upload; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "处理上载的服务器的URL或路径。取String或factory函数，返回String。函数在上传前立即调用；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "examples": [
                         "https://example.com/path",
                         "files => `https://example.com?count=${files.length}`"
@@ -23294,7 +23474,7 @@ export const tagLists: any = [
                         "Function"
                     ],
                     "default": "POST",
-                    "desc": "HTTP method to use for upload; Takes String or factory function which returns a String; Function is called right before upload; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "用于上传的HTTP方法；取String或返回String的工厂函数；函数在上传前立即调用；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "values": [
                         "POST",
                         "PUT"
@@ -23321,7 +23501,7 @@ export const tagLists: any = [
                         "String",
                         "Function"
                     ],
-                    "desc": "Field name for each file upload; This goes into the following header: 'Content-Disposition: form-data; name=\"__HERE__\"; filename=\"somefile.png\"; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "每个文件上传的字段名称；这将进入以下标题：“内容处置：表单数据；name=“__HERE_”；filename=“somefile.png”；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "default": "(file) => file.name",
                     "examples": [
                         "backgroundFile",
@@ -23345,7 +23525,7 @@ export const tagLists: any = [
                         "Array",
                         "Function"
                     ],
-                    "desc": "Array or a factory function which returns an array; Array consists of objects with header definitions; Function is called right before upload; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "数组或返回数组的工厂函数；数组由具有标头定义的对象组成；函数在上传前立即调用；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "definition": {
                         "name": {
                             "type": "String",
@@ -23389,7 +23569,7 @@ export const tagLists: any = [
                         "Array",
                         "Function"
                     ],
-                    "desc": "Array or a factory function which returns an array; Array consists of objects with additional fields definitions (used by Form to be uploaded); Function is called right before upload; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "数组或返回数组的工厂函数；数组由具有附加字段定义的对象组成（由要上传的Form使用）；函数在上传前立即调用；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "definition": {
                         "name": {
                             "type": "String",
@@ -23430,7 +23610,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Function"
                     ],
-                    "desc": "Sets withCredentials to true on the XHR that manages the upload; Takes boolean or factory function for Boolean; Function is called right before upload; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "在管理上载的XHR上将withCredentials设置为true；将布尔函数或工厂函数作为布尔函数；函数在上传前立即调用；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "examples": [
                         "with-credentials",
                         ":with-credentials=\"files => ...\""
@@ -23452,7 +23632,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Function"
                     ],
-                    "desc": "Send raw files without wrapping into a Form(); Takes boolean or factory function for Boolean; Function is called right before upload; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "发送原始文件而不包装到Form（）中；将布尔函数或工厂函数作为布尔函数；函数在上传前立即调用；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "examples": [
                         "send-raw",
                         ":send-raw=\"files => ...\""
@@ -23474,7 +23654,7 @@ export const tagLists: any = [
                         "Boolean",
                         "Function"
                     ],
-                    "desc": "Upload files in batch (in one XHR request); Takes boolean or factory function for Boolean; Function is called right before upload; If using a function then for best performance, reference it from your scope and do not define it inline",
+                    "desc": "批量上传文件（在一个XHR请求中）；将布尔函数或工厂函数作为布尔函数；函数在上传前立即调用；如果使用一个函数，那么为了获得最佳性能，请从您的作用域中引用它，不要内联定义它",
                     "examples": [
                         "files => files.length > 10"
                     ],
@@ -23492,12 +23672,12 @@ export const tagLists: any = [
                 },
                 "multiple": {
                     "type": "Boolean",
-                    "desc": "Allow multiple file uploads",
+                    "desc": "允许多个文件上载",
                     "category": "behavior"
                 },
                 "accept": {
                     "type": "String",
-                    "desc": "Comma separated list of unique file type specifiers. Maps to 'accept' attribute of native input type=file element",
+                    "desc": "以逗号分隔的唯一文件类型说明符列表。映射到本机输入类型=文件元素的“accept”属性",
                     "examples": [
                         ".jpg, .pdf, image/*",
                         "image/jpeg, .pdf"
@@ -23506,7 +23686,7 @@ export const tagLists: any = [
                 },
                 "capture": {
                     "type": "String",
-                    "desc": "Optionally, specify that a new file should be captured, and which device should be used to capture that new media of a type defined by the 'accept' prop. Maps to 'capture' attribute of native input type=file element",
+                    "desc": "（可选）指定应捕获新文件，以及应使用哪个设备捕获由“accept”道具定义的类型的新媒体。映射到本机输入类型=文件元素的“capture”属性",
                     "values": [
                         "user",
                         "environment"
@@ -23518,7 +23698,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Maximum size of individual file in bytes",
+                    "desc": "单个文件的最大大小（字节）",
                     "examples": [
                         1024,
                         1048576
@@ -23530,7 +23710,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Maximum size of all files combined in bytes",
+                    "desc": "所有文件的最大大小（以字节为单位）",
                     "category": "behavior"
                 },
                 "max-files": {
@@ -23538,12 +23718,12 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Maximum number of files to contain",
+                    "desc": "要包含的最大文件数",
                     "category": "behavior"
                 },
                 "filter": {
                     "type": "Function",
-                    "desc": "Custom filter for added files; Only files that pass this filter will be added to the queue and uploaded; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "为添加的文件自定义过滤器；只有通过此筛选器的文件才会添加到队列中并上载；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "files": {
                             "type": [
@@ -23564,7 +23744,7 @@ export const tagLists: any = [
                 },
                 "label": {
                     "type": "String",
-                    "desc": "Label for the uploader",
+                    "desc": "上传器的标签",
                     "examples": [
                         "Upload photo here"
                     ],
@@ -23572,7 +23752,7 @@ export const tagLists: any = [
                 },
                 "color": {
                     "type": "String",
-                    "desc": "Color name for component from the Quasar Color Palette",
+                    "desc": "Quasar调色板中组件的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -23581,7 +23761,7 @@ export const tagLists: any = [
                 },
                 "text-color": {
                     "type": "String",
-                    "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+                    "desc": "覆盖文本颜色（如果需要）；Quasar调色板中的颜色名称",
                     "examples": [
                         "primary",
                         "teal-10"
@@ -23590,53 +23770,53 @@ export const tagLists: any = [
                 },
                 "dark": {
                     "type": "Boolean",
-                    "desc": "Notify the component that the background is a dark color",
+                    "desc": "通知组件背景为深色",
                     "category": "style"
                 },
                 "square": {
                     "type": "Boolean",
-                    "desc": "Removes border-radius so borders are squared",
+                    "desc": "删除边界半径，使边界为方形",
                     "category": "style"
                 },
                 "flat": {
                     "type": "Boolean",
-                    "desc": "Applies a 'flat' design (no default shadow)",
+                    "desc": "应用“平面”设计（无默认阴影）",
                     "category": "style"
                 },
                 "bordered": {
                     "type": "Boolean",
-                    "desc": "Applies a default border to the component",
+                    "desc": "将默认边框应用于零部件",
                     "category": "style"
                 },
                 "no-thumbnails": {
                     "type": "Boolean",
-                    "desc": "Don't display thumbnails for image files",
+                    "desc": "不显示图像文件的缩略图",
                     "category": "content"
                 },
                 "auto-upload": {
                     "type": "Boolean",
-                    "desc": "Upload files immediately when added",
+                    "desc": "添加后立即上载文件",
                     "category": "behavior"
                 },
                 "hide-upload-btn": {
                     "type": "Boolean",
-                    "desc": "Don't show the upload button",
+                    "desc": "不显示上传按钮",
                     "category": "behavior"
                 },
                 "disable": {
                     "type": "Boolean",
-                    "desc": "Put component in disabled mode",
+                    "desc": "将组件置于禁用模式",
                     "category": "state"
                 },
                 "readonly": {
                     "type": "Boolean",
-                    "desc": "Put component in readonly mode",
+                    "desc": "将组件置于只读模式",
                     "category": "state"
                 }
             },
             "slots": {
                 "header": {
-                    "desc": "Slot for custom header; Scope is the QUploader instance itself",
+                    "desc": "自定义标头的插槽；范围是QUploader实例本身",
                     "scope": {
                         "...self": {
                             "type": "Component",
@@ -23646,7 +23826,7 @@ export const tagLists: any = [
                     }
                 },
                 "list": {
-                    "desc": "Slot for custom list; Scope is the QUploader instance itself",
+                    "desc": "自定义列表插槽；范围是QUploader实例本身",
                     "scope": {
                         "...self": {
                             "type": "Component",
@@ -23658,7 +23838,7 @@ export const tagLists: any = [
             },
             "events": {
                 "uploaded": {
-                    "desc": "Emitted when file or batch of files is uploaded",
+                    "desc": "上传文件或一批文件时发出",
                     "params": {
                         "info": {
                             "type": "Object",
@@ -23679,7 +23859,7 @@ export const tagLists: any = [
                     }
                 },
                 "failed": {
-                    "desc": "Emitted when file or batch of files has encountered error while uploading",
+                    "desc": "当文件或一批文件在上载时遇到错误时发出",
                     "params": {
                         "info": {
                             "type": "Object",
@@ -23700,7 +23880,7 @@ export const tagLists: any = [
                     }
                 },
                 "uploading": {
-                    "desc": "Emitted when file or batch of files started uploading",
+                    "desc": "当文件或一批文件开始上载时发出",
                     "params": {
                         "info": {
                             "type": "Object",
@@ -23721,7 +23901,7 @@ export const tagLists: any = [
                     }
                 },
                 "factory-failed": {
-                    "desc": "Emitted when factory function is supplied with a Promise which is rejected",
+                    "desc": "当向工厂功能提供被拒绝的Promise时发出",
                     "params": {
                         "err": {
                             "type": "Error",
@@ -23734,7 +23914,7 @@ export const tagLists: any = [
                     }
                 },
                 "rejected": {
-                    "desc": "Emitted after files are picked and some do not pass the validation props (accept, max-file-size, max-total-size, filter, etc)",
+                    "desc": "在拾取文件后发出，有些文件未通过验证道具（accept、最大文件大小、最大总大小、筛选器等）",
                     "params": {
                         "rejectedEntries": {
                             "type": "Array",
@@ -23744,7 +23924,7 @@ export const tagLists: any = [
                     }
                 },
                 "added": {
-                    "desc": "Emitted when files are added into the list",
+                    "desc": "当文件添加到列表中时发出",
                     "params": {
                         "files": {
                             "type": "Array",
@@ -23753,7 +23933,7 @@ export const tagLists: any = [
                     }
                 },
                 "removed": {
-                    "desc": "Emitted when files are removed from the list",
+                    "desc": "从列表中删除文件时发出",
                     "params": {
                         "files": {
                             "type": "Array",
@@ -23762,15 +23942,15 @@ export const tagLists: any = [
                     }
                 },
                 "start": {
-                    "desc": "Started working"
+                    "desc": "已开始工作"
                 },
                 "finish": {
-                    "desc": "Finished working (regardless of success or fail)"
+                    "desc": "已完成工作（无论成功与否）"
                 }
             },
             "methods": {
                 "pickFiles": {
-                    "desc": "Trigger the file picker dialog; The event must come from a user interaction event handler",
+                    "desc": "触发文件选择器对话框；事件必须来自用户交互事件处理程序",
                     "params": {
                         "evt": {
                             "type": "Event",
@@ -23780,7 +23960,7 @@ export const tagLists: any = [
                     }
                 },
                 "addFiles": {
-                    "desc": "Manually add files to the queue",
+                    "desc": "手动将文件添加到队列",
                     "params": {
                         "files": {
                             "type": "Array",
@@ -23790,22 +23970,22 @@ export const tagLists: any = [
                     }
                 },
                 "upload": {
-                    "desc": "Start uploading (same as clicking the upload button)"
+                    "desc": "开始上传（与点击上传按钮相同）"
                 },
                 "abort": {
-                    "desc": "Abort upload of all files (same as clicking the abort button)"
+                    "desc": "中止上传所有文件（与单击中止按钮相同）"
                 },
                 "reset": {
-                    "desc": "Resets uploader to default; Empties queue, aborts current uploads"
+                    "desc": "将上传程序重置为默认值；清空队列，中止当前上载"
                 },
                 "removeUploadedFiles": {
-                    "desc": "Removes already uploaded files from the list"
+                    "desc": "从列表中删除已上载的文件"
                 },
                 "removeQueuedFiles": {
-                    "desc": "Remove files that are waiting for upload to start (same as clicking the left clear button)"
+                    "desc": "删除等待上传开始的文件（与单击左侧清除按钮相同）"
                 },
                 "removeFile": {
-                    "desc": "Remove specified file from the queue",
+                    "desc": "从队列中删除指定的文件",
                     "params": {
                         "file": {
                             "type": "File",
@@ -23815,7 +23995,7 @@ export const tagLists: any = [
                     }
                 },
                 "updateFileStatus": {
-                    "desc": "Update the status of a file",
+                    "desc": "更新文件的状态",
                     "params": {
                         "file": {
                             "type": "File",
@@ -23841,7 +24021,7 @@ export const tagLists: any = [
                     }
                 },
                 "isAlive": {
-                    "desc": "Is the component alive (activated but not unmounted); Useful to determine if you still need to compute anything going further",
+                    "desc": "组件是否处于活动状态（已激活但未卸载）；有助于确定是否还需要进一步计算",
                     "returns": {
                         "type": "Boolean",
                         "desc": "If true, the current component is still activated and mounted"
@@ -23851,55 +24031,57 @@ export const tagLists: any = [
             "computedProps": {
                 "files": {
                     "type": "Array",
-                    "desc": "List of all files"
+                    "desc": "所有文件的列表"
                 },
                 "queuedFiles": {
                     "type": "Array",
-                    "desc": "List of files that are waiting to be uploaded"
+                    "desc": "等待上载的文件列表"
                 },
                 "uploadedFiles": {
                     "type": "Array",
-                    "desc": "List of files that have been uploaded"
+                    "desc": "已上载的文件列表"
                 },
                 "uploadedSize": {
                     "type": "Number",
-                    "desc": "Size of all uploaded files in bytes"
+                    "desc": "所有上传文件的大小（字节）"
                 },
                 "uploadSizeLabel": {
                     "type": "String",
-                    "desc": "Label for the size total of all files",
+                    "desc": "所有文件的总大小标签",
                     "examples": [
                         "1.0MB"
                     ]
                 },
                 "uploadProgressLabel": {
                     "type": "String",
-                    "desc": "Label for the upload progress (in %)",
+                    "desc": "上载进度标签（%）",
                     "examples": [
                         "52.76%"
                     ]
                 },
                 "canAddFiles": {
                     "type": "Boolean",
-                    "desc": "Whether new files can be added to the list"
+                    "desc": "是否可以将新文件添加到列表中"
                 },
                 "canUpload": {
                     "type": "Boolean",
-                    "desc": "Whether the files can be uploaded"
+                    "desc": "是否可以上传文件"
                 },
                 "isBusy": {
                     "type": "Boolean",
-                    "desc": "The component state is set as busy; User should not be able to interact with the component"
+                    "desc": "组件状态设置为繁忙；用户不应能够与组件交互"
                 },
                 "isUploading": {
                     "type": "Boolean",
-                    "desc": "The component is uploading files"
+                    "desc": "组件正在上载文件"
                 }
             }
         }
     },
     {
-        name: "q-video", desc: "视频", info: {
+        "name": "q-video",
+        "desc": "视频",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/video"
@@ -23910,7 +24092,7 @@ export const tagLists: any = [
                         "String",
                         "Number"
                     ],
-                    "desc": "Aspect ratio for the content; If value is a String, then avoid using a computational statement (like '16/9') and instead specify the String value of the result directly (eg. '1.7777')",
+                    "desc": "内容的纵横比；如果值是String，则避免使用计算语句（如“16/9”），而是直接指定结果的String值（如“1.7777”）",
                     "examples": [
                         ":ratio=\"4/3\"",
                         ":ratio=\"16/9\"",
@@ -23920,7 +24102,7 @@ export const tagLists: any = [
                 },
                 "src": {
                     "type": "String",
-                    "desc": "The source url to display in an iframe",
+                    "desc": "要在iframe中显示的源url",
                     "required": true,
                     "examples": [
                         "https://www.youtube.com/embed/k3_tw44QsZQ"
@@ -23929,7 +24111,7 @@ export const tagLists: any = [
                 },
                 "title": {
                     "type": "String",
-                    "desc": "(Accessibility) Set the native 'title' attribute value of the inner iframe being used",
+                    "desc": "（辅助功能）设置正在使用的内部iframe的本机“title”属性值",
                     "required": false,
                     "examples": [
                         "My Daily Marathon"
@@ -23939,7 +24121,7 @@ export const tagLists: any = [
                 },
                 "fetchpriority": {
                     "type": "String",
-                    "desc": "Provides a hint of the relative priority to use when fetching the iframe document",
+                    "desc": "提供获取iframe文档时要使用的相对优先级的提示",
                     "default": "auto",
                     "values": [
                         "high",
@@ -23952,7 +24134,7 @@ export const tagLists: any = [
                 },
                 "loading": {
                     "type": "String",
-                    "desc": "Indicates how the browser should load the iframe",
+                    "desc": "指示浏览器应如何加载iframe",
                     "default": "eager",
                     "values": [
                         "eager",
@@ -23964,7 +24146,7 @@ export const tagLists: any = [
                 },
                 "referrerpolicy": {
                     "type": "String",
-                    "desc": "Indicates which referrer to send when fetching the frame's resource",
+                    "desc": "指示在获取帧的资源时发送哪个引用器",
                     "default": "strict-origin-when-cross-origin",
                     "values": [
                         "no-referrer",
@@ -23984,7 +24166,9 @@ export const tagLists: any = [
         }
     },
     {
-        name: "q-virtual-scroll", desc: "虚拟滚动", info: {
+        "name": "q-virtual-scroll",
+        "desc": "虚拟滚动",
+        "info": {
             "type": "component",
             "meta": {
                 "docsUrl": "https://v2.quasar.dev/vue-components/virtual-scroll"
@@ -23992,7 +24176,7 @@ export const tagLists: any = [
             "props": {
                 "virtual-scroll-horizontal": {
                     "type": "Boolean",
-                    "desc": "Make virtual list work in horizontal mode",
+                    "desc": "使虚拟列表在水平模式下工作",
                     "category": "behavior"
                 },
                 "virtual-scroll-slice-size": {
@@ -24000,7 +24184,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Minimum number of items to render in the virtual list",
+                    "desc": "虚拟列表中要渲染的最小项目数",
                     "default": "30",
                     "examples": [
                         "virtual-scroll-slice-size=\"60\""
@@ -24013,7 +24197,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Ratio of number of items in visible zone to render before it",
+                    "desc": "可见区域中要在其之前渲染的项目数的比率",
                     "default": 1,
                     "category": "virtual-scroll",
                     "required": false
@@ -24023,7 +24207,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Ratio of number of items in visible zone to render after it",
+                    "desc": "可见区域中要在其之后渲染的项目数的比率",
                     "default": 1,
                     "category": "virtual-scroll",
                     "required": false
@@ -24033,7 +24217,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Default size in pixels (height if vertical, width if horizontal) of an item; This value is used for rendering the initial list; Try to use a value close to the minimum size of an item",
+                    "desc": "项目的默认像素大小（垂直时为高度，水平时为宽度）；该值用于呈现初始列表；尝试使用接近项目最小大小的值",
                     "default": 24,
                     "category": "virtual-scroll",
                     "required": false
@@ -24043,7 +24227,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Size in pixels (height if vertical, width if horizontal) of the sticky part (if using one) at the start of the list; A correct value will improve scroll precision",
+                    "desc": "列表开头的粘性部分（如果使用一个）的像素大小（垂直时为高度，水平时为宽度）；正确的值将提高滚动精度",
                     "default": "0",
                     "category": "virtual-scroll",
                     "required": false
@@ -24053,7 +24237,7 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "Size in pixels (height if vertical, width if horizontal) of the sticky part (if using one) at the end of the list; A correct value will improve scroll precision",
+                    "desc": "列表末尾的粘性部分（如果使用）的像素大小（如果垂直，则为高度，如果水平，则为宽度）；正确的值将提高滚动精度",
                     "default": "0",
                     "category": "virtual-scroll",
                     "required": false
@@ -24063,12 +24247,12 @@ export const tagLists: any = [
                         "Number",
                         "String"
                     ],
-                    "desc": "The number of columns in the table (you need this if you use table-layout: fixed)",
+                    "desc": "表中的列数（如果使用表布局，则需要此项：固定）",
                     "category": "virtual-scroll|content"
                 },
                 "type": {
                     "type": "String",
-                    "desc": "The type of content: list (default) or table",
+                    "desc": "内容类型：列表（默认）或表格",
                     "default": "list",
                     "values": [
                         "list",
@@ -24079,7 +24263,7 @@ export const tagLists: any = [
                 },
                 "items": {
                     "type": "Array",
-                    "desc": "Available list items that will be passed to the scoped slot; For best performance freeze the list of items; Required if 'itemsFn' is not supplied",
+                    "desc": "将传递到作用域插槽的可用列表项；为了获得最佳性能，冻结项目列表；如果未提供“itemsFn”，则为必需",
                     "default": "[]",
                     "examples": [
                         ":items=\"[ 'BMW', 'Samsung Phone' ]\"",
@@ -24090,7 +24274,7 @@ export const tagLists: any = [
                 },
                 "items-size": {
                     "type": "Number",
-                    "desc": "Number of available items in the list; Required and used only if 'itemsFn' is provided",
+                    "desc": "列表中可用项目的数量；必需，仅当提供了“itemsFn”时使用",
                     "default": "void 0",
                     "examples": [
                         ":items-size=\"100000\"",
@@ -24101,7 +24285,7 @@ export const tagLists: any = [
                 },
                 "items-fn": {
                     "type": "Function",
-                    "desc": "Function to return the scope for the items to be displayed; Should return an array for items starting from 'from' index for size length; For best performance, reference it from your scope and do not define it inline",
+                    "desc": "函数返回要显示的项目的范围；应为大小长度从“from”索引开始的项返回一个数组；为了获得最佳性能，请从您的范围中引用它，不要内联定义它",
                     "params": {
                         "from": {
                             "type": "Number",
@@ -24126,7 +24310,7 @@ export const tagLists: any = [
                         "Element",
                         "String"
                     ],
-                    "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
+                    "desc": "CSS选择器或DOM元素用作自定义滚动容器，而不是自动检测的滚动容器",
                     "examples": [
                         ":scroll-target=\"$refs.scrollTarget\"",
                         "scroll-target=\".scroll-target-class\"",
@@ -24138,13 +24322,13 @@ export const tagLists: any = [
             },
             "slots": {
                 "before": {
-                    "desc": "Template slot for the elements that should be rendered before the list; Suggestion: thead before a table"
+                    "desc": "应在列表之前呈现的元素的模板槽；建议：餐桌前的餐桌"
                 },
                 "after": {
-                    "desc": "Template slot for the elements that should be rendered after the list; Suggestion: tfoot after a table"
+                    "desc": "应在列表之后呈现的元素的模板槽；建议：坐在桌子后面"
                 },
                 "default": {
-                    "desc": "Template slot for defining the list item; Suggestion: QItem",
+                    "desc": "用于定义列表项的模板槽；建议：QItem",
                     "scope": {
                         "index": {
                             "type": "Number",
@@ -24159,7 +24343,7 @@ export const tagLists: any = [
             },
             "events": {
                 "virtual-scroll": {
-                    "desc": "Emitted when the virtual scroll occurs",
+                    "desc": "发生虚拟滚动时发出",
                     "params": {
                         "details": {
                             "type": "Object",
@@ -24202,7 +24386,7 @@ export const tagLists: any = [
             },
             "methods": {
                 "scrollTo": {
-                    "desc": "Scroll the virtual scroll list to the item with the specified index (0 based)",
+                    "desc": "将虚拟滚动列表滚动到具有指定索引的项目（基于0）",
                     "params": {
                         "index": {
                             "type": [
@@ -24227,10 +24411,10 @@ export const tagLists: any = [
                     }
                 },
                 "reset": {
-                    "desc": "Resets the virtual scroll computations; Needed for custom edge-cases"
+                    "desc": "重置虚拟滚动计算；需要自定义边缘案例"
                 },
                 "refresh": {
-                    "desc": "Refreshes the virtual scroll list; Use it after appending items",
+                    "desc": "刷新虚拟滚动列表；附加项目后使用",
                     "params": {
                         "index": {
                             "type": [
@@ -24243,6 +24427,6 @@ export const tagLists: any = [
                 }
             }
         }
-    },
+    }
 
 ]
