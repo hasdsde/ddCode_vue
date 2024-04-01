@@ -1,7 +1,7 @@
 <!--@formatter:on-->
 <template>
   <div class="q-pa-sm flex justify-around h-[95vh]">
-    <q-card class="w-[20%] q-pa-md">
+    <q-card class="w-[25%] q-pa-md">
       <div>
         <q-btn icon="add" color="primary" flat class="float-right">
           <q-menu>
@@ -212,17 +212,17 @@
         <iframe src="http://localhost:9000/#/template" frameborder="0" class="w-full h-full"/>
       </q-card-section>
     </q-card>
-    <q-card class="w-[20%] h-full">
+    <q-card class="w-[15%] h-full">
       <q-card-section class="">
         <div class="text-body1 q-pb-md">
           设置
         </div>
-        <div class="flex no-wrap">
-          <q-btn class="q-ml-md" color="primary" label="拉取" :loading="refresh" @click="getCode"
+        <div class="flex justify-left">
+          <q-btn class="q-ma-sm" color="primary" label="拉取" :loading="refresh" @click="getCode"
                  icon="cloud_download"/>
-          <q-btn class="q-ml-md" color="secondary" label="推送" :loading="refresh" @click="uploadCode(sourceCode)"
+          <q-btn class="q-ma-sm" color="secondary" label="推送" :loading="refresh" @click="uploadCode(sourceCode)"
                  icon="backup"/>
-          <q-btn class="q-ml-md" color="purple" label="生成并推送" :loading="refresh" @click="generateCode"
+          <q-btn class="q-ma-sm" color="purple" label="生成并推送" :loading="refresh" @click="generateCode"
                  icon="auto_fix_high"/>
         </div>
       </q-card-section>
@@ -761,9 +761,6 @@ function cycleGetNode(node: Cheerio<AnyNode>, codeTree: any) {
         text: $(node).children().length == 0 ? $(node).text().replaceAll("\n", "").replaceAll(" ", "") : ''
       }
   )
-  // console.log("node", node[0])
-  // console.log("child1", $(node).children().get())
-  // console.log("child2", node.children())
   $(node).children().map((i, el) => {
     cycleGetNode($(el), codeTree[codeTree.length - 1].children)
   })
